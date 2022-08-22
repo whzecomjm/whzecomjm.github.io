@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sat, 22 Sep 2018 15:17:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Latex中输入双括号</title>
-        <link>https://whzecomjm.com/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</link>
+        <link>https://whzecomjm.com/p/2018/09/latex-lrangles/</link>
         <pubDate>Sat, 22 Sep 2018 15:17:05 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/jeswin-thomas-hecib2an4T4-unsplash.jpg" alt="Featured image of post Latex中输入双括号" /&gt;&lt;p&gt;在LaTeX中如果只是用&lt;code&gt;[[a]]&lt;/code&gt;和&lt;code&gt;((a))&lt;/code&gt;表示双括号（比如幂级数环）显示会比较难看。尝试使用&lt;code&gt;\left[\left[a\right]\right]&lt;/code&gt;等效果也不太好，一个简单的做法是使用&lt;code&gt;[\![a]\!]&lt;/code&gt;和&lt;code&gt;(\!(a)\!)&lt;/code&gt;，可以得到如下效果：&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2018/09/latex-lrangles/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/09/latex-lrangles/jeswin-thomas-hecib2an4T4-unsplash.jpg" alt="Featured image of post Latex中输入双括号" /&gt;&lt;p&gt;在LaTeX中如果只是用&lt;code&gt;[[a]]&lt;/code&gt;和&lt;code&gt;((a))&lt;/code&gt;表示双括号（比如幂级数环）显示会比较难看。尝试使用&lt;code&gt;\left[\left[a\right]\right]&lt;/code&gt;等效果也不太好，一个简单的做法是使用&lt;code&gt;[\![a]\!]&lt;/code&gt;和&lt;code&gt;(\!(a)\!)&lt;/code&gt;，可以得到如下效果：&lt;/p&gt;
 &lt;p&gt;$$f[\![a]\!]+(\!(a)\!).$$&lt;/p&gt;
 &lt;p&gt;至于双三角括号的使用，需要引用宏包 &lt;code&gt;mnsymbol&lt;/code&gt; 或者使用如下符号自定义：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -43,11 +43,11 @@
         </item>
         <item>
         <title>KaTeX：博客的数学公式支持</title>
-        <link>https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</link>
+        <link>https://whzecomjm.com/p/2018/07/katex/</link>
         <pubDate>Thu, 12 Jul 2018 15:14:23 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/2018/07/katex/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/07/katex/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt; 刚出来的时候, 我就有关注这个 MathJax 的代替者. 不过当时好多公式符号都无法加载, 那时甚至矩阵都显示有问题. KaTeX 虽然加载公式速度很快, 但是怕我文章里有公式不能正常显示, 所以还是没有选择使用它. 不过就像很多开源软件一样, 时间能让它们变得越来越好. 诚如前段时间回归 Typecho 重新写博客一样, Markdown 和 MathJax 之间的小 Bug 得到完美解决; 如今 KaTeX 也能独当一面, 可以彻底代替 MathJax 了.&lt;/p&gt;
 &lt;p&gt;最简单的使用方法是使用了官方推荐的简单配置（使用 jsDelivr 的CDN）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

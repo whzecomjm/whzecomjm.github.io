@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Hasse principle'><title>函数域上二次型的 Hasse 原理</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2015/12/hasse-principle/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='函数域上二次型的 Hasse 原理'>
+<meta property='og:description' content='Hasse principle'>
+<meta property='og:url' content='https://whzecomjm.com/p/2015/12/hasse-principle/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hasse原理' /><meta property='article:tag' content='二次型' /><meta property='article:published_time' content='2015-12-24T05:50:18&#43;08:00'/><meta property='article:modified_time' content='2015-12-24T05:50:18&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash.jpg' />
+<meta name="twitter:title" content="函数域上二次型的 Hasse 原理">
+<meta name="twitter:description" content="Hasse principle"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2015/12/hasse-principle/">
+                <img src="/p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash_hu2d927d073e730f2f230bdcf90b5be0be_278575_800x0_resize_q75_box.jpg"
+                        srcset="/p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash_hu2d927d073e730f2f230bdcf90b5be0be_278575_800x0_resize_q75_box.jpg 800w, /p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash_hu2d927d073e730f2f230bdcf90b5be0be_278575_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post 函数域上二次型的 Hasse 原理" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E6%95%B0/" style="background-color: #2a9d8f; color: #fff;">
+                代数
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2015/12/hasse-principle/">函数域上二次型的 Hasse 原理</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Hasse principle
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 24, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>经典的 Hasse 原理或者称为全局-局部原理是数论中著名结果。对于一些给定形式的多项式方程，如果我们需要判定或者得到他们的整数解或者有理数解时，运用这一原理，我们只需要研究方程在其所有完备域上的解即可，也就是在实数域和 p-adic 数域上的解。这表面上看起来是把问题复杂化了，但是完备域上的性质比有理数域要好得多，所以在很多情况下，这是一种简化。这一问题在二次型里就有更加有趣的结果。虽然二次型方程是一般多项式方程的简化，但是实际上，对于一些高次方程，现在已经找到不少 Hasse 原理的反例，因此显得不是那么重要。而且，二次型的理论比起高次型要完善的多，所以，研究各种数域上二次型的非奇异零点更有工具上的支持。</p>
+<p>关于整数的二次型的最早突破性工作来自于闵可夫斯基，之后在1923年，Hasse 完善了他的结果到有理数上的二次型。并且，之后还推广到任意代数数域上。这些结果并成为 Hasse-Minkowshi 定理。这个定理在有理数域上有很多具体的形式，比如下面这个结果：</p>
+<blockquote>
+<p>一个有理数域上的本原二次型有非奇异零点当且仅当它是非正定的且有对任意 $n&gt;2$ 的模 $n$ 本原同余解。</p>
+</blockquote>
+<p>一个本原二次型从属于高斯引理中的本原多项式，它是被重新规整后的整互素系数的对角型二次型。非正定指的是二次型有且仅有一次系数（正负）符号改变。本原同余解是指同余方程的解且最大公约数与被模数互素。</p>
+<p>文章中作者还给出来一个更加详细的形式，这里就不赘述了。文中用了一定的篇幅去证明这个结果，证明过程中用到了 Hensel 引理和 Hasse-Minkowshi 定理。 进一步地，我们可以将代数数域上的 Hasse 原理推广到所有的全局域。全局域包括代数数域和有限域的函数域。值得注意的是，有限域的函数域，比如 $F_q(t)$ 的完备化是洛朗级数域。用更加精炼的语言描述新的 Hasse 原理如下：$q$ 是全局域 $k$ 上的二次型，如果 $q$ 在所有完备域 $k_v$ 上是各向同性( isotropic )的，则其在 $k$ 上也是各向同性的。</p>
+<p>文章的最后部分就讨论到了函数域上的 Hasse 原理，在函数域上我们讨论一个域的不变量 $u$。 u-不变量的定义如下：</p>
+<p>$$u(K)=\sup\{\dim(q)|q \text{ anisotropic quadratic form over }K\}$$</p>
+<p>根据 Hasse-Minkowshi 定理我们可以计算出代数数域的函数域和 p-adic 数域的函数域的 完备域的u-不变量都是8。而如果 Hasse 原来在这些域上成立的话，则可以导出他们本身的u-不变量也是8。且先不说，Hasse 原理本身的适用性，就连这些域本身的u-不变量是否有限都是难题。Parimala，V. Suresh 以及 Heath-Brown 和 Leep 在 2010 年左右全部已经解决了 p-adic 数域的 u-不变量，并且随后 Colliot-Thelene， Parimala 和 Suresh 得到了相应的 Hasse 原理。而数域上的函数域的u-不变量的有限性和是否等于8仍然是一个未解之题。不过，在2012年 Lieblich，Parimala 和 Suresh 得到一个基于 Colliot-Thelene 猜想成立的结果。结果表明，如果 Colliot-Thelene 猜想成立的话，那么代数数域的函数域的u-不变量是有限的。而代数数域的函数域上是否适用 Hasse 原理，还是远远未知的。</p>
+<p>2015-12-24</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hasse%E5%8E%9F%E7%90%86/">Hasse原理</a>
+        
+            <a href="/tags/%E4%BA%8C%E6%AC%A1%E5%9E%8B/">二次型</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2022/06/calculus-omission-in-algebra/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/06/calculus-omission-in-algebra/_hud7e36f7e20e71be184458283bdae4646_55974_23a5d351d2fc2374f952239b6e9c423a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 一篇代数文章的分析疏忽"
+                        data-key="calculus-omission-in-algebra" 
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">一篇代数文章的分析疏忽</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/12/17-th-root-via-quadratic/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/12/17-th-root-via-quadratic/_huf941de4769045cdfa8c9ee7036519a2a_35369_36687b530fa140121781e790cfd060e7.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 17次单位根的二次根式表达"
+                        data-key="17-th-root-via-quadratic" 
+                        data-hash="md5-YBFrHM/IYy6aZffVHfPvwg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">17次单位根的二次根式表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/07/symmetric-groups-notes/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/07/symmetric-groups-notes/_hub903cafb6679530a2974d63bf9062c75_381815_7738a65b744b3c907a6e4aa256ee4a9a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 对称群学习笔记"
+                        data-key="symmetric-groups-notes" 
+                        data-hash="md5-4iMCQ0xxHeQTe2i36Q32hw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">对称群学习笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/10/ore-extension/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/10/ore-extension/_hu90c2596816b8be10028817715a17b50c_43052_4b39a7f04c7668a65dec1370f45419c0.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 非交换多项式环和Ore扩张"
+                        data-key="Ore-extension" 
+                        data-hash="md5-SAVM9/&#43;zNxAs&#43;boUVpZszQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">非交换多项式环和Ore扩张</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2017/01/finite-division-ring/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2017/01/finite-division-ring/tower.b6fac41e04426f85143f2dd668b3b583_hu295b39edbdb74bd7ae3f28e9eeb43e08_28149_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 有限除环即是域"
+                        data-key="finite-division-ring" 
+                        data-hash="md5-tvrEHgRCb4UUPy3WaLO1gw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">有限除环即是域</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

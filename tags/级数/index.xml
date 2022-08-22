@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 23 Sep 2018 15:21:42 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E7%BA%A7%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>欧拉是怎么发现平方倒数级数公式的</title>
-        <link>https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</link>
+        <link>https://whzecomjm.com/p/2018/09/euler-basel-problem/</link>
         <pubDate>Sun, 23 Sep 2018 15:21:42 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/2018/09/euler-basel-problem/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/09/euler-basel-problem/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;The Euler Archive&lt;/a&gt; 。上面有不少欧拉的历史以及原著（包括一些翻译版），有兴趣可以去看看。之前我也花了一些时间去看了一些欧拉微积分和数论方向的文章（比如读读欧拉系列），发现很适合刚上大学甚至高中生去读。&lt;/p&gt;
 &lt;p&gt;下面我讲一下贝塞尔问题的解决过程吧（也就是平方倒数级数公式）。其实学过高数的人都应该知道欧拉当初是怎么证明的，虽然不算是十分严格，但是非常精巧。可是他是怎么发现这个公式等于 $\pi^2/6$ 的呢？&lt;/p&gt;
 &lt;p&gt;首先，欧拉从几何级数的等式出发 $$1+x+ x^2 +\cdots + x^{n-1} = \frac{1-x^n}{1-x}$$ 然后两边取不定积分，得到 $$x+ \frac{x^2}{2} +\cdots + \frac{x^n}{n} = \int\frac{1-x^n}{1-x}dx$$&lt;/p&gt;

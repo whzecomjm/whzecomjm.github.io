@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们'><title>幂平均不等式和对称法</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2020/11/inequality-symmetry/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='幂平均不等式和对称法'>
+<meta property='og:description' content='高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们'>
+<meta property='og:url' content='https://whzecomjm.com/p/2020/11/inequality-symmetry/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='平均数' /><meta property='article:tag' content='不等式' /><meta property='article:tag' content='对称' /><meta property='article:published_time' content='2020-11-30T15:25:54&#43;08:00'/><meta property='article:modified_time' content='2020-11-30T15:25:54&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash.jpg' />
+<meta name="twitter:title" content="幂平均不等式和对称法">
+<meta name="twitter:description" content="高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2020/11/inequality-symmetry/">
+                <img src="/p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_800x0_resize_q75_box.jpg"
+                        srcset="/p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_800x0_resize_q75_box.jpg 800w, /p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post 幂平均不等式和对称法" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E5%90%88/" style="background-color: #1d7dsf; color: #fff;">
+                组合
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2020/11/inequality-symmetry/">幂平均不等式和对称法</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 30, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。</p>
+<p>事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&gt;0$）：
+$$
+\frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},
+$$
+所有的等号当且仅当$a=b$时成立。我们可以简记为：
+$$
+H_2\leq G_2\leq A_2\leq Q_2,
+$$
+即两个正数的调和平均小于等于几何平均小于等于算术平均小于等于平方平均。这些平均都是如下定义的幂平均：
+$$P^{n}_2=\left(\frac{a^n+b^n}{2}\right)^{1/n}$$</p>
+<p>其中，下标$2$指的是所取平均的数的个数；上标$(n)$表示幂平均对应的指数$n$。注意到
+$$
+H_2=P_2^{-1}, A_2=P_2^{1}, Q_2=P_2^{2}.
+$$
+而我们在<a class="link" href="https://whzecomjm.com/archives/Holder-means.html"  target="_blank" rel="noopener"
+    >几何平均即是零次幂平均</a>中已经知道，
+$$
+G_2=\lim_{n\to0}P^{n}_2:=P_2^{0}.
+$$
+因此我们可以把上述幂平均改写为：
+$$
+P^{-1}_2\leq P^{0}_2\leq P^{1}_2 \leq P^{2}_2.
+$$
+所以，我们可以总结为如下<strong>幂平均不等式</strong>，
+$$
+\forall n&lt;m\in\mathbb R, \\ P_2^{n}=\left(\frac{a^n+b^n}{2}\right)^{1/n}\leq \left(\frac{a^m+b^m}{2}\right)^{1/m}=P_2^{m}.
+$$
+注意这里的$n,m$不仅仅是整数，可以是任意实数。这一幂平均不等式也能推广到任意多个数的平均（这一平均甚至可以加权）。这一系列不等式的证明不难可作为习题。</p>
+<p>需要说明的是，为什么这些幂平均还需要在外层作一个$1/n$次幂？事实上，这保证了各个幂平均数和原来数据的量纲相同。比如，我们的 $a,b$ 都是表示身高，单位为米，则幂平均数都应该是单位为米。在内部给其作“$n$次方平均”以后，得到的单位为 $米^n$，所以外层的 $^{1/n}$ 是必不可少的。值得注意的是，作为“零次幂平均”的几何平均，它的内部是乘积形式，因此对应的外层开方是和元素个数相对应的，否则无法保证量纲不变。</p>
+<p>我们常用的重要不等式和基本不等式分别对应了幂平均不等式中的 “$P_2^{0}\leq P^2_2$” 以及 $P^0_2\leq P^1_2$。</p>
+<p>接下来我们将介绍一个简便方法，即“对称法”或者称为“轮换对称法”，其基本结论是，</p>
+<blockquote>
+<p>若不等式的条件和结论（或想要求的式子）是关于各个变量轮换对称的，则其最值在各个变量相等时取得。</p>
+</blockquote>
+<p>这一结论是拉格朗日乘数法的一个简单推论。不过我们还需要前面提到的幂平均不等式确定等号方向或者是最大/小值。先来看一个简单的例子，</p>
+<blockquote>
+<p>例1. 若 $a,b&gt;0$，且$a+b=4$，则下列不等式恒成立的是（）</p>
+<p>A. $\frac{1}{ab}\leq\frac{1}{4}$    B. $\frac{1}{a}+\frac{1}{b}\leq1$           C. $\sqrt{ab}\geq 4$    D. $a^2+b^2\geq 8$</p>
+</blockquote>
+<p>注意到，条件和所有结论都是轮换对称的，即 $a、b$ 互相轮换式子都不会改变。因此极值都在 $a=b=2$ 时取得。我们可以看到ABCD四个选项对应的数值都是对的。不过符号的方向可通过幂平均来判断。比如 D 中是平方和，在幂平均中会大于算术平均（和），因此是大于等于号。</p>
+<blockquote>
+<p>例2. 若$x,y&gt;0$，且 $2x+8y-xy=0$，求 $xy$ 的最小值。</p>
+</blockquote>
+<p>首先原题的条件不是对称的，但是令 $z=4y$ 以后，条件会转为对称，结论依然是对称的。事实上，我们有 $2x+2z-\frac{xz}{4}=0$，因此最值在 $x=z$ 时取得，即 $4x=\frac{x^2}{4}$，所以 $x=z=16$，此时 $xy=\frac{xz}{4}=64$.</p>
+<p>如果这是一道选择题，也许我们就可以到此为止。如果是解答题，我们则需要通过幂平均不等式来分析。我们的条件表面看起来分为两个部分，和与积，即有 $2x+8y=xy$。我们需要求积的最小值。根据幂平均不等式，我们是需要使用类似于 $P^{-1}_2\leq P^0_{2}$ 的不等式。因此，我们需要一个倒数和的条件。而 $2x+8y=xy$ 左边是一次式右边是二次式，因此讲二次式除过来就可以得到倒数和（负一次）：</p>
+<p>$$
+\frac{1}{y/2}+\frac{1}{x/8}=1,
+$$</p>
+<p>根据 $P^{-1}_2\leq P^0_{2}$，我们有</p>
+<p>$$
+2=\frac{2}{\frac{1}{y/2}+\frac{1}{x/8}}\leq \sqrt{\frac{y}{2}\cdot\frac{x}{8}}=\frac{\sqrt{xy}}{4}
+$$
+所以 $xy\geq (2\times 4)^2=64$，等号当且仅当 $\frac{y}{2}=\frac{x}{8}$ 时成立。</p>
+<p>通过这个例子，我们可以看到对于某些不是对称的题目，我们可以通过换元转化为对称的题目，利用对称法得到最值。而幂平均不等式能通过判断等式方向给我们提供解题思路。类似地，如果这道题让我们求解 $x+y$ 的最小值，则可以通过 $P_2^{-1}\leq P^1_{2}$ 来找到思路，即通过类似于 $(a+b)(\frac{1}{a}+\frac{1}{b})\geq 4$ 的证明方法（包括使用逐项相乘或者柯西不等式）。</p>
+<p>当然还有一些不等式的题目这些技巧不一定奏效，需要的工具也不仅仅限于此，此处不再赘述。</p>
+<p>whzecomjm</p>
+<p>2020年11月30日</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/">平均数</a>
+        
+            <a href="/tags/%E4%B8%8D%E7%AD%89%E5%BC%8F/">不等式</a>
+        
+            <a href="/tags/%E5%AF%B9%E7%A7%B0/">对称</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2020/12/vectors-in-range/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/12/vectors-in-range/0.a856ce6ea953335b26e4b0185753e26e_hu0a16cb1dbb8cceabb23d7af20e42d092_218999_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 向量法求根式函数值域"
+                        data-key="vectors-in-range" 
+                        data-hash="md5-qFbObqlTM1sm5LAYV1Pibg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">向量法求根式函数值域</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2017/04/holder-mean/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2017/04/holder-mean/_hu41a877f012867df713fff6b3d1dd31d0_21372_6006766d7f62cc834e37bfc95c2480c6.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 几何平均即是零次幂平均"
+                        data-key="Holder-mean" 
+                        data-hash="md5-6Df31xJxI0Epsy&#43;191RROA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">几何平均即是零次幂平均</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/05/ramsey-lower-bound/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/05/ramsey-lower-bound/_huce2ce4ebc46bd238f374a8b645a9cd16_63394_df96710032e24c1f2bce421c679b5c50.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 拉姆齐数一个下界的概率证明"
+                        data-key="Ramsey-lower-bound" 
+                        data-hash="md5-Ufri9uLHBJTPZBeXfMzuGg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">拉姆齐数一个下界的概率证明</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2019/08/monochromatic-equation/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2019/08/monochromatic-equation/_hu87320138b3abf470c192b6d01bc26e1f_428425_fbffd5c0e590302aa37e782f8011e62f.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 方程的染色问题"
+                        data-key="monochromatic-equation" 
+                        data-hash="md5-UE&#43;iuCXfF9htOqVOdudlHg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">方程的染色问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/10/trigonometric-identities/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/10/trigonometric-identities/aZXCGcgtpwP8RMA.95ba242f0621c356cee5def86376326f_hu5b00630d19d90bb4a4949ace60ead1c3_26338_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 三角恒等式的几何表达"
+                        data-key="trigonometric-identities" 
+                        data-hash="md5-lbokLwYhw1bO5d74Y3Yybw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">三角恒等式的几何表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

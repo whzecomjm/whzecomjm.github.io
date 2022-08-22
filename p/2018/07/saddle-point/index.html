@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='昨天一个本科学妹问我一道数学题, 她觉得有些困惑. 题目是道选择题, 具体如下:
+The function $f(x,y)=3x^2y&#43;y^3-3x^2-3y^2&#43;2$
+has a saddle point at (-1,1) has a minimum point at (-1,1) has a maximum point at (0,2) has four minimum points '><title>鞍点及其判定</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2018/07/saddle-point/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='鞍点及其判定'>
+<meta property='og:description' content='昨天一个本科学妹问我一道数学题, 她觉得有些困惑. 题目是道选择题, 具体如下:
+The function $f(x,y)=3x^2y&#43;y^3-3x^2-3y^2&#43;2$
+has a saddle point at (-1,1) has a minimum point at (-1,1) has a maximum point at (0,2) has four minimum points '>
+<meta property='og:url' content='https://whzecomjm.com/p/2018/07/saddle-point/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='鞍点' /><meta property='article:tag' content='微积分' /><meta property='article:published_time' content='2018-07-12T15:08:53&#43;08:00'/><meta property='article:modified_time' content='2018-07-12T15:08:53&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2018/07/saddle-point/alexander-black-9yCLzkpYZwY-unsplash.jpg' />
+<meta name="twitter:title" content="鞍点及其判定">
+<meta name="twitter:description" content="昨天一个本科学妹问我一道数学题, 她觉得有些困惑. 题目是道选择题, 具体如下:
+The function $f(x,y)=3x^2y&#43;y^3-3x^2-3y^2&#43;2$
+has a saddle point at (-1,1) has a minimum point at (-1,1) has a maximum point at (0,2) has four minimum points "><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2018/07/saddle-point/alexander-black-9yCLzkpYZwY-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2018/07/saddle-point/">
+                <img src="/p/2018/07/saddle-point/alexander-black-9yCLzkpYZwY-unsplash_hud6cb4882880173052f7635cd251c08da_763174_800x0_resize_q75_box.jpg"
+                        srcset="/p/2018/07/saddle-point/alexander-black-9yCLzkpYZwY-unsplash_hud6cb4882880173052f7635cd251c08da_763174_800x0_resize_q75_box.jpg 800w, /p/2018/07/saddle-point/alexander-black-9yCLzkpYZwY-unsplash_hud6cb4882880173052f7635cd251c08da_763174_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post 鞍点及其判定" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%88%86%E6%9E%90/" >
+                分析
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2018/07/saddle-point/">鞍点及其判定</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 12, 2018</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>昨天一个本科学妹问我一道数学题, 她觉得有些困惑. 题目是道选择题, 具体如下:</p>
+<blockquote>
+<p>The function $f(x,y)=3x^2y+y^3-3x^2-3y^2+2$</p>
+<ol>
+<li>has a saddle point at (-1,1)</li>
+<li>has a minimum point at (-1,1)</li>
+<li>has a maximum point at (0,2)</li>
+<li>has four minimum points</li>
+</ol>
+</blockquote>
+<p>这是一个简单的多元函数求极值的问题. 不过接下来我们将会看到很多人的误区. 首先很容易求得 $f(x,y)$ 两个一阶偏导:
+$$
+f_x(x,y)=6x(y-1), \\
+f_y(x,y)=3(x^2+y^2-2y)
+$$
+容易知道二元函数 $f(x,y)$ 有四个驻点 (0,0), (0,2), (1,1), (-1,1). 接下来我们将判定四个驻点情况, 需要继续计算二阶偏导, 结果如下:
+$$
+f_{xx}(x,y)=f_{yy}(x,y)=6(y-1),\\
+f_{xy}(x,y)=6x
+$$
+则判别式(Hessian 矩阵的行列式)为 $36[(y-1)^2-x^2]$. 四个驻点中, (0,0) 使得判别式大于0, 是一个极值点, 又因为 $f_{xx}=f_{yy}=-6&lt;0$, 所以是一个极大值点. 同理(0,2)是一个极小值点. 现在重点看看 (-1,1) 和 (1,1). 它们判别式都等于 -36&lt;0, 所以一定不是极值点. 此时问题出来了, 大部分的教材会认为这样的点就是所谓鞍点. 它们认为鞍点并不是都长得和马鞍一样的点, 不是极值点的驻点都叫鞍点(saddle point). 但是有些教材并不这么定义, &ldquo;强行&quot;推广了一维的拐点(inflection point)到二元函数.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 她给我提供的教科书中的定义如下:</p>
+<blockquote>
+<p>The following observation are important to note.</p>
+<ol>
+<li>
+<p>Since, by Young&rsquo;s theorem, $f_{xy} =f_{yx}$, $f_{xy}\cdot f_{yx}=(f_{xy})^2$. step 3 may also be written
+$f_{xx}\cdot f_{yy}-(f_{xy})^2&gt;0$. (这里说明判别式中的二阶偏导可以交换求导顺序)</p>
+</li>
+<li>
+<p>If $f_{xx}\cdot f_{yy}&lt;(f_{xy})^2$, (a) when $f_{xx}$ and $f_{yy}$ have the same signs, the function is at an <!-- raw HTML omitted -->infection point<!-- raw HTML omitted -->; (b) when $f_{xx}$ and $f_{yy}$ have different signs, the function is at a <!-- raw HTML omitted -->saddle point<!-- raw HTML omitted -->, where the function is at a minimum when viewed from one axis, here the x axis, but at a maximum when viewed from the other axis, here the y axis. (这里就是值得商榷的地方)</p>
+</li>
+<li>
+<p>If $f_{xx}\cdot f_{yy}=(f_{xy})^2$, the test is inconclusive.</p>
+</li>
+</ol>
+</blockquote>
+<p>这个教材细分了判别式小于零的情况, 说 <strong>$f_{xx},f_{yy}$ 同号的话叫拐点; 如果异号的话才叫鞍点</strong>. 然后我们会惊喜地看到我们这个问题在 (-1,1), (1,1) 这两个点上 $f_{xx}=f_{yy}=0$, 所以这算同号还是异号? 我们之前已经排除了上述选择题的2,3,4项, 此时1项的答案似乎又沿用了另一个鞍点的定义.</p>
+<p>所以还是别弄太多幺蛾子让学生困惑, 简单的使用大家都比较认可的定义不好吗?</p>
+<p>whzecomjm</p>
+<p>2018年7月11日</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>实际上一维函数的拐点也可以称为一维鞍点.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%9E%8D%E7%82%B9/">鞍点</a>
+        
+            <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2022/06/calculus-omission-in-algebra/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/06/calculus-omission-in-algebra/_hud7e36f7e20e71be184458283bdae4646_55974_23a5d351d2fc2374f952239b6e9c423a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 一篇代数文章的分析疏忽"
+                        data-key="calculus-omission-in-algebra" 
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">一篇代数文章的分析疏忽</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/09/euler-basel-problem/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/09/euler-basel-problem/_hu6e67dd6f5ac089212338afafb1a70805_525156_c07d6184cd0683d7a296765ea99f59ea.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的"
+                        data-key="Euler-Basel-Problem" 
+                        data-hash="md5-fYYIhl9GV74yIhd6NiQMgQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">欧拉是怎么发现平方倒数级数公式的</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2017/04/holder-mean/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2017/04/holder-mean/_hu41a877f012867df713fff6b3d1dd31d0_21372_6006766d7f62cc834e37bfc95c2480c6.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 几何平均即是零次幂平均"
+                        data-key="Holder-mean" 
+                        data-hash="md5-6Df31xJxI0Epsy&#43;191RROA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">几何平均即是零次幂平均</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

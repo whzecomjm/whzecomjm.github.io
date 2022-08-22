@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='partition regular equations with Ramsey theory.'><title>方程的染色问题</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2019/08/monochromatic-equation/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='方程的染色问题'>
+<meta property='og:description' content='partition regular equations with Ramsey theory.'>
+<meta property='og:url' content='https://whzecomjm.com/p/2019/08/monochromatic-equation/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ramsey理论' /><meta property='article:tag' content='染色' /><meta property='article:published_time' content='2019-08-20T22:48:12&#43;08:00'/><meta property='article:modified_time' content='2019-08-20T22:48:12&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2019/08/monochromatic-equation/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg' />
+<meta name="twitter:title" content="方程的染色问题">
+<meta name="twitter:description" content="partition regular equations with Ramsey theory."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2019/08/monochromatic-equation/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2019/08/monochromatic-equation/">
+                <img src="/p/2019/08/monochromatic-equation/pawel-czerwinski-nyJY9UZnkrE-unsplash_hu87320138b3abf470c192b6d01bc26e1f_428425_800x0_resize_q75_box.jpg"
+                        srcset="/p/2019/08/monochromatic-equation/pawel-czerwinski-nyJY9UZnkrE-unsplash_hu87320138b3abf470c192b6d01bc26e1f_428425_800x0_resize_q75_box.jpg 800w, /p/2019/08/monochromatic-equation/pawel-czerwinski-nyJY9UZnkrE-unsplash_hu87320138b3abf470c192b6d01bc26e1f_428425_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="1200" 
+                        loading="lazy"
+                        alt="Featured image of post 方程的染色问题" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E5%90%88/" style="background-color: #1d7dsf; color: #fff;">
+                组合
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2019/08/monochromatic-equation/">方程的染色问题</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            partition regular equations with Ramsey theory.
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 20, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。</p>
+<p>染色问题最著名的理论是<a class="link" href="https://en.wikipedia.org/wiki/Ramsey_theory"  target="_blank" rel="noopener"
+    >拉姆齐理论</a>，它描述的是对有限整数集合或者所有自然数的任意染色下局部拥有的单色性。这一定理可以推广到可数甚至与一些大基数（large cardinals）。关于无限的拉姆齐理论可以参考这个 <a class="link" href="https://cs.stanford.edu/people/jbaek/infinite-ramsey.pdf"  target="_blank" rel="noopener"
+    >Notes</a>。至于满足单色性的局部性质，拉姆齐定理并没有给出这些性质的具体形式。然而， Van der Waerden 定理和 Hales–Jewett 定理等结论给出了一些具体的形式，比如前者是等差数列总有单色解，后者更是前者的推广。另一个有意思的局部性质是“单色方程解”，满足这一特性的方程我们称为“分割正规的”（partition regular）。</p>
+<!-- raw HTML omitted -->
+<blockquote>
+<p><strong>Definition 1</strong>. An equation $f(x,y,z,\dots)=0$ is <em>partition regular</em> (or simply <em>regular</em>) if, and only if, for any finite partition of  $\mathbb{N}$ into $C_1, C_1,\dots, C_r$, there exists some $C_i$ containing a non-trivial solution to the equation.</p>
+</blockquote>
+<p>Schur 最早研究了分割正规的Schur方程，也就是最简单的线性齐次方程 $x+y=z$。Schur定理表明，对自然数的任意有限染色，上述方程都有单色解。为了更好的理解，我们考虑二染色，用反证法可以证明在二染色情况下，总存在单色解。</p>
+<p>实际上，对于二染色的情况，我们只需要考察前5个数即可。不妨假设1被染成蓝色，因为 1+1=2 ，所以2只能被染成红色，同理4只能被染为蓝色。而1+3=4则表明 3 只能被染为红色。因此 ${1,2,3,4}$ 被唯一（不考虑特定颜色）分割为两个单色子集  ${1,4}$ 和 ${2,3}$ 。而 5=2+3=1+4 导致必然有一个单色解（5要么是蓝色要么是红色）。在这一情况下，我们称 5 为方程 x+y=z 的 Schur 数 $S(2)$ 。上述“证明”也表明Schur方程是 <strong>2-regular</strong> 的。更一般地，对任意的方程或者方程组，我们定义 Rado 数如下：</p>
+<blockquote>
+<p><strong>Definition 2</strong>. Given an equation or a system of equations $\mathcal{L}$ and finite $r$ colors, the <em>Rado number</em> $R(\mathcal{L},r)$ is the least number such that any $r$-coloring of ${1,2,\dots,R(\mathcal{L},r)}$ must contain a monochromatic solution to $\mathcal{ L}$.</p>
+</blockquote>
+<p>对于一般的线性齐次方程 $a_1 x_1+\cdots+a_nx_n=0$ , Schur 的学生 Rado 给出了线性齐次方程是否是分割正规的充分必要条件：</p>
+<blockquote>
+<p><strong>Theorem 3</strong> (Rado&rsquo;s Theorem [1]).  A linear homogeneous equation $a_1 x_1+\cdots+a_nx_n=0$ is partition regular on $\mathbb{N}$ if and only if there exists a nonempty set $J\subseteq{1,\dots,n}$ such that $\sum_{j\in J}a_j=0$.</p>
+</blockquote>
+<p>上述定理也有乘积形式的非线性方程的定理。对于不是分割正规的方程，我们也会考察一个弱化的条件，即上文提到的 r-regular，r 染色的分割正规性。进一步地，我们有<strong>正规次数</strong>的定义</p>
+<blockquote>
+<p><strong>Definition 4</strong>. The <em>degree of regularity</em> of an equation or a system of equations $\mathcal{L}$ is the largest integer $r\geq 0$, if any, such that $\mathcal{L}$ is $r$-regular. This number is denoted by $\mathrm{dor}(\mathcal{L})$. In particular, if $\mathrm{dor}(\mathcal{L})=\infty$, then $\mathcal{L}$ is regular.</p>
+</blockquote>
+<p>让我们回到 Schur 方程，我们可以手工计算得到 $S(3)=14$。Golomb 和 Baumert [2] 证明了 $S(4)=45$。至于 S(5)，悬而未决了多年，直到最近，Heule [3] 才使用计算机方法 SAT solver 证明了 $S(5)=161$。而 $S(r);(r\geq6)$ 到目前为止还是未解的。</p>
+<p>在方程的正规性这一领域中的最著名的问题是 Erdos 和 Graham 提出的勾股方程的正规性，这一问题目前仍然是未解的，甚至对于特定的 r， r-正规性也长期没有任何突破。直到2016年，Heule, Kullmann 和 Marik [4] 使用 SAT solver 反向树的方法证明了
+$$
+R(x^2+y^2=z^2,2)=7825
+$$
+这一证明被称为“世界上最长的证明”，有 200 TB 证明数据。当时有大量媒体报道这一证明，其中每日邮报当时报道的标题是：“World&rsquo;s longest maths proof: Solution to a 30-year-old problem would take 10 BILLION years to read—all for a prize of just $100.”但实际上，他们还不能获得这一100美元奖金。因为悬赏100美元的问题是完整解决勾股方程的正规性，而他们的工作仅仅只是解决这一问题的一小步。</p>
+<p>而在方程正规性的理论证明中，Nasso 和 Baglini [5] 给出了最好的结果。他们给出了一系列满足分割正规性的方程的充分条件和必要条件。比如，他们证明了扩展的Rado多项式：</p>
+<p>$$
+R(x_1,\dots,x_n,y_1,\dots,y_k)=c_1x_1+\cdots+c_nx_n+P(y_1,\dots,y_k)
+$$
+（n≥2，P是<strong>没有常数项</strong>的整系数多项式）在N上是正规的当且仅当存在非空子集 $J\subseteq {1,\dots,n}$ 使得 $\sum_{j\in J}c_j=0$。不仅仅如此，诸如 $x_1x_2=y_1y_2+z^2$ 等大量方程也能被证明是正规的。</p>
+<p>不幸的是，Nasso 和 Baglini 的理论还是无法判断勾股方程的分割正规性。它是2-正规的依然是目前我们知道的最好的结果。</p>
+<p>不过让我们来看一些其他的例子，比如 $x+y=z^2$ 。根据Nasso 和 Baglini 的理论，这一方程不是正规的。但是对于不正规的方程我们乐于考察他们的正规次数。 Lindqvist [6] 最近证明了它的正规次数是2， 即它是2-正规但不是3-正规的。需要注意的是，这一方程有一个平凡解（x=y=z=2），我们讨论的单色解都排除这样的情况。Lindqvist 对于这一方程的非3-正规的构造性证明仅有十几行，而对2-正规（更严格地说，他证明了2-强正规，即对任意有限染色有无穷多对单色解）的证明则用到了解析数论等多种工具，花了近30多页。</p>
+<p>实际上，仅仅是考察2-正规性，我们也可以通过穷举得到
+$$
+R(x+y=z^2,2)=32
+$$
+并且能构造31以内自然数的一个无同色解的分割：</p>
+<p>$$
+C_R={1,4,5,6,7};\\
+C_B={2,3,8,9,10,11,12,15,18,19,20,21,24,29,30,31}.
+$$</p>
+<p>让我们用上述方法讨论一下如下方程： $x+y=2z^2$ 。这一方程同样不是正规的，且是非3-正规，我们通过略微修改Lindqvist的证明既可证明非3-正规性。</p>
+<p><strong>证明</strong>.  We color all the points in each dyadic block $A_i={n\in \mathbb{N}:2^i\leq n &lt;2^{i+1}},$ $i=0,1,2,\dots$, in one color $c_i$. We assign $c_0,c_1,c_2$ to be different and let $c_i\notin{c_{\lfloor{i/2}\rfloor-1},c_{\lfloor {i/2}\rfloor}}$, for all $i\geq 3$. This is possible, since $\lfloor{i/2}\rfloor\leq i$ for all $i\geq 3$ (actually for all $i\geq 0$). Without loss of generality, suppose $x\leq y, y\in A_i$, then we have $2^i&lt;x+y&lt; 2^{i+2}$, hence $2^{(i-1)/2}&lt;z&lt;2^{(i+1)/2}$. Since $\frac{i-1}{2}\geq \lfloor\frac{i}{2}\rfloor-1$ and $(i+1)/2\leq \lfloor\frac{i}{2}\rfloor+1$, it follows that $z\in A_{\lfloor{i/2}\rfloor-1}\cup A_{\lfloor{i/2}\rfloor}$. By construction, the only way that such a $z$ can have the same color as $y$ is if $i \in {0,1,2}$, in which case $x\leq y&lt;8$, and so $z=1$ or $2$. If $z=1$, then this is the trivial solution $x=y=z=1$. If $z=2$, then $x+y=8=2\cdot 2^2$. Here are all the possible options {1,7,2}, {2,6,2}, {3,5,2} and {4,4,2}. It is easy to check that there is no monochromatic solution in those options.</p>
+<p>接下来我们可以使用穷举法考察 2-正规性。然而过程没有那么顺利，通过简单的枚举我们可以得到有如下的同色子集 ${3,4,5,6}$。于是我试图使用 SAT solver。SAT solver 是一个“逻辑计算器”，我们需要把我们的问题（在正规性检测中我们需要输入反问题）转化为合取范式的问题才能放入 SAT solver。感兴趣的可以去了解一下 SAT，这里就不详述了。虽然有很多现成的 SAT solver，但是为了方便我还是找到了一个现成的在线的 SAT solver <a class="link" href="https://www.comp.nus.edu.sg/~gregory/sat/"  target="_blank" rel="noopener"
+    >SAT.js</a>. 由于不知道这一问题的 Rado 数的大小，我先尝试了 100。结果发现，仅仅当z≤9时，我们就能得出矛盾，也就是说 Rado数必然比100小。用二分法穷举以后，我得到</p>
+<p>$$
+R(x+y=2z^2,2)=93.
+$$
+下面附上生成 cpf 的python 代码（几年没写过代码）和结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span><span class="o">=</span><span class="mi">94</span><span class="p">;</span> <span class="c1"># then 93</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># get the number of clauses for any n&lt;100.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">clauses</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span> 
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span><span class="n">n</span> <span class="ow">and</span> <span class="mi">2</span><span class="o">*</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="o">+</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">k</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># print the head of the cpf file.</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="p">(</span><span class="s2">&#34;p cnf&#34;</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">clauses</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># print contents of the cpf file</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span> <span class="c1"># for n&lt;100, 1 &lt; z &lt;10</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span> <span class="c1"># get rid of symmetric solutions of x and y&#39;s </span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span><span class="n">n</span> <span class="ow">and</span> <span class="mi">2</span><span class="o">*</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">:</span> <span class="c1"># all solutions with x, y less than n</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># the condition of no blue monochromatic</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># the condition of no red monochromatic</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="https://pic4.zhimg.com/v2-2bbe022f89eea5de79dd272c577f05b7_b.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p><img src="https://pic1.zhimg.com/v2-c1d6dbcc7b93e30702904f8ea1721530_b.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p><strong>References</strong>.</p>
+<p>[1] R. Rado, Studien zur Kombinatorik, <em>Math. Z.</em> 36 (1933), 242–280.<br>
+[2] S. W. Golomb and L. D. Baumert. &ldquo;Backtrack programming.&rdquo; <em>Journal of the ACM (JACM)</em> 12.4 (1965): 516-524.<br>
+[3] M. Heule, Schur number five. <em>Thirty-Second AAAI Conference on Artificial Intelligence</em>. 2018.<br>
+[4] M. Heule, O. Kullmann, and V. Marek, Solving and verifying the boolean Pythagorean triples problem via cube-and-conquer. <em>International Conference on Theory and Applications of Satisfiability Testing</em>. Springer, Cham, 2016.<br>
+[5] M. Nasso and L. Baglini. Ramsey properties of nonlinear Diophantine equations. <em>Advances in Mathematics</em> 324 (2018): 84-117.<br>
+[6] B. Green and S. Lindqvist. Monochromatic Solutions to x+y=z2. <em>Canadian Journal of Mathematics</em> 71.3 (2019): 579-605.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ramsey%E7%90%86%E8%AE%BA/">Ramsey理论</a>
+        
+            <a href="/tags/%E6%9F%93%E8%89%B2/">染色</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2020/05/ramsey-lower-bound/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/05/ramsey-lower-bound/_huce2ce4ebc46bd238f374a8b645a9cd16_63394_df96710032e24c1f2bce421c679b5c50.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 拉姆齐数一个下界的概率证明"
+                        data-key="Ramsey-lower-bound" 
+                        data-hash="md5-Ufri9uLHBJTPZBeXfMzuGg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">拉姆齐数一个下界的概率证明</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/12/vectors-in-range/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/12/vectors-in-range/0.a856ce6ea953335b26e4b0185753e26e_hu0a16cb1dbb8cceabb23d7af20e42d092_218999_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 向量法求根式函数值域"
+                        data-key="vectors-in-range" 
+                        data-hash="md5-qFbObqlTM1sm5LAYV1Pibg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">向量法求根式函数值域</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/11/inequality-symmetry/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/11/inequality-symmetry/_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_473e75c98bc190d1e3c7eb626c45cd7e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 幂平均不等式和对称法"
+                        data-key="Inequality-Symmetry" 
+                        data-hash="md5-9kexJDPKvYaLdFDhg6jW1Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">幂平均不等式和对称法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/10/trigonometric-identities/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/10/trigonometric-identities/aZXCGcgtpwP8RMA.95ba242f0621c356cee5def86376326f_hu5b00630d19d90bb4a4949ace60ead1c3_26338_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 三角恒等式的几何表达"
+                        data-key="trigonometric-identities" 
+                        data-hash="md5-lbokLwYhw1bO5d74Y3Yybw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">三角恒等式的几何表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/09/perfect-square/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/09/perfect-square/Smith_diagram.0d3619d527fa80227645771e5cca667a_hu2d13e45f5a60810c61e48ce37bbe9702_21939_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 完美正方形"
+                        data-key="perfect-square" 
+                        data-hash="md5-DTYZ1Sf6gCJ2RXceXMpmeg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">完美正方形</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

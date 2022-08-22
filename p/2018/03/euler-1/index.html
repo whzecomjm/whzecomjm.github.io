@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Euler binomial powers'><title>[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2018/03/euler-1/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示'>
+<meta property='og:description' content='Euler binomial powers'>
+<meta property='og:url' content='https://whzecomjm.com/p/2018/03/euler-1/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='欧拉' /><meta property='article:published_time' content='2018-03-21T12:41:25&#43;08:00'/><meta property='article:modified_time' content='2018-03-21T12:41:25&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg' />
+<meta name="twitter:title" content="[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示">
+<meta name="twitter:description" content="Euler binomial powers"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2018/03/euler-1/">
+                <img src="/p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash_hu30979162bef768218a70e245ac967d5a_351891_800x0_resize_q75_box.jpg"
+                        srcset="/p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash_hu30979162bef768218a70e245ac967d5a_351891_800x0_resize_q75_box.jpg 800w, /p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash_hu30979162bef768218a70e245ac967d5a_351891_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="1200" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E5%90%88/" style="background-color: #1d7dsf; color: #fff;">
+                组合
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2018/03/euler-1/">[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Euler binomial powers
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 21, 2018</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>拉普拉斯曾说过一句话, &ldquo;读读欧拉，他是所有人的老师。&rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, <a class="link" href="http://www.eulerarchive.org/"  target="_blank" rel="noopener"
+    >eulerarchive.org</a>总结了欧拉的一些结果, 一些他的论文还可以在 <a class="link" href="https://arxiv.org/find/math/1/au:&#43;Euler_L/0/1/0/all/0/1"  target="_blank" rel="noopener"
+    >arxiv</a> 找到。</p>
+<!-- raw HTML omitted -->
+<p>&ldquo;读读欧拉&quot;系列是我对一些欧拉著作或论文的一些总结，这是本系列第一篇文章&rdquo;<a class="link" href="https://arxiv.org/abs/math/0507459"  target="_blank" rel="noopener"
+    >A commentary on the continued fraction by which the illustrious La Grange has expressed the binomial powers</a>&ldquo;的摘要。这篇文章是Euler继续Lagrange的工作（我突然意识到，当时的论文都是没有参考文献的，在文章前面提到之前的研究成果即可，参考文献好像是从Science引入影响因子开始的），Lagrange用取对数微分的方法得到了如下的二项式公式的连分式表示：</p>
+<p>$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2+\frac{(1+n)x}{3+\frac{(2-n)x}{2+\frac{(2+n)x}{5+\frac{(3-n)x}{2+\frac{(2+n)x}{7+\cdots}}}}}}}$$</p>
+<p>显然当n为整数时，这个连分式是有限的，实际上它可以化为二项式定理。首先，欧拉对其做了一些细致的分析和变形，得到了如下形式：（这里不得不说欧拉是一个细致的人，他把每一项的推理都一丝不苟地写得很清楚！）</p>
+<p>$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2}+\frac{4(n^2 -1)x^2 }{3(1+\frac{1}{2}x)+\frac{4(n^2 -2^2 )x^2 }{5(1+\frac{1}{2}x)+\frac{4(n^2 -3^2 )x^2 }{7(1+\frac{1}{2}x)+\frac{4(n^2 -4^2 )x^2 }{\cdots}}}}}$$</p>
+<p>进一步地，令$x=2y$，整理后(分离一次连分式)两边同时加上 $ny$，再同时除以 $(1+y)$ 可以得到：</p>
+<p>$$\frac{ny}{1+y}\frac{(1+2y)^n +1}{(1+2y)^n -1}=1+\frac{(n^2 -1)y^2 (1+y)^2 }{3+\frac{(n^2 -2^2 )y^2 (1+y)^2 }{5+\frac{(n^2 -3^2 )y^2 (1+y)^2 }{7+\frac{(n^2 -4^2 )y^2 (1+y)^2 }{9+\cdots}}}}$$</p>
+<p>现在我们令$z=\frac{y}{1+y}$，则可以得到：</p>
+<p>$$\frac{nz[(1+z)^n +(1-z)^n ]}{(1+z)^n -(1-z)^n }=1+\frac{(n^2 -1)z^2 }{3+\frac{(n^2 -2^2 )z^2 }{5+\frac{(n^2 -3^2 )z^2 }{7+\cdots}}}$$</p>
+<p>现在就开始牵扯到复数了，令$z=t\times i$，其中$i=\sqrt{-1}$，再做换元(万能代换)$t=\tan{\varphi}$，就可以得到简单的<strong>正切的倍角公式</strong>：</p>
+<p>$$\tan{n\varphi}=\frac{nt}{1-\frac{(n^2 -1)t^2 }{3-\frac{(n^2 -4)t^2 }{5-\cdots}}}$$</p>
+<p>比如，令n=2,我们可以得到$\tan{2\varphi}=\frac{2t}{1-t^2 }$;再比如$n=3$，时，有</p>
+<p>$$\tan{3\varphi}=\frac{3t}{1-\frac{8t^2 }{3-t^2 }}=\frac{3t-t^2 }{1-3t^2 }$$
+令$nt=\theta$可以得到<strong>正切函数的连分式展开</strong>。</p>
+<p>文章中还有另外两个结论，不那么有趣，这里就不一一赘述了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%AC%A7%E6%8B%89/">欧拉</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2018/03/euler-3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/03/euler-3/_hua2a6d5c80f61e0f02711cfea24a144f1_561437_c87d9ebd9c0518a51d110455951534ac.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 二项式公式的一个推广"
+                        data-key="Euler-3" 
+                        data-hash="md5-wTp4YLmXn&#43;ngxPmfq0twIw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[读读欧拉] 二项式公式的一个推广</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/03/euler-2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/03/euler-2/_hu83c4af82e415789534fbb9ccd4c8e145_218460_fe7a1ad81a7215d86b9827ad3df04b7f.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 一个有理式的对称公式"
+                        data-key="Euler-2" 
+                        data-hash="md5-SZW1nGFmM&#43;i84Hu4clUKjA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[读读欧拉] 一个有理式的对称公式</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/12/vectors-in-range/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/12/vectors-in-range/0.a856ce6ea953335b26e4b0185753e26e_hu0a16cb1dbb8cceabb23d7af20e42d092_218999_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 向量法求根式函数值域"
+                        data-key="vectors-in-range" 
+                        data-hash="md5-qFbObqlTM1sm5LAYV1Pibg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">向量法求根式函数值域</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/11/inequality-symmetry/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/11/inequality-symmetry/_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_473e75c98bc190d1e3c7eb626c45cd7e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 幂平均不等式和对称法"
+                        data-key="Inequality-Symmetry" 
+                        data-hash="md5-9kexJDPKvYaLdFDhg6jW1Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">幂平均不等式和对称法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/05/ramsey-lower-bound/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/05/ramsey-lower-bound/_huce2ce4ebc46bd238f374a8b645a9cd16_63394_df96710032e24c1f2bce421c679b5c50.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 拉姆齐数一个下界的概率证明"
+                        data-key="Ramsey-lower-bound" 
+                        data-hash="md5-Ufri9uLHBJTPZBeXfMzuGg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">拉姆齐数一个下界的概率证明</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

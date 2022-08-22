@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 23 Sep 2018 15:21:42 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E6%AC%A7%E6%8B%89/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>欧拉是怎么发现平方倒数级数公式的</title>
-        <link>https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</link>
+        <link>https://whzecomjm.com/p/2018/09/euler-basel-problem/</link>
         <pubDate>Sun, 23 Sep 2018 15:21:42 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/2018/09/euler-basel-problem/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/09/euler-basel-problem/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;The Euler Archive&lt;/a&gt; 。上面有不少欧拉的历史以及原著（包括一些翻译版），有兴趣可以去看看。之前我也花了一些时间去看了一些欧拉微积分和数论方向的文章（比如读读欧拉系列），发现很适合刚上大学甚至高中生去读。&lt;/p&gt;
 &lt;p&gt;下面我讲一下贝塞尔问题的解决过程吧（也就是平方倒数级数公式）。其实学过高数的人都应该知道欧拉当初是怎么证明的，虽然不算是十分严格，但是非常精巧。可是他是怎么发现这个公式等于 $\pi^2/6$ 的呢？&lt;/p&gt;
 &lt;p&gt;首先，欧拉从几何级数的等式出发 $$1+x+ x^2 +\cdots + x^{n-1} = \frac{1-x^n}{1-x}$$ 然后两边取不定积分，得到 $$x+ \frac{x^2}{2} +\cdots + \frac{x^n}{n} = \int\frac{1-x^n}{1-x}dx$$&lt;/p&gt;
@@ -33,11 +33,11 @@
         </item>
         <item>
         <title>[读读欧拉] 二项式公式的一个推广</title>
-        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</link>
+        <link>https://whzecomjm.com/p/2018/03/euler-3/</link>
         <pubDate>Fri, 23 Mar 2018 01:47:28 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2018/03/euler-3/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/03/euler-3/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
 &lt;p&gt;$$(x+y)^{n}={n \choose 0}x^{n}y^{0}+{n \choose 1}x^{{n-1}}y^{1}+\cdots +{n \choose n}x^{0}y^{n},$$&lt;/p&gt;
 &lt;p&gt;其中 ${n \choose 2}$ 称为二项式系数, 它等于 $\frac{n!}{k!(n-k)!}$. 二项式定理的一个变形是将 $y$ 替换为 1, 减少为一个变量. 这种形式的二项式公式为
 $$(1+x)^n=\sum_{k=0}^n {n\choose k} x^k.$$
@@ -71,11 +71,11 @@ $${n\choose k}^{\theta+1}=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^{\theta} {n\c
         </item>
         <item>
         <title>[读读欧拉] 一个有理式的对称公式</title>
-        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</link>
+        <link>https://whzecomjm.com/p/2018/03/euler-2/</link>
         <pubDate>Thu, 22 Mar 2018 00:43:26 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2018/03/euler-2/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/03/euler-2/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
 &lt;p&gt;$$\frac{1}{a-b}+\frac{1}{b-a}=0$$&lt;/p&gt;
 &lt;p&gt;$$\frac{1}{(a-b)(a-c)}+\frac{1}{(b-a)(b-c)}+\frac{1}{(c-a)(c-b)}=0$$&lt;/p&gt;
 &lt;p&gt;上述结果是一种 &amp;ldquo;轮换对称&amp;rdquo;, 可以很自然地推广到任意有限多个不相等的数，这个结果参见 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0502425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -104,11 +104,11 @@ $$\frac{b^n}{(b-a)(b-c)(b-d)\cdots}=B&amp;rsquo;,$$&lt;/p&gt;
         </item>
         <item>
         <title>[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</title>
-        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</link>
+        <link>https://whzecomjm.com/p/2018/03/euler-1/</link>
         <pubDate>Wed, 21 Mar 2018 12:41:25 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/2018/03/euler-1/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2018/03/euler-1/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;eulerarchive.org&lt;/a&gt;总结了欧拉的一些结果, 一些他的论文还可以在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/find/math/1/au:&amp;#43;Euler_L/0/1/0/all/0/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;arxiv&lt;/a&gt; 找到。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A method to use thm, def etc. for short to enter related environment in Texmacs...'><title>TeXmacs tips: 给定理环境添加别名</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2020/06/texmacs-assignment/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='TeXmacs tips: 给定理环境添加别名'>
+<meta property='og:description' content='A method to use thm, def etc. for short to enter related environment in Texmacs...'>
+<meta property='og:url' content='https://whzecomjm.com/p/2020/06/texmacs-assignment/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='TeXmacs' /><meta property='article:published_time' content='2020-06-27T19:30:05&#43;08:00'/><meta property='article:modified_time' content='2020-06-27T19:30:05&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2020/06/texmacs-assignment/20220822161931.png' />
+<meta name="twitter:title" content="TeXmacs tips: 给定理环境添加别名">
+<meta name="twitter:description" content="A method to use thm, def etc. for short to enter related environment in Texmacs..."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2020/06/texmacs-assignment/20220822161931.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2020/06/texmacs-assignment/">
+                <img src="/p/2020/06/texmacs-assignment/20220822161931_hu6480b43f5cb714228bc5162177f34a02_181702_800x0_resize_box_3.png"
+                        srcset="/p/2020/06/texmacs-assignment/20220822161931_hu6480b43f5cb714228bc5162177f34a02_181702_800x0_resize_box_3.png 800w, /p/2020/06/texmacs-assignment/20220822161931_hu6480b43f5cb714228bc5162177f34a02_181702_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="284" 
+                        loading="lazy"
+                        alt="Featured image of post TeXmacs tips: 给定理环境添加别名" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%94%9F%E6%B4%BB/" style="background-color: #1d7dsf; color: #fff;">
+                生活
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2020/06/texmacs-assignment/">TeXmacs tips: 给定理环境添加别名</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            A method to use thm, def etc. for short to enter related environment in Texmacs...
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 27, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><a class="link" href="http://www.texmacs.org/"  target="_blank" rel="noopener"
+    >Texmacs</a>是一款非常容易上手和方便的排版工具。它拥有的方便特性对于经常写数学笔记和作业的我非常方便。其他类似于 Typora 的 Markdown 工具虽然也拥有一部分的优势，但是面对大量数学公式时，并不能快速输入数学公式，解析使用的 MathJax 和 KaTeX 也没有那么流畅。</p>
+<p>熟悉 LaTeX 的用户很容易能上手 TeXmacs，但是想要进阶使用并没有那么容易。比如最近我厌烦了用鼠标点击定理环境（包括定义、命题等等），使用 <code>\theorem</code> 之类的命令也似乎增加不了多少效率。于是我想着能新建一个新的宏，使用 <code>\thm</code> 代替定理环境的命令。</p>
+<p>然而解决的进展的并不一帆风顺。我尝试查看官方文档以及谷歌搜索寻找答案，没有找到任何有用的资料。一无所获的我想到的是去看看 TeXmacs 的源文件。幸运的是我知道了相关文件，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/Applications/TeXmacs.app/Contents/Resources/share/TeXmacs/packages/environment/env-theorem.ts
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>里面有类似于 <code>&lt;new-theorem|theorem|Theorem&gt;</code> 的大量内容。我尝试添加类似的一行命令<code>&lt;new-theorem|thm|Theorem&gt;</code>。之后重启程序，不过并没有什么用处，:cry:。</p>
+<p>之后我重新打开了宏编辑器，看了看 <code>theorem</code> 的宏命令。不过宏命令（定义内容）可以复制出来，但是定义头 <code>&lt;theorem | body&gt;:=</code> 无法复制，且后面的 <code>body</code> 是特殊的 <code>Argument</code>， 无法复制（在定义内容中也有）。当然单纯键入<code>body</code> 是无效的。当时我尝试的例子是 <code>definition</code>环境。首先尝试过先输入未定义的 <code>\def</code> 回车，然后在焦点工具栏中选择扳手符号设置，在设置里，可以（复制粘贴）填入 <code>definition</code> 环境的定义内容。这样的效果是输入 <code>\def</code> 并且回车后可以得到一个看起来符合条件的 <code>\definition</code>，但是由于无法在定义头中写明<code>body</code>，故而只会生成 <code>definition</code> 的空环境，无法输入内容，如下图。</p>
+<p><img src="https://i.loli.net/2020/06/27/872RYpPiZnVv6mo.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="amqXDtYJ8dTf6Gn.png"
+	
+	
+></p>
+<p>由于发现，宏编辑器中并不能很好地利用源文件和宏命令的工具栏，故而我转向打开文件的 <code>preamble</code>格式（菜单栏 <code>Tools&gt;Macros&gt;Edit preamble...</code>）。</p>
+<p>根据 preamble 的工具栏中的各个命令的名称，我猜测可以使用 <code>asign</code> 来定义一个环境的别名。于是我尝试输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="err">&lt;</span>\assign|def|definition&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样得到的 <code>\def</code> 只会输出文字 definition，并不是我想要的。如果给 <code>definition</code> 加个反斜杠，可以得到之前的方法得到的半成品。于是我尝试所有的源码宏命令的各个选项，偶然间我发现可以给 definition 加一个 <code>\value</code> 命令。这样完美解决了这一需求，参见下面这个 gif。</p>
+<p><img src="https://i.loli.net/2020/06/27/Z4HmXauY9N6vUWb.gif"
+	
+	
+	
+	loading="lazy"
+	
+		alt="TeXmacs-assign-def.gif"
+	
+	
+></p>
+<p>不过直接在文档内添加这一指令，生效后会隐藏，但是可能会不小心删除。我们可以把它添加到 <code>preamble </code> 中的<code>&lt;hide-preamble| &gt;</code>内。</p>
+<p><img src="https://i.loli.net/2020/06/27/6pe8qihbXDIg9aG.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20200627202256218.png"
+	
+	
+></p>
+<p>whzecomjm</p>
+<p>Jun 27, 2020 20:19:22</p>
+<hr>
+<p>过了两天，我发现在 Macros editor 中直接修改 definition 的名字（只保留 def），再点击 OK，也是能做到使用 <code>\def</code> 来得到一个定义环境。我之前也有想过这样直接改，但是怕修改会替换原本的宏，导致前文中使用完整 definition 的环境会无法显示。实际上，这会生成一个新的宏，且不会对本来的宏产生影响。</p>
+<p>另，打开 Extract style 可编辑宏和不显示的源码，这比 Edit preamble 更高效。</p>
+<p>不过进一步发现上面两种方法都会导致导出 latex 不能编译或者生成大量的宏代码。今天看TeXmacs 作者的一篇介绍文章中讲到了一种新的方式，这种新的方式更加简便。即在 <code>my-init-texmacs.scm</code> 中加入如下代码即可：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-scheme" data-lang="scheme"><span class="line"><span class="cl"><span class="p">(</span><span class="nf">kbd-map</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;D e f .&#34;</span> <span class="p">(</span><span class="nf">make</span> <span class="ss">&#39;definition</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;L e m .&#34;</span> <span class="p">(</span><span class="nf">make</span> <span class="ss">&#39;lemma</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;P r o p .&#34;</span> <span class="p">(</span><span class="nf">make</span> <span class="ss">&#39;proposition</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;T h m .&#34;</span> <span class="p">(</span><span class="nf">make</span> <span class="ss">&#39;theorem</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;E x .&#34;</span> <span class="p">(</span><span class="nf">make</span> <span class="ss">&#39;example</span><span class="p">)))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>之后输入 <code>Def.</code> 等就能自动生成定义环境等。</p>
+<p>whzecomjm</p>
+<p>Jun 30, 2020 10:50:44</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/texmacs/">TeXmacs</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2021/04/texmacs/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2021/04/texmacs/20220822155248.dc321b058d56285a0b6eb4d624083df0_hu21856fdfd83f49657572f8f55387b927_207452_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Texmacs 一些使用技巧"
+                        data-key="Texmacs" 
+                        data-hash="md5-3DIbBY1WKFoLbrTWJAg98A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Texmacs 一些使用技巧</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2019/12/mobaxterm/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2019/12/mobaxterm/_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_27040ddd7399aaf289c0ce70ee6592d9.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 使用 MobaXTerm/VNC 打开图像化的远程服务器"
+                        data-key="MobaXTerm" 
+                        data-hash="md5-RvYejqai34/Fvx0koXxEpg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用 MobaXTerm/VNC 打开图像化的远程服务器</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/09/latex-lrangles/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/09/latex-lrangles/_hu4a8d234ea25b03a1d51b899ed4e5bf74_14797_ee545b25ffb402e1f3b9150edf27a12f.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Latex中输入双括号"
+                        data-key="LaTeX-lrangles" 
+                        data-hash="md5-y9qgaRjdlPoHaHYS5b/V7w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Latex中输入双括号</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/07/katex/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/07/katex/_hufe480380c58e0e0e3bc8988110f8ac7b_729100_a7da283cd5e990e6a1cfd5be6a0eb0e6.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post KaTeX：博客的数学公式支持"
+                        data-key="KaTeX" 
+                        data-hash="md5-rXmB1cNjcsQ7DPLTy4s51w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">KaTeX：博客的数学公式支持</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/01/washing-machine/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/01/washing-machine/1922346059.f77aad8bbd9bf7f7db75d998f5766df2_hu2cad403f201a6e25784e057e20549164_266241_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 洗衣机修复记"
+                        data-key="washing-machine" 
+                        data-hash="md5-93qti72b9/fbddmY9XZt8g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">洗衣机修复记</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

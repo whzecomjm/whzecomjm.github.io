@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Mon, 30 Nov 2020 15:25:54 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%AF%B9%E7%A7%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>幂平均不等式和对称法</title>
-        <link>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
+        <link>https://whzecomjm.com/p/2020/11/inequality-symmetry/</link>
         <pubDate>Mon, 30 Nov 2020 15:25:54 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2020/11/inequality-symmetry/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2020/11/inequality-symmetry/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
 &lt;p&gt;事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&amp;gt;0$）：
 $$
 \frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},

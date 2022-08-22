@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Thu, 24 Dec 2015 05:50:18 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/hasse%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>函数域上二次型的 Hasse 原理</title>
-        <link>https://whzecomjm.com/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/</link>
+        <link>https://whzecomjm.com/p/2015/12/hasse-principle/</link>
         <pubDate>Thu, 24 Dec 2015 05:50:18 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/jan-kahanek-fVUl6kzIvLg-unsplash.jpg" alt="Featured image of post 函数域上二次型的 Hasse 原理" /&gt;&lt;p&gt;经典的 Hasse 原理或者称为全局-局部原理是数论中著名结果。对于一些给定形式的多项式方程，如果我们需要判定或者得到他们的整数解或者有理数解时，运用这一原理，我们只需要研究方程在其所有完备域上的解即可，也就是在实数域和 p-adic 数域上的解。这表面上看起来是把问题复杂化了，但是完备域上的性质比有理数域要好得多，所以在很多情况下，这是一种简化。这一问题在二次型里就有更加有趣的结果。虽然二次型方程是一般多项式方程的简化，但是实际上，对于一些高次方程，现在已经找到不少 Hasse 原理的反例，因此显得不是那么重要。而且，二次型的理论比起高次型要完善的多，所以，研究各种数域上二次型的非奇异零点更有工具上的支持。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2015/12/hasse-principle/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2015/12/hasse-principle/jan-kahanek-fVUl6kzIvLg-unsplash.jpg" alt="Featured image of post 函数域上二次型的 Hasse 原理" /&gt;&lt;p&gt;经典的 Hasse 原理或者称为全局-局部原理是数论中著名结果。对于一些给定形式的多项式方程，如果我们需要判定或者得到他们的整数解或者有理数解时，运用这一原理，我们只需要研究方程在其所有完备域上的解即可，也就是在实数域和 p-adic 数域上的解。这表面上看起来是把问题复杂化了，但是完备域上的性质比有理数域要好得多，所以在很多情况下，这是一种简化。这一问题在二次型里就有更加有趣的结果。虽然二次型方程是一般多项式方程的简化，但是实际上，对于一些高次方程，现在已经找到不少 Hasse 原理的反例，因此显得不是那么重要。而且，二次型的理论比起高次型要完善的多，所以，研究各种数域上二次型的非奇异零点更有工具上的支持。&lt;/p&gt;
 &lt;p&gt;关于整数的二次型的最早突破性工作来自于闵可夫斯基，之后在1923年，Hasse 完善了他的结果到有理数上的二次型。并且，之后还推广到任意代数数域上。这些结果并成为 Hasse-Minkowshi 定理。这个定理在有理数域上有很多具体的形式，比如下面这个结果：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个有理数域上的本原二次型有非奇异零点当且仅当它是非正定的且有对任意 $n&amp;gt;2$ 的模 $n$ 本原同余解。&lt;/p&gt;

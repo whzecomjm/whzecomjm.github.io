@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Tue, 08 Dec 2020 15:30:24 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>向量法求根式函数值域</title>
-        <link>https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</link>
+        <link>https://whzecomjm.com/p/2020/12/vectors-in-range/</link>
         <pubDate>Tue, 08 Dec 2020 15:30:24 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2020/12/vectors-in-range/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2020/12/vectors-in-range/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
 &lt;p&gt;首先我们给出最常用的两个向量不等式，用以求解函数值域。它们分别是向量的三角不等式和数量积（柯西）不等式。向量的&lt;strong&gt;三角不等式&lt;/strong&gt;指的是，对于任意两个向量 $\vec{a}, \vec{b}$，下列不等式恒成立：
 $$
 ||\vec{a}|-|\vec{b}||\leq |\vec{a}+\vec{b}|\leq |\vec{a}|+|\vec{b}|            \qquad\qquad(1)

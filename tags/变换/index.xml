@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Mon, 01 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%8F%98%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>双曲、抛物与椭圆变换</title>
-        <link>https://whzecomjm.com/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/</link>
+        <link>https://whzecomjm.com/p/2014/12/flt-sorts/</link>
         <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/claudel-rheault-YHHOdKtmlR8-unsplash.jpg" alt="Featured image of post 双曲、抛物与椭圆变换" /&gt;&lt;p&gt;分式线性变换可以分成以上三类：双曲变换，抛物变换以及椭圆变换，定义这些变换首先需要定义FLT的迹，这个迹和方阵的迹的定义稍微有点不同，确切的说是它的平方。考虑&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2014/12/flt-sorts/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2014/12/flt-sorts/claudel-rheault-YHHOdKtmlR8-unsplash.jpg" alt="Featured image of post 双曲、抛物与椭圆变换" /&gt;&lt;p&gt;分式线性变换可以分成以上三类：双曲变换，抛物变换以及椭圆变换，定义这些变换首先需要定义FLT的迹，这个迹和方阵的迹的定义稍微有点不同，确切的说是它的平方。考虑&lt;/p&gt;
 &lt;p&gt;$$A=\left(\begin{array}{ll}a&amp;amp;b\\ c&amp;amp;d\end{array}\right)\in SL(2,\mathbb{R})$$&lt;/p&gt;
 &lt;p&gt;（将一个$GL(2,\mathbb{R})$的变换同时除以$\sqrt{ad-bc}$,再变成特殊线性群。）于是我们定义$\tau{(\gamma)}=\mathrm{Tr}(A)^2=(a+d)^2$，其中$\gamma(\zeta)=(az+b)/(cz+d)$，$ad-bc=1$。我们可以证明：&lt;strong&gt;共轭FLT拥有一样的迹&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;因为我们已经有 $ad-bc=1,(a+d)^2=\tau{(\gamma)}$。于是显然有：&lt;/p&gt;

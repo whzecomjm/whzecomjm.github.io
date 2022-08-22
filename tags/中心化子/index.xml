@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Wed, 25 Nov 2015 12:07:35 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>正规化子和中心化子</title>
-        <link>https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</link>
+        <link>https://whzecomjm.com/p/2015/11/centralizer-vs-normalizer/</link>
         <pubDate>Wed, 25 Nov 2015 12:07:35 +0800</pubDate>
         
-        <guid>https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</guid>
-        <description>&lt;img src="https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/hulki-okan-tabak-H2AkAU2QTpo-unsplash.jpg" alt="Featured image of post 正规化子和中心化子" /&gt;&lt;p&gt;初学群论的同学刚开始接触正规化子和中心化子这两个概念的时候会很容易弄混，因为他们的定义十分相似。一个群$G$的子集$S$的中心化子(Centralizer)和正规化子(Normalizer)都是$G$的子群，并且符合类似的“局部交换”的限制条件。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/2015/11/centralizer-vs-normalizer/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2015/11/centralizer-vs-normalizer/hulki-okan-tabak-H2AkAU2QTpo-unsplash.jpg" alt="Featured image of post 正规化子和中心化子" /&gt;&lt;p&gt;初学群论的同学刚开始接触正规化子和中心化子这两个概念的时候会很容易弄混，因为他们的定义十分相似。一个群$G$的子集$S$的中心化子(Centralizer)和正规化子(Normalizer)都是$G$的子群，并且符合类似的“局部交换”的限制条件。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;中心化子的一般定义是从一个元素开始，$a\in G$的中心化子$C(a)$是$G$中和$a$交换的元素集合，即&lt;/p&gt;
 &lt;p&gt;$$C(a):=\{x\in G:xa=ax\}.$$&lt;/p&gt;

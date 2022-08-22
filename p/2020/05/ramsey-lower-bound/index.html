@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A lower bound of Ramsey number'><title>拉姆齐数一个下界的概率证明</title>
+
+<link rel='canonical' href='https://whzecomjm.com/p/2020/05/ramsey-lower-bound/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='拉姆齐数一个下界的概率证明'>
+<meta property='og:description' content='A lower bound of Ramsey number'>
+<meta property='og:url' content='https://whzecomjm.com/p/2020/05/ramsey-lower-bound/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Ramsey理论' /><meta property='article:published_time' content='2020-05-18T16:50:05&#43;08:00'/><meta property='article:modified_time' content='2020-05-18T16:50:05&#43;08:00'/><meta property='og:image' content='https://whzecomjm.com/p/2020/05/ramsey-lower-bound/greg-rosenke-TMXIWZncTZU-unsplash.jpg' />
+<meta name="twitter:title" content="拉姆齐数一个下界的概率证明">
+<meta name="twitter:description" content="A lower bound of Ramsey number"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.com/p/2020/05/ramsey-lower-bound/greg-rosenke-TMXIWZncTZU-unsplash.jpg' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2020/05/ramsey-lower-bound/">
+                <img src="/p/2020/05/ramsey-lower-bound/greg-rosenke-TMXIWZncTZU-unsplash_huce2ce4ebc46bd238f374a8b645a9cd16_63394_800x0_resize_q75_box.jpg"
+                        srcset="/p/2020/05/ramsey-lower-bound/greg-rosenke-TMXIWZncTZU-unsplash_huce2ce4ebc46bd238f374a8b645a9cd16_63394_800x0_resize_q75_box.jpg 800w, /p/2020/05/ramsey-lower-bound/greg-rosenke-TMXIWZncTZU-unsplash_huce2ce4ebc46bd238f374a8b645a9cd16_63394_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="534" 
+                        loading="lazy"
+                        alt="Featured image of post 拉姆齐数一个下界的概率证明" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E5%90%88/" style="background-color: #1d7dsf; color: #fff;">
+                组合
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2020/05/ramsey-lower-bound/">拉姆齐数一个下界的概率证明</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            A lower bound of Ramsey number
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 18, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>拉姆齐定理表明在二染色中对任意整数 $r$ 一定存在 $n$，使得完全图 $K_n$ 必然包含的同色子完全图$K_s$。</p>
+<p>$R(s):=R(s,s)$. 我们已经知道 $R(1)=1$, $R(2)=2$, $R(3)=6$, 以及 $R(4)=18$. 然后寻找确切的拉姆齐数十分困难, 事实上, $R(5)$ 及其以上的确切值仍然没有确定. 因此, 自然的想法就是不断缩小上下界. P. Erdös 在其1947年的文章中开创性的利用概率方法给出第一个下界.</p>
+<blockquote>
+<p><strong>Theorem</strong> [3]. The Ramsey number $R(s)$ is bigger than $2^{(s-1)/2}$.</p>
+</blockquote>
+<p>该定理的证明是概率性而非构造性证明。我们选择 $K_n$ 边的一个随机着色。然后我们将得到一个同色完全图$K_s$的概率的一个上界。我们将证明如果我们非常小心地选取 $n$，我们可以令这个概率（严格）小于1。如果这个概率小于1，则必然存在某些着色方式使得不存在同色的 $K_s$。</p>
+<p>那么如何选择一个随机着色呢？我们将 $K_n$ 的每条边染为红色或者蓝色，每次染色都是独立事件，且任意一次染色两种颜色的概率为1/2。那么我们得到一个同色的完全图 $K_s$ 的概率如何？利用简单粗暴的估计，我们知道这等于所有使得 $K_s$ 是同色的概率的和。我们可以通过计算 $K_s$ 的所有数量乘以每一个 $K_s$ 是同色的概率。</p>
+<p>$K_s$ 的数量显而易见是 $n \choose s$. 那么每一个 $K_s$ 同色的概率为多少？我们知道每条边为红色概率是 1/2，$K_s$ 有 $s\choose 2$ 个边。因此，$K_s$ 是红色的概率是 $2^{-{s\choose 2}}$，因此这个 $K_s$ 同色的概率为 $2^{1-{s\choose 2}}=2\times 2^{-{s\choose 2}}$。</p>
+<p>因此，$K_s$ 同色的概率是 ${n\choose s} 2^{1-{s\choose 2}}$. 我们想选择足够大的 n，使得这一概率小于1。如果我们选择 $n=\lfloor{2^{(s-1)/2}}\rfloor$，则我们得到</p>
+<p>$$
+2^{1-{s\choose 2}}{n\choose s}\leq 2^{1-{s\choose 2}}\frac{n^s}{s!} &lt; 2^{-s(s-1)/2}2^{s(s-1)/2}=1.
+$$</p>
+<p>这正是我们想要的结果。注意到在 Erdos 最初的证明中，他使用的是计数而非概率，而现在概率是现代的语言。</p>
+<h3 id="references">References</h3>
+<ol>
+<li>Wikipedia, <a class="link" href="https://en.wikipedia.org/wiki/Ramsey%27s_theorem#Ramsey_numbers"  target="_blank" rel="noopener"
+    >Ramsey Number</a>.</li>
+<li>Michael Krivelevich, <em>Topics in Random Graphs</em>, 1.6.1 pp. 8-9, 2010.</li>
+<li>P. Erdös, <strong>Some remarks on the theory of graphs</strong>, Bull. Amer. Math. Soc. <strong>53</strong> (1947), <a class="link" href="https://www.ams.org/journals/bull/1947-53-04/S0002-9904-1947-08785-1/home.html"  target="_blank" rel="noopener"
+    >292-294</a>.</li>
+<li>Theorem of the week, <a class="link" href="https://theoremoftheweek.wordpress.com/2010/05/02/theorem-25-erdoss-lower-bound-for-the-ramsey-numbers/"  target="_blank" rel="noopener"
+    >Theorem 25: Erdős’s lower bound for the Ramsey numbers</a>.</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ramsey%E7%90%86%E8%AE%BA/">Ramsey理论</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2019/08/monochromatic-equation/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2019/08/monochromatic-equation/_hu87320138b3abf470c192b6d01bc26e1f_428425_fbffd5c0e590302aa37e782f8011e62f.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 方程的染色问题"
+                        data-key="monochromatic-equation" 
+                        data-hash="md5-UE&#43;iuCXfF9htOqVOdudlHg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">方程的染色问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/12/vectors-in-range/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/12/vectors-in-range/0.a856ce6ea953335b26e4b0185753e26e_hu0a16cb1dbb8cceabb23d7af20e42d092_218999_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 向量法求根式函数值域"
+                        data-key="vectors-in-range" 
+                        data-hash="md5-qFbObqlTM1sm5LAYV1Pibg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">向量法求根式函数值域</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2020/11/inequality-symmetry/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2020/11/inequality-symmetry/_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_473e75c98bc190d1e3c7eb626c45cd7e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 幂平均不等式和对称法"
+                        data-key="Inequality-Symmetry" 
+                        data-hash="md5-9kexJDPKvYaLdFDhg6jW1Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">幂平均不等式和对称法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/10/trigonometric-identities/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/10/trigonometric-identities/aZXCGcgtpwP8RMA.95ba242f0621c356cee5def86376326f_hu5b00630d19d90bb4a4949ace60ead1c3_26338_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 三角恒等式的几何表达"
+                        data-key="trigonometric-identities" 
+                        data-hash="md5-lbokLwYhw1bO5d74Y3Yybw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">三角恒等式的几何表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2018/09/perfect-square/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2018/09/perfect-square/Smith_diagram.0d3619d527fa80227645771e5cca667a_hu2d13e45f5a60810c61e48ce37bbe9702_21939_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 完美正方形"
+                        data-key="perfect-square" 
+                        data-hash="md5-DTYZ1Sf6gCJ2RXceXMpmeg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">完美正方形</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
