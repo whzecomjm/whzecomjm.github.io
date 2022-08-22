@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>LaTeX on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/latex/</link>
+        <description>Recent content in LaTeX on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Sep 2018 15:17:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Latex中输入双括号</title>
+        <link>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</link>
+        <pubDate>Sat, 22 Sep 2018 15:17:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/jeswin-thomas-hecib2an4T4-unsplash.jpg" alt="Featured image of post Latex中输入双括号" /&gt;&lt;p&gt;在LaTeX中如果只是用&lt;code&gt;[[a]]&lt;/code&gt;和&lt;code&gt;((a))&lt;/code&gt;表示双括号（比如幂级数环）显示会比较难看。尝试使用&lt;code&gt;\left[\left[a\right]\right]&lt;/code&gt;等效果也不太好，一个简单的做法是使用&lt;code&gt;[\![a]\!]&lt;/code&gt;和&lt;code&gt;(\!(a)\!)&lt;/code&gt;，可以得到如下效果：&lt;/p&gt;
+&lt;p&gt;$$f[\![a]\!]+(\!(a)\!).$$&lt;/p&gt;
+&lt;p&gt;至于双三角括号的使用，需要引用宏包 &lt;code&gt;mnsymbol&lt;/code&gt; 或者使用如下符号自定义：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% llangle and rrangle
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\makeatletter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newsavebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\llangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\langle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathopen&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\rrangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\rangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathclose&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\makeatother&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后再在正文中使用&lt;code&gt;\llangle&lt;/code&gt; 和&lt;code&gt;\rrangle&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;参考链接: &lt;a class=&#34;link&#34; href=&#34;https://tex.stackexchange.com/questions/79657/how-to-get-double-angle-bracket-without-using-mnsymbol-package&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How to get double angle bracket without using MnSymbol package?&lt;/a&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>KaTeX：博客的数学公式支持</title>
+        <link>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</link>
+        <pubDate>Thu, 12 Jul 2018 15:14:23 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX&lt;/a&gt; 刚出来的时候, 我就有关注这个 MathJax 的代替者. 不过当时好多公式符号都无法加载, 那时甚至矩阵都显示有问题. KaTeX 虽然加载公式速度很快, 但是怕我文章里有公式不能正常显示, 所以还是没有选择使用它. 不过就像很多开源软件一样, 时间能让它们变得越来越好. 诚如前段时间回归 Typecho 重新写博客一样, Markdown 和 MathJax 之间的小 Bug 得到完美解决; 如今 KaTeX 也能独当一面, 可以彻底代替 MathJax 了.&lt;/p&gt;
+&lt;p&gt;最简单的使用方法是使用了官方推荐的简单配置（使用 jsDelivr 的CDN）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中前两个是 KaTeX的基本配置，第三个是自动加载的插件。 我们只需要把这些样式引用和脚本引用放在网页合适的位置即可享受在线使用 KaTeX 公式渲染。&lt;/p&gt;
+&lt;p&gt;如果使用默认的配置，无论是行间公式还是行内公式都要用左右各两个美元符号包裹。唯一的区别在于行间公式要单行书写，而行内公式在段落内直接书写即可。不过这和 LateX、MathJax 的习惯不一致。 我们可以通过修改分隔符 &lt;code&gt;delimiters&lt;/code&gt; 来更新上述配置，其中的&lt;code&gt;display&lt;/code&gt;的选项代表是否开启“显示模式”（&lt;code&gt;displayMode&lt;/code&gt;），即行间公式。我们只要在 CDN 引入配置之后添加如下代码即可：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;renderMathInElement&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nx&#34;&gt;delimiters&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;于是便可以畅快地享受 KaTeX 的快速加载了。 KaTeX 还可以和 InstantClick 一起提速加载速度，而这一优势是 MathJax 没有的。&lt;/p&gt;
+&lt;h2 id=&#34;typecho-的-katex-插件&#34;&gt;Typecho 的 KaTeX 插件&lt;/h2&gt;
+&lt;p&gt;由于 Typecho 1.1 正式版之后它的 Markdown内核 HyperDown 得到更新，之前和其他无论是动态博客还是静态博客都一样存在的 &lt;code&gt;\&lt;/code&gt; 转义的 bug 得到解决，所以我们可以开心回归&amp;quot;正常的LaTeX写法&amp;quot;。如果不想要自己配置 KaTeX，可以安装 Typecho 的 KaTeX 插件。&lt;/p&gt;
+&lt;p&gt;我试用过一款名为&lt;a class=&#34;link&#34; href=&#34;https://github.com/vc12345679/KaTeX4Typecho&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX4Typecho&lt;/a&gt;的插件。由于早期 KaTeX 有一些显示bug，所以需要更新插件的 KaTeX 引用。&lt;/p&gt;
+&lt;p&gt;另外需要注意的是，Typecho 的 Markdown 并没有更新 &lt;code&gt;\[&lt;/code&gt; 作为行间公式，如需设置需要设置为 &lt;code&gt;\\[&lt;/code&gt;。因此，还是推荐双美元符号的形式。&lt;/p&gt;
+&lt;p&gt;如果是使用其他静态博客程序，也有相对应的 KaTeX 插件，比如 Jeykll 的 SsKaTeX 可以在生成静态网页的同时转化 KaTeX 代码，实现了离线可用，具体可参见 &lt;a class=&#34;link&#34; href=&#34;https://frankindev.com/2017/02/08/using-katex-in-jekyll/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jekyll 中使用 KaTeX&lt;/a&gt;。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

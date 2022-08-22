@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>完美正方形 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <description>Recent content in 完美正方形 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 30 Sep 2018 02:23:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>完美正方形</title>
+        <link>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <pubDate>Sun, 30 Sep 2018 02:23:22 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;其实最自然的想法是利用&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/PyramidalNumber.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;四角锥数&lt;/a&gt;($\sum_{i=1}^n i^2$)来寻找, 但是是平方数的四角锥数仅有 1 和 4900 ($70^2=\sum_{i=1}^{40}i^2$). 但是令人遗憾的是边长7200的正方形不能被分割为24个小正方形.&lt;/p&gt;
+&lt;h2 id=&#34;完美正方体和基尔霍夫定律&#34;&gt;完美正方体和基尔霍夫定律&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;正方形的方割&amp;rdquo;(Squaring the square)问题看起来很自然, 似乎也应该不难解决. 可是真正第一次被研究还得到20世纪三十年代. 来自于剑桥大学三一学院数学学会的几个年轻学生 R. L. Brooks, C. A. B. Smith, A. H. Stone 和 W. T. Tutte 把这一问题转化为等价的&amp;quot;电路问题&amp;quot;. 他们称之为 Smith 图. 他们通过将小正方形视为电阻, 上下边分别并联起来,考虑等势点, 边长大小视为电流大小, 利用&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;基尔霍夫电路定律&lt;/a&gt;和电路分解技巧来重构这一问题.&lt;/p&gt;
+&lt;p&gt;下面举例说明, 为了方便起见我们先考虑一个大的长方形, 把它方割为如下的小正方形. 首先最上面的边等势, 分别有三个流向到三个电阻, 电流依次为6,4,5. 除了最上边和最下边两个等势点, 我们还有四个等势点 (即左图中不同的高度的水平线), 它们的流向就如右图描述的那样. 更直观地理解可以把每个正方形看成一个从上往下的水管, 边长是他们的粗细, 水从上往下流.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/5/59/Smith_diagram.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Simith Diagram&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;当时这群小伙子先找到的是一个69阶(即由69个小正方形)的完美正方形. 这是一个复合完美正方形. 直到 1978 年计算机出现以后, A. J. W. Duijvestijn 才找到第一个简单完美正方形. 它是一个边长112的大正方形方割为21个小正方形, 方割图如下:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/6/64/Squaring_the_square.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最小的完美正方形&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;并且进一步地, Duijvestijn用计算机验证了这是最小的简单完美正方形, 同时也是21阶唯一的简单完美正方形. 之后这一最小的简单完美正方形给剑桥大学的三一数学学会(&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Trinity_Mathematical_Society&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Trinity Mathematical Society&lt;/a&gt;)拿去当作他们的会徽, 以此纪念最早研究正方形方割的几名会员. 而最小的复合完美正方形再早一点的1946年T.H. Willcocks就已发现, 它的阶数是24. 但直到 1982 年 Duijvestijn, Pasquale Joseph Federico 和 P. Leeuw才真正证明复合完美正方形的最小阶数是24, 但是这样的方割并不唯一.&lt;/p&gt;
+&lt;h2 id=&#34;完美正方体&#34;&gt;完美正方体?&lt;/h2&gt;
+&lt;p&gt;同时, 人们会很自然想到一个问题, &amp;ldquo;是否存在完美正方体?&amp;rdquo; 不过令人失望的是, 并不存在完美正方体. 而且更一般地, 也不存在完美长方体(即将长方体立方割为不同边长的小正方体). 这并不难证明.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;. 假设存在这样的完美长方体$C$立方割. 不妨设$C$的底面为 $R$, 显然这个长方形是完美长方形, 它能方割为一些边长不等的小正方形. 我们考虑最小的那个正方形, 显然它不再四个角落. 因为角落旁边的正方形比角落的大. 进一步的不再边界, 于是最小的正方形$s_1 $在$R$ 中间. 于是我们知道底边最小正方形的正方体周围都是比他大的正方体. 于是考虑这个最小正方体的上表面, 以上表面作为我们接下去研究对象. 它也是一个完美长方形. 同理, 我们在这个面也能找到最小的正方形 $s_2$ (注意 $s_2&amp;lt;s_1$). 由于正方体的边长是整数, 而我们的 $s_1,s_2,\dots$ 序列是无限的, 但是总的大长方体高是有限的. 所以导出矛盾.&lt;/p&gt;
+&lt;p&gt;实际上任何高维($n\geq3$)的超正方体都不是完美超正方体, 由归纳法可以看出. 比如, 四维的超立方体如果能被完美地超立方割, 则它的&amp;quot;面&amp;quot;就是正方体能被完美地立方割. 而这是不可能的.&lt;/p&gt;
+&lt;h2 id=&#34;mrs-perkinss-quilt&#34;&gt;Mrs. Perkins&amp;rsquo;s Quilt&lt;/h2&gt;
+&lt;p&gt;让我们回到正方形方割的问题, 另一个方向的推广是去除小正方形互异的条件. 如果正方形方割不要求小正方形必须相异, 我们称之为 &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/MrsPerkinssQuilt.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mrs. Perkins&amp;rsquo;s Quilt&lt;/a&gt;. 为了方便研究我们只考虑其中的&amp;quot;素方割&amp;quot;, 即不能分解为更小的方割的方割, 也就是说方割模式的一个子正方形不能延用更小的正方形素方割.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://mathworld.wolfram.com/images/eps-gif/MrsPerkinsQuilts_850.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;每个素方割的最小阶数(分割出来的正方形数)构成的数列可以参见OEIS &lt;a class=&#34;link&#34; href=&#34;http://oeis.org/A005670&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A005670&lt;/a&gt; .&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Squaring_the_square&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Squaring the square&lt;/a&gt;, Wikipedia.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=NoRjwZomUK0&amp;amp;feature=youtu.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Squared Squares&lt;/a&gt;, Numberphile, Youtube.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Perfect Square Dissection.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Pyramidal Number.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource. &lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Mrs. Perkins&amp;rsquo;s Quilt.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

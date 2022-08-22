@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>平均数 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/</link>
+        <description>Recent content in 平均数 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 30 Nov 2020 15:25:54 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>幂平均不等式和对称法</title>
+        <link>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
+        <pubDate>Mon, 30 Nov 2020 15:25:54 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
+&lt;p&gt;事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&amp;gt;0$）：
+$$
+\frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},
+$$
+所有的等号当且仅当$a=b$时成立。我们可以简记为：
+$$
+H_2\leq G_2\leq A_2\leq Q_2,
+$$
+即两个正数的调和平均小于等于几何平均小于等于算术平均小于等于平方平均。这些平均都是如下定义的幂平均：
+$$P^{n}_2=\left(\frac{a^n+b^n}{2}\right)^{1/n}$$&lt;/p&gt;
+&lt;p&gt;其中，下标$2$指的是所取平均的数的个数；上标$(n)$表示幂平均对应的指数$n$。注意到
+$$
+H_2=P_2^{-1}, A_2=P_2^{1}, Q_2=P_2^{2}.
+$$
+而我们在&lt;a class=&#34;link&#34; href=&#34;https://whzecomjm.com/archives/Holder-means.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;几何平均即是零次幂平均&lt;/a&gt;中已经知道，
+$$
+G_2=\lim_{n\to0}P^{n}_2:=P_2^{0}.
+$$
+因此我们可以把上述幂平均改写为：
+$$
+P^{-1}_2\leq P^{0}_2\leq P^{1}_2 \leq P^{2}_2.
+$$
+所以，我们可以总结为如下&lt;strong&gt;幂平均不等式&lt;/strong&gt;，
+$$
+\forall n&amp;lt;m\in\mathbb R, \\ P_2^{n}=\left(\frac{a^n+b^n}{2}\right)^{1/n}\leq \left(\frac{a^m+b^m}{2}\right)^{1/m}=P_2^{m}.
+$$
+注意这里的$n,m$不仅仅是整数，可以是任意实数。这一幂平均不等式也能推广到任意多个数的平均（这一平均甚至可以加权）。这一系列不等式的证明不难可作为习题。&lt;/p&gt;
+&lt;p&gt;需要说明的是，为什么这些幂平均还需要在外层作一个$1/n$次幂？事实上，这保证了各个幂平均数和原来数据的量纲相同。比如，我们的 $a,b$ 都是表示身高，单位为米，则幂平均数都应该是单位为米。在内部给其作“$n$次方平均”以后，得到的单位为 $米^n$，所以外层的 $^{1/n}$ 是必不可少的。值得注意的是，作为“零次幂平均”的几何平均，它的内部是乘积形式，因此对应的外层开方是和元素个数相对应的，否则无法保证量纲不变。&lt;/p&gt;
+&lt;p&gt;我们常用的重要不等式和基本不等式分别对应了幂平均不等式中的 “$P_2^{0}\leq P^2_2$” 以及 $P^0_2\leq P^1_2$。&lt;/p&gt;
+&lt;p&gt;接下来我们将介绍一个简便方法，即“对称法”或者称为“轮换对称法”，其基本结论是，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若不等式的条件和结论（或想要求的式子）是关于各个变量轮换对称的，则其最值在各个变量相等时取得。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一结论是拉格朗日乘数法的一个简单推论。不过我们还需要前面提到的幂平均不等式确定等号方向或者是最大/小值。先来看一个简单的例子，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例1. 若 $a,b&amp;gt;0$，且$a+b=4$，则下列不等式恒成立的是（）&lt;/p&gt;
+&lt;p&gt;A. $\frac{1}{ab}\leq\frac{1}{4}$    B. $\frac{1}{a}+\frac{1}{b}\leq1$           C. $\sqrt{ab}\geq 4$    D. $a^2+b^2\geq 8$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意到，条件和所有结论都是轮换对称的，即 $a、b$ 互相轮换式子都不会改变。因此极值都在 $a=b=2$ 时取得。我们可以看到ABCD四个选项对应的数值都是对的。不过符号的方向可通过幂平均来判断。比如 D 中是平方和，在幂平均中会大于算术平均（和），因此是大于等于号。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例2. 若$x,y&amp;gt;0$，且 $2x+8y-xy=0$，求 $xy$ 的最小值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先原题的条件不是对称的，但是令 $z=4y$ 以后，条件会转为对称，结论依然是对称的。事实上，我们有 $2x+2z-\frac{xz}{4}=0$，因此最值在 $x=z$ 时取得，即 $4x=\frac{x^2}{4}$，所以 $x=z=16$，此时 $xy=\frac{xz}{4}=64$.&lt;/p&gt;
+&lt;p&gt;如果这是一道选择题，也许我们就可以到此为止。如果是解答题，我们则需要通过幂平均不等式来分析。我们的条件表面看起来分为两个部分，和与积，即有 $2x+8y=xy$。我们需要求积的最小值。根据幂平均不等式，我们是需要使用类似于 $P^{-1}_2\leq P^0_{2}$ 的不等式。因此，我们需要一个倒数和的条件。而 $2x+8y=xy$ 左边是一次式右边是二次式，因此讲二次式除过来就可以得到倒数和（负一次）：&lt;/p&gt;
+&lt;p&gt;$$
+\frac{1}{y/2}+\frac{1}{x/8}=1,
+$$&lt;/p&gt;
+&lt;p&gt;根据 $P^{-1}_2\leq P^0_{2}$，我们有&lt;/p&gt;
+&lt;p&gt;$$
+2=\frac{2}{\frac{1}{y/2}+\frac{1}{x/8}}\leq \sqrt{\frac{y}{2}\cdot\frac{x}{8}}=\frac{\sqrt{xy}}{4}
+$$
+所以 $xy\geq (2\times 4)^2=64$，等号当且仅当 $\frac{y}{2}=\frac{x}{8}$ 时成立。&lt;/p&gt;
+&lt;p&gt;通过这个例子，我们可以看到对于某些不是对称的题目，我们可以通过换元转化为对称的题目，利用对称法得到最值。而幂平均不等式能通过判断等式方向给我们提供解题思路。类似地，如果这道题让我们求解 $x+y$ 的最小值，则可以通过 $P_2^{-1}\leq P^1_{2}$ 来找到思路，即通过类似于 $(a+b)(\frac{1}{a}+\frac{1}{b})\geq 4$ 的证明方法（包括使用逐项相乘或者柯西不等式）。&lt;/p&gt;
+&lt;p&gt;当然还有一些不等式的题目这些技巧不一定奏效，需要的工具也不仅仅限于此，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2020年11月30日&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>几何平均即是零次幂平均</title>
+        <link>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
+        <pubDate>Thu, 13 Apr 2017 12:11:33 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
+&lt;p&gt;$$\lim_{m\rightarrow 0} M_m(a) = \lim_{m\rightarrow 0} \left(\frac{a_1^m + a_2^m+\dots+ a_n^m}{n} \right)^{1/m}=\sqrt[n]{a_1 a_2 \dots a_n}=G(a)$$&lt;/p&gt;
+&lt;p&gt;左边是幂的形式，右边也是幂的形式，但是指数不一样，所以，当时我也是想取对数来做，右边取完对数就会变成&lt;/p&gt;
+&lt;p&gt;$$ \frac{1}{n}\ln(a_1a_2\dots a_n)=\frac{1}{n}(\ln a_1+\ln a_2+\cdots+\ln a_n) $$&lt;/p&gt;
+&lt;p&gt;接下来就看不到什么迹象了，再看左边的形式，取完对数后变成了&lt;/p&gt;
+&lt;p&gt;$$ \frac{1}{m} (\ln(a_1^m + \cdots + a_n^m)-\ln n) $$&lt;/p&gt;
+&lt;p&gt;到这里似乎不能进行下去了。&lt;/p&gt;
+&lt;p&gt;在课堂上大概就想到这里，后来下课后也没有多想，不过偶然地机会看到一本老书——史济怀的《平均》，里面有详细地证明。大体的想法也是先取对数，不过我们还需要一个关键的替换。下面是书本的证明思路：&lt;/p&gt;
+&lt;p&gt;令$x=\frac{a_1^m + a_2^m + \dots + a_n^m}{n}-1$,那么很容易知道$\lim_{m\rightarrow 0}x=0$,于是，我们的$\ln M_m(a)$可以写成：&lt;/p&gt;
+&lt;p&gt;$$
+\ln M_m(a)=\frac{1}{m}\ln(1+x) = \frac{x}{r}\frac{\ln(1+x)}{x}
+$$
+根据洛必达法则，很容易知道$\lim_{x\rightarrow 0}\frac{\ln(1+x)}{x}=1$，因此我们现在只需要考虑$\lim_{m\rightarrow 0}\frac{x}{m}$即可：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}\lim_{m \rightarrow 0} \frac{x}{m} &amp;amp;= \lim_{m \rightarrow 0}\frac{\frac{a_1^m + a_2^m + \ldots + a_n^m}{n} - 1}{m} \\ &amp;amp;= \frac{1}{n} \lim_{m \rightarrow 0} \frac{a_1^m + a_2^m + \ldots +a_n^m - n}{m}\\ &amp;amp;= \frac{1}{n} \lim_{m \rightarrow 0} \left(\frac{a^m_1 - 1}{m} +\frac{a^m_2 - 1}{m} + \ldots + \frac{a^m_n - 1}{m}\right)\\ &amp;amp;= \frac{1}{n} \left( \ln a_1 + \ln a_2 + \ldots + \ln a_n \right) \\ &amp;amp;= \ln \sqrt[n]{a_1 a_2 \ldots a_n} \end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;这样接着刚才的分析我们就已经证明完毕了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

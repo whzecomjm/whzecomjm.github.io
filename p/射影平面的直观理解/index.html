@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Projective plane'><title>射影平面的直观理解</title>
+
+<link rel='canonical' href='https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='射影平面的直观理解'>
+<meta property='og:description' content='Projective plane'>
+<meta property='og:url' content='https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='射影平面' /><meta property='article:published_time' content='2020-01-09T14:14:17&#43;08:00'/><meta property='article:modified_time' content='2020-01-09T14:14:17&#43;08:00'/><meta property='og:image' content='https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg' />
+<meta name="twitter:title" content="射影平面的直观理解">
+<meta name="twitter:description" content="Projective plane"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg' />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/">
+                <img src="/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w_hub53ff5494b8db2935c0cf9ad65949c49_27360_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w_hub53ff5494b8db2935c0cf9ad65949c49_27360_800x0_resize_q75_box.jpg 800w, /p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w_hub53ff5494b8db2935c0cf9ad65949c49_27360_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="495" 
+                        loading="lazy"
+                        alt="Featured image of post 射影平面的直观理解" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%87%A0%E4%BD%95/" style="background-color: #2a9d8f; color: #fff;">
+                几何
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/">射影平面的直观理解</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Projective plane
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 09, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>射影虽名为 projective，但并不代表全部意义下的“投影”，而仅仅指的是“点光源的投影”，这也是为什么中文翻译使用“射影”（音同“摄影”）而非“投影”。本文仅从最常见的实射影平面来解释射影平面的几个不太直观或者令人困惑的点。</p>
+<!-- raw HTML omitted -->
+<p>实射影平面是 $R^3$ 中所有过原点的直线构成的空间，记为 $\mathbb R P^2$ 或简记为 $P^2$。这一定义并不会给我们一个足够清晰的图像，作为“平面”，我们自然会考虑如何定义这一“平面”上的点和线等等。因此我们常常可以根据等价类来具体化。</p>
+<p>过原点的全部直线可以分为两类，一类是与 xy 平面 (z=0) 有非零倾角的；另一类是位于 xy 平面上的。我们可以任取一个在 $R^3$ 中与 xy 平面平行但不重合的平面，比如 z=1 平面，则前一类的所有直线均在这一平面上有且仅有一个交点。不能选择 xy 平面作为投影平面是因为所有交点会退化为原点。另外一类在 xy 平面上的过原点的直线，并不会与 z=1 平面相交。但是在射影平面中，为了统一这些直线，可以将它们与 z=1 平面的交点定在“无穷远”。无穷远的讲法源自于过原点直线的倾角趋近于0的极限。</p>
+<p>因此，我们常常会使用 $R^3\setminus 0$ 的等价类的形式定义。其中两个点
+$$
+p_1=(x_1,y_1,z_1), \quad p_2=(x_2,y_2,z_2)
+$$
+等价当且仅当存在非零实数 $\lambda$ 使得 $p_1=\lambda p_2$。因此，我们可以把每个点(等价类)写成一个齐次坐标 $[x:y:z]$ 的形式 （为了方便，我们也可以继续简写为 (x,y,z)）。</p>
+<p>利用齐次坐标，我们可以将点进行分类。如果一个点的第三坐标 $z\neq 0$ 时，我们可以将齐次坐标写为 (x/z,y/z,1)，此时这个点落在平面 z=1 上。如果这个点第三坐标 $z=0$，则此时这个点位于 $xy$-平面中，如果进一步地 $y\neq 0$，则齐次坐标可写为 (x/y,1,0)，此时它位于一条直线上；最后如果 $y=z=0$，则齐次坐标为 (1,0,0) （此时 $x\neq 0$）。</p>
+<p>事实上，因为<!-- raw HTML omitted -->射影平面不能无自交地嵌入三维欧几里得空间<!-- raw HTML omitted -->，因此在三维欧几里得空间中，我们并不能完美的表现射影平面。这里的完美是指既不能把直线“掰弯”，也不能引入“无穷远点”等不直观的概念。射影平面可以嵌入到四维欧几里得空间，这与克莱因瓶类似。</p>
+<p>因为无穷远点的关系，上述等价类的定义并没有给我们带来直观上的简单。一个更好的直观化的做法是使用球面（想要直观，只能掰弯）。考虑球面 $x^2+y^2+z^2=1$，则所有过原点的直线均和这一球面有且有 2 个交点。剔除对跖点，我们则可以得到射影空间一一对应的投影点。因此，我们需要<strong>完全平分</strong>这个球面。</p>
+<p>最简单的方法是取“上半球”。但是这牵涉到边界归属的问题，我们还需要平分边界：位于 $xy$-平面上的 $x^2+y^2=1$ 这个圆。继续平分这个圆弧，我们可以取 $y&gt;0$ 的半圆。最后剩下的两个对跖点我们也只取一个 (1,0,0)。如此我们便完成了球面的完全平分，并把射影平面上的点和半球面上的点一一对应。这一方法是把无穷远点收回到 $xy$-平面上的半大圆弧，使其处理起来更加直观。</p>
+<p>通过上面的讨论，我们已经感受到使用球面来讨论射影平面是最为直观的。最后我们根据这一理解考虑如下的几个问题：</p>
+<ol>
+<li>为什么射影平面中的点和直线都是使用一个非零三维向量来表示？（对偶关系）</li>
+<li>为什么一个点 $m$ 位于一条线 $l$ 当且仅当 $l^Tm=0$ ？</li>
+<li>为什么平行线的相交于无穷远点？</li>
+</ol>
+<p>射影平面上的点在球面投影（绝对平分的上半球面）中是球面上的一点，可以用三维坐标表示，因此任意一点其实也表示一个方向（该点在球面的法向）。</p>
+<p>因为直线的定义是最短路径（的延申），而在球面上大圆弧是最短路径。因此射影平面上的直线在球面投影是一个“半大圆”。实际上，任意一个半大圆是半球面和平面 ax+by+cz=0 的交集。我们可以用<!-- raw HTML omitted -->唯一需要确定的这个平面的<strong>法向坐标</strong>来定义直线的齐次坐标<!-- raw HTML omitted -->，即 (a,b,c)。这个三维齐次坐标唯一确定了一条射影平面的直线以及球面的半大圆。特别地，当 a=b=0，这定义了一个无穷远直线。</p>
+<p>直线齐次坐标的定义也回答了第二个问题，因为直线上的一点必然满足直线的方程，因此对于直线 l 和它上的点 m，它们的齐次坐标满足 $a x_m +b y_m+c z_m=0$ 亦即 $l^T m=0$。 这也进一步地解释了射影空间的点和直线的对偶关系。更进一步地，一条穿过两点 $m_1, m_2$ 的直线 l 可以用他们的向量积 $m_1\times m_2$ 表示。实际上，过两点的大圆弧（射影直线以及其对应的三维空间的平面）由这两点的向量坐标所确定。两点的向量积给出了它们所在大圆弧（所在平面）的法向量，而这个法向量就是过这两点的（平面表示的）直线 l 的齐次坐标。</p>
+<p>第三个问题的直观理解是球面上的平行线类似于地球经线，它们相交于两极，而两极是对跖点，因而只相交于一个无穷远点。因此射影平面的一个重要性质是，任何两条直线相交于一点。</p>
+<p><strong>参考文献</strong></p>
+<ol>
+<li>Wikipedia, <a class="link" href="https://en.wikipedia.org/wiki/Real_projective_plane"  target="_blank" rel="noopener"
+    >Real projective plane</a>.</li>
+<li>Wikipedia, <a class="link" href="https://en.wikipedia.org/wiki/Projective_plane"  target="_blank" rel="noopener"
+    >Projective plane</a>.</li>
+<li>Marc Pollefeys, The projective plane, Visual 3D Modeling from Images, <a class="link" href="http://www.cs.unc.edu/~marc/tutorial/tutorial02.html"  target="_blank" rel="noopener"
+    >Tutorial Notes</a>.</li>
+</ol>
+<p>whzecomjm
+2020-01-09 13:10</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2/">射影平面</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.95ba242f0621c356cee5def86376326f_hu5b00630d19d90bb4a4949ace60ead1c3_26338_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 三角恒等式的几何表达"
+                        
+                        data-hash="md5-lbokLwYhw1bO5d74Y3Yybw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">三角恒等式的几何表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/Loxodrome.872db5b32ad5b2e72ceeca96b33675ee_huaa9147bd7c1c05d35a830f4b809679a3_120575_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 斜航线介绍"
+                        
+                        data-hash="md5-hy21syrVsucs7sqWszZ17g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">斜航线介绍</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>TeXmacs on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/texmacs/</link>
+        <description>Recent content in TeXmacs on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 07 Apr 2021 15:39:07 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/texmacs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Texmacs 一些使用技巧</title>
+        <link>https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+        <pubDate>Wed, 07 Apr 2021 15:39:07 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/20220822155248.png" alt="Featured image of post Texmacs 一些使用技巧" /&gt;&lt;h2 id=&#34;开箱使用&#34;&gt;开箱使用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;设置文本空格无连续空格: &lt;code&gt;首选项&amp;gt;键盘&amp;gt;文本模式中的空格键: No Multiple spaces&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设置文档更新刷新两遍: &lt;code&gt;首选项&amp;gt;其他&amp;gt;执行文档更新: 两次&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用前可以删除大多数插件，仅仅保留常用的插件：graph，pari，python，sage，sympy，tikz，tmpy。&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;标准&lt;/code&gt;的断页模式可能会在&lt;strong&gt;断页前或其他类似情景输入换行出现闪退 bug&lt;/strong&gt;。设置 &lt;code&gt;Document&amp;gt;Page..&lt;/code&gt;的断行算法为&lt;code&gt;专业&lt;/code&gt;可以防止此换行 bug。不过专业的断行可能会拖慢编辑器。解决的方法是书写文章时候使用&lt;code&gt;paperus&lt;/code&gt;+标准断行算法, 之后导出文档再转为paper格式。&lt;/li&gt;
+&lt;li&gt;中文文档仅仅保存为 xml 格式（tmml）可以以Unicode方式存储中文，方便预览和版本控制。但是文件大小会比较大，且实时编辑保存会有卡顿。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;常用技巧&#34;&gt;常用技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Shift + 箭头可以框选.&lt;/li&gt;
+&lt;li&gt;MacOS 使用 &lt;code&gt;ctrl + shift + 4&lt;/code&gt; 进入行间公式需要切换为英文输入法, 且先按下 &lt;code&gt;ctrl&lt;/code&gt;.  （Windows版本下快捷键为 &lt;code&gt;Alt+Shift+4&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;文档内的==折叠结构==: &lt;code&gt;Insert -&amp;gt; Fold -&amp;gt; Folded -&amp;gt; Default&lt;/code&gt;
+会产生一个空心的点，表示点击可展开。第一行是可见内容，之后是不可见。&lt;/li&gt;
+&lt;li&gt;向量符号输入是 &lt;code&gt;\vect&lt;/code&gt; 而不是 LaTeX 的 &lt;code&gt;\vec&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;使用某些命令, 比如&lt;code&gt;\label&lt;/code&gt;, &lt;code&gt;\index&lt;/code&gt; 时可以使用 &lt;strong&gt;Tab&lt;/strong&gt; 键代替中间的确认键防止突然跳转.&lt;/li&gt;
+&lt;li&gt;在 Texmacs 中高亮数学公式中的括号， &amp;ldquo;焦点工具栏&amp;quot;中扳手形状的图标,然后点击 &amp;ldquo;color according to nesting level&amp;rdquo; 即可.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;修改宏&#34;&gt;修改宏&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;更改中文环境中的“定理”为英文“Theorem”等: 在一个定理环境中点击扳手符号, 找到 &lt;code&gt;Theorem text...&lt;/code&gt; 修改对应宏的中文名为英文即可.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用的宏命令，&lt;code&gt;\assign&lt;/code&gt;, &lt;code&gt;\value&lt;/code&gt;, &lt;code&gt;\with&lt;/code&gt; 以及 &lt;code&gt;\macro&lt;/code&gt; 和 &lt;code&gt;\&lt;/code&gt;(即 argument，直接输入反斜杠加 argument 的名字即可。) 注意，如果要嵌套的话，需要把每个指令都&lt;code&gt;Enter&lt;/code&gt;执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;定义 definition 的别名&lt;code&gt;\def&lt;/code&gt;（详细参见&lt;a class=&#34;link&#34; href=&#34;https://whzecomjm.github.io/p/texmacs-tips-%e7%bb%99%e5%ae%9a%e7%90%86%e7%8e%af%e5%a2%83%e6%b7%bb%e5%8a%a0%e5%88%ab%e5%90%8d/&#34; &gt;TeXmacs tips: 给定理环境添加别名&lt;/a&gt;）：输入&lt;code&gt;assign&lt;/code&gt;命令将 def 映射到 definition，而命令 definition 需要用 value 来包裹，需要输入的效果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;&amp;lt;assign|def|&amp;lt;value|definition&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;一直回车使之生效，也可以把这些内容放在 preamble 中&lt;code&gt;&amp;lt;hide-preamble| &amp;gt;&lt;/code&gt;中。这一assign方式不如直接修改宏，更不如使用快捷键(修改&lt;code&gt;my-init-texmacs.scm&lt;/code&gt;)（会导致导出 latex，md 等无效。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设置快捷键和快捷输入&#34;&gt;设置快捷键和快捷输入&lt;/h2&gt;
+&lt;p&gt;scheme 代码可以在特定的文档中加入使用（插件或者运行的插件）。&lt;/p&gt;
+&lt;p&gt;使用scheme 可以实现类似于 AHK 的快速输入。 比如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;s u s t c&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;南方科技大学&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意&lt;!-- raw HTML omitted --&gt;每个字符都要分隔&lt;!-- raw HTML omitted --&gt;。这些代码还能添加到默认的用户启动配置。&lt;/p&gt;
+&lt;h3 id=&#34;增加复制到粘贴为-latex-快捷键&#34;&gt;增加复制到/粘贴为 LaTeX 快捷键&lt;/h3&gt;
+&lt;p&gt;通常情况下，我们使用 &lt;code&gt;Edit&amp;gt;Copy to/Paste to&lt;/code&gt; 复制粘贴 Latex 代码。我们可以为这两个动作添加快捷键。打开或者新建文件 &lt;code&gt;vi ~/.TeXmacs/progs/my-init-texmacs.scm&lt;/code&gt; （Windows下目录为 &lt;code&gt;\Appdata\Roaming\TeXmacs\progs\&lt;/code&gt;），增加如下内容&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M-A-c&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;clipboard-copy-import&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;latex&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;primary&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M-A-v&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;clipboard-paste-export&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;latex&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;primary&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;设置的是&lt;code&gt;Win+Alt+c&lt;/code&gt;复制为latex，而 &lt;code&gt;Win+Alt+v&lt;/code&gt;粘贴 latex。详见参考「&lt;a class=&#34;link&#34; href=&#34;https://www.douban.com/group/topic/75062782/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;豆瓣小组&lt;/a&gt;」。（在 Texmacs 内 M 代表 Command/Wind，C 代表 Ctrl，A 代表 Option/Alt。）&lt;/p&gt;
+&lt;h3 id=&#34;增加一些不显示快捷键和工具栏的数学公式&#34;&gt;增加一些不显示快捷键和工具栏的数学公式&lt;/h3&gt;
+&lt;p&gt;比如输入&lt;strong&gt;几分之一&lt;/strong&gt;（且可以嵌套）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;:mode&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;in-math?&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1 /&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;begin &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;math-insert&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;frac&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;go-to-previous-word&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;比如输入&lt;strong&gt;二项式系数&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;:mode&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;in-math?&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;b i n o m&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;begin &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;math-insert&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;binom&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;n&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;go-to-previous-word&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;自带画图的技巧&#34;&gt;自带画图的技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;需要尽可能的画在正中央, 这样裁剪（crop）以后不会有边白.&lt;/li&gt;
+&lt;li&gt;公式模式可以插入 &lt;code&gt;tree&lt;/code&gt; 用于画交换图.&lt;/li&gt;
+&lt;li&gt;画图模式中鼠标右键点击是取消, 左键双击确认曲线.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;bibtex参考文献使用方法&#34;&gt;Bibtex参考文献使用方法&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.texmacs.org/tmweb/home/welcome.en.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texmacs&lt;/a&gt; 中使用参考文献要求如下几步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;写好 .bib文件，并把它放在含 tm 文件的文件夹中。&lt;/li&gt;
+&lt;li&gt;点击 Insert-&amp;gt;Automatic-&amp;gt;Bibliography，然后输入 bib 文件名。&lt;/li&gt;
+&lt;li&gt;在文档需要引用处，点击 Insert-&amp;gt; Link-&amp;gt; citation-&amp;gt; visible/invisible，再输入相应的文献名，&lt;strong&gt;回车&lt;/strong&gt;(!)。（或者使用 &lt;code&gt;\cite&lt;/code&gt;.）&lt;/li&gt;
+&lt;li&gt;点击三次 Document-&amp;gt; Update-&amp;gt; Bibliography, 或者使用快捷键 &lt;code&gt;⌘⇧R&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安装字体以及更新字体缓存&#34;&gt;安装字体以及更新字体缓存&lt;/h2&gt;
+&lt;p&gt;TeXmacs默认的中文字体是Fandol，所以我们需要从Fandol字体的&lt;a class=&#34;link&#34; href=&#34;https://www.ctan.org/tex-archive/fonts/fandol/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;主页&lt;/a&gt;下载，并将字体放在 &lt;code&gt;~\AppData\Roaming\TeXmacs\fonts\truetype&lt;/code&gt; 下面。&lt;/p&gt;
+&lt;p&gt;GNU/Linux 或者 macOS 对应的目录是 &lt;code&gt;~/.TeXmacs/font/truetype&lt;/code&gt;，之后要运行如下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Applications/TeXmacs.app/Contents/MacOS/TeXmacs --delete-font-cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完这个字体以后可以使用中英混排(中文模式).&lt;/p&gt;
+&lt;h2 id=&#34;插件的使用&#34;&gt;插件的使用&lt;/h2&gt;
+&lt;h3 id=&#34;使用-basictex-如何使用-tikz-xypic-等插件&#34;&gt;使用 BasicTex 如何使用 tikz, xypic 等插件&lt;/h3&gt;
+&lt;p&gt;BasicTex 虽然自带 tikz 包, 但是如果直接在 texmacs 中使用tikz插件的话可能会一直显示“busy”, 原因是 texmacs 的 tikz 插件&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;用到了宏包 &lt;code&gt;standalone&lt;/code&gt;, 这需要使用 tlmgr 安装.&lt;/p&gt;
+&lt;p&gt;BasicTex 默认没有安装 xypic. 使用 tikz 即可.&lt;/p&gt;
+&lt;h3 id=&#34;使用-tikz-画图不显示代码&#34;&gt;使用 tikz 画图不显示代码&lt;/h3&gt;
+&lt;p&gt;通常我们并不希望看到代码, 但是也想在文档中留下代码(便于修改), 这时候不要插入 interactive session, 转而插入 executable.  写完代码后, 在插件工具栏点击生成即可.&lt;/p&gt;
+&lt;h2 id=&#34;添加-markdown-转换功能&#34;&gt;添加 Markdown 转换功能&lt;/h2&gt;
+&lt;p&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://github.com/PikachuHy/texmacs-converter-tm2md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tm2md项目&lt;/a&gt;到本地，放在&lt;code&gt;convert&lt;/code&gt;目录下，重命名为&lt;code&gt;markdown&lt;/code&gt;。在windows上，路径为&lt;code&gt;%appdata%/TeXmacs/progs/convert&lt;/code&gt;，在Linux或MacOS上，路径为&lt;code&gt;~/.TeXmacs/progs/convert&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;可以先点击菜单&lt;code&gt;Tools-&amp;gt;Developer tool&lt;/code&gt;打开&lt;code&gt;Developer&lt;/code&gt;菜单。之后点击菜单&lt;code&gt;Developer-&amp;gt;Open my-init-texmacs.scm&lt;/code&gt;, 然后在&lt;code&gt;my-init-texmacs.scm&lt;/code&gt;添加代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;use-modules&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;convert&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;markdown&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;init-markdown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;成功安装后，可以看到&lt;code&gt;File-&amp;gt;Export-&amp;gt;Markdown…&lt;/code&gt;菜单，点击即可导出为markdown文档。&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;豆瓣小组. &lt;a class=&#34;link&#34; href=&#34;https://www.douban.com/group/topic/164712189/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TeXmacs常见问题（2020版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;知乎专栏. &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/56882252&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GNU TeXmacs专栏导航贴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学术文章写作利器: &lt;a class=&#34;link&#34; href=&#34;https://x-wei.github.io/soft/TeXmacs_intro.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TeXmacs介绍&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2021-04-07 20:37&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;以后遇到插件问题可以直接去安装目录, 看看插件是如何写的, 依赖哪些程序和包.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>TeXmacs tips: 给定理环境添加别名</title>
+        <link>https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/</link>
+        <pubDate>Sat, 27 Jun 2020 19:30:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/20220822161931.png" alt="Featured image of post TeXmacs tips: 给定理环境添加别名" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.texmacs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texmacs&lt;/a&gt;是一款非常容易上手和方便的排版工具。它拥有的方便特性对于经常写数学笔记和作业的我非常方便。其他类似于 Typora 的 Markdown 工具虽然也拥有一部分的优势，但是面对大量数学公式时，并不能快速输入数学公式，解析使用的 MathJax 和 KaTeX 也没有那么流畅。&lt;/p&gt;
+&lt;p&gt;熟悉 LaTeX 的用户很容易能上手 TeXmacs，但是想要进阶使用并没有那么容易。比如最近我厌烦了用鼠标点击定理环境（包括定义、命题等等），使用 &lt;code&gt;\theorem&lt;/code&gt; 之类的命令也似乎增加不了多少效率。于是我想着能新建一个新的宏，使用 &lt;code&gt;\thm&lt;/code&gt; 代替定理环境的命令。&lt;/p&gt;
+&lt;p&gt;然而解决的进展的并不一帆风顺。我尝试查看官方文档以及谷歌搜索寻找答案，没有找到任何有用的资料。一无所获的我想到的是去看看 TeXmacs 的源文件。幸运的是我知道了相关文件，&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Applications/TeXmacs.app/Contents/Resources/share/TeXmacs/packages/environment/env-theorem.ts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;里面有类似于 &lt;code&gt;&amp;lt;new-theorem|theorem|Theorem&amp;gt;&lt;/code&gt; 的大量内容。我尝试添加类似的一行命令&lt;code&gt;&amp;lt;new-theorem|thm|Theorem&amp;gt;&lt;/code&gt;。之后重启程序，不过并没有什么用处，:cry:。&lt;/p&gt;
+&lt;p&gt;之后我重新打开了宏编辑器，看了看 &lt;code&gt;theorem&lt;/code&gt; 的宏命令。不过宏命令（定义内容）可以复制出来，但是定义头 &lt;code&gt;&amp;lt;theorem | body&amp;gt;:=&lt;/code&gt; 无法复制，且后面的 &lt;code&gt;body&lt;/code&gt; 是特殊的 &lt;code&gt;Argument&lt;/code&gt;， 无法复制（在定义内容中也有）。当然单纯键入&lt;code&gt;body&lt;/code&gt; 是无效的。当时我尝试的例子是 &lt;code&gt;definition&lt;/code&gt;环境。首先尝试过先输入未定义的 &lt;code&gt;\def&lt;/code&gt; 回车，然后在焦点工具栏中选择扳手符号设置，在设置里，可以（复制粘贴）填入 &lt;code&gt;definition&lt;/code&gt; 环境的定义内容。这样的效果是输入 &lt;code&gt;\def&lt;/code&gt; 并且回车后可以得到一个看起来符合条件的 &lt;code&gt;\definition&lt;/code&gt;，但是由于无法在定义头中写明&lt;code&gt;body&lt;/code&gt;，故而只会生成 &lt;code&gt;definition&lt;/code&gt; 的空环境，无法输入内容，如下图。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/872RYpPiZnVv6mo.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;amqXDtYJ8dTf6Gn.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;由于发现，宏编辑器中并不能很好地利用源文件和宏命令的工具栏，故而我转向打开文件的 &lt;code&gt;preamble&lt;/code&gt;格式（菜单栏 &lt;code&gt;Tools&amp;gt;Macros&amp;gt;Edit preamble...&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;根据 preamble 的工具栏中的各个命令的名称，我猜测可以使用 &lt;code&gt;asign&lt;/code&gt; 来定义一个环境的别名。于是我尝试输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&amp;lt;&lt;/span&gt;\assign|def|definition&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这样得到的 &lt;code&gt;\def&lt;/code&gt; 只会输出文字 definition，并不是我想要的。如果给 &lt;code&gt;definition&lt;/code&gt; 加个反斜杠，可以得到之前的方法得到的半成品。于是我尝试所有的源码宏命令的各个选项，偶然间我发现可以给 definition 加一个 &lt;code&gt;\value&lt;/code&gt; 命令。这样完美解决了这一需求，参见下面这个 gif。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/Z4HmXauY9N6vUWb.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TeXmacs-assign-def.gif&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;不过直接在文档内添加这一指令，生效后会隐藏，但是可能会不小心删除。我们可以把它添加到 &lt;code&gt;preamble &lt;/code&gt; 中的&lt;code&gt;&amp;lt;hide-preamble| &amp;gt;&lt;/code&gt;内。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/6pe8qihbXDIg9aG.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200627202256218.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;Jun 27, 2020 20:19:22&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;过了两天，我发现在 Macros editor 中直接修改 definition 的名字（只保留 def），再点击 OK，也是能做到使用 &lt;code&gt;\def&lt;/code&gt; 来得到一个定义环境。我之前也有想过这样直接改，但是怕修改会替换原本的宏，导致前文中使用完整 definition 的环境会无法显示。实际上，这会生成一个新的宏，且不会对本来的宏产生影响。&lt;/p&gt;
+&lt;p&gt;另，打开 Extract style 可编辑宏和不显示的源码，这比 Edit preamble 更高效。&lt;/p&gt;
+&lt;p&gt;不过进一步发现上面两种方法都会导致导出 latex 不能编译或者生成大量的宏代码。今天看TeXmacs 作者的一篇介绍文章中讲到了一种新的方式，这种新的方式更加简便。即在 &lt;code&gt;my-init-texmacs.scm&lt;/code&gt; 中加入如下代码即可：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;D e f .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;definition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;L e m .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;lemma&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;P r o p .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;proposition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;T h m .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;theorem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;E x .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;example&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后输入 &lt;code&gt;Def.&lt;/code&gt; 等就能自动生成定义环境等。&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;Jun 30, 2020 10:50:44&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

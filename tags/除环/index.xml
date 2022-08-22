@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>除环 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E9%99%A4%E7%8E%AF/</link>
+        <description>Recent content in 除环 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 10 Jan 2017 17:59:48 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E9%99%A4%E7%8E%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>有限除环即是域</title>
+        <link>https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/</link>
+        <pubDate>Tue, 10 Jan 2017 17:59:48 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/tower.jpg" alt="Featured image of post 有限除环即是域" /&gt;&lt;p&gt;如果一个含幺环 R 的每一个非零元有乘法逆，则 R 称为除环（division ring），常记为 D。除环和域只相差乘法交换律，所以交换除环就是域。有时我们也称除环为 skew field，skew 正是指（二元乘法的）不对称。最经典的除环要数哈密顿发现的四元数环，有意思的是，这样的非退化的除环并没有有限的形式。也就是说，我们有如下著名的定理：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理（Wedderburn）&lt;/strong&gt;: 每个有限除环 D 都是域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;此定理又称为 &lt;a class=&#34;link&#34; href=&#34;http://en.wikipedia.org/wiki/Wedderburn%27s_little_theorem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wedderburn little theorem&lt;/a&gt;，最早由 &lt;a class=&#34;link&#34; href=&#34;http://en.wikipedia.org/wiki/Joseph_Wedderburn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Joseph Wedderburn&lt;/a&gt; 在1905年证明。但是当时他给出了的证明，并不正确，在看了 Dickson 的正确证明以后，他修改了自己的证明。所以此定理的归属当时也有争议，不过现在我们通常还是称为 Wedderburn 定理。之后在1931年，&lt;a class=&#34;link&#34; href=&#34;http://en.wikipedia.org/wiki/Ernst_Witt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ernst Witt&lt;/a&gt; 给出了一个优美的&lt;a class=&#34;link&#34; href=&#34;http://www.math.leidenuniv.nl/~hfinkeln/seminarium/eindige_delingsring_is_lichaam.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;初等证明&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;下面整理一下 Witt 的初等证明：&lt;/p&gt;
+&lt;p&gt;设 D 为一有限除环，则 D 的中心 Z(D) 是 D 的有限子域，从而有存在素数 $p$，使得 $\operatorname{char}(Z(D))=p$。因为&lt;a class=&#34;link&#34; href=&#34;https://proofwiki.org/wiki/Field_of_Prime_Characteristic_has_Unique_Prime_Subfield&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;任意一个特征为 p 的域均存在唯一一个素子域(同构于 $\mathbb{Z}/(p)$ 的子域)&lt;/a&gt;，所以 $Z(D)$ 的素子域与 $\mathbb{Z}/(p)$ 同构。从而 $Z(D)$ 可看作为 $\mathbb{Z}/(p)$ 的向量空间。另一方面，容易看出 $D$ 也是 $Z(D)$ 的向量空间。注意，这些空间的维度都是有限的（基于有限除环的有限性）。如下图，设 n,m 分别为线性空间的维度。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/tower.jpg&#34;
+	width=&#34;800&#34;
+	height=&#34;472&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/tower_hu295b39edbdb74bd7ae3f28e9eeb43e08_28149_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/tower_hu295b39edbdb74bd7ae3f28e9eeb43e08_28149_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;有限除环&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;406px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;于是有限线性空间 Z(D) 和 D 的基数 (Cardinality) 分别为 $p^n$ 和 $(p^n) ^m$。因为 $Z(D)$ 是 $D$ 的子域，所以如果能够证明 $m=1$，则就可得到 $D=Z(D)$ 是域。&lt;/p&gt;
+&lt;p&gt;此时，由于需要计算元素数量，我们需要用到&lt;a class=&#34;link&#34; href=&#34;http://en.wikipedia.org/wiki/Conjugacy_class&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;共轭类方程（类数公式）&lt;/a&gt;。此处，我们并不能把类数公式直接用在 $D$ 上，因为 $D$ 本身并不是一个乘法群。所以考虑 D 的全体可逆元 (units) 构成的乘法群 $D^*=D\setminus {0}$，得到如下公式&lt;/p&gt;
+&lt;p&gt;$$(p^n) ^m-1= |D^*| = |Z(D^*)| +\sum_{k=1}^l |C_k| = p^n-1+ \sum_{k=1}^l \frac{ (p^n) ^m-1} {(p^n) ^ {\alpha_k} -1}$$&lt;/p&gt;
+&lt;p&gt;我们还要需要如下两个结论:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果 $p^k - 1 \mid p^n - 1$ 则 $k \mid n$.&lt;/li&gt;
+&lt;li&gt;如果 $k\mid n$，则 $\Phi_n \mid \frac{x^{n}-1}{x^k-1}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接下来我们要用反证法证明 m=1，反设 $m&amp;gt;1$， 则存在 $\zeta$ 为一个 m 阶本原单位根，根据上述结论一，我们有 $\alpha_k \mid m$，再根据结论二，得到分圆多项式&lt;/p&gt;
+&lt;p&gt;$$\Phi_m \mid \frac{x^m-1} {x^{\alpha_k} - 1}.$$&lt;/p&gt;
+&lt;p&gt;从类数公式的两边整除性质，可以得到 $\Phi_m(p^n) \mid p^n-1$。&lt;/p&gt;
+&lt;p&gt;另一方面，显然有&lt;/p&gt;
+&lt;p&gt;$$|p^n-\zeta| &amp;gt;p^n-1$$&lt;/p&gt;
+&lt;p&gt;（详见下图），从而有&lt;/p&gt;
+&lt;p&gt;$$|\Phi_m(p^n)| = \prod_{\zeta} |p^n-\zeta| &amp;gt;p^n-1$$&lt;/p&gt;
+&lt;p&gt;这意味着 $\Phi_m(p^n)$ 不是 $p^n-1$ 的因子。矛盾！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/geometry-proof.jpg&#34;
+	width=&#34;350&#34;
+	height=&#34;213&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/geometry-proof_huf81fa281017f10c7a45c634b0315eeb6_5426_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%9C%89%E9%99%90%E9%99%A4%E7%8E%AF%E5%8D%B3%E6%98%AF%E5%9F%9F/geometry-proof_huf81fa281017f10c7a45c634b0315eeb6_5426_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;几何证明&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;394px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;：上述证明中我并没有进一步说明“任意一个特征为 p 的域均存在唯一一个素子域”的证明，这是因为，再次证明中，其实并不需要 $Z(D)$ 作为向量空间的条件，实际上上述证明过程中， $p^n$ 均可用一个大于1的正整数 $q$ 替代。之后用到的两个引理可以是在分圆多项式中经常出现的结果，证明不是很难，有兴趣可作为习题做做。&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;br&gt;
+2015-05-08&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>函数 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%87%BD%E6%95%B0/</link>
+        <description>Recent content in 函数 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 08 Dec 2020 15:30:24 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>向量法求根式函数值域</title>
+        <link>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</link>
+        <pubDate>Tue, 08 Dec 2020 15:30:24 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
+&lt;p&gt;首先我们给出最常用的两个向量不等式，用以求解函数值域。它们分别是向量的三角不等式和数量积（柯西）不等式。向量的&lt;strong&gt;三角不等式&lt;/strong&gt;指的是，对于任意两个向量 $\vec{a}, \vec{b}$，下列不等式恒成立：
+$$
+||\vec{a}|-|\vec{b}||\leq |\vec{a}+\vec{b}|\leq |\vec{a}|+|\vec{b}|            \qquad\qquad(1)
+$$
+左边不等式取得等号当且仅当 $\vec{a},\vec{b}$ 反向，右边不等式取得等号当且仅当 $\vec{a},\vec{b}$ 同向。当然，一个直接的推论是 $|\vec{a}-\vec{b}|$ 也满足上述不等式，不过等号取得条件恰好和$|\vec{a}+\vec{b}|$相反。&lt;/p&gt;
+&lt;p&gt;另一个&lt;strong&gt;数量积不等式&lt;/strong&gt;也与两个向量的夹角有关。事实上，因为 $\vec{a}\cdot\vec{b}=|\vec{a}| |\vec{b}|\cos\theta$，因此
+$$
+|\vec{a}\cdot\vec{b}|\leq|\vec{a}| |\vec{b}|, \qquad\qquad(2)\
+(\vec{a}\cdot\vec{b})^2\leq |\vec{a}|^2|\vec{b}|^2 \qquad\quad(3)
+$$
+上述不等式的等号取得条件均是$\vec{a},\vec{b}$平行，其中不等式(3)称为柯西 (Cauchy-Schwarz) 不等式。&lt;/p&gt;
+&lt;p&gt;接下来我们看几类简单的根式函数的值域问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;例1&lt;/strong&gt;. 若 $f(x)=\sqrt{2x^2-12x+36}+\sqrt{2x^2-22x+73}$，求 $f(x)$ 的最小值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事实上，这道题目是将军饮马问题的函数形式。原题讲的是在平面直角坐标系中，点 $P(3,-2)$ 经过 $x+y=6$ 直线上一点，到原点的折线段的最小值。也就是有，
+$$
+f(x)=\sqrt{(x-3)^2+(6-x+2)^2}+\sqrt{x^2+(6-x)^2}
+$$
+因此，此函数 $f(x)$ 的定义域为 $\mathbb R$. 我们回到原题，如果需要计算这类函数的值域或者极值问题，我们可以观察两个根式内的函数之间的关系，并试图作化简。可以发现这并不容易。那又如何使用向量法呢？我们可以首先给两个根式内的二次函数配方（这样做的想法在于看看是否刚好是完全平方，则可以去掉根式），得到如下结果：
+$$
+f(x)=\sqrt2 \left[\sqrt{\left(x-\frac{11}{2}\right)^2+\left(\frac{5}{2}\right)^2}+\sqrt{(x-3)^2+3^2}\right]  \qquad\qquad(4)
+$$
+我们可以发现，两个根式都可以化为平方和，且一个有变量，另一个是常数。平方和的根号在向量的坐标表示中正是向量的模。因此，令 $\vec{a}=(x-\frac{11}{2}, \frac{5}{2}), \vec{b}=(3-x,3)$，则可以看出 $\vec{a}+\vec{b}=(-\frac{5}{2},\frac{11}{2})$ 是一个常数向量，因此模必然也是定值。利用向量的三角不等式(1)可以得到，
+$$
+f(x)=\sqrt{2}(|\vec{a}|+|\vec{b}|)\geq \sqrt{2} |\vec{a}+\vec{b}| =\sqrt{73},
+$$
+等号当且仅当 $x=\frac{48}{11}$时， 即$\vec{a},\vec{b}$ 同向时成立。&lt;/p&gt;
+&lt;p&gt;需要注意的是，(4)式中，我们似乎也可以令 $\vec{a}=(x-\frac{11}{2}, \frac{5}{2}), \vec{b}=(x-3,3)$，则 $\vec{a}-\vec{b}=(-\frac{5}{2},-\frac{1}{2})$也是常数向量。利用向量的三角不等式，可得
+$$
+f(x)=\sqrt{2}(|\vec{a}|+|\vec{b}|)\geq \sqrt{2} |\vec{a}-\vec{b}| =\sqrt{13}.
+$$
+这得到一个更小的值！然而 $\sqrt{13}$ 并不是所求的最值。事实上此时，要求 $\vec{a},\vec{b}$ 反向，但平行条件解得 $x=18$，但此时 $\vec{a},\vec{b}$ 却是同向。事实上，在将军饮马背景中，这一不合理的结果是没有经过河边的直线距离。&lt;/p&gt;
+&lt;p&gt;下面我们再看另一类根式函数的值域问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例2. 求函数 $y=\sqrt{1+x}+\sqrt{3-x}$ 的值域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先容易得到函数 $y$ 的定义域为 $[-1,3]$。因为根式内的一次函数的和为常数，即平方和为常数，因此我们可以找寻平方和的不等式，得到一个最值。但是要完整的求此类函数的值域问题，我们需要对函数 $y$ 做变形。
+$$
+y=\sqrt{(\sqrt{1+x}+\sqrt{3-x})^2}=\sqrt{4+2\sqrt{(1+x)(3-x)}}
+$$
+由此根据二次函数的单调性以及$y$定义域可求得 $y$ 的值域。下面我们来思考向量的类比。因为根式满足平方和为常数，因此若令 $\vec{m}=(\sqrt{1+x},\sqrt{3-x})$，则 $|\vec{m}|=2$。那如何理解 $\sqrt{1+x}+\sqrt{3-x}$ 呢？根据向量的坐标表示，它是横坐标和纵坐标的和。但是在此我们可以看成 $\vec{m}$ 与向量 $\vec{n}=(1,1)$ 的数量积！&lt;/p&gt;
+&lt;p&gt;令 $u=\sqrt{1+x}, v=\sqrt{3-x}$， 则 $u,v\geq 0$ 且 $u^2+v^2=4$. 则 $\vec{m}=(u,v), \vec{n}=(1,1)$，$y=\vec{m}\cdot \vec{n}$。&lt;/p&gt;
+&lt;p&gt;下图中的坐标系是 $uOv$，很好地表示了 $y$ 的取值范围（即蓝色阴影矩形的面积）的变化。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108.gif&#34;
+	width=&#34;600&#34;
+	height=&#34;434&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108_hu7a4c01ecc8c39e65bc19dd00899f7246_531460_480x0_resize_box.gif 480w, https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108_hu7a4c01ecc8c39e65bc19dd00899f7246_531460_1024x0_resize_box.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;138&#34;
+		data-flex-basis=&#34;331px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在上述图示中，$\vec{n}=(1,1)=\overrightarrow{OA}$,  $\vec{m}=(u,v)=\overrightarrow{OB}$, 所以
+$$
+y=\overrightarrow{OA}\cdot\overrightarrow{OB}=|\overrightarrow{OA}||\overrightarrow{OC}|=|\overrightarrow{OA&amp;rsquo;}||\overrightarrow{OC}|=S_{Blue}
+$$
+因此可得到 $y\in[2,2\sqrt{2}]$。&lt;/p&gt;
+&lt;p&gt;如下两道题目也可以利用向量法求值域或最值，留作习题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;习题1&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. 求函数 $f(x)=\sqrt{x^2-3x+2}+\sqrt{2+3x-x^2}$ 的最小值。&lt;/p&gt;
+&lt;p&gt;习题2. 求函数 $f(x)=3x+2+4\sqrt{4-x^2}$ 的值域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2020-12-8&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;此题可以用上述两种不等式求解。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

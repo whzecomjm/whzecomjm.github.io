@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Euler expansion of power'><title>[读读欧拉] 二项式公式的一个推广</title>
+
+<link rel='canonical' href='https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='[读读欧拉] 二项式公式的一个推广'>
+<meta property='og:description' content='Euler expansion of power'>
+<meta property='og:url' content='https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='欧拉' /><meta property='article:published_time' content='2018-03-23T01:47:28&#43;08:00'/><meta property='article:modified_time' content='2018-03-23T01:47:28&#43;08:00'/><meta property='og:image' content='https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg' />
+<meta name="twitter:title" content="[读读欧拉] 二项式公式的一个推广">
+<meta name="twitter:description" content="Euler expansion of power"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg' />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/">
+                <img src="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash_hua2a6d5c80f61e0f02711cfea24a144f1_561437_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash_hua2a6d5c80f61e0f02711cfea24a144f1_561437_800x0_resize_q75_box.jpg 800w, /p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash_hua2a6d5c80f61e0f02711cfea24a144f1_561437_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 二项式公式的一个推广" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E5%90%88/" style="background-color: #1d7dsf; color: #fff;">
+                组合
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/">[读读欧拉] 二项式公式的一个推广</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Euler expansion of power
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 23, 2018</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:</p>
+<p>$$(x+y)^{n}={n \choose 0}x^{n}y^{0}+{n \choose 1}x^{{n-1}}y^{1}+\cdots +{n \choose n}x^{0}y^{n},$$</p>
+<p>其中 ${n \choose 2}$ 称为二项式系数, 它等于 $\frac{n!}{k!(n-k)!}$. 二项式定理的一个变形是将 $y$ 替换为 1, 减少为一个变量. 这种形式的二项式公式为
+$$(1+x)^n=\sum_{k=0}^n {n\choose k} x^k.$$
+这也正是我们需要讨论的形式. 现在我们考虑 $(1+x+x^2)^n$, $(1+x+x^2+x^3)^n$, &hellip; 等&quot;多项式&quot;的展开情况. 欧拉在 <a class="link" href="https://arxiv.org/abs/math/0505425"  target="_blank" rel="noopener"
+    >On the expansion of the power of any polynomial (1 + x + x^2+ x^3+ etc.)^n</a> 一文中讨论了这些情况, 并给出了 &ldquo;多项式系数&rdquo; 的定义以及他们和二项式系数之间的关系.</p>
+<p>实际上, 对于任意线性多项式, 我们亦有<a class="link" href="https://zh.wikipedia.org/wiki/%e5%a4%9a%e9%a1%b9%e5%bc%8f%e5%ae%9a%e7%90%86"  target="_blank" rel="noopener"
+    >多项式定理</a>. 它是二项式定理的推广, 使用组合的隔板法即可以证明下列 &ldquo;多项式公式&rdquo;.</p>
+<p>$$(x_{1}+x_{2}+\cdots +x_{t})^{n}=\sum {\frac {n!}{n_{1}!n_{2}!\cdots n_{t}!}}x_{1}^{n_{1}}x_{2}^{n_{2}}\cdots x_{t}^{n_{t}}$$</p>
+<p>其中 $\sum_{i=1}^{t}n_{i}=n$, $0\leq n_{i}\leq n$. 该公式可以用数学归纳法证明.</p>
+<p>现在我们回到欧拉的问题, 看看针对一个变量的情况是否有更有趣的结果.</p>
+<p>先考虑 $(1+x+x^2)^2$, 根据类比, 假设相应有三项式系数 ${n\choose k}^3$ (原文如是写, 虽然比较容易和二项式系数的三次方混淆.) 此时的三项式公式如下</p>
+<p>$$(1+x+x^2)^n= \sum_{k=0}^{2n} {n\choose k}^3 x^k,$$
+它的最后一项是 ${n\choose 2n}^3 x^{2n}$, 其中 ${n\choose 2n}^3=1={n\choose 0}^3$. 进一步地, 可以看出三项式系数的对称性, 我们有如下等式:</p>
+<p>$${n\choose\lambda}^3={n\choose 2n-\lambda}^3.$$
+为了能得到三项式系数的具体值, 我们将原公式变形为 $[1+x(1+x)]^n$, 再套用二项式公式, 得到</p>
+<p>$$[1+x(1+x)]^n=\sum_{k=0}^{n}x^k(1+x)^k.$$
+考察系数得到
+$${n\choose \lambda}^3=\sum_{k=0}^{\lambda}{\lambda-k\choose k}{n\choose \lambda-k}.$$</p>
+<p>注意二项式系数$a\choose b$中, 如果 $b&gt;a$ 或者 $b&lt;0$, 则系数的值都为零.</p>
+<p>紧接着我们考虑 $(1+x+x^2+x^3)^n$, 将它改写为 $[1+x(1+x+x^2)]^n$ 后考察系数得到:</p>
+<p>$${n\choose \lambda}^4=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^3 {n\choose \lambda-k}^2.$$
+注意上式中的&quot;平方&quot;是指二项式系数, 和三项式系数类似. 根据进一步地举例考察, 我们得到最终的结论如下:</p>
+<blockquote>
+<p><strong>定理.</strong> 多项式 $1+x+x^2+\dots+x^{\theta}$ 的 $n$ 次幂展开为
+$$(1+x+x^2+\dots+x^{\theta})^n=\sum_{k=0}^{n\theta} {n\choose k}^{\theta+1} x^k,$$
+其中 &ldquo;$n+1$项式系数&rdquo; ${n\choose k}^{\theta+1}$ 由下列递推公式给出
+$${n\choose k}^{\theta+1}=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^{\theta} {n\choose \lambda-k}^2.$$</p>
+</blockquote>
+<p>欧拉并没有给出该定理的证明, 他只是通过归纳 $\theta=2,3,4,5$ 的结果推广得到, 但是这个结果用数学归纳法证明不是难事. 关键是结果看起来还是挺美的.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%AC%A7%E6%8B%89/">欧拉</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/_hu83c4af82e415789534fbb9ccd4c8e145_218460_fe7a1ad81a7215d86b9827ad3df04b7f.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 一个有理式的对称公式"
+                        
+                        data-hash="md5-SZW1nGFmM&#43;i84Hu4clUKjA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[读读欧拉] 一个有理式的对称公式</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/_hu32b013bf8f0b7b970f974267fa7c6678_3536828_5c731a5f0ae3eaa7be41f8676a4c28a6.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示"
+                        
+                        data-hash="md5-3cviYQEraDFvyiXGeOAlVw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.a856ce6ea953335b26e4b0185753e26e_hu0a16cb1dbb8cceabb23d7af20e42d092_218999_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 向量法求根式函数值域"
+                        
+                        data-hash="md5-qFbObqlTM1sm5LAYV1Pibg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">向量法求根式函数值域</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/_huf300c14348b6b48ca97f1f6d21d7b4fa_38995_473e75c98bc190d1e3c7eb626c45cd7e.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 幂平均不等式和对称法"
+                        
+                        data-hash="md5-9kexJDPKvYaLdFDhg6jW1Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">幂平均不等式和对称法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/_huce2ce4ebc46bd238f374a8b645a9cd16_63394_df96710032e24c1f2bce421c679b5c50.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 拉姆齐数一个下界的概率证明"
+                        
+                        data-hash="md5-Ufri9uLHBJTPZBeXfMzuGg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">拉姆齐数一个下界的概率证明</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

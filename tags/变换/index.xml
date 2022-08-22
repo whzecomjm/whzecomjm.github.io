@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>变换 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%8F%98%E6%8D%A2/</link>
+        <description>Recent content in 变换 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 01 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%8F%98%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>双曲、抛物与椭圆变换</title>
+        <link>https://whzecomjm.github.io/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/</link>
+        <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E4%B8%8E%E6%A4%AD%E5%9C%86%E5%8F%98%E6%8D%A2/claudel-rheault-YHHOdKtmlR8-unsplash.jpg" alt="Featured image of post 双曲、抛物与椭圆变换" /&gt;&lt;p&gt;分式线性变换可以分成以上三类：双曲变换，抛物变换以及椭圆变换，定义这些变换首先需要定义FLT的迹，这个迹和方阵的迹的定义稍微有点不同，确切的说是它的平方。考虑&lt;/p&gt;
+&lt;p&gt;$$A=\left(\begin{array}{ll}a&amp;amp;b\\ c&amp;amp;d\end{array}\right)\in SL(2,\mathbb{R})$$&lt;/p&gt;
+&lt;p&gt;（将一个$GL(2,\mathbb{R})$的变换同时除以$\sqrt{ad-bc}$,再变成特殊线性群。）于是我们定义$\tau{(\gamma)}=\mathrm{Tr}(A)^2=(a+d)^2$，其中$\gamma(\zeta)=(az+b)/(cz+d)$，$ad-bc=1$。我们可以证明：&lt;strong&gt;共轭FLT拥有一样的迹&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因为我们已经有 $ad-bc=1,(a+d)^2=\tau{(\gamma)}$。于是显然有：&lt;/p&gt;
+&lt;p&gt;$$(a-d)^2+4bc=\tau{(\gamma)}-4$$&lt;/p&gt;
+&lt;p&gt;当c=0时，之前我们已经提到$\infty$是一个固定点，并且另一个固定点为$b/(d-a)$，于是如果$a-d=0$，则有$a=d=1$或者$a=d=-1$，$ad-bc-ad=1$,于是迹为$(1+1)^2=4$。如果$a-d\neq0$，则有两个不动点，并且迹大于4。当$c\neq0$，则可以找到两个不动点&lt;/p&gt;
+&lt;p&gt;$$z_0=\frac{a-d\pm\sqrt{(a-d)^2+4bc}}{2c}$$&lt;/p&gt;
+&lt;p&gt;于是我们可以根据上述的定义可以将$\gamma$分成三类（如果不是恒等变换）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\gamma$是抛物型的当且仅当$\tau{(\gamma)}=4$;&lt;/li&gt;
+&lt;li&gt;$\gamma$是椭圆型的当且仅当$\tau{(\gamma)}\in[0,4)$;&lt;/li&gt;
+&lt;li&gt;$\gamma$是双曲型的当且仅当$\tau{(\gamma)}\in(4,+\infty)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;进一步的我们有&lt;a class=&#34;link&#34; href=&#34;http://www.maths.manchester.ac.uk/~cwalkden/hyperbolic-geometry/lecture10.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如下结论&lt;/a&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;抛物型的FLT共轭于平移变换;并且共轭于$z\mapsto z+1$或者$z\mapsto z-1$；&lt;/li&gt;
+&lt;li&gt;双曲型的FLT共轭于一个放缩变换，$z\mapsto kx$，其中$k&amp;gt;0$；&lt;/li&gt;
+&lt;li&gt;椭圆型的FLT共轭于一个旋转变换，$z\mapsto e^{i\theta}z$。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
+&lt;p&gt;[1] Lyndon and Ullman, Groups of Elliptic Linear Fractional Transformations&lt;/p&gt;
+&lt;p&gt;[2] Classifying Mobius transformations: conjugacy, trace, and applications to parabolic transformations&lt;/p&gt;
+&lt;p&gt;[3] Classifying Mobius transformations: hyperbolic and elliptic transformation&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

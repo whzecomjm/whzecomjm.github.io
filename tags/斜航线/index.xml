@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>斜航线 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E6%96%9C%E8%88%AA%E7%BA%BF/</link>
+        <description>Recent content in 斜航线 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 24 Dec 2015 06:50:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%96%9C%E8%88%AA%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>斜航线介绍</title>
+        <link>https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</link>
+        <pubDate>Thu, 24 Dec 2015 06:50:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/Loxodrome.png" alt="Featured image of post 斜航线介绍" /&gt;&lt;p&gt;斜航线(Loxodrome)又叫恒向线，顾名思义，它是基于船舶航行背景的。Loxodrome最初是一个希腊词，loxos的意思是oblique，即是倾斜的，dromos是bearing，方位的意思。后来在17世纪这个词为了解释 Nune 这方面的工作时，被人拉丁化了，成为一个拉丁词语。我们也用Rhumb(或Rhumb Line)这个词代替之。实际上呢，比较抠门的人是有区别这两个名词的，他们的Rhumb是特指恒定的方位，而把loxodrome是指这条运动曲线。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;斜航线的定义就是：在地球上保持恒定方位的运动路径。比如，始终朝着北偏东30度方向运动。基于航海背景的原因，为了统一文章的表述，我们就把这种运动就直接称之为航行就好了。&lt;/p&gt;
+&lt;p&gt;进一步的，对于地球而言，定义方向的最好手段，不是在夜晚的北半球寻找北极星以外，而是利用罗盘，利用地磁场，并且我们近似认为磁南北极和北南极重合。这样，呈现在地图上，经线就是我们判断方向的最好依据。当然，地图上还有纬线，但是还原到地球本身上去时，我们会发现，纬线都是闭合的并没有方向性，给一条纬线，并不知道哪边是东哪边是西，也就是说东西实际上是相对的。当然，其实最主要的原因还是南北极能在指南针中很好的识别，何苦再去弄一些不方便的东西。&lt;/p&gt;
+&lt;p&gt;所以，我们得到斜航线就是满足在曲线上每一点的切线都和过改点的经线交出同样大小的角度的曲线。因此，每条纬线都是一个斜航线(看起来好像不斜哈)，每两条对应的经线组成的经线圈也是斜航线。在地图上，这两种斜航线，是唯一不是无限长的斜航线。其余的所有的斜航线易知都是趋向于南北极的，理论上是到达不了南北极。这些斜航线的赤道平面投影是对数螺线。&lt;/p&gt;
+&lt;p&gt;我们想要了解其存在的意义，就必须真正知道其存在的意义。因为，除了前面说的经线圈和0度纬线，斜航线显然都不是大圆，所以它并不是两点之间最短的航线。之所以不选择最短的的大圆作为航行时的航线，其实是有原因的。这是因为，对于一般的情况，要做到沿着最短航线航行实际上是要一直调整船舶的航向的。看过Titanic的都知道，船上的舵不是一直都有人在那里转的，而且不遇上冰山或者船长命令什么的根本就不会理它。如今的航线，实际上既不是大圆也不是完全的斜航线，而是多个斜航线复合在一起，在一段路程内会适当调节的航线，并且这个航线是接近于大圆的。但是，几百年前，当时还处于探索海洋的阶段，要做到直接找到大圆的航线，显然是不可能的。&lt;/p&gt;
+&lt;p&gt;实际上，斜航线的理论也是在航海探索之后才出现的。这自然要追述到最初有人开始相信地球并不是平的的时候，自那以后，航海家们就意识到为什么明明在北偏东30度的地方，我一直都是北偏东30度的航行，最后发现会有所偏差。好吧，这个例子是我编的，我想这之前，他们还没有这么远的航行，或者把这个现象归结于其他很多各种误差吧。意识到这一点的真正故事后面会讲到。&lt;/p&gt;
+&lt;p&gt;在Introduction中还有一个很重要的概念要讲到，Mercator Projection(墨卡托投影法).又称正轴等角圆柱投影。圆柱投影的一种，由荷兰地图学家墨卡托（G.Mercator）于1569年创拟。为地图投影方法中影响最大的。&lt;/p&gt;
+&lt;p&gt;设想一个与地轴方向一致的圆柱切于或割于地球，按等角条件将经纬网投影到圆柱面上，将圆柱面展为平面后，得平面经纬线网。投影后经线是一组竖直的等距离平行直线，纬线是垂直于经线的一组平行直线。各相邻纬线间隔由赤道向两极增大。该投影具有斜航线被表示成直线的特性，故广泛用于编制航海图和航空图等。&lt;/p&gt;
+&lt;h2 id=&#34;历史&#34;&gt;历史&lt;/h2&gt;
+&lt;p&gt;在正式讲历史之前，先预告一下，讲完历史之后接下来的工作，主要体现在三个方面，墨卡托投影的构建；在地图上两点如何找斜航线；如何计算两点之间的斜航线的距离。&lt;/p&gt;
+&lt;p&gt;航海的背景想必大家都已经知道，从15世纪末开始，就有一大批热血青年为了美好的未来奋斗在茫茫的大西洋上，虽然充满了未知和敬畏，但是他们还是勇敢的探索着。显然，人的胆量还是有限度的，当最初对大西洋深处一无所知的时候，航海家们还是小心翼翼地沿着欧洲非洲大陆的边缘探索，其中比较有代表性的就是达伽马。看看这段时期的地图就可以发现，地图上充满着黑色的未知的世界，所了解的海洋或者海岛都是靠近大陆的。有趣的是，第一个沿着海边航行的迪亚士当他航行过了赤道后，就发现找不到北极星了。晚上航行的安全感就少了不少，于是就回去了。相比他应该跟坚信地球是球体了，同时，也给当时的地图带来了新的纬度——南纬。所以之后哥伦布才会带着这样坚定的信念，开始往西航行了。在他之后的Amerigo(1501)沿着美洲东海岸到达了南美。这之后，人人渐渐发现，经线之间的距离不是均匀的。&lt;/p&gt;
+&lt;p&gt;由于当时航线是一个国家尤其是像葡萄牙这样的海洋国家的命脉，葡萄牙的国王还禁止了地球仪在航行中的使用。他们怕他们的技术被其他国家偷去。但是这丝毫不会影响航海事件如潮水般的汹涌。在1543年，终于有一个做理论的人出现了，他的名字叫Pedro Nunes。他明确提出了斜航线的概念，并且粗略的用他的理论给航海家们以指导。开创性的工作是属于其后的Mercator于1569做出来的。Mercator做出了前文提到的Mercator’s Projection,并且绘制了第一张投影后的地图。地图上，两个地点用直线表示，给定了航向方位角，船舶很容易利用这样的地图在大海中航向。类似于伽利略的状况，Mercator和Nunes都受到了当时基督教会的庭审。所以，最后Nunes搞哲学去了，Mercator还坐了7个月的牢。不过，由于那时候还没有微积分，所以，理论上的东西也多是以几何的形式来表达近似的。&lt;/p&gt;
+&lt;h2 id=&#34;一些问题&#34;&gt;一些问题&lt;/h2&gt;
+&lt;p&gt;在历史讲述开始之前，我们已经提及了这节要讲的内容。首先是关于Mercator投影的。前面已经说到，Mercator是保角的，所以投影后的在角度上是不会扭曲的，只是在位置上会产生扭曲，并且是纬度的方向(包括可分解到纬度)的长度会变化。既然是保角而且正轴，所以经线都是彼此平行的，纬线也是如此，并且长度变得一样了。&lt;/p&gt;
+&lt;p&gt;我们将σ(L)定义为纬度为L时的“局部拉伸因子”，如果假定地球是个球体，在Mercator的地图上显然有σ(L)=sec L.如果还要考虑离心率的话，公式就会稍微复杂一点，&lt;/p&gt;
+&lt;p&gt;$$ \sigma(L)=\frac{(1-e^2) \sec{L}} {1-e^2 \sin^2 L} $$&lt;/p&gt;
+&lt;p&gt;地球的偏心率是大概0.08吧。接下来，有局部的拉伸因子，就可以算出总的拉伸量了。定义从赤道到L纬线的总拉伸量 $\sum(L)=\int_0^L \sigma(l)dl$. Σ(L)就是在地图中，纬线L到达赤道的垂直距离。&lt;/p&gt;
+&lt;p&gt;在Mercator地图里面，直线可以用Σ(L)和经度M来线性表示，Σ-Σ(L1)=a(M-M1).所以，对于任意的两点来说，斜率或者是斜航线的方位就满足：&lt;/p&gt;
+&lt;p&gt;$$
+a=\frac{\Sigma_2 - \Sigma_1}{M_2-M_1}\\
+\theta=\mathrm{arccot}\frac{ \Sigma_2-\Sigma_1} {M_2-M_1}
+$$&lt;/p&gt;
+&lt;p&gt;其中θ是与北极所夹的角。&lt;/p&gt;
+&lt;p&gt;最后计算一下两点之间的最短的斜航线的距离。在球面几何里，弧长公式为：&lt;/p&gt;
+&lt;p&gt;$$
+\left(\frac{ds}{R}\right)^2 = dL^2 + \left(\frac{dM}{\sigma(L)}\right)^2
+$$&lt;/p&gt;
+&lt;p&gt;于是有：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}\frac{ds}{dL} &amp;amp;= R \sqrt{1+\frac{1}{\sigma^2(L)} \left(\frac{dM}{dL}\right)^2} \\ &amp;amp;=R\sqrt{1+\frac{1}{\sigma^2(L)} \left(\frac{dM}{d\Sigma}\right)^2 \left(\frac{d\Sigma}{dL}\right)^2}\\ &amp;amp;=R\sqrt{1+\frac{1}{a^2}}\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;所以两点之间的距离为：&lt;/p&gt;
+&lt;p&gt;$$
+D_{rh}=\int ds=\int_{L_1}^{L_2} \frac{ds}{dL}dL = R\sqrt{1+\frac{1}{a^2}} (L_2-L_1)
+$$&lt;/p&gt;
+&lt;p&gt;进一步由a与θ的关系可知：&lt;/p&gt;
+&lt;p&gt;$$D_{rh}=R|\sec\theta| |L_2-L_1|$$&lt;/p&gt;
+&lt;p&gt;如果直接带入a关于M和Σ的关系式，则有&lt;/p&gt;
+&lt;p&gt;$$
+D_{rh}=R\frac{\sqrt{\Delta\Sigma^2 +\Delta M^2} } {|\Delta\Sigma/\Delta L|}
+$$&lt;/p&gt;
+&lt;p&gt;对于球体来说，就有&lt;/p&gt;
+&lt;p&gt;$$
+\Sigma(L)=\ln(\sec L+\tan L) = \ln\left(\tan \frac{1}{2} \left(\frac{\pi}{2}+L\right)\right)
+$$&lt;/p&gt;
+&lt;p&gt;可以对比一下两点间大圆的距离公式：&lt;/p&gt;
+&lt;p&gt;$$
+D_{gc}=R\arccos (\sin L_1\sin L_2 + \cos L_1 \cos L_2 \cos(M_2-M_1))
+$$&lt;/p&gt;
+&lt;p&gt;以下是一些实际航行的数据：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;City&lt;/th&gt;
+&lt;th&gt;Latitude/Longitude&lt;/th&gt;
+&lt;th&gt;Comments&lt;/th&gt;
+&lt;th&gt;$D_{gc}$&lt;/th&gt;
+&lt;th&gt;$D_{rh}$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;London&lt;/td&gt;
+&lt;td&gt;51°32&amp;rsquo;N / 0°10&amp;rsquo;W&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5,564&lt;/td&gt;
+&lt;td&gt;5,802&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bogotá&lt;/td&gt;
+&lt;td&gt;4°32&amp;rsquo;N / 74°5/W&lt;/td&gt;
+&lt;td&gt;colongitudinal&lt;/td&gt;
+&lt;td&gt;4,024&lt;/td&gt;
+&lt;td&gt;4,030&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Beijing&lt;/td&gt;
+&lt;td&gt;39°55&amp;rsquo;N / 116°23&amp;rsquo;E&lt;/td&gt;
+&lt;td&gt;colatitudinal&lt;/td&gt;
+&lt;td&gt;11,019&lt;/td&gt;
+&lt;td&gt;14,380&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Canberra&lt;/td&gt;
+&lt;td&gt;35°31&amp;rsquo;S / 149°10&amp;rsquo;E&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;16,230&lt;/td&gt;
+&lt;td&gt;6,408&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;最后重申一句，两点之间的斜航线有无穷多个，上述公式都是求最短的。
+Understanding_Map_Projections.&lt;/p&gt;
+&lt;p&gt;有一点，就是当θ不等于0或者90度时，即一般的斜航线都会无穷趋近于南北极，这时南北极都是奇异点，不知道叫什么名字。在球面上画满θ=0的斜航线，形成的斜航线簇南北极是结点，θ=90度的斜航线簇，南北极为中心。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更新一个很好的相关文献: &lt;a class=&#34;link&#34; href=&#34;http://downloads2.esri.com/support/documentation/ao_/710Understanding_Map_Projections.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Understanding_Map_Projections&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

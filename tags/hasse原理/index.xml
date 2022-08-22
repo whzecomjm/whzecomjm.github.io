@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hasse原理 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/hasse%E5%8E%9F%E7%90%86/</link>
+        <description>Recent content in Hasse原理 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 24 Dec 2015 05:50:18 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/hasse%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>函数域上二次型的 Hasse 原理</title>
+        <link>https://whzecomjm.github.io/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/</link>
+        <pubDate>Thu, 24 Dec 2015 05:50:18 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%87%BD%E6%95%B0%E5%9F%9F%E4%B8%8A%E4%BA%8C%E6%AC%A1%E5%9E%8B%E7%9A%84-hasse-%E5%8E%9F%E7%90%86/jan-kahanek-fVUl6kzIvLg-unsplash.jpg" alt="Featured image of post 函数域上二次型的 Hasse 原理" /&gt;&lt;p&gt;经典的 Hasse 原理或者称为全局-局部原理是数论中著名结果。对于一些给定形式的多项式方程，如果我们需要判定或者得到他们的整数解或者有理数解时，运用这一原理，我们只需要研究方程在其所有完备域上的解即可，也就是在实数域和 p-adic 数域上的解。这表面上看起来是把问题复杂化了，但是完备域上的性质比有理数域要好得多，所以在很多情况下，这是一种简化。这一问题在二次型里就有更加有趣的结果。虽然二次型方程是一般多项式方程的简化，但是实际上，对于一些高次方程，现在已经找到不少 Hasse 原理的反例，因此显得不是那么重要。而且，二次型的理论比起高次型要完善的多，所以，研究各种数域上二次型的非奇异零点更有工具上的支持。&lt;/p&gt;
+&lt;p&gt;关于整数的二次型的最早突破性工作来自于闵可夫斯基，之后在1923年，Hasse 完善了他的结果到有理数上的二次型。并且，之后还推广到任意代数数域上。这些结果并成为 Hasse-Minkowshi 定理。这个定理在有理数域上有很多具体的形式，比如下面这个结果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个有理数域上的本原二次型有非奇异零点当且仅当它是非正定的且有对任意 $n&amp;gt;2$ 的模 $n$ 本原同余解。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一个本原二次型从属于高斯引理中的本原多项式，它是被重新规整后的整互素系数的对角型二次型。非正定指的是二次型有且仅有一次系数（正负）符号改变。本原同余解是指同余方程的解且最大公约数与被模数互素。&lt;/p&gt;
+&lt;p&gt;文章中作者还给出来一个更加详细的形式，这里就不赘述了。文中用了一定的篇幅去证明这个结果，证明过程中用到了 Hensel 引理和 Hasse-Minkowshi 定理。 进一步地，我们可以将代数数域上的 Hasse 原理推广到所有的全局域。全局域包括代数数域和有限域的函数域。值得注意的是，有限域的函数域，比如 $F_q(t)$ 的完备化是洛朗级数域。用更加精炼的语言描述新的 Hasse 原理如下：$q$ 是全局域 $k$ 上的二次型，如果 $q$ 在所有完备域 $k_v$ 上是各向同性( isotropic )的，则其在 $k$ 上也是各向同性的。&lt;/p&gt;
+&lt;p&gt;文章的最后部分就讨论到了函数域上的 Hasse 原理，在函数域上我们讨论一个域的不变量 $u$。 u-不变量的定义如下：&lt;/p&gt;
+&lt;p&gt;$$u(K)=\sup\{\dim(q)|q \text{ anisotropic quadratic form over }K\}$$&lt;/p&gt;
+&lt;p&gt;根据 Hasse-Minkowshi 定理我们可以计算出代数数域的函数域和 p-adic 数域的函数域的 完备域的u-不变量都是8。而如果 Hasse 原来在这些域上成立的话，则可以导出他们本身的u-不变量也是8。且先不说，Hasse 原理本身的适用性，就连这些域本身的u-不变量是否有限都是难题。Parimala，V. Suresh 以及 Heath-Brown 和 Leep 在 2010 年左右全部已经解决了 p-adic 数域的 u-不变量，并且随后 Colliot-Thelene， Parimala 和 Suresh 得到了相应的 Hasse 原理。而数域上的函数域的u-不变量的有限性和是否等于8仍然是一个未解之题。不过，在2012年 Lieblich，Parimala 和 Suresh 得到一个基于 Colliot-Thelene 猜想成立的结果。结果表明，如果 Colliot-Thelene 猜想成立的话，那么代数数域的函数域的u-不变量是有限的。而代数数域的函数域上是否适用 Hasse 原理，还是远远未知的。&lt;/p&gt;
+&lt;p&gt;2015-12-24&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>欧拉 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E6%AC%A7%E6%8B%89/</link>
+        <description>Recent content in 欧拉 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 23 Sep 2018 15:21:42 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%AC%A7%E6%8B%89/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>欧拉是怎么发现平方倒数级数公式的</title>
+        <link>https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</link>
+        <pubDate>Sun, 23 Sep 2018 15:21:42 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Euler Archive&lt;/a&gt; 。上面有不少欧拉的历史以及原著（包括一些翻译版），有兴趣可以去看看。之前我也花了一些时间去看了一些欧拉微积分和数论方向的文章（比如读读欧拉系列），发现很适合刚上大学甚至高中生去读。&lt;/p&gt;
+&lt;p&gt;下面我讲一下贝塞尔问题的解决过程吧（也就是平方倒数级数公式）。其实学过高数的人都应该知道欧拉当初是怎么证明的，虽然不算是十分严格，但是非常精巧。可是他是怎么发现这个公式等于 $\pi^2/6$ 的呢？&lt;/p&gt;
+&lt;p&gt;首先，欧拉从几何级数的等式出发 $$1+x+ x^2 +\cdots + x^{n-1} = \frac{1-x^n}{1-x}$$ 然后两边取不定积分，得到 $$x+ \frac{x^2}{2} +\cdots + \frac{x^n}{n} = \int\frac{1-x^n}{1-x}dx$$&lt;/p&gt;
+&lt;p&gt;注意，左边 $x$ 取 $1$的话就是调和级数的前n项（n-partial sum），它等于右边取从0到1的定积分（瑕积分）。由于左右的相等，可以定义类似于 n=1/2-partial sum 的非整数部分和，对于这个例子：&lt;/p&gt;
+&lt;p&gt;$$\int_{0}^1 \frac{1-\sqrt{x}}{1-x}dx =\int_{0}^1 \frac{1}{1+\sqrt x}dx =2-2\ln 2$$&lt;/p&gt;
+&lt;p&gt;现在，我们已经通过积分已经把几何级数和调和级数联系起来了。欧拉尝试继续积分，左边得到&lt;/p&gt;
+&lt;p&gt;$$\frac{x^2}{1\cdot 2} + \frac{x^3}{2\cdot 3} + \cdots + \frac{x^{n+1}}{n\cdot(n+1)}$$
+此时，分母还不是我们想要的结果（我们想要得到平方项），欧拉敏锐地发现只要在积分前除以x即可。&lt;/p&gt;
+&lt;p&gt;$$\int\frac{1}{x} \left(x +\frac{x^2}{2} + \cdots+\frac{x^n}{n} \right)dx = x+ \frac{x^2 }{2^2} + \frac{x^3}{3^2} + \cdots+\frac{x^n}{n^2}$$
+故，我们有&lt;/p&gt;
+&lt;p&gt;$$\int^1_0 \frac{1}{x} \left(\int_0^x \frac{1-y^n} {1-y}dy\right) dx = 1+\frac{1}{4}+\cdots + \frac{1}{n^2}$$&lt;/p&gt;
+&lt;p&gt;当 n 趋于无穷大时，我们就可以从左边的式子估计平方倒数级数。接下来才是欧拉真正厉害之处，他的算数功底就不提了，相传他双目失明以后，所有的计算都是大脑中进行的。欧拉之所以是欧拉，当他看到左边的积分后，用数值估计的方法算出来大约是 &lt;em&gt;1.644924&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;这看起来有些不可思议，但是事实就是如此。而且得到的这个数字可能对于大多数人来说都是无意义的，但是欧拉一眼就看出来是 $\pi^2 / 6$. 当他得到这个结果以后，之后的补证大家都比较清楚了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转自&lt;a class=&#34;link&#34; href=&#34;http://www.zhihu.com/question/29886804/answer/46081140&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的知乎回答&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 二项式公式的一个推广</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</link>
+        <pubDate>Fri, 23 Mar 2018 01:47:28 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
+&lt;p&gt;$$(x+y)^{n}={n \choose 0}x^{n}y^{0}+{n \choose 1}x^{{n-1}}y^{1}+\cdots +{n \choose n}x^{0}y^{n},$$&lt;/p&gt;
+&lt;p&gt;其中 ${n \choose 2}$ 称为二项式系数, 它等于 $\frac{n!}{k!(n-k)!}$. 二项式定理的一个变形是将 $y$ 替换为 1, 减少为一个变量. 这种形式的二项式公式为
+$$(1+x)^n=\sum_{k=0}^n {n\choose k} x^k.$$
+这也正是我们需要讨论的形式. 现在我们考虑 $(1+x+x^2)^n$, $(1+x+x^2+x^3)^n$, &amp;hellip; 等&amp;quot;多项式&amp;quot;的展开情况. 欧拉在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0505425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;On the expansion of the power of any polynomial (1 + x + x^2+ x^3+ etc.)^n&lt;/a&gt; 一文中讨论了这些情况, 并给出了 &amp;ldquo;多项式系数&amp;rdquo; 的定义以及他们和二项式系数之间的关系.&lt;/p&gt;
+&lt;p&gt;实际上, 对于任意线性多项式, 我们亦有&lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/%e5%a4%9a%e9%a1%b9%e5%bc%8f%e5%ae%9a%e7%90%86&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;多项式定理&lt;/a&gt;. 它是二项式定理的推广, 使用组合的隔板法即可以证明下列 &amp;ldquo;多项式公式&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;$$(x_{1}+x_{2}+\cdots +x_{t})^{n}=\sum {\frac {n!}{n_{1}!n_{2}!\cdots n_{t}!}}x_{1}^{n_{1}}x_{2}^{n_{2}}\cdots x_{t}^{n_{t}}$$&lt;/p&gt;
+&lt;p&gt;其中 $\sum_{i=1}^{t}n_{i}=n$, $0\leq n_{i}\leq n$. 该公式可以用数学归纳法证明.&lt;/p&gt;
+&lt;p&gt;现在我们回到欧拉的问题, 看看针对一个变量的情况是否有更有趣的结果.&lt;/p&gt;
+&lt;p&gt;先考虑 $(1+x+x^2)^2$, 根据类比, 假设相应有三项式系数 ${n\choose k}^3$ (原文如是写, 虽然比较容易和二项式系数的三次方混淆.) 此时的三项式公式如下&lt;/p&gt;
+&lt;p&gt;$$(1+x+x^2)^n= \sum_{k=0}^{2n} {n\choose k}^3 x^k,$$
+它的最后一项是 ${n\choose 2n}^3 x^{2n}$, 其中 ${n\choose 2n}^3=1={n\choose 0}^3$. 进一步地, 可以看出三项式系数的对称性, 我们有如下等式:&lt;/p&gt;
+&lt;p&gt;$${n\choose\lambda}^3={n\choose 2n-\lambda}^3.$$
+为了能得到三项式系数的具体值, 我们将原公式变形为 $[1+x(1+x)]^n$, 再套用二项式公式, 得到&lt;/p&gt;
+&lt;p&gt;$$[1+x(1+x)]^n=\sum_{k=0}^{n}x^k(1+x)^k.$$
+考察系数得到
+$${n\choose \lambda}^3=\sum_{k=0}^{\lambda}{\lambda-k\choose k}{n\choose \lambda-k}.$$&lt;/p&gt;
+&lt;p&gt;注意二项式系数$a\choose b$中, 如果 $b&amp;gt;a$ 或者 $b&amp;lt;0$, 则系数的值都为零.&lt;/p&gt;
+&lt;p&gt;紧接着我们考虑 $(1+x+x^2+x^3)^n$, 将它改写为 $[1+x(1+x+x^2)]^n$ 后考察系数得到:&lt;/p&gt;
+&lt;p&gt;$${n\choose \lambda}^4=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^3 {n\choose \lambda-k}^2.$$
+注意上式中的&amp;quot;平方&amp;quot;是指二项式系数, 和三项式系数类似. 根据进一步地举例考察, 我们得到最终的结论如下:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理.&lt;/strong&gt; 多项式 $1+x+x^2+\dots+x^{\theta}$ 的 $n$ 次幂展开为
+$$(1+x+x^2+\dots+x^{\theta})^n=\sum_{k=0}^{n\theta} {n\choose k}^{\theta+1} x^k,$$
+其中 &amp;ldquo;$n+1$项式系数&amp;rdquo; ${n\choose k}^{\theta+1}$ 由下列递推公式给出
+$${n\choose k}^{\theta+1}=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^{\theta} {n\choose \lambda-k}^2.$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;欧拉并没有给出该定理的证明, 他只是通过归纳 $\theta=2,3,4,5$ 的结果推广得到, 但是这个结果用数学归纳法证明不是难事. 关键是结果看起来还是挺美的.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 一个有理式的对称公式</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</link>
+        <pubDate>Thu, 22 Mar 2018 00:43:26 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{a-b}+\frac{1}{b-a}=0$$&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{(a-b)(a-c)}+\frac{1}{(b-a)(b-c)}+\frac{1}{(c-a)(c-b)}=0$$&lt;/p&gt;
+&lt;p&gt;上述结果是一种 &amp;ldquo;轮换对称&amp;rdquo;, 可以很自然地推广到任意有限多个不相等的数，这个结果参见 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0502425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;An arithmetic theorem and its demonstration&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理&lt;/strong&gt;. 对于任意有限多m个不相等的实数$a,b,c,d,e,f,\dots$,令&lt;br&gt;
+$$\begin{aligned} &amp;amp;A=(a-b)(a-c)(a-d)\dots \\ &amp;amp;B=(b-a)(b-c)(b-d)\dots\\ &amp;amp;C=(c-a)(c-b)(c-d)\dots\\ &amp;amp;\cdots\end{aligned}$$
+每个等式右边有m-1个式子相乘。那么，有
+$$\frac{1}{A} +\frac{1}{B}+\frac{1}{C}+\cdots=0$$
+更一般地，当$n\leq m-1$时，我们有
+$$\frac{a^n}{A} + \frac{b^n}{B} + \frac{c^n}{C}+\cdots=0$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一个结论是很显然地推广就不需要证明了, 或者我们证明更一般的结论二也顺便证明了前一个结论.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;: 我们需要考察 $$\frac{x^n}{(x-a)(x-b)(x-c)\cdots}$$, 它可以分解为 $m$ 个单项有理式, 也就是说，&lt;/p&gt;
+&lt;p&gt;$$\frac{x^n}{(x-a)(x-b)(x-c) \cdots}= \frac{A&amp;rsquo;}{x-a}+ \frac{B&amp;rsquo;}{x-b} +\frac{C&amp;rsquo;}{x-c} +\cdots \qquad\text{(1)}$$&lt;/p&gt;
+&lt;p&gt;上式两边同乘以$(x-a)$，再令$x=a$，得到&lt;/p&gt;
+&lt;p&gt;$$\frac{a^n}{(a-b)(a-c)(a-d)\cdots}=A&amp;rsquo;$$&lt;/p&gt;
+&lt;p&gt;同理可得：
+$$\frac{b^n}{(b-a)(b-c)(b-d)\cdots}=B&amp;rsquo;,$$&lt;/p&gt;
+&lt;p&gt;等等. 将 (1) 式右侧移到左方我们有,&lt;/p&gt;
+&lt;p&gt;$$\frac{x^n}{(x-a)(x-b)(x-c)\cdots}+ \frac{A&amp;rsquo;}{a-x}+ \frac{B&amp;rsquo;}{b-x}+ \frac{C&amp;rsquo;}{c-x}+\cdots=0$$
+将 $x$ 看作是最后一个(第$m$个)实数 (也就是令$x$为第$m$个实数), 重写 (将上式第一项放在最后) 上式得到&lt;/p&gt;
+&lt;p&gt;$$\frac{a^n}{(a-b)(a-c)(a-d)\dots(a-x)} +\cdots +\frac{x^n}{(x-a)(x-b)(x-c)\dots}=0$$
+证毕!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</link>
+        <pubDate>Wed, 21 Mar 2018 12:41:25 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;eulerarchive.org&lt;/a&gt;总结了欧拉的一些结果, 一些他的论文还可以在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/find/math/1/au:&amp;#43;Euler_L/0/1/0/all/0/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;arxiv&lt;/a&gt; 找到。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&amp;ldquo;读读欧拉&amp;quot;系列是我对一些欧拉著作或论文的一些总结，这是本系列第一篇文章&amp;rdquo;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0507459&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A commentary on the continued fraction by which the illustrious La Grange has expressed the binomial powers&lt;/a&gt;&amp;ldquo;的摘要。这篇文章是Euler继续Lagrange的工作（我突然意识到，当时的论文都是没有参考文献的，在文章前面提到之前的研究成果即可，参考文献好像是从Science引入影响因子开始的），Lagrange用取对数微分的方法得到了如下的二项式公式的连分式表示：&lt;/p&gt;
+&lt;p&gt;$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2+\frac{(1+n)x}{3+\frac{(2-n)x}{2+\frac{(2+n)x}{5+\frac{(3-n)x}{2+\frac{(2+n)x}{7+\cdots}}}}}}}$$&lt;/p&gt;
+&lt;p&gt;显然当n为整数时，这个连分式是有限的，实际上它可以化为二项式定理。首先，欧拉对其做了一些细致的分析和变形，得到了如下形式：（这里不得不说欧拉是一个细致的人，他把每一项的推理都一丝不苟地写得很清楚！）&lt;/p&gt;
+&lt;p&gt;$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2}+\frac{4(n^2 -1)x^2 }{3(1+\frac{1}{2}x)+\frac{4(n^2 -2^2 )x^2 }{5(1+\frac{1}{2}x)+\frac{4(n^2 -3^2 )x^2 }{7(1+\frac{1}{2}x)+\frac{4(n^2 -4^2 )x^2 }{\cdots}}}}}$$&lt;/p&gt;
+&lt;p&gt;进一步地，令$x=2y$，整理后(分离一次连分式)两边同时加上 $ny$，再同时除以 $(1+y)$ 可以得到：&lt;/p&gt;
+&lt;p&gt;$$\frac{ny}{1+y}\frac{(1+2y)^n +1}{(1+2y)^n -1}=1+\frac{(n^2 -1)y^2 (1+y)^2 }{3+\frac{(n^2 -2^2 )y^2 (1+y)^2 }{5+\frac{(n^2 -3^2 )y^2 (1+y)^2 }{7+\frac{(n^2 -4^2 )y^2 (1+y)^2 }{9+\cdots}}}}$$&lt;/p&gt;
+&lt;p&gt;现在我们令$z=\frac{y}{1+y}$，则可以得到：&lt;/p&gt;
+&lt;p&gt;$$\frac{nz[(1+z)^n +(1-z)^n ]}{(1+z)^n -(1-z)^n }=1+\frac{(n^2 -1)z^2 }{3+\frac{(n^2 -2^2 )z^2 }{5+\frac{(n^2 -3^2 )z^2 }{7+\cdots}}}$$&lt;/p&gt;
+&lt;p&gt;现在就开始牵扯到复数了，令$z=t\times i$，其中$i=\sqrt{-1}$，再做换元(万能代换)$t=\tan{\varphi}$，就可以得到简单的&lt;strong&gt;正切的倍角公式&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$$\tan{n\varphi}=\frac{nt}{1-\frac{(n^2 -1)t^2 }{3-\frac{(n^2 -4)t^2 }{5-\cdots}}}$$&lt;/p&gt;
+&lt;p&gt;比如，令n=2,我们可以得到$\tan{2\varphi}=\frac{2t}{1-t^2 }$;再比如$n=3$，时，有&lt;/p&gt;
+&lt;p&gt;$$\tan{3\varphi}=\frac{3t}{1-\frac{8t^2 }{3-t^2 }}=\frac{3t-t^2 }{1-3t^2 }$$
+令$nt=\theta$可以得到&lt;strong&gt;正切函数的连分式展开&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;文章中还有另外两个结论，不那么有趣，这里就不一一赘述了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

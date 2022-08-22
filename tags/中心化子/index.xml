@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>中心化子 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</link>
+        <description>Recent content in 中心化子 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 25 Nov 2015 12:07:35 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>正规化子和中心化子</title>
+        <link>https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</link>
+        <pubDate>Wed, 25 Nov 2015 12:07:35 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/hulki-okan-tabak-H2AkAU2QTpo-unsplash.jpg" alt="Featured image of post 正规化子和中心化子" /&gt;&lt;p&gt;初学群论的同学刚开始接触正规化子和中心化子这两个概念的时候会很容易弄混，因为他们的定义十分相似。一个群$G$的子集$S$的中心化子(Centralizer)和正规化子(Normalizer)都是$G$的子群，并且符合类似的“局部交换”的限制条件。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;中心化子的一般定义是从一个元素开始，$a\in G$的中心化子$C(a)$是$G$中和$a$交换的元素集合，即&lt;/p&gt;
+&lt;p&gt;$$C(a):=\{x\in G:xa=ax\}.$$&lt;/p&gt;
+&lt;p&gt;更一般的子集$S$的中心化子是指$G$中和$S$中&lt;strong&gt;任意元素&lt;/strong&gt;交换的元素集合，即&lt;/p&gt;
+&lt;p&gt;$$C(S):=\{x\in G:xs=sx,\forall s\in S\}.$$&lt;/p&gt;
+&lt;p&gt;值得一提的是，群的中心是一个特殊的中心化子，即子集$G$的中心化子，常记为$Z(G)$。&lt;/p&gt;
+&lt;p&gt;下面再来讲正规化子，正规化子同样也是$G$的子群。如果$S$是$G$的一个子集，则它的正规化子
+$$N(S):=\{x\in G:xS=Sx\}.$$&lt;br&gt;
+我们可以这样看正规化子的定义， 如果我们令$\langle S\rangle$为一个由$S$生成的子群，则$N(S)$是&lt;strong&gt;最大的满足包含$\langle S\rangle$为其正规子群&lt;/strong&gt;的$G$的子群。注意上述定义和中心化子的区别：&lt;strong&gt;$xS=Sx$是指对某些$s,t\in S$,我们有$xs=tx\in Sx$&lt;/strong&gt;。所以我们可以看出中心化子的定义比正规化子更强。&lt;/p&gt;
+&lt;p&gt;环与代数同样也有响应的中心化子定义，定义与群的中心化子类似。特别地，对于李代数，我们同样也有正规化子的定义。令$L$为一个李代数，于是子集$S$的中心化子定义为
+$$C(S)=\{x\in L:[x,s]=0, \forall s\in S\},$$
+而正规化子定义为
+$$N(S)=\{x\in L:[x,s]\in S, \forall s\in S\}$$&lt;/p&gt;
+&lt;p&gt;总之，中心化子的定义更注重元素的交换，而正规化子是一种弱化的定义是元素和集合的交换。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：上述符号$C(a)$一般写为$C_G(a)$，在不引起误解的情况下，可以使用上述简写。其它符号类似。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;相关链接：&lt;a class=&#34;link&#34; href=&#34;http://math.stackexchange.com/questions/57663/normalizer-vs-centralizer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Math.SE: Normalizer vs Centralizer&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2015-11-25&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

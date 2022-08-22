@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>微分代数 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/</link>
+        <description>Recent content in 微分代数 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 06 Jan 2017 17:53:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>为什么 e^{x^2} 没有初等原函数</title>
+        <link>https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</link>
+        <pubDate>Fri, 06 Jan 2017 17:53:22 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/dylan-hunter-x-uT30vm2vU-unsplash.jpg" alt="Featured image of post 为什么 e^{x^2} 没有初等原函数" /&gt;&lt;p&gt;给定一个初等函数，我们很容易可以求得它的导数；而给定一个函数求它的原函数（即不定积分）却不是那么简单的一件事，对于一些常用函数的不定积分，我们有容易记得的几个例子以及并不好记积分表。可是并不是所有的初等函数都存在初等的原函数。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;例子有很多，比如今天我们要介绍的例子:  $e^ {x^2}$ 的原函数不能表示为初等函数。证明这个结论我们需要积分的刘维尔(Liouville)定理以及微分代数(Differential Algebra)的知识。&lt;/p&gt;
+&lt;h2 id=&#34;微分代数简介&#34;&gt;微分代数简介&lt;/h2&gt;
+&lt;p&gt;下面简单介绍一下微分环等微分代数的概念。一个微分环是装备一个或多个&lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/%E5%AF%BC%E5%AD%90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;导子&lt;/a&gt;的环。导子(Derivation)是一个满足莱布尼兹乘积法则的一元函数。类似地可以定义微分域和微分代数。两个微分环的同态(Morphism)$\phi:R\to S$是一个满足如下条件的环同态：
+$$\delta_S\circ\phi=\phi\circ\delta_R,$$
+其中$\delta_S,\delta_R$分别为微分环$R,S$的导子。微分理想是指满足导子运算闭合的微分环的理想。&lt;/p&gt;
+&lt;p&gt;微分环的一个重要子环$R_C$是$R$上的一个导子的核，当$R$为域时，$R_C$也为域。以下一个关于微分域的核子域的性质很重要。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;命题1.&lt;/strong&gt; 假设$K$是一个有非平凡导子的微分域。&lt;br&gt;
+(a) 当$\mathrm{char(K)}=0$时，$K-K_C$里的所有元素均是$K_C$上的超越元。则$K_C\subset K$不是代数扩张。&lt;br&gt;
+(b) 当$\mathrm{char(K)}=p&amp;gt;0$时，$K-K_C$里的所有元素均是$K_C$上的代数元。则$K_C\subset K$是代数扩张。&lt;/p&gt;
+&lt;p&gt;下面的命题是关于微分环扩张的一个定理。设$R\subset S$是一个微分环扩张，于是自然的有$R_C\subset S_C$。接下来的等价性质我们称之为“&lt;strong&gt;无新常数扩张&lt;/strong&gt;”(&amp;ldquo;no new constans extensions&amp;rdquo;)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;命题2.&lt;/strong&gt; 设$R\subset S$为一个微分环扩张，则一下各个命题等价：&lt;br&gt;
+(a) $R_C=S_C$；&lt;br&gt;
+(b) 如果$R$中元素$r$在$R$中存在“本原元”（primitive，相当于导子的原函数）,则$r$在$S-R$不存在本原元；&lt;br&gt;
+(c) 如果$s\in S-R$满足 $s&amp;rsquo;\in R$，则$s&amp;rsquo;$在$R$中无本原元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;命题3.&lt;/strong&gt; 假设$K\subset L$为特征为零的微分域的无新常数扩张，$l\in L-K$ 满足$l&amp;rsquo;\in K$。则以下结论成立：&lt;br&gt;
+(a) $l$是$K$的超越元；&lt;br&gt;
+(b) 对于任意一个次数为$n&amp;gt;1$的多项式$p(x)$，$(p(l))&amp;rsquo;:=q(l)$，其中$q(x)\in K[x]$，则$\deg(q(x))=n$当且仅当$p(x)$最高次项的系数$k_n$不是常数（常数是指导子作用后为0的数）。如若不然，$\deg(q(x))=n-1$。&lt;/p&gt;
+&lt;p&gt;利用上述命题不难证明如下推论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;推论4.&lt;/strong&gt; 实（复）自然对数函数是$\mathbb R(x)$（$\mathbb C(x)$）的超越元，实反正切函数是$\mathbb R(x)$的超越元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;命题5.&lt;/strong&gt; 假设$K\subset L$为特征为零的微分域的无新常数扩张，$l\in L-K$ 满足$\frac{l&amp;rsquo;}{l}\in K$。则：&lt;br&gt;
+(a) $l$是$K$的代数元当且仅当对于某个$n&amp;gt;1$,$l^n\in K$；&lt;br&gt;
+(b) 当(a)的条件不满足时，任意$n&amp;gt;0$次多项式$p(l)\in K[l]$的导数$(p(l))&amp;rsquo;$仍然是一个次数为$n$的多项式。&lt;/p&gt;
+&lt;p&gt;下面讨论导子的扩张(extending)。有如下定理：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理6.&lt;/strong&gt; 当$K\subset L$是特征为0的域扩张时，$\delta$为域$K$的导子。则&lt;br&gt;
+(a) $\delta$ 可以扩张到$L$的导子$\delta_L$；&lt;br&gt;
+(b) 当$l\in L-K$是$K$上超越元，$m\in L$为任取元素，我们可以选择一个导子扩张，使得$\delta_L(l)=m$；&lt;br&gt;
+(c) 当$K\subset L$是代数扩张，则导子扩张$\delta_L$是唯一的；&lt;br&gt;
+(d) 当$K\subset L$是代数扩张，扩张导子$\delta_L$与任意自同构$\phi\in \mathrm{Aut}(L/K)$可交换。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;刘维尔定理&#34;&gt;刘维尔定理&lt;/h2&gt;
+&lt;p&gt;下面来介绍刘维尔(J. Liouville)的结果。设$K$为特征为零的微分域，我们称元素$l\in K$是元素$k\in K$的对数（或者$k$为$l$的指数）当且仅当 $l&amp;rsquo;=k&amp;rsquo;/k$。我们可以简写为 $l=\ln k$ 或者$k=e^l$。于是我们有公式：
+$$(\ln k)&amp;rsquo;=k&amp;rsquo;/k,  \qquad (e^l)&amp;rsquo; = e^ll&amp;rsquo;.$$&lt;/p&gt;
+&lt;p&gt;对任意$k\in K$，元素$k&amp;rsquo;/k\in K$称为对数导数(logarithmic derivative of k)。根据莱布尼兹公式，我们有对数导数等式(logarithmic derivative identity)：&lt;/p&gt;
+&lt;p&gt;$$\frac{(\prod_{j=1}^{n} k_j^{m_j})&amp;rsquo;}{ \prod_{j=1}^{n} k_j^{m_j}} = \sum_{j=1}^m m_j\frac{k_j&amp;rsquo;}{k_j}.$$&lt;/p&gt;
+&lt;p&gt;现在令$K\subset K(l)$为一个非平凡的单微分域扩张，我们称$K(l)$是$K$的代数添加、对数添加、指数添加当且仅当$l$为$K$上代数元、$l=\ln k$、$l=e^k$。此时$l$统称为在$K$上基本的(elementary over K)。一个微分域扩张$K\subset L$称为&lt;strong&gt;基本的&lt;/strong&gt;当且仅当存在有限个中间微分域扩张$K=K_0\subset K_1\subset\cdots\subset K_n=L$使得任意$K_j\subset K_{j+1}$是上述三种扩张之一。（这个定义和可解群有点类似）基本函数我们是指一个基本微分域扩张$R(x)\subset L$的一个元素（其中$R=\mathbb R$或者$\mathbb C$）。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理7. (Liouville)&lt;/strong&gt; $K$为特征为零的微分域，假设$\alpha\in K$在$K$中没有本原元。则$\alpha$在$K$的“&lt;strong&gt;基本无新常数微分域扩张&lt;/strong&gt;”(elementary no new constant differential field extension )中存在本原元当且仅当存在一个整数$m\geq1$，$c_1,\dots,c_m$，以及$\beta_1,\dots,\beta_m,\gamma\in K$使得下式成立
+$$\alpha=\sum_{j=1}^mc_j\frac{\beta&amp;rsquo;_j}{\beta_j}+\gamma&amp;rsquo;.$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;证明可以参见文献2。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;推论8. (Liouville)&lt;/strong&gt; 假设 $E\subset K=E(e^g)$ 是给定指数元$e^g, g\in E$的一个无新常数微分域扩张（特征为零）。如果 $e^g$ 是$E$的超越元，$f$为$E$的任意元素，则 $fe^g\in K$ 在$K$的某个基本无新常数微分域扩张中存在一个本原元当且仅当 $\exists a\in E$ ,使得 $f=a&amp;rsquo;+ag&amp;rsquo;$ 或者等价的，$f e^g= (a e^g)&amp;rsquo;$。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;推论9.&lt;/strong&gt; 当$R=\mathbb R(x)$或者$\mathbb C(x)$时，函数$e^{x^2}$没有初等原函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;：根据推论4与推论9，给定函数存在初等原函数（本原元）当且仅当存在$a\in R(x)$，使得$1=a&amp;rsquo;+2ax$。我们断定不存在这样的函数。如存在，假设$a=p/q\in K(x)$($p/q$即约)满足上式，则有
+$$1=\frac{qp&amp;rsquo;-q&amp;rsquo;p}{q^2}+2\frac{px}{q},$$
+即$q(q-2px-p&amp;rsquo;)=-q&amp;rsquo;p$，则$q|q&amp;rsquo;p$，于是$q|q&amp;rsquo;$，所以$q&amp;rsquo;=0$，$q$为常函数。所以可以假设$a=p$。但是比较等式两边的次数，右边多项式次数大于等于1，左边为零，矛盾！&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;p&gt;[1]. Churchill, R. C. &amp;ldquo;Liouville’s Theorem on Integration in Terms of Elementary Functions.&amp;rdquo; Lecture Notes for the Kolchin Seminar on Differential Algebra. 2002.&lt;br&gt;
+[2]. M. Rosenlicht, Liouville’s Theorem on Functions with Elementary Integrals, Pac: J: Math:, 24, (1968), 153-161.&lt;br&gt;
+[3]. J: Liouville, Memoire sur l’integration d’une classe de fonctions transcendantes, J: Reine Angew: Math., 13, (1835), 93-118.
+[4]. &lt;a class=&#34;link&#34; href=&#34;https://wenku.baidu.com/view/d246f19aa8114431b90dd8ce.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;巴黎高师数学入学试题ENS1995&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

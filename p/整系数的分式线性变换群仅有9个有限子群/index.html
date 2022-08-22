@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='证明整系数的分式线性变换群的子群仅有九个。'><title>整系数的分式线性变换群仅有9个有限子群</title>
+
+<link rel='canonical' href='https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='整系数的分式线性变换群仅有9个有限子群'>
+<meta property='og:description' content='证明整系数的分式线性变换群的子群仅有九个。'>
+<meta property='og:url' content='https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/'>
+<meta property='og:site_name' content='Transcendence'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='群' /><meta property='article:tag' content='分式线性变换' /><meta property='article:published_time' content='2015-12-02T10:52:33&#43;08:00'/><meta property='article:modified_time' content='2015-12-02T10:52:33&#43;08:00'/><meta property='og:image' content='https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
+<meta name="twitter:title" content="整系数的分式线性变换群仅有9个有限子群">
+<meta name="twitter:description" content="证明整系数的分式线性变换群的子群仅有九个。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu32a8e24389d85ec1a1988d866ef9e041_42597_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Transcendence</a></h1>
+            <h2 class="site-description">whzecomjm&#39;s blog</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/">
+                <img src="/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg 800w, /p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="534" 
+                        loading="lazy"
+                        alt="Featured image of post 整系数的分式线性变换群仅有9个有限子群" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E6%95%B0/" style="background-color: #2a9d8f; color: #fff;">
+                代数
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/">整系数的分式线性变换群仅有9个有限子群</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            证明整系数的分式线性变换群的子群仅有九个。
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 02, 2015</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    10 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>分式线性变换(FLT)又称为Mobius变换是指这样形式的函数：$m(x)=\frac{ax+b}{cx+d}$，其中$ad-bc\ne  0$。我们将要证明，如果Mobius变换的系数为整数，仅有9个有限子群。对于实系数和复系数的情况我们也将要提到。</p>
+<p>首先我们要求我们的整系数的FLT的所有系数互素即$\gcd(a,b,c,d)=1$，然后我们验证所有的整系数的FLT成群：两个FLT的乘积（复合）仍然为FLT。并且$e(x)=x$为单位变换，每个FLT均有逆变换，为$\frac{dx-b}{-cx+a}$。</p>
+<p>为了便于计算（用矩阵计算），我们发现整系数的FLT与$PGL(2,\mathbb{Q})$同构。注意PGL中的“P”为“projective”，意思类似于我们前面提到的要求，即$\gcd(a,b,c,d)=1$，如果不等于1则除去公因子。如果是分数倍，当然也能一起去除。</p>
+<p>我们再考虑复平面上的分式线性变换。我们将复平面拓s展为黎曼球面$\widehat{C}=C\cup{\infty}$，这样我们需要注意几个拓展后的规定$1 / 0=\infty,1 / \infty=0$，以及关于FLT的几个特征：如果$c\neq0$，则有$m(\infty)=a / c$以及$m(-d / c)=\infty$；如果$c=0$，则有$m(\infty)=\infty$。</p>
+<p>下面我们再来考虑接下来需要的几个群：$C_n,D_n$等。$C_n$是n阶循环群。$D_n$为2面体群，</p>
+<p>$$D_n=\{e,a,a^2, \cdots, a^{n-1}, b, ab, a^2b, \cdots,a^{n-1}b\},$$</p>
+<p>注意$C_n$是$D_n$的子群，并且</p>
+<p>$$|D_n|=2|C_n|=2n,$$</p>
+<p>$D_n$ 不是Abel群，因为 $ba=a^{n-1}b$。也就是说，$b^2=1$以及$b^{-1}ab =a^{-1}$。关于$D_n$的小群的结构，有 $D_1\cong C_2$。另外，$D_2$群是最小的非循环群。（这说明一二三阶群必然是循环群。）</p>
+<p>考虑 $C_n,D_n$ 的几何性质，显然它们分别同构于正棱锥和正棱柱的对称群。由于球的有限旋转群是$C_n,D_n,A_4,S_4,A_5$，这一点可以参见 正多面体的对称群 。当然$C_n,D_n$还有平面上的几何意义：$C_n$是正多边形的旋转变换群，$D_n$是正多边形的旋转和镜面映射的变换群。</p>
+<p>有了几种简单的群以后，我们在考虑FLT的复合变换，比如有趣的是$p(x)=1 / (x+1)$的迭代，将之映射到$PGL(2,\mathbb{Q})$，则有n阶复合为</p>
+<p>$$\left[\begin{array}{cc} F_{n-1}&amp; F_{n} \\ F_{n}&amp; F_{n+1} \end{array}\right]$$</p>
+<p>其中$F_n$为第n个斐波纳契数。现在我们定义$p^{(0)}(x)=x$,则$p(x)$的逆为$p^{(-1)}(x)=(1-x) / x$。于是，${p^{(i)}(x):i\in\mathbb Z}$在复合运算下是一个无限群。考察一个特定数的轨道，比如说1，就可以得到一个轨道。</p>
+<p>在考虑一个相似的变换$m(x)=-1 / (x+1)$，我们会发现在复合运算下，m(x)生成的群是有限的，这是因为$m^{(2)}(x)=(-x-1) / x$以及$m^{(3)}(x)=x$，这样这个群的阶就是3，并且同构于$C_3$。如果想要比较清晰地看到这一点，可以带入一个特定的数，看该数的轨道。再考虑一个变换$q(x)=1 / x$，显然$q(x)$的复合变换构成一个2阶的群。现在我们将这两个群放在一起(直积)，则能够生成一个阶数为6的群，并且同构与$D_3$。</p>
+<p>介绍完这么多的基础知识，现在我们可以正面考察我们要证明的定理了。</p>
+<blockquote>
+<p>定理一：$PGL(2,\mathbb{Q})$的全部有限子群同构于$C_n,D_n$,其中n=1,2,3,4,6。</p>
+</blockquote>
+<blockquote>
+<p>定理二：$PGL(2,\mathbb{R})$每一个有限子群同构于任意阶的循环群或者二面体群。</p>
+</blockquote>
+<p>我们的证明是构造性的，并且在这里引用到$PGL(2,\mathbb{C})$的结果：<strong>$PGL(2,\mathbb{C})$的一个有限子群同构于球的对称群的一个有限子群，即同构$C_n,D_n,A_4,S_4,A_5$</strong>。（前半句结论参见文献5）所以，我们证明定理二只需要证明，不能用实系数的FLT的群表示。</p>
+<p>首先我们考虑c=0的分式线性变换，显然 $e(x)=x$ 生成为一阶群，m(x)=-x为2阶群。进一步地，$-x+b(b\in\mathbb C)$也是2阶的。对于四阶的情况我们可能需要利用$ix$甚至是 $ix+b$。</p>
+<p>下面我们还需要本原根的知识，对于n&gt;1的本原根，它是</p>
+<p>$$(x^n-1) / (x-1)=x^{n-1}+\cdots+ x^2+x+1$$</p>
+<p>的一个根。需要指出的是，$\pm1$是唯二的有理本原根，$\pm i$ 和 $\pm\frac{1}{2}\pm\frac{\sqrt{3}i}{2}$（分别是3,4,6阶的本原根）是所有的平方本原根。<strong>其他的所有本原根均是高于二次的本原根。</strong> 这一点在文献4中有体现。</p>
+<p>正如前文提到的c=0的FLT，我们可以猜想$m(x)=\zeta x+b$（其中$\zeta,b$是复数）是n阶的当且仅当$\zeta$是n阶本原根。事实上，我们可以看到，当$\zeta$是n阶本原根时，</p>
+<p>$$m^{(n)}(x)={\zeta}^nx +b({\zeta}^{(n-1)}+\cdots+ {\zeta}^2+\zeta+1)=x.$$</p>
+<p>反之也成立。现在我们需要解决任意的FLT的有限阶数了。我们现在证明，任意一个FLT：$(ax+b) / (cx+d)$ 是和“线性映射”Ax+B共轭的，于是它们的阶数是相等的。</p>
+<p>共轭元素的阶数相等的证明：设a,b的阶数分别为s,t，$xax^{-1}=b$，于是</p>
+<p>$$b^s=(xax^{-1})^s =x^s (a^s) x^{-s}= x^s x^{-s}=1,$$</p>
+<p>所以 $t \mid s$，同理可证 $s\mid t$，从而有 $s=t$。</p>
+<h2 id="两个引理">两个引理</h2>
+<p>现在开始正式的证明，首先给出两个引理及其证明：</p>
+<blockquote>
+<p>引理一：假设$m(x)=\frac{ax+b}{cx+d}$是整系数的FLT，并且有有限的阶数。则$m(x)$的阶数只能为1,2,3,4,或者6，并且在后三种情况中，m(x)在$PGL(2,\mathbb Q)$分别共轭于$\frac{-1}{x+1}$,$\frac{x-1}{x+1}$,$\frac{2x-1}{x+1}$。</p>
+</blockquote>
+<p>注意一二阶的映射不满足共轭的情形。</p>
+<p><strong>证明</strong>：首先容易验证上述三个变换分别是3,4,6阶的，而且q(x)=1 / x是二阶的，e(x)=x 是一阶的。当c=0时，$m(x)=(a / d)x+b / d$是一个“线性映射”，根据之前的讨论，$a / d=\pm1$（有理本原根），当$a / d=1$时，b=0，为一阶的情形$m(x)=e(x)=x$；当$a / d=-1$时，为二阶的情形$m(x)=b / d-x$。</p>
+<p>对于$c\neq0$的情况，我们先求出变换的不动点，再作共轭变换。解如下方程
+$\frac{ax+b}{cx+d}=x$
+我们可以得到至少一个有限不动点$\alpha$，并且拥有$\leq 2\text{ over } \mathbb{Q}$。现在我们做$m(x)$的共轭$\hat{m}(x)=s^{-1} m s(x)$,其中$s=\alpha+\frac{1}{x}$则$\hat{m}(x)$是$\mathbb{Q}(\alpha)$上的“线性映射”（验证$\hat{m}(\infty)=\infty$），因此可以写成Ax+B。因为$\hat{m}$和m有相同的阶数，所以A是一个n阶本原根。因为$A\in\mathbb{Q}(\alpha)$，而且$\mathbb{Q}(\alpha)$最多是$\mathbb{Q}$的平方本原根扩张，所以$A=\pm1,\pm i,\pm1 / 2\pm\frac{\sqrt{3}i}{2}$,于是，$n=1,2,3,4,6$。</p>
+<p>下面我们再证明当$n=3,4,6$时，选择三个有理数A,B,C，使得$m(x):A\mapsto B\mapsto C$.让s(x)成为这样的变换使得：$0\mapsto A,-1\mapsto B,\infty\mapsto C$（$s(x)=\frac{(B-A)Cx+A(B-C)}{(B-A)x+(B-C)}$），然后做m(x)的共轭$\hat{m}(x)=s^{-1}ms(x)$，我们可以得到：$\hat{m}(x):0\mapsto-1\mapsto\infty$。此时也就有$\hat{m}(x)=\frac{\hat{a}x-1}{x+1}$。$\hat{m}(x)$的阶数为3,4,6，则对应$\hat{a}$为0,1,2。QED</p>
+<blockquote>
+<p>引理二：如果K是$\mathbb{R}$的一个子域，则所有以K为系数的FLT群的有限子群（也就是PGL(2,K)的全部有限子群）为循环群或者是二面体群。</p>
+</blockquote>
+<p><strong>证明</strong>：根据之前的$PGL(2,\mathbb{C})$结论，我们只需要证明$A_4,S_4,A_5$不能表示为PGL(2,K)的一个有限子群。又因为$A_4\subset S_4$，以及$A_4\subset S_5$，所以我们只需要证明$A_4$不能表示即可。</p>
+<p>设G和$A_4$同构，因为$A_4$里有三循环，所以根据引理一，经过合适的共轭变换可以得到$-1 / (x+1)\in G$。在$A_4$中，一个三循环和一个二循环的元素复合会等于一个新的三循环。（比如(abc)和(ab)(cd)的乘积）而在PGL(2,K)中的二阶元素只有两种形式：$-x+b$（固定$\infty$）或者是$\frac{ax+b}{x-a}$（将$\infty$变成a）。而$-1 / (x+1)$和它们的复合分别为$1 / (x-b-1)$（它是三阶当且仅当$b=-1\pm i$），$\frac{-x+a}{(a+1)x+(b-a)}$（而它是三阶的当且仅当$b=\frac{1}{2}(1+2a\pm\sqrt{-4a^2-4a-3})$，这是个复数。）所以，$A_4$不能被PGL(2,K)的有限子群表示。</p>
+<h2 id="定理的证明">定理的证明</h2>
+<p>证明：根据引理二，我们只需要关心$C_n,D_n$。要证明$PGL(2,\mathbb{R})$包含所有的$C_n,D_n$，我们只需证明对任意$n&gt;0$，我们都能找到$m(x)$，使得n阶的$m(x)$和$q(x)=1 / x$能生成$D_n$。</p>
+<p>当n=1是，让m(x)=x；当n=2是，让m(x)=-x。很容易看出，这给出了（结合q(x)=1 / x）$C_1,C_2,D_1,D_2$。现在假设$n\geq3$，让$\zeta_{n}=e^{2\pi i / n}$为n阶本原根，让$a_n=1+2\cos(2\pi / n)=1+\zeta_{n}+1 / \zeta_{n}$（这是一个实数。）现在将m(x)定义$\frac{a_nx-1}{x+1}$，不难证明$m^{-1}(x)=\frac{x+1}{-x+a_n}$以及$q^{-1}mq=m^{-1}$（这里见过吧，之前二面体群的性质），所以我们只需要证明m(x)是n阶的。</p>
+<p>现在我们做共轭变换，令$s(x)=\zeta_{n}+1 / x$,因为$s(\infty)=\zeta_{n}$且$m(\zeta_{n})=\zeta_{n}$,所以有$\hat{m}(\infty)=\infty$，于是$\hat{m}(x)=Ax+B$,其中A,B为复数。通过比较$\hat{m}(x)$和$s^{-1}ms(x)$的表达式，可以得到（令$x=0,x=-1 / \zeta_{n}$）$A=\zeta_{n}$和$B=\zeta_{n} / (\zeta_{n}+1)$。显然$\hat{m}(x)$是n阶的。于是定理二得证！</p>
+<p>现在我们限制系数为有理数，根据以上结论和引理一，定理一得证！</p>
+<p>由此我们还可以得到一个推论：</p>
+<blockquote>
+<p>推论一：对于$n\geq3$和$a_n=1+2\cos(2\pi / n)$，则$(a_nx+1) / (x+1)$是n阶的。</p>
+</blockquote>
+<p><strong>参考文献</strong></p>
+<ol>
+<li>Joseph A. Gallian, Contemporary Abstract Algebra, 5th ed., Houghton Mifﬂin, Boston, MA, 2002.</li>
+<li>R. C. Lyndon and J. L. Ullman, Groups of elliptic linear fractional transformations, Proc. Amer. Math. Soc. 18 (1967), 1119–1124.</li>
+<li>Dresden, Gregory P. &ldquo;<a class="link" href="http://home.wlu.edu/~dresdeng/papers/nine.pdf"  target="_blank" rel="noopener"
+    >There are only nine finite groups of fractional linear transformations with integer coefficients.</a>&rdquo; <em>Mathematics Magazine</em> (2004): 211-218.</li>
+</ol>
+<blockquote>
+<p>首发于知乎专栏: <a class="link" href="https://zhuanlan.zhihu.com/p/20444487"  target="_blank" rel="noopener"
+    >https://zhuanlan.zhihu.com/p/20444487</a></p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%BE%A4/">群</a>
+        
+            <a href="/tags/%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2/">分式线性变换</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/">
+        
+        
+            <div class="article-image">
+                <img src="/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/_huf941de4769045cdfa8c9ee7036519a2a_35369_36687b530fa140121781e790cfd060e7.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 17次单位根的二次根式表达"
+                        
+                        data-hash="md5-YBFrHM/IYy6aZffVHfPvwg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">17次单位根的二次根式表达</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/_hub903cafb6679530a2974d63bf9062c75_381815_7738a65b744b3c907a6e4aa256ee4a9a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 对称群学习笔记"
+                        
+                        data-hash="md5-4iMCQ0xxHeQTe2i36Q32hw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">对称群学习笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/_hu2ab793db18c85df45ae6f63e8f0219ac_2821327_e7a1252b139a1502228099e36899b8a4.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 正规化子和中心化子"
+                        
+                        data-hash="md5-q3CRljGmgR7hAg1bNS5qZg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">正规化子和中心化子</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E4%B8%80%E7%AF%87%E4%BB%A3%E6%95%B0%E6%96%87%E7%AB%A0%E7%9A%84%E5%88%86%E6%9E%90%E7%96%8F%E5%BF%BD/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E4%B8%80%E7%AF%87%E4%BB%A3%E6%95%B0%E6%96%87%E7%AB%A0%E7%9A%84%E5%88%86%E6%9E%90%E7%96%8F%E5%BF%BD/_hud7e36f7e20e71be184458283bdae4646_55974_23a5d351d2fc2374f952239b6e9c423a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 一篇代数文章的分析疏忽"
+                        
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">一篇代数文章的分析疏忽</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E9%9D%9E%E4%BA%A4%E6%8D%A2%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%8E%AF%E5%92%8Core%E6%89%A9%E5%BC%A0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E9%9D%9E%E4%BA%A4%E6%8D%A2%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%8E%AF%E5%92%8Core%E6%89%A9%E5%BC%A0/_hu90c2596816b8be10028817715a17b50c_43052_4b39a7f04c7668a65dec1370f45419c0.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 非交换多项式环和Ore扩张"
+                        
+                        data-hash="md5-SAVM9/&#43;zNxAs&#43;boUVpZszQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">非交换多项式环和Ore扩张</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2014 - 
+        
+        2022 Transcendence
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#两个引理">两个引理</a></li>
+    <li><a href="#定理的证明">定理的证明</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

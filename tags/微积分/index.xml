@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>微积分 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/</link>
+        <description>Recent content in 微积分 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 12 Jul 2018 15:08:53 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>鞍点及其判定</title>
+        <link>https://whzecomjm.github.io/p/%E9%9E%8D%E7%82%B9%E5%8F%8A%E5%85%B6%E5%88%A4%E5%AE%9A/</link>
+        <pubDate>Thu, 12 Jul 2018 15:08:53 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E9%9E%8D%E7%82%B9%E5%8F%8A%E5%85%B6%E5%88%A4%E5%AE%9A/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E9%9E%8D%E7%82%B9%E5%8F%8A%E5%85%B6%E5%88%A4%E5%AE%9A/alexander-black-9yCLzkpYZwY-unsplash.jpg" alt="Featured image of post 鞍点及其判定" /&gt;&lt;p&gt;昨天一个本科学妹问我一道数学题, 她觉得有些困惑. 题目是道选择题, 具体如下:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The function $f(x,y)=3x^2y+y^3-3x^2-3y^2+2$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;has a saddle point at (-1,1)&lt;/li&gt;
+&lt;li&gt;has a minimum point at (-1,1)&lt;/li&gt;
+&lt;li&gt;has a maximum point at (0,2)&lt;/li&gt;
+&lt;li&gt;has four minimum points&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是一个简单的多元函数求极值的问题. 不过接下来我们将会看到很多人的误区. 首先很容易求得 $f(x,y)$ 两个一阶偏导:
+$$
+f_x(x,y)=6x(y-1), \\
+f_y(x,y)=3(x^2+y^2-2y)
+$$
+容易知道二元函数 $f(x,y)$ 有四个驻点 (0,0), (0,2), (1,1), (-1,1). 接下来我们将判定四个驻点情况, 需要继续计算二阶偏导, 结果如下:
+$$
+f_{xx}(x,y)=f_{yy}(x,y)=6(y-1),\\
+f_{xy}(x,y)=6x
+$$
+则判别式(Hessian 矩阵的行列式)为 $36[(y-1)^2-x^2]$. 四个驻点中, (0,0) 使得判别式大于0, 是一个极值点, 又因为 $f_{xx}=f_{yy}=-6&amp;lt;0$, 所以是一个极大值点. 同理(0,2)是一个极小值点. 现在重点看看 (-1,1) 和 (1,1). 它们判别式都等于 -36&amp;lt;0, 所以一定不是极值点. 此时问题出来了, 大部分的教材会认为这样的点就是所谓鞍点. 它们认为鞍点并不是都长得和马鞍一样的点, 不是极值点的驻点都叫鞍点(saddle point). 但是有些教材并不这么定义, &amp;ldquo;强行&amp;quot;推广了一维的拐点(inflection point)到二元函数.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 她给我提供的教科书中的定义如下:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The following observation are important to note.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Since, by Young&amp;rsquo;s theorem, $f_{xy} =f_{yx}$, $f_{xy}\cdot f_{yx}=(f_{xy})^2$. step 3 may also be written
+$f_{xx}\cdot f_{yy}-(f_{xy})^2&amp;gt;0$. (这里说明判别式中的二阶偏导可以交换求导顺序)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If $f_{xx}\cdot f_{yy}&amp;lt;(f_{xy})^2$, (a) when $f_{xx}$ and $f_{yy}$ have the same signs, the function is at an &lt;!-- raw HTML omitted --&gt;infection point&lt;!-- raw HTML omitted --&gt;; (b) when $f_{xx}$ and $f_{yy}$ have different signs, the function is at a &lt;!-- raw HTML omitted --&gt;saddle point&lt;!-- raw HTML omitted --&gt;, where the function is at a minimum when viewed from one axis, here the x axis, but at a maximum when viewed from the other axis, here the y axis. (这里就是值得商榷的地方)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If $f_{xx}\cdot f_{yy}=(f_{xy})^2$, the test is inconclusive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个教材细分了判别式小于零的情况, 说 &lt;strong&gt;$f_{xx},f_{yy}$ 同号的话叫拐点; 如果异号的话才叫鞍点&lt;/strong&gt;. 然后我们会惊喜地看到我们这个问题在 (-1,1), (1,1) 这两个点上 $f_{xx}=f_{yy}=0$, 所以这算同号还是异号? 我们之前已经排除了上述选择题的2,3,4项, 此时1项的答案似乎又沿用了另一个鞍点的定义.&lt;/p&gt;
+&lt;p&gt;所以还是别弄太多幺蛾子让学生困惑, 简单的使用大家都比较认可的定义不好吗?&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2018年7月11日&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;实际上一维函数的拐点也可以称为一维鞍点.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>GKdim on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/gkdim/</link>
+        <description>Recent content in GKdim on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 14 Jun 2022 15:43:34 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/gkdim/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>一篇代数文章的分析疏忽</title>
+        <link>https://whzecomjm.github.io/p/%E4%B8%80%E7%AF%87%E4%BB%A3%E6%95%B0%E6%96%87%E7%AB%A0%E7%9A%84%E5%88%86%E6%9E%90%E7%96%8F%E5%BF%BD/</link>
+        <pubDate>Tue, 14 Jun 2022 15:43:34 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E4%B8%80%E7%AF%87%E4%BB%A3%E6%95%B0%E6%96%87%E7%AB%A0%E7%9A%84%E5%88%86%E6%9E%90%E7%96%8F%E5%BF%BD/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%80%E7%AF%87%E4%BB%A3%E6%95%B0%E6%96%87%E7%AB%A0%E7%9A%84%E5%88%86%E6%9E%90%E7%96%8F%E5%BF%BD/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 一篇代数文章的分析疏忽" /&gt;&lt;p&gt;近期我们代数讨论班讨论了一篇有关于GK dimension的一篇文章——即构造任意GK维数 （$\in [2,\infty]$） 的prime 以及 primitive 代数[1]。不过在一个关键引理的证明中发现，有几个看似简单的论断，尝试了多次自行证明都是错的。这些论断均为纯分析的结论，似乎无法直接一笔带过。&lt;/p&gt;
+&lt;p&gt;现在先将其相关分析问题抽离出来，有如下两个论断：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;假设${r_n}$为正项数列，且$r_n\geq3$(此条件可以用大于等于0替代)。在文章中声称，如果$\frac{r_1+r_2\cdots+r_n}{n}$是有界的，则$\limsup _ { n\to \infty } \frac { r _ { 1 } + \cdots + r _ { n } } { r _ { 1 } + \cdots + r _ { n - 1 } }=1;$&lt;/li&gt;
+&lt;li&gt;类似地，如果$\frac{r_1+r_2\cdots+r_n}{n}$是无界的，则 $\limsup _ { n\to \infty } \frac { r _ { 1 } + \cdots + r _ { n }-1 } {\log_2(r_n)+n+ r _ { 1 } + \cdots + r _ { n - 1 } }=\limsup _ { n\to \infty } \frac { r _ { 1 } + \cdots + r _ { n } } { r _ { 1 } + \cdots + r _ { n - 1 } }.$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;论断1的等价命题为：$x_n=r_1 +\cdots+r_n,$ 且$x_n\geq 3$是单调递增数列, 如果$\frac{x_n}{n}$是有界的，则$\limsup \frac{x_n}{x_{n-1}}=1.$&lt;/p&gt;
+&lt;p&gt;第一个断言似乎看起来是对的，也似乎比较容易给出“证明”。以下是我的第一个错误证明:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Proof&amp;rdquo;. $A_n:=\frac{r_1+\cdots+r_n}{n}$ is bounded $\iff$$r_n$ is also bounded. WLOG, suppose $r_n\leq C$.&lt;/p&gt;
+&lt;p&gt;$\limsup \frac{r_1+\cdots+r_n}{r_1+\cdots+r_{n-1}}=1+\limsup \frac{r_n}{r_1+\cdots+r_{n-1}}$.&lt;/p&gt;
+&lt;p&gt;Since $\limsup r_n\geq0, \limsup \frac{1}{r_1+\cdots+r_{n-1}}\geq 0$,&lt;/p&gt;
+&lt;p&gt;$\limsup \frac{r_n}{r_1+\cdots+r_{n-1}}\leq \limsup r_n \limsup \frac{1}{r_1+\cdots+r_{n-1}}\leq C\cdot\limsup \frac{1}{r_1+\cdots+r_{n-1}}$.&lt;/p&gt;
+&lt;p&gt;Recall $r_n\geq 3,$ then $\limsup \frac{1}{r_1+\cdots+r_{n-1}}\leq \limsup\frac{1}{3^{n-1}}=0$,&lt;/p&gt;
+&lt;p&gt;Hence, $\limsup \frac{r_1+\cdots+r_n}{r_1+\cdots+r_{n-1}}=1.$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上述&amp;quot;证明&amp;quot;的错误在于第一步，前n项和是有界并不能保证$r_n$也是有界的。和朋友LT以及SC讨论以后，发现我证明的第一行的结论存在反例。&lt;/p&gt;
+&lt;p&gt;$$
+r_n=\begin{cases} 3 &amp;amp; n\neq 2^i \ 3+2^i &amp;amp; n=2^i\end{cases}, i\in \mathbb N.        \qquad(1)
+$$&lt;/p&gt;
+&lt;p&gt;显然$\frac{r_1+\cdots+r_n}{n}\leq \frac{3n+2^{i+1}-1}{n}\leq 5 (n=2^i),$ 但$r_n$存在一个单调无界的子列。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;类似地，ZY也给出了一个似乎更加有说服力的&amp;quot;错误&amp;quot;证明（但也是在第一步出错）：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It suffices to prove $C:=\limsup \frac{r_n}{r_1 +\cdots+r_{n-1}}=0.$&lt;/p&gt;
+&lt;p&gt;Assume $C&amp;gt;0,$ then $\frac{r_n}{r_1 +\cdots+r_{n-1}}&amp;gt;\frac{C}{2}$, $\forall n\gg 0$, i.e. $r_n\gt \frac{C}{2}(r_1 +\cdots+r_{n-1})$.&lt;/p&gt;
+&lt;p&gt;$b_n:=\frac{r_1 +\cdots+r_n}{n}&amp;gt;\frac{r_1+\cdots+r_{n-1}+\frac{C}{2}(r_1+\cdots+r_{n-1})}{n}=(\frac{C}{2}+1)\frac{r_1 +\cdots+r_{n-1}}{n}=\frac{C+2}{2}\frac{n-1}{n} b_{n-1}, \forall n\gg 0$.&lt;/p&gt;
+&lt;p&gt;Hence, $b_n&amp;gt; (\frac{C+2}{2})\frac{n-1}{n} b_{n-1}&amp;gt; (\frac{C+2}{2})^2 \frac{n-1}{n} \frac{n-2}{n-1} b_{n-2}&amp;gt;\cdots &amp;gt;(\frac{C+2}{2})^{n-N}\frac{N}{n} b_N.$&lt;/p&gt;
+&lt;p&gt;$b_n$ is not bounded. Contradiction!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由此，我不由得怀疑这些claims是错的，并试图联系原作者Uzi。Uzi恰好是我读博学校的老师。因此当天晚上，我给他写信询问情况。大约过了几个小时，Uzi给我回信，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;When writing this paper I had in mind the construction with $r_n=[\beta^n]$. Consequently, all the &amp;ldquo;calculus&amp;rdquo; lemmas were written with a hidden assumption in mind, that the sequence r_n is weakly increasing, or perhaps that (r_n) is unbounded. I failed to mention this in the paper. As stated, the claims in the paper are false. Fortunately, this does not affect the construction.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;也就是说，他认为这些 Calculus 论断都是基于脑中$r_n$的例子给出来的，因此本身是错的。但是其构造只依赖于这一具体的$r_n$例子，是正确的。&lt;/p&gt;
+&lt;p&gt;事实上，稍作计算可以可发现，上述反例$(1)$也给出了一个论断1的反例。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Interestingly, Krause and Lenagen decided to include this example in the revised version of &amp;ldquo;Growth of Algebras and GK dimension&amp;rdquo;, which came out not long after this paper. They also caught my calculus omission&amp;hellip; we had a short exchange on this, and I send them a corrected statement and proof, which is probably in the book now.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Uzi指出写经典 GK教材的作者 Krause 和 Lenagen在20年前就发现了这个问题，当时他做了修正，并给出了新形式的定理，收录在KL的书[2]中。Uzi在信中还和我讲了一些关于 Simple algebra 的构造。&lt;/p&gt;
+&lt;p&gt;随后加入讨论的 Beeri 给我讲解了Simple algebra的构造思路：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If W is uniformly recurrent, then $A_W$ is projectively simple primitive.  Nekrashevych observed that in such a setting, a suitable localization of A_W (you basically invert the sum of all letters) is simple with GK-dimension given by the complexity of W.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;实际上 Uzi 的构造中的 $W$ 也是uniformaly recurrent的，这一结论Uzi没有直接指出。但是从 $A_W$ 的prime 和 just infinite可以得到 $W$ 就是uniformly recurrent. 因此，在某种程度上将complexity为$n^r$的uniformly recurrent字最早就归功于 Uzi的构造。&lt;/p&gt;
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;U. Vishne, Primitive Algebras with Arbitrary Gelfand-Kirillov Dimension, Journal of Algebra. 211 (1999) 150–158. (&lt;a class=&#34;link&#34; href=&#34;zotero://open-pdf/library/items/GLHM3J3B&#34; &gt;pdf&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Krause and Lenagan, Growth of Algebras and Gelfand-Kirillov Dimension, GSM22 (2000) 162-163. (&lt;a class=&#34;link&#34; href=&#34;zotero://open-pdf/library/items/J52RVRSN?page=141&amp;amp;annotation=JR5VJ65P&#34; &gt;Link:P141&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;P. Kurka,  &lt;em&gt;Topological and symbolic dynamics&lt;/em&gt; , Société Mathématique De France Paris (2003), pp.199.&lt;/li&gt;
+&lt;li&gt;V. Nekrashevych,  &lt;em&gt;Growth of étale groupoids and simple algebras&lt;/em&gt; , International Journal of Algebra and Computation 26 (2016), pp. 375–397.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2022-06-10&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

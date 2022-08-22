@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>VNC on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/vnc/</link>
+        <description>Recent content in VNC on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 28 Dec 2019 05:47:25 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/vnc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用 MobaXTerm/VNC 打开图像化的远程服务器</title>
+        <link>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <pubDate>Sat, 28 Dec 2019 05:47:25 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 使用 MobaXTerm/VNC 打开图像化的远程服务器" /&gt;&lt;p&gt;刚来到 BIU 的时候，系里的计算机工程师就跟我讲我有了系里电脑的账号和对应的系里服务器账号。然而我一直只是使用 SSH 或者 SFTP 将自己电脑的文件和学校电脑同步。偶尔的一次机会看到了系里账号的配置网页 BIU-Remote &lt;a class=&#34;link&#34; href=&#34;http://ezra.cs.biu.ac.il/?p=241&amp;amp;page=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Graphical Applications&lt;/a&gt; 中有关于远程图形化应用程序的骚操作。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;经过一番研究发现学校远程服务器的Linux系统中装了 VNC server，可以远程调用这台服务器。于是我兴冲冲地按照上述网页的指示进行操作。&lt;/p&gt;
+&lt;h2 id=&#34;安装和初步使用-x-windows&#34;&gt;安装和初步使用 X Windows&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先下载安装 MobaXterm（&lt;a class=&#34;link&#34; href=&#34;https://www.nocmd.com/5704.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;此处有便携版&lt;/a&gt;）， 创建 一个新的 ssh 连接 BIU-math，相应服务器地址和端口如下（这个地址在上述网页中没有明确，系里的管理员也没有给过我，是有一次我查看系里电脑的账户是怎么与服务器同步发现的）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;planet.cs.biu.ac.il:22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填入用户名和私钥位置（在Advanced SSH setting中使用private key）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由于远程服务器支持X Windows。在登录之后的命令行中输入程序命令，可以直接调用远程服务器中的应用。已检测到的 BIU-math 拥有的程序如下表。比如我们输入 matlab 就能弹出一个 matlab 的虚拟窗口。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;程序代码&lt;/th&gt;
+&lt;th&gt;程序介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;acroread&lt;/td&gt;
+&lt;td&gt;Adobe Acrobat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display&lt;/td&gt;
+&lt;td&gt;X display 主程序，图形化显示打开远程文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emacs&lt;/td&gt;
+&lt;td&gt;Emacs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;firefox&lt;/td&gt;
+&lt;td&gt;Firefox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gap&lt;/td&gt;
+&lt;td&gt;GAP (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;magma&lt;/td&gt;
+&lt;td&gt;magma (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;matlab&lt;/td&gt;
+&lt;td&gt;Matlab 2012b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sage&lt;/td&gt;
+&lt;td&gt;sage (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;soffice&lt;/td&gt;
+&lt;td&gt;Open Office&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;smath&lt;/td&gt;
+&lt;td&gt;Open Office Math Formula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xmaple&lt;/td&gt;
+&lt;td&gt;Maple 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;进阶使用-vnc-远程可视化&#34;&gt;进阶使用 VNC 远程可视化&lt;/h2&gt;
+&lt;p&gt;上述方法只能通过 X windows 调用特定的程序，而且延迟比较严重，实际效果较差。于是我继续查看网页介绍的方法。说是要安装一个 VNC Viewer 比如 RealVNC。不过在我下载 RealVNC 的同时，我发现 MobaXTerm 也是支持 VNC Viewer 的，于是用它尝试了一下。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;连接SSH，打开vncserver&lt;/strong&gt;。首先使用 putty 或者 MobaXTerm 的 SSH 功能连接登录 BIU-Math。连接完成后在命令行中输入 &lt;code&gt;vncserver&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;初始化vncserver&lt;/strong&gt;。第一次使用会需要初始化密码，输入一个密码重复两次（为了方便记忆我直接使用连接密码）。之后弹出如下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;New VNC server is &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To tunnel VNC &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt; through SSH:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click on the upper left corner of PuTTY
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Select &lt;span class=&#34;s2&#34;&gt;&amp;#34;Change Settings...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Under &lt;span class=&#34;s2&#34;&gt;&amp;#34;Category&amp;#34;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Connection&amp;#34;&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;SSH&amp;#34;&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Tunnels&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Under &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add new forwarded port&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Source port: &lt;span class=&#34;m&#34;&gt;5900&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Destination: planet:19597
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click &lt;span class=&#34;s2&#34;&gt;&amp;#34;Apply&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Leave PuTTY running&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To run a VNC Viewer:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Server: localhost
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To stop VNC &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vncserver -kill :13697
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;添加本地转发端口。&lt;/strong&gt; 我们需要在 putty 或者 MobaXTerm (位于 Tools &amp;gt;Network &amp;gt; SSHTunnel ) 添加一个本地转发端口 5900，目标为 &lt;code&gt;planet:19597&lt;/code&gt;。两种方法如下图所示。（Moba还支持自动启动和自动重连）
+&lt;img src=&#34;https://imgkr.cn-bj.ufileos.com/9f86fc8d-afb6-4234-9f1f-33f3f7bcb87d.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgkr.cn-bj.ufileos.com/5a4fa39b-4198-45ab-8e44-6806fe6da12b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;浏览VNC。&lt;/strong&gt; 保持端口打开，在 MobaXTerm 中新建一个 VNC 进程, 只要填写 localhost 即可 (端口默认是5900与我们vncserver的设置一致)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;大功告成。&lt;/strong&gt; 连接以后就大功告成！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;题外话ssh-转发端口科学上网&#34;&gt;题外话：SSH 转发端口科学上网&lt;/h2&gt;
+&lt;p&gt;其实上次回国的时候我就发现，我可以在putty中新建一个转发动态端口 &lt;code&gt;D4000&lt;/code&gt; 来做 socks 代理，让我在家能用上学校的校园网下载论文（当然也顺便能科学上网）。这一次安装了 MobaXTerm，我发现同样也是能这样设置的。&lt;/p&gt;
+&lt;p&gt;具体讲讲：在putty或者MobaXTerm中设置并开启转发端口以后，在 Chrome 中安装扩展 Proxy SwitchyOmega。在其选项设置中添加一个代理服务器，代理协议 socks5，服务器是localhost:4000。然后就可以愉快地上网了。&lt;/p&gt;
+&lt;p&gt;whzecomjm
+2019-12-28 23:06&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

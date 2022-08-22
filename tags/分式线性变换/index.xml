@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>分式线性变换 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2/</link>
+        <description>Recent content in 分式线性变换 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 02 Dec 2015 10:52:33 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>整系数的分式线性变换群仅有9个有限子群</title>
+        <link>https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</link>
+        <pubDate>Wed, 02 Dec 2015 10:52:33 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 整系数的分式线性变换群仅有9个有限子群" /&gt;&lt;p&gt;分式线性变换(FLT)又称为Mobius变换是指这样形式的函数：$m(x)=\frac{ax+b}{cx+d}$，其中$ad-bc\ne  0$。我们将要证明，如果Mobius变换的系数为整数，仅有9个有限子群。对于实系数和复系数的情况我们也将要提到。&lt;/p&gt;
+&lt;p&gt;首先我们要求我们的整系数的FLT的所有系数互素即$\gcd(a,b,c,d)=1$，然后我们验证所有的整系数的FLT成群：两个FLT的乘积（复合）仍然为FLT。并且$e(x)=x$为单位变换，每个FLT均有逆变换，为$\frac{dx-b}{-cx+a}$。&lt;/p&gt;
+&lt;p&gt;为了便于计算（用矩阵计算），我们发现整系数的FLT与$PGL(2,\mathbb{Q})$同构。注意PGL中的“P”为“projective”，意思类似于我们前面提到的要求，即$\gcd(a,b,c,d)=1$，如果不等于1则除去公因子。如果是分数倍，当然也能一起去除。&lt;/p&gt;
+&lt;p&gt;我们再考虑复平面上的分式线性变换。我们将复平面拓s展为黎曼球面$\widehat{C}=C\cup{\infty}$，这样我们需要注意几个拓展后的规定$1 / 0=\infty,1 / \infty=0$，以及关于FLT的几个特征：如果$c\neq0$，则有$m(\infty)=a / c$以及$m(-d / c)=\infty$；如果$c=0$，则有$m(\infty)=\infty$。&lt;/p&gt;
+&lt;p&gt;下面我们再来考虑接下来需要的几个群：$C_n,D_n$等。$C_n$是n阶循环群。$D_n$为2面体群，&lt;/p&gt;
+&lt;p&gt;$$D_n=\{e,a,a^2, \cdots, a^{n-1}, b, ab, a^2b, \cdots,a^{n-1}b\},$$&lt;/p&gt;
+&lt;p&gt;注意$C_n$是$D_n$的子群，并且&lt;/p&gt;
+&lt;p&gt;$$|D_n|=2|C_n|=2n,$$&lt;/p&gt;
+&lt;p&gt;$D_n$ 不是Abel群，因为 $ba=a^{n-1}b$。也就是说，$b^2=1$以及$b^{-1}ab =a^{-1}$。关于$D_n$的小群的结构，有 $D_1\cong C_2$。另外，$D_2$群是最小的非循环群。（这说明一二三阶群必然是循环群。）&lt;/p&gt;
+&lt;p&gt;考虑 $C_n,D_n$ 的几何性质，显然它们分别同构于正棱锥和正棱柱的对称群。由于球的有限旋转群是$C_n,D_n,A_4,S_4,A_5$，这一点可以参见 正多面体的对称群 。当然$C_n,D_n$还有平面上的几何意义：$C_n$是正多边形的旋转变换群，$D_n$是正多边形的旋转和镜面映射的变换群。&lt;/p&gt;
+&lt;p&gt;有了几种简单的群以后，我们在考虑FLT的复合变换，比如有趣的是$p(x)=1 / (x+1)$的迭代，将之映射到$PGL(2,\mathbb{Q})$，则有n阶复合为&lt;/p&gt;
+&lt;p&gt;$$\left[\begin{array}{cc} F_{n-1}&amp;amp; F_{n} \\ F_{n}&amp;amp; F_{n+1} \end{array}\right]$$&lt;/p&gt;
+&lt;p&gt;其中$F_n$为第n个斐波纳契数。现在我们定义$p^{(0)}(x)=x$,则$p(x)$的逆为$p^{(-1)}(x)=(1-x) / x$。于是，${p^{(i)}(x):i\in\mathbb Z}$在复合运算下是一个无限群。考察一个特定数的轨道，比如说1，就可以得到一个轨道。&lt;/p&gt;
+&lt;p&gt;在考虑一个相似的变换$m(x)=-1 / (x+1)$，我们会发现在复合运算下，m(x)生成的群是有限的，这是因为$m^{(2)}(x)=(-x-1) / x$以及$m^{(3)}(x)=x$，这样这个群的阶就是3，并且同构于$C_3$。如果想要比较清晰地看到这一点，可以带入一个特定的数，看该数的轨道。再考虑一个变换$q(x)=1 / x$，显然$q(x)$的复合变换构成一个2阶的群。现在我们将这两个群放在一起(直积)，则能够生成一个阶数为6的群，并且同构与$D_3$。&lt;/p&gt;
+&lt;p&gt;介绍完这么多的基础知识，现在我们可以正面考察我们要证明的定理了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;定理一：$PGL(2,\mathbb{Q})$的全部有限子群同构于$C_n,D_n$,其中n=1,2,3,4,6。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;定理二：$PGL(2,\mathbb{R})$每一个有限子群同构于任意阶的循环群或者二面体群。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们的证明是构造性的，并且在这里引用到$PGL(2,\mathbb{C})$的结果：&lt;strong&gt;$PGL(2,\mathbb{C})$的一个有限子群同构于球的对称群的一个有限子群，即同构$C_n,D_n,A_4,S_4,A_5$&lt;/strong&gt;。（前半句结论参见文献5）所以，我们证明定理二只需要证明，不能用实系数的FLT的群表示。&lt;/p&gt;
+&lt;p&gt;首先我们考虑c=0的分式线性变换，显然 $e(x)=x$ 生成为一阶群，m(x)=-x为2阶群。进一步地，$-x+b(b\in\mathbb C)$也是2阶的。对于四阶的情况我们可能需要利用$ix$甚至是 $ix+b$。&lt;/p&gt;
+&lt;p&gt;下面我们还需要本原根的知识，对于n&amp;gt;1的本原根，它是&lt;/p&gt;
+&lt;p&gt;$$(x^n-1) / (x-1)=x^{n-1}+\cdots+ x^2+x+1$$&lt;/p&gt;
+&lt;p&gt;的一个根。需要指出的是，$\pm1$是唯二的有理本原根，$\pm i$ 和 $\pm\frac{1}{2}\pm\frac{\sqrt{3}i}{2}$（分别是3,4,6阶的本原根）是所有的平方本原根。&lt;strong&gt;其他的所有本原根均是高于二次的本原根。&lt;/strong&gt; 这一点在文献4中有体现。&lt;/p&gt;
+&lt;p&gt;正如前文提到的c=0的FLT，我们可以猜想$m(x)=\zeta x+b$（其中$\zeta,b$是复数）是n阶的当且仅当$\zeta$是n阶本原根。事实上，我们可以看到，当$\zeta$是n阶本原根时，&lt;/p&gt;
+&lt;p&gt;$$m^{(n)}(x)={\zeta}^nx +b({\zeta}^{(n-1)}+\cdots+ {\zeta}^2+\zeta+1)=x.$$&lt;/p&gt;
+&lt;p&gt;反之也成立。现在我们需要解决任意的FLT的有限阶数了。我们现在证明，任意一个FLT：$(ax+b) / (cx+d)$ 是和“线性映射”Ax+B共轭的，于是它们的阶数是相等的。&lt;/p&gt;
+&lt;p&gt;共轭元素的阶数相等的证明：设a,b的阶数分别为s,t，$xax^{-1}=b$，于是&lt;/p&gt;
+&lt;p&gt;$$b^s=(xax^{-1})^s =x^s (a^s) x^{-s}= x^s x^{-s}=1,$$&lt;/p&gt;
+&lt;p&gt;所以 $t \mid s$，同理可证 $s\mid t$，从而有 $s=t$。&lt;/p&gt;
+&lt;h2 id=&#34;两个引理&#34;&gt;两个引理&lt;/h2&gt;
+&lt;p&gt;现在开始正式的证明，首先给出两个引理及其证明：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引理一：假设$m(x)=\frac{ax+b}{cx+d}$是整系数的FLT，并且有有限的阶数。则$m(x)$的阶数只能为1,2,3,4,或者6，并且在后三种情况中，m(x)在$PGL(2,\mathbb Q)$分别共轭于$\frac{-1}{x+1}$,$\frac{x-1}{x+1}$,$\frac{2x-1}{x+1}$。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意一二阶的映射不满足共轭的情形。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;：首先容易验证上述三个变换分别是3,4,6阶的，而且q(x)=1 / x是二阶的，e(x)=x 是一阶的。当c=0时，$m(x)=(a / d)x+b / d$是一个“线性映射”，根据之前的讨论，$a / d=\pm1$（有理本原根），当$a / d=1$时，b=0，为一阶的情形$m(x)=e(x)=x$；当$a / d=-1$时，为二阶的情形$m(x)=b / d-x$。&lt;/p&gt;
+&lt;p&gt;对于$c\neq0$的情况，我们先求出变换的不动点，再作共轭变换。解如下方程
+$\frac{ax+b}{cx+d}=x$
+我们可以得到至少一个有限不动点$\alpha$，并且拥有$\leq 2\text{ over } \mathbb{Q}$。现在我们做$m(x)$的共轭$\hat{m}(x)=s^{-1} m s(x)$,其中$s=\alpha+\frac{1}{x}$则$\hat{m}(x)$是$\mathbb{Q}(\alpha)$上的“线性映射”（验证$\hat{m}(\infty)=\infty$），因此可以写成Ax+B。因为$\hat{m}$和m有相同的阶数，所以A是一个n阶本原根。因为$A\in\mathbb{Q}(\alpha)$，而且$\mathbb{Q}(\alpha)$最多是$\mathbb{Q}$的平方本原根扩张，所以$A=\pm1,\pm i,\pm1 / 2\pm\frac{\sqrt{3}i}{2}$,于是，$n=1,2,3,4,6$。&lt;/p&gt;
+&lt;p&gt;下面我们再证明当$n=3,4,6$时，选择三个有理数A,B,C，使得$m(x):A\mapsto B\mapsto C$.让s(x)成为这样的变换使得：$0\mapsto A,-1\mapsto B,\infty\mapsto C$（$s(x)=\frac{(B-A)Cx+A(B-C)}{(B-A)x+(B-C)}$），然后做m(x)的共轭$\hat{m}(x)=s^{-1}ms(x)$，我们可以得到：$\hat{m}(x):0\mapsto-1\mapsto\infty$。此时也就有$\hat{m}(x)=\frac{\hat{a}x-1}{x+1}$。$\hat{m}(x)$的阶数为3,4,6，则对应$\hat{a}$为0,1,2。QED&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引理二：如果K是$\mathbb{R}$的一个子域，则所有以K为系数的FLT群的有限子群（也就是PGL(2,K)的全部有限子群）为循环群或者是二面体群。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;：根据之前的$PGL(2,\mathbb{C})$结论，我们只需要证明$A_4,S_4,A_5$不能表示为PGL(2,K)的一个有限子群。又因为$A_4\subset S_4$，以及$A_4\subset S_5$，所以我们只需要证明$A_4$不能表示即可。&lt;/p&gt;
+&lt;p&gt;设G和$A_4$同构，因为$A_4$里有三循环，所以根据引理一，经过合适的共轭变换可以得到$-1 / (x+1)\in G$。在$A_4$中，一个三循环和一个二循环的元素复合会等于一个新的三循环。（比如(abc)和(ab)(cd)的乘积）而在PGL(2,K)中的二阶元素只有两种形式：$-x+b$（固定$\infty$）或者是$\frac{ax+b}{x-a}$（将$\infty$变成a）。而$-1 / (x+1)$和它们的复合分别为$1 / (x-b-1)$（它是三阶当且仅当$b=-1\pm i$），$\frac{-x+a}{(a+1)x+(b-a)}$（而它是三阶的当且仅当$b=\frac{1}{2}(1+2a\pm\sqrt{-4a^2-4a-3})$，这是个复数。）所以，$A_4$不能被PGL(2,K)的有限子群表示。&lt;/p&gt;
+&lt;h2 id=&#34;定理的证明&#34;&gt;定理的证明&lt;/h2&gt;
+&lt;p&gt;证明：根据引理二，我们只需要关心$C_n,D_n$。要证明$PGL(2,\mathbb{R})$包含所有的$C_n,D_n$，我们只需证明对任意$n&amp;gt;0$，我们都能找到$m(x)$，使得n阶的$m(x)$和$q(x)=1 / x$能生成$D_n$。&lt;/p&gt;
+&lt;p&gt;当n=1是，让m(x)=x；当n=2是，让m(x)=-x。很容易看出，这给出了（结合q(x)=1 / x）$C_1,C_2,D_1,D_2$。现在假设$n\geq3$，让$\zeta_{n}=e^{2\pi i / n}$为n阶本原根，让$a_n=1+2\cos(2\pi / n)=1+\zeta_{n}+1 / \zeta_{n}$（这是一个实数。）现在将m(x)定义$\frac{a_nx-1}{x+1}$，不难证明$m^{-1}(x)=\frac{x+1}{-x+a_n}$以及$q^{-1}mq=m^{-1}$（这里见过吧，之前二面体群的性质），所以我们只需要证明m(x)是n阶的。&lt;/p&gt;
+&lt;p&gt;现在我们做共轭变换，令$s(x)=\zeta_{n}+1 / x$,因为$s(\infty)=\zeta_{n}$且$m(\zeta_{n})=\zeta_{n}$,所以有$\hat{m}(\infty)=\infty$，于是$\hat{m}(x)=Ax+B$,其中A,B为复数。通过比较$\hat{m}(x)$和$s^{-1}ms(x)$的表达式，可以得到（令$x=0,x=-1 / \zeta_{n}$）$A=\zeta_{n}$和$B=\zeta_{n} / (\zeta_{n}+1)$。显然$\hat{m}(x)$是n阶的。于是定理二得证！&lt;/p&gt;
+&lt;p&gt;现在我们限制系数为有理数，根据以上结论和引理一，定理一得证！&lt;/p&gt;
+&lt;p&gt;由此我们还可以得到一个推论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推论一：对于$n\geq3$和$a_n=1+2\cos(2\pi / n)$，则$(a_nx+1) / (x+1)$是n阶的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Joseph A. Gallian, Contemporary Abstract Algebra, 5th ed., Houghton Mifﬂin, Boston, MA, 2002.&lt;/li&gt;
+&lt;li&gt;R. C. Lyndon and J. L. Ullman, Groups of elliptic linear fractional transformations, Proc. Amer. Math. Soc. 18 (1967), 1119–1124.&lt;/li&gt;
+&lt;li&gt;Dresden, Gregory P. &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;http://home.wlu.edu/~dresdeng/papers/nine.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;There are only nine finite groups of fractional linear transformations with integer coefficients.&lt;/a&gt;&amp;rdquo; &lt;em&gt;Mathematics Magazine&lt;/em&gt; (2004): 211-218.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;首发于知乎专栏: &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/20444487&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zhuanlan.zhihu.com/p/20444487&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

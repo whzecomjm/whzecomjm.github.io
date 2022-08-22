@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>洗衣机 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E6%B4%97%E8%A1%A3%E6%9C%BA/</link>
+        <description>Recent content in 洗衣机 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 19 Jan 2018 10:52:33 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%B4%97%E8%A1%A3%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>洗衣机修复记</title>
+        <link>https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/</link>
+        <pubDate>Fri, 19 Jan 2018 10:52:33 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059.jpg" alt="Featured image of post 洗衣机修复记" /&gt;&lt;p&gt;家里的滚筒洗衣机用了将近一年，前几天某一次我洗衣服的时候突然家里跳闸断电。开始我不明白为什么，当时没有增加特殊过载的电器，所以直接去把电闸打回来。&lt;/p&gt;
+&lt;p&gt;回到房间开始没有意识到任何问题，过了一个小时的闹钟提示我去洗衣机处收衣服。当我过去发现洗衣机停掉了，所以想了下又重新打开洗衣机重新洗。可是洗衣机显示门是没有正常锁定的状态，并且此时门已经打不开了。&lt;/p&gt;
+&lt;p&gt;刚开始试图用蛮力打开都没有成功，然后去网上搜索“西门子滚筒洗衣机门不能正常打开怎么办”，果然有结果，显示我需要找到一个洗衣机下方的手动拉环将门拉开。&lt;/p&gt;
+&lt;p&gt;好不容易找到以后发现还有一个问题，洗衣机里面有水，而现在洗衣机不能正常放水。心想肯定也有手动放水的装置，找了一下果然看到手动出水口，清理了洗衣机所有的积水。&lt;/p&gt;
+&lt;p&gt;好不容易把衣服拿出来以后，准备研究一下怎么把这个bug修复。网上一搜索都说很有可能是门锁坏了，需要换一个。于是我想考虑怎么换门锁。因为洗衣机的固定螺丝都是六角形的，所以我自己的螺丝刀用不了。由于没有相应工具，我于是让室友去实验室带工具晚上来拆洗衣机。&lt;/p&gt;
+&lt;p&gt;晚上室友回来，于是他们加入了拆洗衣机行列。不过门锁由于在滚筒的侧前方非常难拆，中间只能卡一只手进去，而且还有一个人顶住滚筒给予拆卸的相应空间。门锁拆下来我们发现果然是不正常的。研究了好一会他的结构，实际上它是一个电磁继电器控制位移的装置：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658.jpg&#34;
+	width=&#34;1174&#34;
+	height=&#34;660&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658_hu51259f1d429c4cc202ae8335b3bf7945_63322_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658_hu51259f1d429c4cc202ae8335b3bf7945_63322_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;门锁&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;开始我以为杀死这个装置被烧坏了，所以将它拆干净，用电笔测量了所有元件是否工作，发现一切正常，线圈电阻大约164欧姆。所以，最终我们排除了它的问题，并且修复复位了门锁。之后把它装回去花费了很大的力气，由于位置很窄，把机械挂钩挂在门锁下面费了特别多力气。这是后话了。&lt;/p&gt;
+&lt;p&gt;之后我们拆除了所有的电脑板，如下是型号 WM12E464ME 的电脑板。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059.jpg&#34;
+	width=&#34;2016&#34;
+	height=&#34;1512&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059_hu2cad403f201a6e25784e057e20549164_266241_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059_hu2cad403f201a6e25784e057e20549164_266241_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;电脑板&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;拆除之后发现电脑板控制门锁的地方果然被烧坏了，焦黑一片：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122.jpg&#34;
+	width=&#34;950&#34;
+	height=&#34;712&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122_hu323e9726a6543c69a9e3ad6601468205_64687_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122_hu323e9726a6543c69a9e3ad6601468205_64687_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;烧坏的部位&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;到此当天的工作告一段了，我能想到的就是换一个电路板或者是修复一下电路板。于是第二天我去到室友实验室，和一个做电路的同学讨论了一下，他说也许可以用外接电线来修复。说干就干，我们试图还原电路板，并且焊接了如下电路部分：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766.jpg&#34;
+	width=&#34;1344&#34;
+	height=&#34;1008&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766_hud5e13ccfa7b1d6880fa7e919b955c11d_132824_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766_hud5e13ccfa7b1d6880fa7e919b955c11d_132824_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;手工修复的电路&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;于是晚上回到家以后我们开开心心地装回去以后发现洗衣机能工作。不过有个小bug，当洗衣机运行到最后1分钟以后会停格在那里，电路板发出细微的响声。并且第二次测试的时候，洗衣机进水之后干脆就不转了。本来还想和搞电路的同学再讨论讨论，结果第二天他说他也只能验证电路正确可能会有一些问题。&lt;/p&gt;
+&lt;p&gt;在家里我试图找到原因，尝试了很多方法，最后惊喜地发现，只要将洗衣机转速不要用默认的1200和800，使用低转速600或者400就能正常运作。我想原因可能是我们焊接的电路影响了电路板原本的电流电压分布，使得分配到控制马达的电路电压不够，高转速不能正常使用。不过这也只是我的猜测。自此，洗衣机能用我也就不想在折腾了。&lt;/p&gt;
+&lt;p&gt;whzecomjm
+2018-01-19&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

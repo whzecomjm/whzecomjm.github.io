@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>级数 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E7%BA%A7%E6%95%B0/</link>
+        <description>Recent content in 级数 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 23 Sep 2018 15:21:42 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E7%BA%A7%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>欧拉是怎么发现平方倒数级数公式的</title>
+        <link>https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</link>
+        <pubDate>Sun, 23 Sep 2018 15:21:42 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%AC%A7%E6%8B%89%E6%98%AF%E6%80%8E%E4%B9%88%E5%8F%91%E7%8E%B0%E5%B9%B3%E6%96%B9%E5%80%92%E6%95%B0%E7%BA%A7%E6%95%B0%E5%85%AC%E5%BC%8F%E7%9A%84/fabrice-villard-7__6lSyuYeA-unsplash.jpg" alt="Featured image of post 欧拉是怎么发现平方倒数级数公式的" /&gt;&lt;p&gt;欧拉是一位多产的数学家，其学术著作约有60-80册，发表论文800多篇，内容极其丰富，对近现代数学产生了极大的影响。之前有一个网站 eulerarchive.org 最近好像挂了，不过我发现 MAA 有更全面的主页： &lt;a class=&#34;link&#34; href=&#34;http://eulerarchive.maa.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Euler Archive&lt;/a&gt; 。上面有不少欧拉的历史以及原著（包括一些翻译版），有兴趣可以去看看。之前我也花了一些时间去看了一些欧拉微积分和数论方向的文章（比如读读欧拉系列），发现很适合刚上大学甚至高中生去读。&lt;/p&gt;
+&lt;p&gt;下面我讲一下贝塞尔问题的解决过程吧（也就是平方倒数级数公式）。其实学过高数的人都应该知道欧拉当初是怎么证明的，虽然不算是十分严格，但是非常精巧。可是他是怎么发现这个公式等于 $\pi^2/6$ 的呢？&lt;/p&gt;
+&lt;p&gt;首先，欧拉从几何级数的等式出发 $$1+x+ x^2 +\cdots + x^{n-1} = \frac{1-x^n}{1-x}$$ 然后两边取不定积分，得到 $$x+ \frac{x^2}{2} +\cdots + \frac{x^n}{n} = \int\frac{1-x^n}{1-x}dx$$&lt;/p&gt;
+&lt;p&gt;注意，左边 $x$ 取 $1$的话就是调和级数的前n项（n-partial sum），它等于右边取从0到1的定积分（瑕积分）。由于左右的相等，可以定义类似于 n=1/2-partial sum 的非整数部分和，对于这个例子：&lt;/p&gt;
+&lt;p&gt;$$\int_{0}^1 \frac{1-\sqrt{x}}{1-x}dx =\int_{0}^1 \frac{1}{1+\sqrt x}dx =2-2\ln 2$$&lt;/p&gt;
+&lt;p&gt;现在，我们已经通过积分已经把几何级数和调和级数联系起来了。欧拉尝试继续积分，左边得到&lt;/p&gt;
+&lt;p&gt;$$\frac{x^2}{1\cdot 2} + \frac{x^3}{2\cdot 3} + \cdots + \frac{x^{n+1}}{n\cdot(n+1)}$$
+此时，分母还不是我们想要的结果（我们想要得到平方项），欧拉敏锐地发现只要在积分前除以x即可。&lt;/p&gt;
+&lt;p&gt;$$\int\frac{1}{x} \left(x +\frac{x^2}{2} + \cdots+\frac{x^n}{n} \right)dx = x+ \frac{x^2 }{2^2} + \frac{x^3}{3^2} + \cdots+\frac{x^n}{n^2}$$
+故，我们有&lt;/p&gt;
+&lt;p&gt;$$\int^1_0 \frac{1}{x} \left(\int_0^x \frac{1-y^n} {1-y}dy\right) dx = 1+\frac{1}{4}+\cdots + \frac{1}{n^2}$$&lt;/p&gt;
+&lt;p&gt;当 n 趋于无穷大时，我们就可以从左边的式子估计平方倒数级数。接下来才是欧拉真正厉害之处，他的算数功底就不提了，相传他双目失明以后，所有的计算都是大脑中进行的。欧拉之所以是欧拉，当他看到左边的积分后，用数值估计的方法算出来大约是 &lt;em&gt;1.644924&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;这看起来有些不可思议，但是事实就是如此。而且得到的这个数字可能对于大多数人来说都是无意义的，但是欧拉一眼就看出来是 $\pi^2 / 6$. 当他得到这个结果以后，之后的补证大家都比较清楚了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转自&lt;a class=&#34;link&#34; href=&#34;http://www.zhihu.com/question/29886804/answer/46081140&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的知乎回答&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

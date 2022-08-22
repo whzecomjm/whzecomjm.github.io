@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>生活 on Transcendence</title>
+        <link>https://whzecomjm.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+        <description>Recent content in 生活 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 07 Apr 2021 15:39:07 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Texmacs 一些使用技巧</title>
+        <link>https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+        <pubDate>Wed, 07 Apr 2021 15:39:07 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/texmacs-%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/20220822155248.png" alt="Featured image of post Texmacs 一些使用技巧" /&gt;&lt;h2 id=&#34;开箱使用&#34;&gt;开箱使用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;设置文本空格无连续空格: &lt;code&gt;首选项&amp;gt;键盘&amp;gt;文本模式中的空格键: No Multiple spaces&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;设置文档更新刷新两遍: &lt;code&gt;首选项&amp;gt;其他&amp;gt;执行文档更新: 两次&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用前可以删除大多数插件，仅仅保留常用的插件：graph，pari，python，sage，sympy，tikz，tmpy。&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;标准&lt;/code&gt;的断页模式可能会在&lt;strong&gt;断页前或其他类似情景输入换行出现闪退 bug&lt;/strong&gt;。设置 &lt;code&gt;Document&amp;gt;Page..&lt;/code&gt;的断行算法为&lt;code&gt;专业&lt;/code&gt;可以防止此换行 bug。不过专业的断行可能会拖慢编辑器。解决的方法是书写文章时候使用&lt;code&gt;paperus&lt;/code&gt;+标准断行算法, 之后导出文档再转为paper格式。&lt;/li&gt;
+&lt;li&gt;中文文档仅仅保存为 xml 格式（tmml）可以以Unicode方式存储中文，方便预览和版本控制。但是文件大小会比较大，且实时编辑保存会有卡顿。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;常用技巧&#34;&gt;常用技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Shift + 箭头可以框选.&lt;/li&gt;
+&lt;li&gt;MacOS 使用 &lt;code&gt;ctrl + shift + 4&lt;/code&gt; 进入行间公式需要切换为英文输入法, 且先按下 &lt;code&gt;ctrl&lt;/code&gt;.  （Windows版本下快捷键为 &lt;code&gt;Alt+Shift+4&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;文档内的==折叠结构==: &lt;code&gt;Insert -&amp;gt; Fold -&amp;gt; Folded -&amp;gt; Default&lt;/code&gt;
+会产生一个空心的点，表示点击可展开。第一行是可见内容，之后是不可见。&lt;/li&gt;
+&lt;li&gt;向量符号输入是 &lt;code&gt;\vect&lt;/code&gt; 而不是 LaTeX 的 &lt;code&gt;\vec&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;使用某些命令, 比如&lt;code&gt;\label&lt;/code&gt;, &lt;code&gt;\index&lt;/code&gt; 时可以使用 &lt;strong&gt;Tab&lt;/strong&gt; 键代替中间的确认键防止突然跳转.&lt;/li&gt;
+&lt;li&gt;在 Texmacs 中高亮数学公式中的括号， &amp;ldquo;焦点工具栏&amp;quot;中扳手形状的图标,然后点击 &amp;ldquo;color according to nesting level&amp;rdquo; 即可.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;修改宏&#34;&gt;修改宏&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;更改中文环境中的“定理”为英文“Theorem”等: 在一个定理环境中点击扳手符号, 找到 &lt;code&gt;Theorem text...&lt;/code&gt; 修改对应宏的中文名为英文即可.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常用的宏命令，&lt;code&gt;\assign&lt;/code&gt;, &lt;code&gt;\value&lt;/code&gt;, &lt;code&gt;\with&lt;/code&gt; 以及 &lt;code&gt;\macro&lt;/code&gt; 和 &lt;code&gt;\&lt;/code&gt;(即 argument，直接输入反斜杠加 argument 的名字即可。) 注意，如果要嵌套的话，需要把每个指令都&lt;code&gt;Enter&lt;/code&gt;执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;定义 definition 的别名&lt;code&gt;\def&lt;/code&gt;（详细参见&lt;a class=&#34;link&#34; href=&#34;https://whzecomjm.github.io/p/texmacs-tips-%e7%bb%99%e5%ae%9a%e7%90%86%e7%8e%af%e5%a2%83%e6%b7%bb%e5%8a%a0%e5%88%ab%e5%90%8d/&#34; &gt;TeXmacs tips: 给定理环境添加别名&lt;/a&gt;）：输入&lt;code&gt;assign&lt;/code&gt;命令将 def 映射到 definition，而命令 definition 需要用 value 来包裹，需要输入的效果如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;&amp;lt;assign|def|&amp;lt;value|definition&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;一直回车使之生效，也可以把这些内容放在 preamble 中&lt;code&gt;&amp;lt;hide-preamble| &amp;gt;&lt;/code&gt;中。这一assign方式不如直接修改宏，更不如使用快捷键(修改&lt;code&gt;my-init-texmacs.scm&lt;/code&gt;)（会导致导出 latex，md 等无效。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设置快捷键和快捷输入&#34;&gt;设置快捷键和快捷输入&lt;/h2&gt;
+&lt;p&gt;scheme 代码可以在特定的文档中加入使用（插件或者运行的插件）。&lt;/p&gt;
+&lt;p&gt;使用scheme 可以实现类似于 AHK 的快速输入。 比如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;s u s t c&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;南方科技大学&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意&lt;!-- raw HTML omitted --&gt;每个字符都要分隔&lt;!-- raw HTML omitted --&gt;。这些代码还能添加到默认的用户启动配置。&lt;/p&gt;
+&lt;h3 id=&#34;增加复制到粘贴为-latex-快捷键&#34;&gt;增加复制到/粘贴为 LaTeX 快捷键&lt;/h3&gt;
+&lt;p&gt;通常情况下，我们使用 &lt;code&gt;Edit&amp;gt;Copy to/Paste to&lt;/code&gt; 复制粘贴 Latex 代码。我们可以为这两个动作添加快捷键。打开或者新建文件 &lt;code&gt;vi ~/.TeXmacs/progs/my-init-texmacs.scm&lt;/code&gt; （Windows下目录为 &lt;code&gt;\Appdata\Roaming\TeXmacs\progs\&lt;/code&gt;），增加如下内容&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M-A-c&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;clipboard-copy-import&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;latex&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;primary&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;M-A-v&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;clipboard-paste-export&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;latex&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;primary&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;设置的是&lt;code&gt;Win+Alt+c&lt;/code&gt;复制为latex，而 &lt;code&gt;Win+Alt+v&lt;/code&gt;粘贴 latex。详见参考「&lt;a class=&#34;link&#34; href=&#34;https://www.douban.com/group/topic/75062782/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;豆瓣小组&lt;/a&gt;」。（在 Texmacs 内 M 代表 Command/Wind，C 代表 Ctrl，A 代表 Option/Alt。）&lt;/p&gt;
+&lt;h3 id=&#34;增加一些不显示快捷键和工具栏的数学公式&#34;&gt;增加一些不显示快捷键和工具栏的数学公式&lt;/h3&gt;
+&lt;p&gt;比如输入&lt;strong&gt;几分之一&lt;/strong&gt;（且可以嵌套）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;:mode&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;in-math?&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1 /&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;begin &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;math-insert&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;frac&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;go-to-previous-word&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;比如输入&lt;strong&gt;二项式系数&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;:mode&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;in-math?&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;b i n o m&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;begin &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;math-insert&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;binom&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;n&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;go-to-previous-word&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;自带画图的技巧&#34;&gt;自带画图的技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;需要尽可能的画在正中央, 这样裁剪（crop）以后不会有边白.&lt;/li&gt;
+&lt;li&gt;公式模式可以插入 &lt;code&gt;tree&lt;/code&gt; 用于画交换图.&lt;/li&gt;
+&lt;li&gt;画图模式中鼠标右键点击是取消, 左键双击确认曲线.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;bibtex参考文献使用方法&#34;&gt;Bibtex参考文献使用方法&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.texmacs.org/tmweb/home/welcome.en.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texmacs&lt;/a&gt; 中使用参考文献要求如下几步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;写好 .bib文件，并把它放在含 tm 文件的文件夹中。&lt;/li&gt;
+&lt;li&gt;点击 Insert-&amp;gt;Automatic-&amp;gt;Bibliography，然后输入 bib 文件名。&lt;/li&gt;
+&lt;li&gt;在文档需要引用处，点击 Insert-&amp;gt; Link-&amp;gt; citation-&amp;gt; visible/invisible，再输入相应的文献名，&lt;strong&gt;回车&lt;/strong&gt;(!)。（或者使用 &lt;code&gt;\cite&lt;/code&gt;.）&lt;/li&gt;
+&lt;li&gt;点击三次 Document-&amp;gt; Update-&amp;gt; Bibliography, 或者使用快捷键 &lt;code&gt;⌘⇧R&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安装字体以及更新字体缓存&#34;&gt;安装字体以及更新字体缓存&lt;/h2&gt;
+&lt;p&gt;TeXmacs默认的中文字体是Fandol，所以我们需要从Fandol字体的&lt;a class=&#34;link&#34; href=&#34;https://www.ctan.org/tex-archive/fonts/fandol/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;主页&lt;/a&gt;下载，并将字体放在 &lt;code&gt;~\AppData\Roaming\TeXmacs\fonts\truetype&lt;/code&gt; 下面。&lt;/p&gt;
+&lt;p&gt;GNU/Linux 或者 macOS 对应的目录是 &lt;code&gt;~/.TeXmacs/font/truetype&lt;/code&gt;，之后要运行如下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Applications/TeXmacs.app/Contents/MacOS/TeXmacs --delete-font-cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完这个字体以后可以使用中英混排(中文模式).&lt;/p&gt;
+&lt;h2 id=&#34;插件的使用&#34;&gt;插件的使用&lt;/h2&gt;
+&lt;h3 id=&#34;使用-basictex-如何使用-tikz-xypic-等插件&#34;&gt;使用 BasicTex 如何使用 tikz, xypic 等插件&lt;/h3&gt;
+&lt;p&gt;BasicTex 虽然自带 tikz 包, 但是如果直接在 texmacs 中使用tikz插件的话可能会一直显示“busy”, 原因是 texmacs 的 tikz 插件&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;用到了宏包 &lt;code&gt;standalone&lt;/code&gt;, 这需要使用 tlmgr 安装.&lt;/p&gt;
+&lt;p&gt;BasicTex 默认没有安装 xypic. 使用 tikz 即可.&lt;/p&gt;
+&lt;h3 id=&#34;使用-tikz-画图不显示代码&#34;&gt;使用 tikz 画图不显示代码&lt;/h3&gt;
+&lt;p&gt;通常我们并不希望看到代码, 但是也想在文档中留下代码(便于修改), 这时候不要插入 interactive session, 转而插入 executable.  写完代码后, 在插件工具栏点击生成即可.&lt;/p&gt;
+&lt;h2 id=&#34;添加-markdown-转换功能&#34;&gt;添加 Markdown 转换功能&lt;/h2&gt;
+&lt;p&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://github.com/PikachuHy/texmacs-converter-tm2md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tm2md项目&lt;/a&gt;到本地，放在&lt;code&gt;convert&lt;/code&gt;目录下，重命名为&lt;code&gt;markdown&lt;/code&gt;。在windows上，路径为&lt;code&gt;%appdata%/TeXmacs/progs/convert&lt;/code&gt;，在Linux或MacOS上，路径为&lt;code&gt;~/.TeXmacs/progs/convert&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;可以先点击菜单&lt;code&gt;Tools-&amp;gt;Developer tool&lt;/code&gt;打开&lt;code&gt;Developer&lt;/code&gt;菜单。之后点击菜单&lt;code&gt;Developer-&amp;gt;Open my-init-texmacs.scm&lt;/code&gt;, 然后在&lt;code&gt;my-init-texmacs.scm&lt;/code&gt;添加代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;use-modules&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;convert&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;markdown&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;init-markdown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;成功安装后，可以看到&lt;code&gt;File-&amp;gt;Export-&amp;gt;Markdown…&lt;/code&gt;菜单，点击即可导出为markdown文档。&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;豆瓣小组. &lt;a class=&#34;link&#34; href=&#34;https://www.douban.com/group/topic/164712189/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TeXmacs常见问题（2020版）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;知乎专栏. &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/56882252&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GNU TeXmacs专栏导航贴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学术文章写作利器: &lt;a class=&#34;link&#34; href=&#34;https://x-wei.github.io/soft/TeXmacs_intro.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TeXmacs介绍&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2021-04-07 20:37&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;以后遇到插件问题可以直接去安装目录, 看看插件是如何写的, 依赖哪些程序和包.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>TeXmacs tips: 给定理环境添加别名</title>
+        <link>https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/</link>
+        <pubDate>Sat, 27 Jun 2020 19:30:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/texmacs-tips-%E7%BB%99%E5%AE%9A%E7%90%86%E7%8E%AF%E5%A2%83%E6%B7%BB%E5%8A%A0%E5%88%AB%E5%90%8D/20220822161931.png" alt="Featured image of post TeXmacs tips: 给定理环境添加别名" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.texmacs.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texmacs&lt;/a&gt;是一款非常容易上手和方便的排版工具。它拥有的方便特性对于经常写数学笔记和作业的我非常方便。其他类似于 Typora 的 Markdown 工具虽然也拥有一部分的优势，但是面对大量数学公式时，并不能快速输入数学公式，解析使用的 MathJax 和 KaTeX 也没有那么流畅。&lt;/p&gt;
+&lt;p&gt;熟悉 LaTeX 的用户很容易能上手 TeXmacs，但是想要进阶使用并没有那么容易。比如最近我厌烦了用鼠标点击定理环境（包括定义、命题等等），使用 &lt;code&gt;\theorem&lt;/code&gt; 之类的命令也似乎增加不了多少效率。于是我想着能新建一个新的宏，使用 &lt;code&gt;\thm&lt;/code&gt; 代替定理环境的命令。&lt;/p&gt;
+&lt;p&gt;然而解决的进展的并不一帆风顺。我尝试查看官方文档以及谷歌搜索寻找答案，没有找到任何有用的资料。一无所获的我想到的是去看看 TeXmacs 的源文件。幸运的是我知道了相关文件，&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Applications/TeXmacs.app/Contents/Resources/share/TeXmacs/packages/environment/env-theorem.ts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;里面有类似于 &lt;code&gt;&amp;lt;new-theorem|theorem|Theorem&amp;gt;&lt;/code&gt; 的大量内容。我尝试添加类似的一行命令&lt;code&gt;&amp;lt;new-theorem|thm|Theorem&amp;gt;&lt;/code&gt;。之后重启程序，不过并没有什么用处，:cry:。&lt;/p&gt;
+&lt;p&gt;之后我重新打开了宏编辑器，看了看 &lt;code&gt;theorem&lt;/code&gt; 的宏命令。不过宏命令（定义内容）可以复制出来，但是定义头 &lt;code&gt;&amp;lt;theorem | body&amp;gt;:=&lt;/code&gt; 无法复制，且后面的 &lt;code&gt;body&lt;/code&gt; 是特殊的 &lt;code&gt;Argument&lt;/code&gt;， 无法复制（在定义内容中也有）。当然单纯键入&lt;code&gt;body&lt;/code&gt; 是无效的。当时我尝试的例子是 &lt;code&gt;definition&lt;/code&gt;环境。首先尝试过先输入未定义的 &lt;code&gt;\def&lt;/code&gt; 回车，然后在焦点工具栏中选择扳手符号设置，在设置里，可以（复制粘贴）填入 &lt;code&gt;definition&lt;/code&gt; 环境的定义内容。这样的效果是输入 &lt;code&gt;\def&lt;/code&gt; 并且回车后可以得到一个看起来符合条件的 &lt;code&gt;\definition&lt;/code&gt;，但是由于无法在定义头中写明&lt;code&gt;body&lt;/code&gt;，故而只会生成 &lt;code&gt;definition&lt;/code&gt; 的空环境，无法输入内容，如下图。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/872RYpPiZnVv6mo.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;amqXDtYJ8dTf6Gn.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;由于发现，宏编辑器中并不能很好地利用源文件和宏命令的工具栏，故而我转向打开文件的 &lt;code&gt;preamble&lt;/code&gt;格式（菜单栏 &lt;code&gt;Tools&amp;gt;Macros&amp;gt;Edit preamble...&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;根据 preamble 的工具栏中的各个命令的名称，我猜测可以使用 &lt;code&gt;asign&lt;/code&gt; 来定义一个环境的别名。于是我尝试输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&amp;lt;&lt;/span&gt;\assign|def|definition&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这样得到的 &lt;code&gt;\def&lt;/code&gt; 只会输出文字 definition，并不是我想要的。如果给 &lt;code&gt;definition&lt;/code&gt; 加个反斜杠，可以得到之前的方法得到的半成品。于是我尝试所有的源码宏命令的各个选项，偶然间我发现可以给 definition 加一个 &lt;code&gt;\value&lt;/code&gt; 命令。这样完美解决了这一需求，参见下面这个 gif。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/Z4HmXauY9N6vUWb.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TeXmacs-assign-def.gif&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;不过直接在文档内添加这一指令，生效后会隐藏，但是可能会不小心删除。我们可以把它添加到 &lt;code&gt;preamble &lt;/code&gt; 中的&lt;code&gt;&amp;lt;hide-preamble| &amp;gt;&lt;/code&gt;内。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/27/6pe8qihbXDIg9aG.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200627202256218.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;Jun 27, 2020 20:19:22&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;过了两天，我发现在 Macros editor 中直接修改 definition 的名字（只保留 def），再点击 OK，也是能做到使用 &lt;code&gt;\def&lt;/code&gt; 来得到一个定义环境。我之前也有想过这样直接改，但是怕修改会替换原本的宏，导致前文中使用完整 definition 的环境会无法显示。实际上，这会生成一个新的宏，且不会对本来的宏产生影响。&lt;/p&gt;
+&lt;p&gt;另，打开 Extract style 可编辑宏和不显示的源码，这比 Edit preamble 更高效。&lt;/p&gt;
+&lt;p&gt;不过进一步发现上面两种方法都会导致导出 latex 不能编译或者生成大量的宏代码。今天看TeXmacs 作者的一篇介绍文章中讲到了一种新的方式，这种新的方式更加简便。即在 &lt;code&gt;my-init-texmacs.scm&lt;/code&gt; 中加入如下代码即可：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;kbd-map&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;D e f .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;definition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;L e m .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;lemma&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;P r o p .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;proposition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;T h m .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;theorem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;E x .&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;make&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;&amp;#39;example&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后输入 &lt;code&gt;Def.&lt;/code&gt; 等就能自动生成定义环境等。&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;Jun 30, 2020 10:50:44&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用 MobaXTerm/VNC 打开图像化的远程服务器</title>
+        <link>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <pubDate>Sat, 28 Dec 2019 05:47:25 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 使用 MobaXTerm/VNC 打开图像化的远程服务器" /&gt;&lt;p&gt;刚来到 BIU 的时候，系里的计算机工程师就跟我讲我有了系里电脑的账号和对应的系里服务器账号。然而我一直只是使用 SSH 或者 SFTP 将自己电脑的文件和学校电脑同步。偶尔的一次机会看到了系里账号的配置网页 BIU-Remote &lt;a class=&#34;link&#34; href=&#34;http://ezra.cs.biu.ac.il/?p=241&amp;amp;page=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Graphical Applications&lt;/a&gt; 中有关于远程图形化应用程序的骚操作。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;经过一番研究发现学校远程服务器的Linux系统中装了 VNC server，可以远程调用这台服务器。于是我兴冲冲地按照上述网页的指示进行操作。&lt;/p&gt;
+&lt;h2 id=&#34;安装和初步使用-x-windows&#34;&gt;安装和初步使用 X Windows&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先下载安装 MobaXterm（&lt;a class=&#34;link&#34; href=&#34;https://www.nocmd.com/5704.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;此处有便携版&lt;/a&gt;）， 创建 一个新的 ssh 连接 BIU-math，相应服务器地址和端口如下（这个地址在上述网页中没有明确，系里的管理员也没有给过我，是有一次我查看系里电脑的账户是怎么与服务器同步发现的）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;planet.cs.biu.ac.il:22
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填入用户名和私钥位置（在Advanced SSH setting中使用private key）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由于远程服务器支持X Windows。在登录之后的命令行中输入程序命令，可以直接调用远程服务器中的应用。已检测到的 BIU-math 拥有的程序如下表。比如我们输入 matlab 就能弹出一个 matlab 的虚拟窗口。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;程序代码&lt;/th&gt;
+&lt;th&gt;程序介绍&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;acroread&lt;/td&gt;
+&lt;td&gt;Adobe Acrobat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;display&lt;/td&gt;
+&lt;td&gt;X display 主程序，图形化显示打开远程文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;emacs&lt;/td&gt;
+&lt;td&gt;Emacs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;firefox&lt;/td&gt;
+&lt;td&gt;Firefox&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gap&lt;/td&gt;
+&lt;td&gt;GAP (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;magma&lt;/td&gt;
+&lt;td&gt;magma (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;matlab&lt;/td&gt;
+&lt;td&gt;Matlab 2012b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sage&lt;/td&gt;
+&lt;td&gt;sage (命令行界面)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;soffice&lt;/td&gt;
+&lt;td&gt;Open Office&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;smath&lt;/td&gt;
+&lt;td&gt;Open Office Math Formula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xmaple&lt;/td&gt;
+&lt;td&gt;Maple 14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;进阶使用-vnc-远程可视化&#34;&gt;进阶使用 VNC 远程可视化&lt;/h2&gt;
+&lt;p&gt;上述方法只能通过 X windows 调用特定的程序，而且延迟比较严重，实际效果较差。于是我继续查看网页介绍的方法。说是要安装一个 VNC Viewer 比如 RealVNC。不过在我下载 RealVNC 的同时，我发现 MobaXTerm 也是支持 VNC Viewer 的，于是用它尝试了一下。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;连接SSH，打开vncserver&lt;/strong&gt;。首先使用 putty 或者 MobaXTerm 的 SSH 功能连接登录 BIU-Math。连接完成后在命令行中输入 &lt;code&gt;vncserver&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;初始化vncserver&lt;/strong&gt;。第一次使用会需要初始化密码，输入一个密码重复两次（为了方便记忆我直接使用连接密码）。之后弹出如下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;New VNC server is &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To tunnel VNC &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt; through SSH:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click on the upper left corner of PuTTY
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Select &lt;span class=&#34;s2&#34;&gt;&amp;#34;Change Settings...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Under &lt;span class=&#34;s2&#34;&gt;&amp;#34;Category&amp;#34;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Connection&amp;#34;&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;SSH&amp;#34;&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Tunnels&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Under &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add new forwarded port&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Source port: &lt;span class=&#34;m&#34;&gt;5900&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Destination: planet:19597
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Click &lt;span class=&#34;s2&#34;&gt;&amp;#34;Apply&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Leave PuTTY running&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To run a VNC Viewer:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Server: localhost
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To stop VNC &lt;span class=&#34;s2&#34;&gt;&amp;#34;planet:13697&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;vncserver -kill :13697
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;添加本地转发端口。&lt;/strong&gt; 我们需要在 putty 或者 MobaXTerm (位于 Tools &amp;gt;Network &amp;gt; SSHTunnel ) 添加一个本地转发端口 5900，目标为 &lt;code&gt;planet:19597&lt;/code&gt;。两种方法如下图所示。（Moba还支持自动启动和自动重连）
+&lt;img src=&#34;https://imgkr.cn-bj.ufileos.com/9f86fc8d-afb6-4234-9f1f-33f3f7bcb87d.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgkr.cn-bj.ufileos.com/5a4fa39b-4198-45ab-8e44-6806fe6da12b.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;浏览VNC。&lt;/strong&gt; 保持端口打开，在 MobaXTerm 中新建一个 VNC 进程, 只要填写 localhost 即可 (端口默认是5900与我们vncserver的设置一致)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;大功告成。&lt;/strong&gt; 连接以后就大功告成！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;题外话ssh-转发端口科学上网&#34;&gt;题外话：SSH 转发端口科学上网&lt;/h2&gt;
+&lt;p&gt;其实上次回国的时候我就发现，我可以在putty中新建一个转发动态端口 &lt;code&gt;D4000&lt;/code&gt; 来做 socks 代理，让我在家能用上学校的校园网下载论文（当然也顺便能科学上网）。这一次安装了 MobaXTerm，我发现同样也是能这样设置的。&lt;/p&gt;
+&lt;p&gt;具体讲讲：在putty或者MobaXTerm中设置并开启转发端口以后，在 Chrome 中安装扩展 Proxy SwitchyOmega。在其选项设置中添加一个代理服务器，代理协议 socks5，服务器是localhost:4000。然后就可以愉快地上网了。&lt;/p&gt;
+&lt;p&gt;whzecomjm
+2019-12-28 23:06&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Latex中输入双括号</title>
+        <link>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</link>
+        <pubDate>Sat, 22 Sep 2018 15:17:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/jeswin-thomas-hecib2an4T4-unsplash.jpg" alt="Featured image of post Latex中输入双括号" /&gt;&lt;p&gt;在LaTeX中如果只是用&lt;code&gt;[[a]]&lt;/code&gt;和&lt;code&gt;((a))&lt;/code&gt;表示双括号（比如幂级数环）显示会比较难看。尝试使用&lt;code&gt;\left[\left[a\right]\right]&lt;/code&gt;等效果也不太好，一个简单的做法是使用&lt;code&gt;[\![a]\!]&lt;/code&gt;和&lt;code&gt;(\!(a)\!)&lt;/code&gt;，可以得到如下效果：&lt;/p&gt;
+&lt;p&gt;$$f[\![a]\!]+(\!(a)\!).$$&lt;/p&gt;
+&lt;p&gt;至于双三角括号的使用，需要引用宏包 &lt;code&gt;mnsymbol&lt;/code&gt; 或者使用如下符号自定义：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% llangle and rrangle
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\makeatletter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newsavebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\llangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\langle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathopen&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\rrangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\rangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathclose&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\makeatother&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后再在正文中使用&lt;code&gt;\llangle&lt;/code&gt; 和&lt;code&gt;\rrangle&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;参考链接: &lt;a class=&#34;link&#34; href=&#34;https://tex.stackexchange.com/questions/79657/how-to-get-double-angle-bracket-without-using-mnsymbol-package&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How to get double angle bracket without using MnSymbol package?&lt;/a&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>KaTeX：博客的数学公式支持</title>
+        <link>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</link>
+        <pubDate>Thu, 12 Jul 2018 15:14:23 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX&lt;/a&gt; 刚出来的时候, 我就有关注这个 MathJax 的代替者. 不过当时好多公式符号都无法加载, 那时甚至矩阵都显示有问题. KaTeX 虽然加载公式速度很快, 但是怕我文章里有公式不能正常显示, 所以还是没有选择使用它. 不过就像很多开源软件一样, 时间能让它们变得越来越好. 诚如前段时间回归 Typecho 重新写博客一样, Markdown 和 MathJax 之间的小 Bug 得到完美解决; 如今 KaTeX 也能独当一面, 可以彻底代替 MathJax 了.&lt;/p&gt;
+&lt;p&gt;最简单的使用方法是使用了官方推荐的简单配置（使用 jsDelivr 的CDN）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中前两个是 KaTeX的基本配置，第三个是自动加载的插件。 我们只需要把这些样式引用和脚本引用放在网页合适的位置即可享受在线使用 KaTeX 公式渲染。&lt;/p&gt;
+&lt;p&gt;如果使用默认的配置，无论是行间公式还是行内公式都要用左右各两个美元符号包裹。唯一的区别在于行间公式要单行书写，而行内公式在段落内直接书写即可。不过这和 LateX、MathJax 的习惯不一致。 我们可以通过修改分隔符 &lt;code&gt;delimiters&lt;/code&gt; 来更新上述配置，其中的&lt;code&gt;display&lt;/code&gt;的选项代表是否开启“显示模式”（&lt;code&gt;displayMode&lt;/code&gt;），即行间公式。我们只要在 CDN 引入配置之后添加如下代码即可：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;renderMathInElement&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nx&#34;&gt;delimiters&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;于是便可以畅快地享受 KaTeX 的快速加载了。 KaTeX 还可以和 InstantClick 一起提速加载速度，而这一优势是 MathJax 没有的。&lt;/p&gt;
+&lt;h2 id=&#34;typecho-的-katex-插件&#34;&gt;Typecho 的 KaTeX 插件&lt;/h2&gt;
+&lt;p&gt;由于 Typecho 1.1 正式版之后它的 Markdown内核 HyperDown 得到更新，之前和其他无论是动态博客还是静态博客都一样存在的 &lt;code&gt;\&lt;/code&gt; 转义的 bug 得到解决，所以我们可以开心回归&amp;quot;正常的LaTeX写法&amp;quot;。如果不想要自己配置 KaTeX，可以安装 Typecho 的 KaTeX 插件。&lt;/p&gt;
+&lt;p&gt;我试用过一款名为&lt;a class=&#34;link&#34; href=&#34;https://github.com/vc12345679/KaTeX4Typecho&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX4Typecho&lt;/a&gt;的插件。由于早期 KaTeX 有一些显示bug，所以需要更新插件的 KaTeX 引用。&lt;/p&gt;
+&lt;p&gt;另外需要注意的是，Typecho 的 Markdown 并没有更新 &lt;code&gt;\[&lt;/code&gt; 作为行间公式，如需设置需要设置为 &lt;code&gt;\\[&lt;/code&gt;。因此，还是推荐双美元符号的形式。&lt;/p&gt;
+&lt;p&gt;如果是使用其他静态博客程序，也有相对应的 KaTeX 插件，比如 Jeykll 的 SsKaTeX 可以在生成静态网页的同时转化 KaTeX 代码，实现了离线可用，具体可参见 &lt;a class=&#34;link&#34; href=&#34;https://frankindev.com/2017/02/08/using-katex-in-jekyll/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jekyll 中使用 KaTeX&lt;/a&gt;。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>洗衣机修复记</title>
+        <link>https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/</link>
+        <pubDate>Fri, 19 Jan 2018 10:52:33 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059.jpg" alt="Featured image of post 洗衣机修复记" /&gt;&lt;p&gt;家里的滚筒洗衣机用了将近一年，前几天某一次我洗衣服的时候突然家里跳闸断电。开始我不明白为什么，当时没有增加特殊过载的电器，所以直接去把电闸打回来。&lt;/p&gt;
+&lt;p&gt;回到房间开始没有意识到任何问题，过了一个小时的闹钟提示我去洗衣机处收衣服。当我过去发现洗衣机停掉了，所以想了下又重新打开洗衣机重新洗。可是洗衣机显示门是没有正常锁定的状态，并且此时门已经打不开了。&lt;/p&gt;
+&lt;p&gt;刚开始试图用蛮力打开都没有成功，然后去网上搜索“西门子滚筒洗衣机门不能正常打开怎么办”，果然有结果，显示我需要找到一个洗衣机下方的手动拉环将门拉开。&lt;/p&gt;
+&lt;p&gt;好不容易找到以后发现还有一个问题，洗衣机里面有水，而现在洗衣机不能正常放水。心想肯定也有手动放水的装置，找了一下果然看到手动出水口，清理了洗衣机所有的积水。&lt;/p&gt;
+&lt;p&gt;好不容易把衣服拿出来以后，准备研究一下怎么把这个bug修复。网上一搜索都说很有可能是门锁坏了，需要换一个。于是我想考虑怎么换门锁。因为洗衣机的固定螺丝都是六角形的，所以我自己的螺丝刀用不了。由于没有相应工具，我于是让室友去实验室带工具晚上来拆洗衣机。&lt;/p&gt;
+&lt;p&gt;晚上室友回来，于是他们加入了拆洗衣机行列。不过门锁由于在滚筒的侧前方非常难拆，中间只能卡一只手进去，而且还有一个人顶住滚筒给予拆卸的相应空间。门锁拆下来我们发现果然是不正常的。研究了好一会他的结构，实际上它是一个电磁继电器控制位移的装置：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658.jpg&#34;
+	width=&#34;1174&#34;
+	height=&#34;660&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658_hu51259f1d429c4cc202ae8335b3bf7945_63322_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/3462178658_hu51259f1d429c4cc202ae8335b3bf7945_63322_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;门锁&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;开始我以为杀死这个装置被烧坏了，所以将它拆干净，用电笔测量了所有元件是否工作，发现一切正常，线圈电阻大约164欧姆。所以，最终我们排除了它的问题，并且修复复位了门锁。之后把它装回去花费了很大的力气，由于位置很窄，把机械挂钩挂在门锁下面费了特别多力气。这是后话了。&lt;/p&gt;
+&lt;p&gt;之后我们拆除了所有的电脑板，如下是型号 WM12E464ME 的电脑板。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059.jpg&#34;
+	width=&#34;2016&#34;
+	height=&#34;1512&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059_hu2cad403f201a6e25784e057e20549164_266241_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/1922346059_hu2cad403f201a6e25784e057e20549164_266241_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;电脑板&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;拆除之后发现电脑板控制门锁的地方果然被烧坏了，焦黑一片：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122.jpg&#34;
+	width=&#34;950&#34;
+	height=&#34;712&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122_hu323e9726a6543c69a9e3ad6601468205_64687_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/434947122_hu323e9726a6543c69a9e3ad6601468205_64687_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;烧坏的部位&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;到此当天的工作告一段了，我能想到的就是换一个电路板或者是修复一下电路板。于是第二天我去到室友实验室，和一个做电路的同学讨论了一下，他说也许可以用外接电线来修复。说干就干，我们试图还原电路板，并且焊接了如下电路部分：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766.jpg&#34;
+	width=&#34;1344&#34;
+	height=&#34;1008&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766_hud5e13ccfa7b1d6880fa7e919b955c11d_132824_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E6%B4%97%E8%A1%A3%E6%9C%BA%E4%BF%AE%E5%A4%8D%E8%AE%B0/37248766_hud5e13ccfa7b1d6880fa7e919b955c11d_132824_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;手工修复的电路&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;于是晚上回到家以后我们开开心心地装回去以后发现洗衣机能工作。不过有个小bug，当洗衣机运行到最后1分钟以后会停格在那里，电路板发出细微的响声。并且第二次测试的时候，洗衣机进水之后干脆就不转了。本来还想和搞电路的同学再讨论讨论，结果第二天他说他也只能验证电路正确可能会有一些问题。&lt;/p&gt;
+&lt;p&gt;在家里我试图找到原因，尝试了很多方法，最后惊喜地发现，只要将洗衣机转速不要用默认的1200和800，使用低转速600或者400就能正常运作。我想原因可能是我们焊接的电路影响了电路板原本的电流电压分布，使得分配到控制马达的电路电压不够，高转速不能正常使用。不过这也只是我的猜测。自此，洗衣机能用我也就不想在折腾了。&lt;/p&gt;
+&lt;p&gt;whzecomjm
+2018-01-19&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

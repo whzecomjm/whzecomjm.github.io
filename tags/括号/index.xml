@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>括号 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E6%8B%AC%E5%8F%B7/</link>
+        <description>Recent content in 括号 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Sep 2018 15:17:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%8B%AC%E5%8F%B7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Latex中输入双括号</title>
+        <link>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</link>
+        <pubDate>Sat, 22 Sep 2018 15:17:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/latex%E4%B8%AD%E8%BE%93%E5%85%A5%E5%8F%8C%E6%8B%AC%E5%8F%B7/jeswin-thomas-hecib2an4T4-unsplash.jpg" alt="Featured image of post Latex中输入双括号" /&gt;&lt;p&gt;在LaTeX中如果只是用&lt;code&gt;[[a]]&lt;/code&gt;和&lt;code&gt;((a))&lt;/code&gt;表示双括号（比如幂级数环）显示会比较难看。尝试使用&lt;code&gt;\left[\left[a\right]\right]&lt;/code&gt;等效果也不太好，一个简单的做法是使用&lt;code&gt;[\![a]\!]&lt;/code&gt;和&lt;code&gt;(\!(a)\!)&lt;/code&gt;，可以得到如下效果：&lt;/p&gt;
+&lt;p&gt;$$f[\![a]\!]+(\!(a)\!).$$&lt;/p&gt;
+&lt;p&gt;至于双三角括号的使用，需要引用宏包 &lt;code&gt;mnsymbol&lt;/code&gt; 或者使用如下符号自定义：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;% llangle and rrangle
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\makeatletter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newsavebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\llangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\langle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathopen&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\newcommand&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\rrangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;[1][]&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\savebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\m&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;@th{#&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\rangle&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;\)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;%
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;k&#34;&gt;\mathclose&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\copy\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\kern&lt;/span&gt;-0.5&lt;span class=&#34;k&#34;&gt;\wd\@&lt;/span&gt;brx&lt;span class=&#34;k&#34;&gt;\usebox&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\@&lt;/span&gt;brx&lt;span class=&#34;nb&#34;&gt;}}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\makeatother&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;之后再在正文中使用&lt;code&gt;\llangle&lt;/code&gt; 和&lt;code&gt;\rrangle&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;参考链接: &lt;a class=&#34;link&#34; href=&#34;https://tex.stackexchange.com/questions/79657/how-to-get-double-angle-bracket-without-using-mnsymbol-package&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How to get double angle bracket without using MnSymbol package?&lt;/a&gt;&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

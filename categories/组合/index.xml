@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>组合 on Transcendence</title>
+        <link>https://whzecomjm.github.io/categories/%E7%BB%84%E5%90%88/</link>
+        <description>Recent content in 组合 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 08 Dec 2020 15:30:24 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/categories/%E7%BB%84%E5%90%88/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>向量法求根式函数值域</title>
+        <link>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</link>
+        <pubDate>Tue, 08 Dec 2020 15:30:24 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
+&lt;p&gt;首先我们给出最常用的两个向量不等式，用以求解函数值域。它们分别是向量的三角不等式和数量积（柯西）不等式。向量的&lt;strong&gt;三角不等式&lt;/strong&gt;指的是，对于任意两个向量 $\vec{a}, \vec{b}$，下列不等式恒成立：
+$$
+||\vec{a}|-|\vec{b}||\leq |\vec{a}+\vec{b}|\leq |\vec{a}|+|\vec{b}|            \qquad\qquad(1)
+$$
+左边不等式取得等号当且仅当 $\vec{a},\vec{b}$ 反向，右边不等式取得等号当且仅当 $\vec{a},\vec{b}$ 同向。当然，一个直接的推论是 $|\vec{a}-\vec{b}|$ 也满足上述不等式，不过等号取得条件恰好和$|\vec{a}+\vec{b}|$相反。&lt;/p&gt;
+&lt;p&gt;另一个&lt;strong&gt;数量积不等式&lt;/strong&gt;也与两个向量的夹角有关。事实上，因为 $\vec{a}\cdot\vec{b}=|\vec{a}| |\vec{b}|\cos\theta$，因此
+$$
+|\vec{a}\cdot\vec{b}|\leq|\vec{a}| |\vec{b}|, \qquad\qquad(2)\
+(\vec{a}\cdot\vec{b})^2\leq |\vec{a}|^2|\vec{b}|^2 \qquad\quad(3)
+$$
+上述不等式的等号取得条件均是$\vec{a},\vec{b}$平行，其中不等式(3)称为柯西 (Cauchy-Schwarz) 不等式。&lt;/p&gt;
+&lt;p&gt;接下来我们看几类简单的根式函数的值域问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;例1&lt;/strong&gt;. 若 $f(x)=\sqrt{2x^2-12x+36}+\sqrt{2x^2-22x+73}$，求 $f(x)$ 的最小值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事实上，这道题目是将军饮马问题的函数形式。原题讲的是在平面直角坐标系中，点 $P(3,-2)$ 经过 $x+y=6$ 直线上一点，到原点的折线段的最小值。也就是有，
+$$
+f(x)=\sqrt{(x-3)^2+(6-x+2)^2}+\sqrt{x^2+(6-x)^2}
+$$
+因此，此函数 $f(x)$ 的定义域为 $\mathbb R$. 我们回到原题，如果需要计算这类函数的值域或者极值问题，我们可以观察两个根式内的函数之间的关系，并试图作化简。可以发现这并不容易。那又如何使用向量法呢？我们可以首先给两个根式内的二次函数配方（这样做的想法在于看看是否刚好是完全平方，则可以去掉根式），得到如下结果：
+$$
+f(x)=\sqrt2 \left[\sqrt{\left(x-\frac{11}{2}\right)^2+\left(\frac{5}{2}\right)^2}+\sqrt{(x-3)^2+3^2}\right]  \qquad\qquad(4)
+$$
+我们可以发现，两个根式都可以化为平方和，且一个有变量，另一个是常数。平方和的根号在向量的坐标表示中正是向量的模。因此，令 $\vec{a}=(x-\frac{11}{2}, \frac{5}{2}), \vec{b}=(3-x,3)$，则可以看出 $\vec{a}+\vec{b}=(-\frac{5}{2},\frac{11}{2})$ 是一个常数向量，因此模必然也是定值。利用向量的三角不等式(1)可以得到，
+$$
+f(x)=\sqrt{2}(|\vec{a}|+|\vec{b}|)\geq \sqrt{2} |\vec{a}+\vec{b}| =\sqrt{73},
+$$
+等号当且仅当 $x=\frac{48}{11}$时， 即$\vec{a},\vec{b}$ 同向时成立。&lt;/p&gt;
+&lt;p&gt;需要注意的是，(4)式中，我们似乎也可以令 $\vec{a}=(x-\frac{11}{2}, \frac{5}{2}), \vec{b}=(x-3,3)$，则 $\vec{a}-\vec{b}=(-\frac{5}{2},-\frac{1}{2})$也是常数向量。利用向量的三角不等式，可得
+$$
+f(x)=\sqrt{2}(|\vec{a}|+|\vec{b}|)\geq \sqrt{2} |\vec{a}-\vec{b}| =\sqrt{13}.
+$$
+这得到一个更小的值！然而 $\sqrt{13}$ 并不是所求的最值。事实上此时，要求 $\vec{a},\vec{b}$ 反向，但平行条件解得 $x=18$，但此时 $\vec{a},\vec{b}$ 却是同向。事实上，在将军饮马背景中，这一不合理的结果是没有经过河边的直线距离。&lt;/p&gt;
+&lt;p&gt;下面我们再看另一类根式函数的值域问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例2. 求函数 $y=\sqrt{1+x}+\sqrt{3-x}$ 的值域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先容易得到函数 $y$ 的定义域为 $[-1,3]$。因为根式内的一次函数的和为常数，即平方和为常数，因此我们可以找寻平方和的不等式，得到一个最值。但是要完整的求此类函数的值域问题，我们需要对函数 $y$ 做变形。
+$$
+y=\sqrt{(\sqrt{1+x}+\sqrt{3-x})^2}=\sqrt{4+2\sqrt{(1+x)(3-x)}}
+$$
+由此根据二次函数的单调性以及$y$定义域可求得 $y$ 的值域。下面我们来思考向量的类比。因为根式满足平方和为常数，因此若令 $\vec{m}=(\sqrt{1+x},\sqrt{3-x})$，则 $|\vec{m}|=2$。那如何理解 $\sqrt{1+x}+\sqrt{3-x}$ 呢？根据向量的坐标表示，它是横坐标和纵坐标的和。但是在此我们可以看成 $\vec{m}$ 与向量 $\vec{n}=(1,1)$ 的数量积！&lt;/p&gt;
+&lt;p&gt;令 $u=\sqrt{1+x}, v=\sqrt{3-x}$， 则 $u,v\geq 0$ 且 $u^2+v^2=4$. 则 $\vec{m}=(u,v), \vec{n}=(1,1)$，$y=\vec{m}\cdot \vec{n}$。&lt;/p&gt;
+&lt;p&gt;下图中的坐标系是 $uOv$，很好地表示了 $y$ 的取值范围（即蓝色阴影矩形的面积）的变化。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108.gif&#34;
+	width=&#34;600&#34;
+	height=&#34;434&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108_hu7a4c01ecc8c39e65bc19dd00899f7246_531460_480x0_resize_box.gif 480w, https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/678473108_hu7a4c01ecc8c39e65bc19dd00899f7246_531460_1024x0_resize_box.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;138&#34;
+		data-flex-basis=&#34;331px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在上述图示中，$\vec{n}=(1,1)=\overrightarrow{OA}$,  $\vec{m}=(u,v)=\overrightarrow{OB}$, 所以
+$$
+y=\overrightarrow{OA}\cdot\overrightarrow{OB}=|\overrightarrow{OA}||\overrightarrow{OC}|=|\overrightarrow{OA&amp;rsquo;}||\overrightarrow{OC}|=S_{Blue}
+$$
+因此可得到 $y\in[2,2\sqrt{2}]$。&lt;/p&gt;
+&lt;p&gt;如下两道题目也可以利用向量法求值域或最值，留作习题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;习题1&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. 求函数 $f(x)=\sqrt{x^2-3x+2}+\sqrt{2+3x-x^2}$ 的最小值。&lt;/p&gt;
+&lt;p&gt;习题2. 求函数 $f(x)=3x+2+4\sqrt{4-x^2}$ 的值域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2020-12-8&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;此题可以用上述两种不等式求解。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>幂平均不等式和对称法</title>
+        <link>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
+        <pubDate>Mon, 30 Nov 2020 15:25:54 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
+&lt;p&gt;事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&amp;gt;0$）：
+$$
+\frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},
+$$
+所有的等号当且仅当$a=b$时成立。我们可以简记为：
+$$
+H_2\leq G_2\leq A_2\leq Q_2,
+$$
+即两个正数的调和平均小于等于几何平均小于等于算术平均小于等于平方平均。这些平均都是如下定义的幂平均：
+$$P^{n}_2=\left(\frac{a^n+b^n}{2}\right)^{1/n}$$&lt;/p&gt;
+&lt;p&gt;其中，下标$2$指的是所取平均的数的个数；上标$(n)$表示幂平均对应的指数$n$。注意到
+$$
+H_2=P_2^{-1}, A_2=P_2^{1}, Q_2=P_2^{2}.
+$$
+而我们在&lt;a class=&#34;link&#34; href=&#34;https://whzecomjm.com/archives/Holder-means.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;几何平均即是零次幂平均&lt;/a&gt;中已经知道，
+$$
+G_2=\lim_{n\to0}P^{n}_2:=P_2^{0}.
+$$
+因此我们可以把上述幂平均改写为：
+$$
+P^{-1}_2\leq P^{0}_2\leq P^{1}_2 \leq P^{2}_2.
+$$
+所以，我们可以总结为如下&lt;strong&gt;幂平均不等式&lt;/strong&gt;，
+$$
+\forall n&amp;lt;m\in\mathbb R, \\ P_2^{n}=\left(\frac{a^n+b^n}{2}\right)^{1/n}\leq \left(\frac{a^m+b^m}{2}\right)^{1/m}=P_2^{m}.
+$$
+注意这里的$n,m$不仅仅是整数，可以是任意实数。这一幂平均不等式也能推广到任意多个数的平均（这一平均甚至可以加权）。这一系列不等式的证明不难可作为习题。&lt;/p&gt;
+&lt;p&gt;需要说明的是，为什么这些幂平均还需要在外层作一个$1/n$次幂？事实上，这保证了各个幂平均数和原来数据的量纲相同。比如，我们的 $a,b$ 都是表示身高，单位为米，则幂平均数都应该是单位为米。在内部给其作“$n$次方平均”以后，得到的单位为 $米^n$，所以外层的 $^{1/n}$ 是必不可少的。值得注意的是，作为“零次幂平均”的几何平均，它的内部是乘积形式，因此对应的外层开方是和元素个数相对应的，否则无法保证量纲不变。&lt;/p&gt;
+&lt;p&gt;我们常用的重要不等式和基本不等式分别对应了幂平均不等式中的 “$P_2^{0}\leq P^2_2$” 以及 $P^0_2\leq P^1_2$。&lt;/p&gt;
+&lt;p&gt;接下来我们将介绍一个简便方法，即“对称法”或者称为“轮换对称法”，其基本结论是，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若不等式的条件和结论（或想要求的式子）是关于各个变量轮换对称的，则其最值在各个变量相等时取得。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一结论是拉格朗日乘数法的一个简单推论。不过我们还需要前面提到的幂平均不等式确定等号方向或者是最大/小值。先来看一个简单的例子，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例1. 若 $a,b&amp;gt;0$，且$a+b=4$，则下列不等式恒成立的是（）&lt;/p&gt;
+&lt;p&gt;A. $\frac{1}{ab}\leq\frac{1}{4}$    B. $\frac{1}{a}+\frac{1}{b}\leq1$           C. $\sqrt{ab}\geq 4$    D. $a^2+b^2\geq 8$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意到，条件和所有结论都是轮换对称的，即 $a、b$ 互相轮换式子都不会改变。因此极值都在 $a=b=2$ 时取得。我们可以看到ABCD四个选项对应的数值都是对的。不过符号的方向可通过幂平均来判断。比如 D 中是平方和，在幂平均中会大于算术平均（和），因此是大于等于号。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例2. 若$x,y&amp;gt;0$，且 $2x+8y-xy=0$，求 $xy$ 的最小值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先原题的条件不是对称的，但是令 $z=4y$ 以后，条件会转为对称，结论依然是对称的。事实上，我们有 $2x+2z-\frac{xz}{4}=0$，因此最值在 $x=z$ 时取得，即 $4x=\frac{x^2}{4}$，所以 $x=z=16$，此时 $xy=\frac{xz}{4}=64$.&lt;/p&gt;
+&lt;p&gt;如果这是一道选择题，也许我们就可以到此为止。如果是解答题，我们则需要通过幂平均不等式来分析。我们的条件表面看起来分为两个部分，和与积，即有 $2x+8y=xy$。我们需要求积的最小值。根据幂平均不等式，我们是需要使用类似于 $P^{-1}_2\leq P^0_{2}$ 的不等式。因此，我们需要一个倒数和的条件。而 $2x+8y=xy$ 左边是一次式右边是二次式，因此讲二次式除过来就可以得到倒数和（负一次）：&lt;/p&gt;
+&lt;p&gt;$$
+\frac{1}{y/2}+\frac{1}{x/8}=1,
+$$&lt;/p&gt;
+&lt;p&gt;根据 $P^{-1}_2\leq P^0_{2}$，我们有&lt;/p&gt;
+&lt;p&gt;$$
+2=\frac{2}{\frac{1}{y/2}+\frac{1}{x/8}}\leq \sqrt{\frac{y}{2}\cdot\frac{x}{8}}=\frac{\sqrt{xy}}{4}
+$$
+所以 $xy\geq (2\times 4)^2=64$，等号当且仅当 $\frac{y}{2}=\frac{x}{8}$ 时成立。&lt;/p&gt;
+&lt;p&gt;通过这个例子，我们可以看到对于某些不是对称的题目，我们可以通过换元转化为对称的题目，利用对称法得到最值。而幂平均不等式能通过判断等式方向给我们提供解题思路。类似地，如果这道题让我们求解 $x+y$ 的最小值，则可以通过 $P_2^{-1}\leq P^1_{2}$ 来找到思路，即通过类似于 $(a+b)(\frac{1}{a}+\frac{1}{b})\geq 4$ 的证明方法（包括使用逐项相乘或者柯西不等式）。&lt;/p&gt;
+&lt;p&gt;当然还有一些不等式的题目这些技巧不一定奏效，需要的工具也不仅仅限于此，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2020年11月30日&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>拉姆齐数一个下界的概率证明</title>
+        <link>https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</link>
+        <pubDate>Mon, 18 May 2020 16:50:05 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/greg-rosenke-TMXIWZncTZU-unsplash.jpg" alt="Featured image of post 拉姆齐数一个下界的概率证明" /&gt;&lt;p&gt;拉姆齐定理表明在二染色中对任意整数 $r$ 一定存在 $n$，使得完全图 $K_n$ 必然包含的同色子完全图$K_s$。&lt;/p&gt;
+&lt;p&gt;$R(s):=R(s,s)$. 我们已经知道 $R(1)=1$, $R(2)=2$, $R(3)=6$, 以及 $R(4)=18$. 然后寻找确切的拉姆齐数十分困难, 事实上, $R(5)$ 及其以上的确切值仍然没有确定. 因此, 自然的想法就是不断缩小上下界. P. Erdös 在其1947年的文章中开创性的利用概率方法给出第一个下界.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt; [3]. The Ramsey number $R(s)$ is bigger than $2^{(s-1)/2}$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;该定理的证明是概率性而非构造性证明。我们选择 $K_n$ 边的一个随机着色。然后我们将得到一个同色完全图$K_s$的概率的一个上界。我们将证明如果我们非常小心地选取 $n$，我们可以令这个概率（严格）小于1。如果这个概率小于1，则必然存在某些着色方式使得不存在同色的 $K_s$。&lt;/p&gt;
+&lt;p&gt;那么如何选择一个随机着色呢？我们将 $K_n$ 的每条边染为红色或者蓝色，每次染色都是独立事件，且任意一次染色两种颜色的概率为1/2。那么我们得到一个同色的完全图 $K_s$ 的概率如何？利用简单粗暴的估计，我们知道这等于所有使得 $K_s$ 是同色的概率的和。我们可以通过计算 $K_s$ 的所有数量乘以每一个 $K_s$ 是同色的概率。&lt;/p&gt;
+&lt;p&gt;$K_s$ 的数量显而易见是 $n \choose s$. 那么每一个 $K_s$ 同色的概率为多少？我们知道每条边为红色概率是 1/2，$K_s$ 有 $s\choose 2$ 个边。因此，$K_s$ 是红色的概率是 $2^{-{s\choose 2}}$，因此这个 $K_s$ 同色的概率为 $2^{1-{s\choose 2}}=2\times 2^{-{s\choose 2}}$。&lt;/p&gt;
+&lt;p&gt;因此，$K_s$ 同色的概率是 ${n\choose s} 2^{1-{s\choose 2}}$. 我们想选择足够大的 n，使得这一概率小于1。如果我们选择 $n=\lfloor{2^{(s-1)/2}}\rfloor$，则我们得到&lt;/p&gt;
+&lt;p&gt;$$
+2^{1-{s\choose 2}}{n\choose s}\leq 2^{1-{s\choose 2}}\frac{n^s}{s!} &amp;lt; 2^{-s(s-1)/2}2^{s(s-1)/2}=1.
+$$&lt;/p&gt;
+&lt;p&gt;这正是我们想要的结果。注意到在 Erdos 最初的证明中，他使用的是计数而非概率，而现在概率是现代的语言。&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Wikipedia, &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Ramsey%27s_theorem#Ramsey_numbers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ramsey Number&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Michael Krivelevich, &lt;em&gt;Topics in Random Graphs&lt;/em&gt;, 1.6.1 pp. 8-9, 2010.&lt;/li&gt;
+&lt;li&gt;P. Erdös, &lt;strong&gt;Some remarks on the theory of graphs&lt;/strong&gt;, Bull. Amer. Math. Soc. &lt;strong&gt;53&lt;/strong&gt; (1947), &lt;a class=&#34;link&#34; href=&#34;https://www.ams.org/journals/bull/1947-53-04/S0002-9904-1947-08785-1/home.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;292-294&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Theorem of the week, &lt;a class=&#34;link&#34; href=&#34;https://theoremoftheweek.wordpress.com/2010/05/02/theorem-25-erdoss-lower-bound-for-the-ramsey-numbers/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Theorem 25: Erdős’s lower bound for the Ramsey numbers&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>方程的染色问题</title>
+        <link>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Tue, 20 Aug 2019 22:48:12 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg" alt="Featured image of post 方程的染色问题" /&gt;&lt;p&gt;本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。&lt;/p&gt;
+&lt;p&gt;染色问题最著名的理论是&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Ramsey_theory&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;拉姆齐理论&lt;/a&gt;，它描述的是对有限整数集合或者所有自然数的任意染色下局部拥有的单色性。这一定理可以推广到可数甚至与一些大基数（large cardinals）。关于无限的拉姆齐理论可以参考这个 &lt;a class=&#34;link&#34; href=&#34;https://cs.stanford.edu/people/jbaek/infinite-ramsey.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Notes&lt;/a&gt;。至于满足单色性的局部性质，拉姆齐定理并没有给出这些性质的具体形式。然而， Van der Waerden 定理和 Hales–Jewett 定理等结论给出了一些具体的形式，比如前者是等差数列总有单色解，后者更是前者的推广。另一个有意思的局部性质是“单色方程解”，满足这一特性的方程我们称为“分割正规的”（partition regular）。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition 1&lt;/strong&gt;. An equation $f(x,y,z,\dots)=0$ is &lt;em&gt;partition regular&lt;/em&gt; (or simply &lt;em&gt;regular&lt;/em&gt;) if, and only if, for any finite partition of  $\mathbb{N}$ into $C_1, C_1,\dots, C_r$, there exists some $C_i$ containing a non-trivial solution to the equation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Schur 最早研究了分割正规的Schur方程，也就是最简单的线性齐次方程 $x+y=z$。Schur定理表明，对自然数的任意有限染色，上述方程都有单色解。为了更好的理解，我们考虑二染色，用反证法可以证明在二染色情况下，总存在单色解。&lt;/p&gt;
+&lt;p&gt;实际上，对于二染色的情况，我们只需要考察前5个数即可。不妨假设1被染成蓝色，因为 1+1=2 ，所以2只能被染成红色，同理4只能被染为蓝色。而1+3=4则表明 3 只能被染为红色。因此 ${1,2,3,4}$ 被唯一（不考虑特定颜色）分割为两个单色子集  ${1,4}$ 和 ${2,3}$ 。而 5=2+3=1+4 导致必然有一个单色解（5要么是蓝色要么是红色）。在这一情况下，我们称 5 为方程 x+y=z 的 Schur 数 $S(2)$ 。上述“证明”也表明Schur方程是 &lt;strong&gt;2-regular&lt;/strong&gt; 的。更一般地，对任意的方程或者方程组，我们定义 Rado 数如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition 2&lt;/strong&gt;. Given an equation or a system of equations $\mathcal{L}$ and finite $r$ colors, the &lt;em&gt;Rado number&lt;/em&gt; $R(\mathcal{L},r)$ is the least number such that any $r$-coloring of ${1,2,\dots,R(\mathcal{L},r)}$ must contain a monochromatic solution to $\mathcal{ L}$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于一般的线性齐次方程 $a_1 x_1+\cdots+a_nx_n=0$ , Schur 的学生 Rado 给出了线性齐次方程是否是分割正规的充分必要条件：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Theorem 3&lt;/strong&gt; (Rado&amp;rsquo;s Theorem [1]).  A linear homogeneous equation $a_1 x_1+\cdots+a_nx_n=0$ is partition regular on $\mathbb{N}$ if and only if there exists a nonempty set $J\subseteq{1,\dots,n}$ such that $\sum_{j\in J}a_j=0$.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上述定理也有乘积形式的非线性方程的定理。对于不是分割正规的方程，我们也会考察一个弱化的条件，即上文提到的 r-regular，r 染色的分割正规性。进一步地，我们有&lt;strong&gt;正规次数&lt;/strong&gt;的定义&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition 4&lt;/strong&gt;. The &lt;em&gt;degree of regularity&lt;/em&gt; of an equation or a system of equations $\mathcal{L}$ is the largest integer $r\geq 0$, if any, such that $\mathcal{L}$ is $r$-regular. This number is denoted by $\mathrm{dor}(\mathcal{L})$. In particular, if $\mathrm{dor}(\mathcal{L})=\infty$, then $\mathcal{L}$ is regular.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;让我们回到 Schur 方程，我们可以手工计算得到 $S(3)=14$。Golomb 和 Baumert [2] 证明了 $S(4)=45$。至于 S(5)，悬而未决了多年，直到最近，Heule [3] 才使用计算机方法 SAT solver 证明了 $S(5)=161$。而 $S(r);(r\geq6)$ 到目前为止还是未解的。&lt;/p&gt;
+&lt;p&gt;在方程的正规性这一领域中的最著名的问题是 Erdos 和 Graham 提出的勾股方程的正规性，这一问题目前仍然是未解的，甚至对于特定的 r， r-正规性也长期没有任何突破。直到2016年，Heule, Kullmann 和 Marik [4] 使用 SAT solver 反向树的方法证明了
+$$
+R(x^2+y^2=z^2,2)=7825
+$$
+这一证明被称为“世界上最长的证明”，有 200 TB 证明数据。当时有大量媒体报道这一证明，其中每日邮报当时报道的标题是：“World&amp;rsquo;s longest maths proof: Solution to a 30-year-old problem would take 10 BILLION years to read—all for a prize of just $100.”但实际上，他们还不能获得这一100美元奖金。因为悬赏100美元的问题是完整解决勾股方程的正规性，而他们的工作仅仅只是解决这一问题的一小步。&lt;/p&gt;
+&lt;p&gt;而在方程正规性的理论证明中，Nasso 和 Baglini [5] 给出了最好的结果。他们给出了一系列满足分割正规性的方程的充分条件和必要条件。比如，他们证明了扩展的Rado多项式：&lt;/p&gt;
+&lt;p&gt;$$
+R(x_1,\dots,x_n,y_1,\dots,y_k)=c_1x_1+\cdots+c_nx_n+P(y_1,\dots,y_k)
+$$
+（n≥2，P是&lt;strong&gt;没有常数项&lt;/strong&gt;的整系数多项式）在N上是正规的当且仅当存在非空子集 $J\subseteq {1,\dots,n}$ 使得 $\sum_{j\in J}c_j=0$。不仅仅如此，诸如 $x_1x_2=y_1y_2+z^2$ 等大量方程也能被证明是正规的。&lt;/p&gt;
+&lt;p&gt;不幸的是，Nasso 和 Baglini 的理论还是无法判断勾股方程的分割正规性。它是2-正规的依然是目前我们知道的最好的结果。&lt;/p&gt;
+&lt;p&gt;不过让我们来看一些其他的例子，比如 $x+y=z^2$ 。根据Nasso 和 Baglini 的理论，这一方程不是正规的。但是对于不正规的方程我们乐于考察他们的正规次数。 Lindqvist [6] 最近证明了它的正规次数是2， 即它是2-正规但不是3-正规的。需要注意的是，这一方程有一个平凡解（x=y=z=2），我们讨论的单色解都排除这样的情况。Lindqvist 对于这一方程的非3-正规的构造性证明仅有十几行，而对2-正规（更严格地说，他证明了2-强正规，即对任意有限染色有无穷多对单色解）的证明则用到了解析数论等多种工具，花了近30多页。&lt;/p&gt;
+&lt;p&gt;实际上，仅仅是考察2-正规性，我们也可以通过穷举得到
+$$
+R(x+y=z^2,2)=32
+$$
+并且能构造31以内自然数的一个无同色解的分割：&lt;/p&gt;
+&lt;p&gt;$$
+C_R={1,4,5,6,7};\\
+C_B={2,3,8,9,10,11,12,15,18,19,20,21,24,29,30,31}.
+$$&lt;/p&gt;
+&lt;p&gt;让我们用上述方法讨论一下如下方程： $x+y=2z^2$ 。这一方程同样不是正规的，且是非3-正规，我们通过略微修改Lindqvist的证明既可证明非3-正规性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;.  We color all the points in each dyadic block $A_i={n\in \mathbb{N}:2^i\leq n &amp;lt;2^{i+1}},$ $i=0,1,2,\dots$, in one color $c_i$. We assign $c_0,c_1,c_2$ to be different and let $c_i\notin{c_{\lfloor{i/2}\rfloor-1},c_{\lfloor {i/2}\rfloor}}$, for all $i\geq 3$. This is possible, since $\lfloor{i/2}\rfloor\leq i$ for all $i\geq 3$ (actually for all $i\geq 0$). Without loss of generality, suppose $x\leq y, y\in A_i$, then we have $2^i&amp;lt;x+y&amp;lt; 2^{i+2}$, hence $2^{(i-1)/2}&amp;lt;z&amp;lt;2^{(i+1)/2}$. Since $\frac{i-1}{2}\geq \lfloor\frac{i}{2}\rfloor-1$ and $(i+1)/2\leq \lfloor\frac{i}{2}\rfloor+1$, it follows that $z\in A_{\lfloor{i/2}\rfloor-1}\cup A_{\lfloor{i/2}\rfloor}$. By construction, the only way that such a $z$ can have the same color as $y$ is if $i \in {0,1,2}$, in which case $x\leq y&amp;lt;8$, and so $z=1$ or $2$. If $z=1$, then this is the trivial solution $x=y=z=1$. If $z=2$, then $x+y=8=2\cdot 2^2$. Here are all the possible options {1,7,2}, {2,6,2}, {3,5,2} and {4,4,2}. It is easy to check that there is no monochromatic solution in those options.&lt;/p&gt;
+&lt;p&gt;接下来我们可以使用穷举法考察 2-正规性。然而过程没有那么顺利，通过简单的枚举我们可以得到有如下的同色子集 ${3,4,5,6}$。于是我试图使用 SAT solver。SAT solver 是一个“逻辑计算器”，我们需要把我们的问题（在正规性检测中我们需要输入反问题）转化为合取范式的问题才能放入 SAT solver。感兴趣的可以去了解一下 SAT，这里就不详述了。虽然有很多现成的 SAT solver，但是为了方便我还是找到了一个现成的在线的 SAT solver &lt;a class=&#34;link&#34; href=&#34;https://www.comp.nus.edu.sg/~gregory/sat/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SAT.js&lt;/a&gt;. 由于不知道这一问题的 Rado 数的大小，我先尝试了 100。结果发现，仅仅当z≤9时，我们就能得出矛盾，也就是说 Rado数必然比100小。用二分法穷举以后，我得到&lt;/p&gt;
+&lt;p&gt;$$
+R(x+y=2z^2,2)=93.
+$$
+下面附上生成 cpf 的python 代码（几年没写过代码）和结果：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;94&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# then 93&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# get the number of clauses for any n&amp;lt;100.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;clauses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# print the head of the cpf file.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;p cnf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clauses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# print contents of the cpf file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# for n&amp;lt;100, 1 &amp;lt; z &amp;lt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# get rid of symmetric solutions of x and y&amp;#39;s &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# all solutions with x, y less than n&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# the condition of no blue monochromatic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# the condition of no red monochromatic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://pic4.zhimg.com/v2-2bbe022f89eea5de79dd272c577f05b7_b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pic1.zhimg.com/v2-c1d6dbcc7b93e30702904f8ea1721530_b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;[1] R. Rado, Studien zur Kombinatorik, &lt;em&gt;Math. Z.&lt;/em&gt; 36 (1933), 242–280.&lt;br&gt;
+[2] S. W. Golomb and L. D. Baumert. &amp;ldquo;Backtrack programming.&amp;rdquo; &lt;em&gt;Journal of the ACM (JACM)&lt;/em&gt; 12.4 (1965): 516-524.&lt;br&gt;
+[3] M. Heule, Schur number five. &lt;em&gt;Thirty-Second AAAI Conference on Artificial Intelligence&lt;/em&gt;. 2018.&lt;br&gt;
+[4] M. Heule, O. Kullmann, and V. Marek, Solving and verifying the boolean Pythagorean triples problem via cube-and-conquer. &lt;em&gt;International Conference on Theory and Applications of Satisfiability Testing&lt;/em&gt;. Springer, Cham, 2016.&lt;br&gt;
+[5] M. Nasso and L. Baglini. Ramsey properties of nonlinear Diophantine equations. &lt;em&gt;Advances in Mathematics&lt;/em&gt; 324 (2018): 84-117.&lt;br&gt;
+[6] B. Green and S. Lindqvist. Monochromatic Solutions to x+y=z2. &lt;em&gt;Canadian Journal of Mathematics&lt;/em&gt; 71.3 (2019): 579-605.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>三角恒等式的几何表达</title>
+        <link>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</link>
+        <pubDate>Sun, 07 Oct 2018 12:27:30 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg" alt="Featured image of post 三角恒等式的几何表达" /&gt;&lt;p&gt;高中数学记忆三角恒等式一直是很多人苦于去做的，虽然有 &lt;code&gt;sinco cosin coco sinsin&lt;/code&gt; 之类的记忆“口诀”，但是过了一段时间不复习中间的细节比如两倍、正负号还是容易忘记的。下面我们来梳理一下这些恒等式的几何化表达。&lt;/p&gt;
+&lt;h2 id=&#34;角和差三角恒等式&#34;&gt;角和差三角恒等式&lt;/h2&gt;
+&lt;p&gt;角和差三角恒等式是所有公式的基础，容易记忆、也容易得到几何化的表达。&lt;/p&gt;
+&lt;h3 id=&#34;正余弦的角和公式&#34;&gt;正余弦的角和公式&lt;/h3&gt;
+&lt;p&gt;$$
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta\\ \cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta
+$$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/01/sREx3vYdIQ4N89g.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;上述几何图示是 $\alpha+\beta&amp;lt;\frac{\pi}{2}$ 的情况, 其余情况也能画出类似的图示, 只不过要注意正负号. 例如对于 $\alpha+\beta&amp;gt;\frac{\pi}{2}$, 且都为锐角情况, 我们有如下图 (图好像画歪了 XD):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/01/vQ59EUgA3hipmbI.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;正切的角和公式&#34;&gt;正切的角和公式&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/01/jGaS8wRKINdnXJg.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;和差化积恒等式&#34;&gt;和差化积恒等式&lt;/h2&gt;
+&lt;p&gt;下面是和差化积的一个几何表达，角BAE为$\alpha$，角$CAE$为$\beta$，$AC=AB=1$，$D$是等腰三角形底边中点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/06/01/qzW9O1Ay6ScgK23.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;上图可以很好地表达和差化积公式，比如&lt;/p&gt;
+&lt;p&gt;$$\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}.$$&lt;/p&gt;
+&lt;p&gt;上式左边两个sin是B、C两点到边$l$的距离，乘以 $|l|$ 则是三角形ABC面积的两倍；等式右边等于
+$$
+2|CD|\times\frac{|h|}{|l|},
+$$
+是三角形ABC面积的两倍除以 $|l|$。故两边相等。&lt;/p&gt;
+&lt;h2 id=&#34;半角公式&#34;&gt;半角公式&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg&#34;
+	width=&#34;463&#34;
+	height=&#34;487&#34;
+	srcset=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;95&#34;
+		data-flex-basis=&#34;228px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此图一目了然。&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;维基百科&lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;三角恒等式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;半角公式几何化来自微博&lt;/li&gt;
+&lt;li&gt;进一步的内容: &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/54302436&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;数学无字证明——三角函数&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>完美正方形</title>
+        <link>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <pubDate>Sun, 30 Sep 2018 02:23:22 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;其实最自然的想法是利用&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/PyramidalNumber.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;四角锥数&lt;/a&gt;($\sum_{i=1}^n i^2$)来寻找, 但是是平方数的四角锥数仅有 1 和 4900 ($70^2=\sum_{i=1}^{40}i^2$). 但是令人遗憾的是边长7200的正方形不能被分割为24个小正方形.&lt;/p&gt;
+&lt;h2 id=&#34;完美正方体和基尔霍夫定律&#34;&gt;完美正方体和基尔霍夫定律&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;正方形的方割&amp;rdquo;(Squaring the square)问题看起来很自然, 似乎也应该不难解决. 可是真正第一次被研究还得到20世纪三十年代. 来自于剑桥大学三一学院数学学会的几个年轻学生 R. L. Brooks, C. A. B. Smith, A. H. Stone 和 W. T. Tutte 把这一问题转化为等价的&amp;quot;电路问题&amp;quot;. 他们称之为 Smith 图. 他们通过将小正方形视为电阻, 上下边分别并联起来,考虑等势点, 边长大小视为电流大小, 利用&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;基尔霍夫电路定律&lt;/a&gt;和电路分解技巧来重构这一问题.&lt;/p&gt;
+&lt;p&gt;下面举例说明, 为了方便起见我们先考虑一个大的长方形, 把它方割为如下的小正方形. 首先最上面的边等势, 分别有三个流向到三个电阻, 电流依次为6,4,5. 除了最上边和最下边两个等势点, 我们还有四个等势点 (即左图中不同的高度的水平线), 它们的流向就如右图描述的那样. 更直观地理解可以把每个正方形看成一个从上往下的水管, 边长是他们的粗细, 水从上往下流.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/5/59/Smith_diagram.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Simith Diagram&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;当时这群小伙子先找到的是一个69阶(即由69个小正方形)的完美正方形. 这是一个复合完美正方形. 直到 1978 年计算机出现以后, A. J. W. Duijvestijn 才找到第一个简单完美正方形. 它是一个边长112的大正方形方割为21个小正方形, 方割图如下:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/6/64/Squaring_the_square.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最小的完美正方形&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;并且进一步地, Duijvestijn用计算机验证了这是最小的简单完美正方形, 同时也是21阶唯一的简单完美正方形. 之后这一最小的简单完美正方形给剑桥大学的三一数学学会(&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Trinity_Mathematical_Society&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Trinity Mathematical Society&lt;/a&gt;)拿去当作他们的会徽, 以此纪念最早研究正方形方割的几名会员. 而最小的复合完美正方形再早一点的1946年T.H. Willcocks就已发现, 它的阶数是24. 但直到 1982 年 Duijvestijn, Pasquale Joseph Federico 和 P. Leeuw才真正证明复合完美正方形的最小阶数是24, 但是这样的方割并不唯一.&lt;/p&gt;
+&lt;h2 id=&#34;完美正方体&#34;&gt;完美正方体?&lt;/h2&gt;
+&lt;p&gt;同时, 人们会很自然想到一个问题, &amp;ldquo;是否存在完美正方体?&amp;rdquo; 不过令人失望的是, 并不存在完美正方体. 而且更一般地, 也不存在完美长方体(即将长方体立方割为不同边长的小正方体). 这并不难证明.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;. 假设存在这样的完美长方体$C$立方割. 不妨设$C$的底面为 $R$, 显然这个长方形是完美长方形, 它能方割为一些边长不等的小正方形. 我们考虑最小的那个正方形, 显然它不再四个角落. 因为角落旁边的正方形比角落的大. 进一步的不再边界, 于是最小的正方形$s_1 $在$R$ 中间. 于是我们知道底边最小正方形的正方体周围都是比他大的正方体. 于是考虑这个最小正方体的上表面, 以上表面作为我们接下去研究对象. 它也是一个完美长方形. 同理, 我们在这个面也能找到最小的正方形 $s_2$ (注意 $s_2&amp;lt;s_1$). 由于正方体的边长是整数, 而我们的 $s_1,s_2,\dots$ 序列是无限的, 但是总的大长方体高是有限的. 所以导出矛盾.&lt;/p&gt;
+&lt;p&gt;实际上任何高维($n\geq3$)的超正方体都不是完美超正方体, 由归纳法可以看出. 比如, 四维的超立方体如果能被完美地超立方割, 则它的&amp;quot;面&amp;quot;就是正方体能被完美地立方割. 而这是不可能的.&lt;/p&gt;
+&lt;h2 id=&#34;mrs-perkinss-quilt&#34;&gt;Mrs. Perkins&amp;rsquo;s Quilt&lt;/h2&gt;
+&lt;p&gt;让我们回到正方形方割的问题, 另一个方向的推广是去除小正方形互异的条件. 如果正方形方割不要求小正方形必须相异, 我们称之为 &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/MrsPerkinssQuilt.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mrs. Perkins&amp;rsquo;s Quilt&lt;/a&gt;. 为了方便研究我们只考虑其中的&amp;quot;素方割&amp;quot;, 即不能分解为更小的方割的方割, 也就是说方割模式的一个子正方形不能延用更小的正方形素方割.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://mathworld.wolfram.com/images/eps-gif/MrsPerkinsQuilts_850.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;每个素方割的最小阶数(分割出来的正方形数)构成的数列可以参见OEIS &lt;a class=&#34;link&#34; href=&#34;http://oeis.org/A005670&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A005670&lt;/a&gt; .&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Squaring_the_square&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Squaring the square&lt;/a&gt;, Wikipedia.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=NoRjwZomUK0&amp;amp;feature=youtu.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Squared Squares&lt;/a&gt;, Numberphile, Youtube.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Perfect Square Dissection.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Pyramidal Number.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource. &lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/about/author.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Weisstein, Eric W.&lt;/a&gt; &amp;ldquo;Mrs. Perkins&amp;rsquo;s Quilt.&amp;rdquo; From &lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;MathWorld&lt;/em&gt;&lt;/a&gt;&amp;ndash;A Wolfram Web Resource.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 二项式公式的一个推广</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</link>
+        <pubDate>Fri, 23 Mar 2018 01:47:28 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
+&lt;p&gt;$$(x+y)^{n}={n \choose 0}x^{n}y^{0}+{n \choose 1}x^{{n-1}}y^{1}+\cdots +{n \choose n}x^{0}y^{n},$$&lt;/p&gt;
+&lt;p&gt;其中 ${n \choose 2}$ 称为二项式系数, 它等于 $\frac{n!}{k!(n-k)!}$. 二项式定理的一个变形是将 $y$ 替换为 1, 减少为一个变量. 这种形式的二项式公式为
+$$(1+x)^n=\sum_{k=0}^n {n\choose k} x^k.$$
+这也正是我们需要讨论的形式. 现在我们考虑 $(1+x+x^2)^n$, $(1+x+x^2+x^3)^n$, &amp;hellip; 等&amp;quot;多项式&amp;quot;的展开情况. 欧拉在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0505425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;On the expansion of the power of any polynomial (1 + x + x^2+ x^3+ etc.)^n&lt;/a&gt; 一文中讨论了这些情况, 并给出了 &amp;ldquo;多项式系数&amp;rdquo; 的定义以及他们和二项式系数之间的关系.&lt;/p&gt;
+&lt;p&gt;实际上, 对于任意线性多项式, 我们亦有&lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/%e5%a4%9a%e9%a1%b9%e5%bc%8f%e5%ae%9a%e7%90%86&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;多项式定理&lt;/a&gt;. 它是二项式定理的推广, 使用组合的隔板法即可以证明下列 &amp;ldquo;多项式公式&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;$$(x_{1}+x_{2}+\cdots +x_{t})^{n}=\sum {\frac {n!}{n_{1}!n_{2}!\cdots n_{t}!}}x_{1}^{n_{1}}x_{2}^{n_{2}}\cdots x_{t}^{n_{t}}$$&lt;/p&gt;
+&lt;p&gt;其中 $\sum_{i=1}^{t}n_{i}=n$, $0\leq n_{i}\leq n$. 该公式可以用数学归纳法证明.&lt;/p&gt;
+&lt;p&gt;现在我们回到欧拉的问题, 看看针对一个变量的情况是否有更有趣的结果.&lt;/p&gt;
+&lt;p&gt;先考虑 $(1+x+x^2)^2$, 根据类比, 假设相应有三项式系数 ${n\choose k}^3$ (原文如是写, 虽然比较容易和二项式系数的三次方混淆.) 此时的三项式公式如下&lt;/p&gt;
+&lt;p&gt;$$(1+x+x^2)^n= \sum_{k=0}^{2n} {n\choose k}^3 x^k,$$
+它的最后一项是 ${n\choose 2n}^3 x^{2n}$, 其中 ${n\choose 2n}^3=1={n\choose 0}^3$. 进一步地, 可以看出三项式系数的对称性, 我们有如下等式:&lt;/p&gt;
+&lt;p&gt;$${n\choose\lambda}^3={n\choose 2n-\lambda}^3.$$
+为了能得到三项式系数的具体值, 我们将原公式变形为 $[1+x(1+x)]^n$, 再套用二项式公式, 得到&lt;/p&gt;
+&lt;p&gt;$$[1+x(1+x)]^n=\sum_{k=0}^{n}x^k(1+x)^k.$$
+考察系数得到
+$${n\choose \lambda}^3=\sum_{k=0}^{\lambda}{\lambda-k\choose k}{n\choose \lambda-k}.$$&lt;/p&gt;
+&lt;p&gt;注意二项式系数$a\choose b$中, 如果 $b&amp;gt;a$ 或者 $b&amp;lt;0$, 则系数的值都为零.&lt;/p&gt;
+&lt;p&gt;紧接着我们考虑 $(1+x+x^2+x^3)^n$, 将它改写为 $[1+x(1+x+x^2)]^n$ 后考察系数得到:&lt;/p&gt;
+&lt;p&gt;$${n\choose \lambda}^4=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^3 {n\choose \lambda-k}^2.$$
+注意上式中的&amp;quot;平方&amp;quot;是指二项式系数, 和三项式系数类似. 根据进一步地举例考察, 我们得到最终的结论如下:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理.&lt;/strong&gt; 多项式 $1+x+x^2+\dots+x^{\theta}$ 的 $n$ 次幂展开为
+$$(1+x+x^2+\dots+x^{\theta})^n=\sum_{k=0}^{n\theta} {n\choose k}^{\theta+1} x^k,$$
+其中 &amp;ldquo;$n+1$项式系数&amp;rdquo; ${n\choose k}^{\theta+1}$ 由下列递推公式给出
+$${n\choose k}^{\theta+1}=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^{\theta} {n\choose \lambda-k}^2.$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;欧拉并没有给出该定理的证明, 他只是通过归纳 $\theta=2,3,4,5$ 的结果推广得到, 但是这个结果用数学归纳法证明不是难事. 关键是结果看起来还是挺美的.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 一个有理式的对称公式</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</link>
+        <pubDate>Thu, 22 Mar 2018 00:43:26 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{a-b}+\frac{1}{b-a}=0$$&lt;/p&gt;
+&lt;p&gt;$$\frac{1}{(a-b)(a-c)}+\frac{1}{(b-a)(b-c)}+\frac{1}{(c-a)(c-b)}=0$$&lt;/p&gt;
+&lt;p&gt;上述结果是一种 &amp;ldquo;轮换对称&amp;rdquo;, 可以很自然地推广到任意有限多个不相等的数，这个结果参见 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0502425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;An arithmetic theorem and its demonstration&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定理&lt;/strong&gt;. 对于任意有限多m个不相等的实数$a,b,c,d,e,f,\dots$,令&lt;br&gt;
+$$\begin{aligned} &amp;amp;A=(a-b)(a-c)(a-d)\dots \\ &amp;amp;B=(b-a)(b-c)(b-d)\dots\\ &amp;amp;C=(c-a)(c-b)(c-d)\dots\\ &amp;amp;\cdots\end{aligned}$$
+每个等式右边有m-1个式子相乘。那么，有
+$$\frac{1}{A} +\frac{1}{B}+\frac{1}{C}+\cdots=0$$
+更一般地，当$n\leq m-1$时，我们有
+$$\frac{a^n}{A} + \frac{b^n}{B} + \frac{c^n}{C}+\cdots=0$$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一个结论是很显然地推广就不需要证明了, 或者我们证明更一般的结论二也顺便证明了前一个结论.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;: 我们需要考察 $$\frac{x^n}{(x-a)(x-b)(x-c)\cdots}$$, 它可以分解为 $m$ 个单项有理式, 也就是说，&lt;/p&gt;
+&lt;p&gt;$$\frac{x^n}{(x-a)(x-b)(x-c) \cdots}= \frac{A&amp;rsquo;}{x-a}+ \frac{B&amp;rsquo;}{x-b} +\frac{C&amp;rsquo;}{x-c} +\cdots \qquad\text{(1)}$$&lt;/p&gt;
+&lt;p&gt;上式两边同乘以$(x-a)$，再令$x=a$，得到&lt;/p&gt;
+&lt;p&gt;$$\frac{a^n}{(a-b)(a-c)(a-d)\cdots}=A&amp;rsquo;$$&lt;/p&gt;
+&lt;p&gt;同理可得：
+$$\frac{b^n}{(b-a)(b-c)(b-d)\cdots}=B&amp;rsquo;,$$&lt;/p&gt;
+&lt;p&gt;等等. 将 (1) 式右侧移到左方我们有,&lt;/p&gt;
+&lt;p&gt;$$\frac{x^n}{(x-a)(x-b)(x-c)\cdots}+ \frac{A&amp;rsquo;}{a-x}+ \frac{B&amp;rsquo;}{b-x}+ \frac{C&amp;rsquo;}{c-x}+\cdots=0$$
+将 $x$ 看作是最后一个(第$m$个)实数 (也就是令$x$为第$m$个实数), 重写 (将上式第一项放在最后) 上式得到&lt;/p&gt;
+&lt;p&gt;$$\frac{a^n}{(a-b)(a-c)(a-d)\dots(a-x)} +\cdots +\frac{x^n}{(x-a)(x-b)(x-c)\dots}=0$$
+证毕!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</title>
+        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</link>
+        <pubDate>Wed, 21 Mar 2018 12:41:25 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;eulerarchive.org&lt;/a&gt;总结了欧拉的一些结果, 一些他的论文还可以在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/find/math/1/au:&amp;#43;Euler_L/0/1/0/all/0/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;arxiv&lt;/a&gt; 找到。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&amp;ldquo;读读欧拉&amp;quot;系列是我对一些欧拉著作或论文的一些总结，这是本系列第一篇文章&amp;rdquo;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0507459&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A commentary on the continued fraction by which the illustrious La Grange has expressed the binomial powers&lt;/a&gt;&amp;ldquo;的摘要。这篇文章是Euler继续Lagrange的工作（我突然意识到，当时的论文都是没有参考文献的，在文章前面提到之前的研究成果即可，参考文献好像是从Science引入影响因子开始的），Lagrange用取对数微分的方法得到了如下的二项式公式的连分式表示：&lt;/p&gt;
+&lt;p&gt;$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2+\frac{(1+n)x}{3+\frac{(2-n)x}{2+\frac{(2+n)x}{5+\frac{(3-n)x}{2+\frac{(2+n)x}{7+\cdots}}}}}}}$$&lt;/p&gt;
+&lt;p&gt;显然当n为整数时，这个连分式是有限的，实际上它可以化为二项式定理。首先，欧拉对其做了一些细致的分析和变形，得到了如下形式：（这里不得不说欧拉是一个细致的人，他把每一项的推理都一丝不苟地写得很清楚！）&lt;/p&gt;
+&lt;p&gt;$$(1+x)^n =1+\frac{nx}{1+\frac{(1-n)x}{2}+\frac{4(n^2 -1)x^2 }{3(1+\frac{1}{2}x)+\frac{4(n^2 -2^2 )x^2 }{5(1+\frac{1}{2}x)+\frac{4(n^2 -3^2 )x^2 }{7(1+\frac{1}{2}x)+\frac{4(n^2 -4^2 )x^2 }{\cdots}}}}}$$&lt;/p&gt;
+&lt;p&gt;进一步地，令$x=2y$，整理后(分离一次连分式)两边同时加上 $ny$，再同时除以 $(1+y)$ 可以得到：&lt;/p&gt;
+&lt;p&gt;$$\frac{ny}{1+y}\frac{(1+2y)^n +1}{(1+2y)^n -1}=1+\frac{(n^2 -1)y^2 (1+y)^2 }{3+\frac{(n^2 -2^2 )y^2 (1+y)^2 }{5+\frac{(n^2 -3^2 )y^2 (1+y)^2 }{7+\frac{(n^2 -4^2 )y^2 (1+y)^2 }{9+\cdots}}}}$$&lt;/p&gt;
+&lt;p&gt;现在我们令$z=\frac{y}{1+y}$，则可以得到：&lt;/p&gt;
+&lt;p&gt;$$\frac{nz[(1+z)^n +(1-z)^n ]}{(1+z)^n -(1-z)^n }=1+\frac{(n^2 -1)z^2 }{3+\frac{(n^2 -2^2 )z^2 }{5+\frac{(n^2 -3^2 )z^2 }{7+\cdots}}}$$&lt;/p&gt;
+&lt;p&gt;现在就开始牵扯到复数了，令$z=t\times i$，其中$i=\sqrt{-1}$，再做换元(万能代换)$t=\tan{\varphi}$，就可以得到简单的&lt;strong&gt;正切的倍角公式&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;$$\tan{n\varphi}=\frac{nt}{1-\frac{(n^2 -1)t^2 }{3-\frac{(n^2 -4)t^2 }{5-\cdots}}}$$&lt;/p&gt;
+&lt;p&gt;比如，令n=2,我们可以得到$\tan{2\varphi}=\frac{2t}{1-t^2 }$;再比如$n=3$，时，有&lt;/p&gt;
+&lt;p&gt;$$\tan{3\varphi}=\frac{3t}{1-\frac{8t^2 }{3-t^2 }}=\frac{3t-t^2 }{1-3t^2 }$$
+令$nt=\theta$可以得到&lt;strong&gt;正切函数的连分式展开&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;文章中还有另外两个结论，不那么有趣，这里就不一一赘述了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>几何平均即是零次幂平均</title>
+        <link>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
+        <pubDate>Thu, 13 Apr 2017 12:11:33 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
+&lt;p&gt;$$\lim_{m\rightarrow 0} M_m(a) = \lim_{m\rightarrow 0} \left(\frac{a_1^m + a_2^m+\dots+ a_n^m}{n} \right)^{1/m}=\sqrt[n]{a_1 a_2 \dots a_n}=G(a)$$&lt;/p&gt;
+&lt;p&gt;左边是幂的形式，右边也是幂的形式，但是指数不一样，所以，当时我也是想取对数来做，右边取完对数就会变成&lt;/p&gt;
+&lt;p&gt;$$ \frac{1}{n}\ln(a_1a_2\dots a_n)=\frac{1}{n}(\ln a_1+\ln a_2+\cdots+\ln a_n) $$&lt;/p&gt;
+&lt;p&gt;接下来就看不到什么迹象了，再看左边的形式，取完对数后变成了&lt;/p&gt;
+&lt;p&gt;$$ \frac{1}{m} (\ln(a_1^m + \cdots + a_n^m)-\ln n) $$&lt;/p&gt;
+&lt;p&gt;到这里似乎不能进行下去了。&lt;/p&gt;
+&lt;p&gt;在课堂上大概就想到这里，后来下课后也没有多想，不过偶然地机会看到一本老书——史济怀的《平均》，里面有详细地证明。大体的想法也是先取对数，不过我们还需要一个关键的替换。下面是书本的证明思路：&lt;/p&gt;
+&lt;p&gt;令$x=\frac{a_1^m + a_2^m + \dots + a_n^m}{n}-1$,那么很容易知道$\lim_{m\rightarrow 0}x=0$,于是，我们的$\ln M_m(a)$可以写成：&lt;/p&gt;
+&lt;p&gt;$$
+\ln M_m(a)=\frac{1}{m}\ln(1+x) = \frac{x}{r}\frac{\ln(1+x)}{x}
+$$
+根据洛必达法则，很容易知道$\lim_{x\rightarrow 0}\frac{\ln(1+x)}{x}=1$，因此我们现在只需要考虑$\lim_{m\rightarrow 0}\frac{x}{m}$即可：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}\lim_{m \rightarrow 0} \frac{x}{m} &amp;amp;= \lim_{m \rightarrow 0}\frac{\frac{a_1^m + a_2^m + \ldots + a_n^m}{n} - 1}{m} \\ &amp;amp;= \frac{1}{n} \lim_{m \rightarrow 0} \frac{a_1^m + a_2^m + \ldots +a_n^m - n}{m}\\ &amp;amp;= \frac{1}{n} \lim_{m \rightarrow 0} \left(\frac{a^m_1 - 1}{m} +\frac{a^m_2 - 1}{m} + \ldots + \frac{a^m_n - 1}{m}\right)\\ &amp;amp;= \frac{1}{n} \left( \ln a_1 + \ln a_2 + \ldots + \ln a_n \right) \\ &amp;amp;= \ln \sqrt[n]{a_1 a_2 \ldots a_n} \end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;这样接着刚才的分析我们就已经证明完毕了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

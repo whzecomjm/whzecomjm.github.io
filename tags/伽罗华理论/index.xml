@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>伽罗华理论 on Transcendence</title>
+        <link>https://whzecomjm.github.io/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/</link>
+        <description>Recent content in 伽罗华理论 on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 28 Dec 2020 15:33:47 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>17次单位根的二次根式表达</title>
+        <link>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</link>
+        <pubDate>Mon, 28 Dec 2020 15:33:47 +0800</pubDate>
+        
+        <guid>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 17次单位根的二次根式表达" /&gt;&lt;p&gt;此笔记翻译自 Reed 大学的 Jerry Shurman 的一篇 Note：The seventeenth root of unity via quadratic，原文很详细，本文有所删减。这实际上是高斯使用尺规作图做出正十七边形的原理所在，使用了 Galois 理论。&lt;/p&gt;
+&lt;p&gt;令 $p=17$, 且令
+$$
+\zeta=\zeta_{17}=e^{2\pi i/17}.
+$$
+则循环域 $\mathbb{Z}/17\mathbb{Z}$ 将有一个16阶的乘法循环群&lt;/p&gt;
+&lt;p&gt;$$
+G=(\mathbb{Z}/17\mathbb{Z})^{\times}\ =\langle3\rangle=\small{\{1,\ 3,\ 9,\ 10,\ 13,\ 5,\ 15,\ 11,\ 16,\ 14,\ 8,\ 7,\ 4,\ 12,\ 2,\ 6\}}.
+$$&lt;/p&gt;
+&lt;p&gt;于是有如下16阶的自同构：
+$$
+\sigma:\mathbb{Q}(\zeta_{17})\ \rightarrow \mathbb{Q}(\zeta_{17})\ ,\ \zeta\mapsto\zeta^{3}
+$$
+易得，循环群$\langle \sigma\rangle$ 有如下子群：
+$$
+\begin{aligned}
+&amp;amp;\langle\sigma : \zeta\mapsto\zeta^{3}\rangle, &amp;amp; \text{ of order 16},\\
+&amp;amp;\langle\sigma^2 : \zeta\mapsto\zeta^{9}\rangle, &amp;amp; \text{ of order 8},\\
+&amp;amp;\langle\sigma^4 : \zeta\mapsto\zeta^{13}\rangle, &amp;amp; \text{ of order 4},\\
+&amp;amp;\langle\sigma^8 : \zeta\mapsto\zeta^{16}\rangle, &amp;amp; \text{ of order 2},\\
+&amp;amp;\langle\sigma^{16}=1\rangle, &amp;amp; \text{ of order 1}.\\
+\end{aligned}
+$$
+根据Galois理论，与子群链对应的有如下的域塔：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+&amp;amp;\mathbb{Q}(\zeta)&amp;amp;&amp;amp;  1\
+&amp;amp;k_3 &amp;amp;&amp;amp; \langle\sigma^8\rangle\\
+&amp;amp;k_2 &amp;amp;&amp;amp; \langle\sigma^4\rangle\\
+&amp;amp;k_1  &amp;amp;&amp;amp; \langle\sigma^2\rangle\\
+&amp;amp;\mathbb{Q}  &amp;amp;&amp;amp; \langle\sigma\rangle\\
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;我们只要把每个中间域（均是二次扩张）的生成元找到就可以使用二次根式表达17次单位元。&lt;/p&gt;
+&lt;h3 id=&#34;构建第一扩域&#34;&gt;构建第一扩域&lt;/h3&gt;
+&lt;p&gt;令
+$$
+r_{1}=\zeta+\zeta^{\sigma^{2}}+\zeta^{\sigma^{4}}+\zeta^{\sigma^{6}}+\zeta^{\sigma^{8}}+\zeta^{\sigma^{10}}+\zeta^{\sigma^{12}}+\zeta^{\sigma^{14}}.
+$$
+则 $r_1$ 是 $\sigma^2$-不变量，但不是 $\sigma$-不变量，于是如下二次多项式是 $\sigma$-不变量，
+$$
+f_{1}(X)=(X-r_{1})(X-r_{1}^{\sigma})=X^2+b_1X+c_1\in \mathbb Q[X].
+$$
+其中
+$$
+b_{1}\ =-r_{1}-r_{1}^{\sigma}=-\sum_{j=1}^{16}\zeta^{\sigma^{j}}\ =-\sum_{j=1}^{16}\zeta^{j}\ =1,\\
+c_{1}\ =r_{1}r_{1}^{\sigma}.
+$$
+$c_1$ 可以直接计算，但也可以通过定义二次特征$\chi$，令
+$$
+\tau=\sum_{j\in G}\chi(j)\zeta^{j}=\zeta+\zeta^{\sigma^{2}}+\zeta^{\sigma^{4}}+\zeta^{\sigma^{6}}+\zeta^{\sigma^{8}}+\zeta^{\sigma^{10}}+\zeta^{\sigma^{12}}+\zeta^{\sigma^{14}}\\
+-\zeta^{\sigma}-\zeta^{\sigma^{3}}-\zeta^{\sigma^{5}}\ -\zeta^{\sigma^{7}}-\zeta^{\sigma^{9}}-\zeta^{\sigma^{11}}\ -\zeta^{\sigma^{13}}-\zeta^{\sigma^{15}}
+$$
+于是有 $r_1-r_1^{\sigma}=\tau, ; r_1+r_1^{\sigma}=-1$，即
+$$
+r_{1}r_{1}^{\sigma}=-\frac{\tau^{2}-1}{4}.
+$$
+利用高斯求和公式可得，&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\tau^{2}&amp;amp;=\sum_{j\in G}\sum_{k\in G}\chi(jk)\zeta^{j+k} \\
+&amp;amp;= \sum_{j\in G}\sum_{k\in G}\chi(j^{2}k)\zeta^{j(1+k)} &amp;amp; \text{replacing $k$ by $jk$}\\
+&amp;amp;= \sum_{k\in G}\chi(k)\sum_{j\in G}\zeta^{(1+k)j}\\
+&amp;amp; =16 \chi(-1)-\sum_{k\neq-1}\chi(k)\\
+&amp;amp; =17
+\end{aligned}
+$$&lt;/p&gt;
+&lt;p&gt;因此 $r_1r_1^{\sigma}=-4$，即
+$$
+f_1(X)=X^2+X-4\in \mathbb{Q}[X]
+$$
+拥有两个实根
+$$
+r_{1}=\ \frac{-1+\sqrt{17}}{2},\quad r_{1}^{\sigma}= \displaystyle \frac{-1-\sqrt{17}}{2}.
+$$
+因此我们得到了第一扩域 $k_1=\mathbb Q(r_1)=\mathbb Q(r_1,r_1^{\sigma})$.&lt;/p&gt;
+&lt;h3 id=&#34;构造第二扩域&#34;&gt;构造第二扩域&lt;/h3&gt;
+&lt;p&gt;令 $r_2=\zeta+\zeta^{\sigma^{4}}+\zeta^{\sigma^{8}}+\zeta^{\sigma^{12}}$，则 $r_2$ 是 $\sigma^4$-不变量，但不是 $\sigma^2$-不变量，于是如下二次多项式是 $\sigma^2$-不变量，
+$$
+f_{2}(X)=(X-r_{2})(X-r_{2}^{\sigma^{2}})=X^{2}+b_{2}X+c_{2}\ \in \mathbb{Q}(r_{1})[X]
+$$
+其中，$b_{2}=-r_{2}-r_{2}^{\sigma^{2}}\ =-r_{1}, ;  c_{2}=r_{2}r_{2}^{\sigma^{2}}$.&lt;/p&gt;
+&lt;p&gt;下面我们计算 $r_2$ 与 $r_2^{\sigma^2}$，
+$$
+r_{2}=\zeta+\zeta^{4}+\zeta^{13}+\zeta^{16}=2(\cos(2\pi/17)+\cos(8\pi/17))\ ,\\
+r_{2}^{\sigma^{2}}\ =\zeta^{2}+\zeta^{8}+\zeta^{9}+\zeta^{15}=2(\cos(4\pi/17)+\cos(16\pi/17))\ .
+$$&lt;/p&gt;
+&lt;p&gt;于是有，
+$$
+\begin{aligned}\frac{1}{4}r_{2}r_{2}^{\sigma^{2}}\ &amp;amp;=\cos(2\pi/17)\cos(4\pi/17)+\cos(2\pi/17)\cos(16\pi/17)\\
+&amp;amp;+\cos(8\pi/17)\cos(4\pi/17)+\cos(8\pi/17)\cos(16\pi/17) ,
+\end{aligned}
+$$
+根据积化和差公式 $2\cos a\cos b=\cos(a+b)+\cos(a-b)$，可得
+$$
+\begin{aligned}
+\frac{1}{2}r_{2}r_{2}^{\sigma^{2}}
+&amp;amp;=\cos(6\pi/17)+\cos(2\pi/17)+\cos(16\pi/17)+\cos(14\pi/17)\\
+&amp;amp;+\cos(12\pi/17)+\cos(4\pi/17)+\cos(10\pi/17)+\cos(8\pi/17)\\
+&amp;amp;=-1/2.
+\end{aligned}
+$$
+因此，特征多项式为&lt;/p&gt;
+&lt;p&gt;$$
+f_{2}(X)=X^{2}-r_{1}X-1\ \in \mathbb{Q}(r_{1})[X]
+$$&lt;/p&gt;
+&lt;p&gt;其拥有两根为&lt;/p&gt;
+&lt;p&gt;$$
+r_{2}=\ \frac{r_{1}+\sqrt{r_{1}^{2}+4}}{2},
+r_{2}^{\sigma^{2}} = \displaystyle \frac{r_{1}-\sqrt{r_{1}^{2}+4}}{2}.
+$$&lt;/p&gt;
+&lt;p&gt;由此可得，&lt;/p&gt;
+&lt;p&gt;$$
+k_{2}=\mathbb{Q}(r_{1},\ r_{2})=\mathbb{Q}(r_{1},\ r_{1}^{\sigma},\ r_{2},\ r_{2}^{\sigma^{2}})\ .
+$$
+当然我们还没有验证另外两个 $\sigma^4$-不变量，$r_2^{\sigma}, r_2^{\sigma^3}$。它们显然满足如下多项式：&lt;/p&gt;
+&lt;p&gt;$$
+f_{2}^{\sigma}(X)=X^{2}-r_{1}^{\sigma}X-1.
+$$&lt;/p&gt;
+&lt;p&gt;也可以直接使用求根公式得到 $r_2^{\sigma}, r_2^{\sigma^2}$。 当然也可以经过计算得到，&lt;/p&gt;
+&lt;p&gt;$$
+r_{1}r_{2}=2-r_{2}+r_{2}^{\sigma}-r_{2}^{\sigma^{3}}\ =3-r_{2}+2r_{2}^{\sigma}+r_{1},
+$$
+现在我们得到了第二扩域，&lt;/p&gt;
+&lt;p&gt;$$
+k_2=\mathbb{Q}(r_{1},\ r_{2})=\mathbb{Q}(r_{1},\ r_{1}^{\sigma},\ r_{2},\ r_{2}^{\sigma},\ r_{2}^{\sigma^{2}},\ r_{2}^{\sigma^{3}}).
+$$&lt;/p&gt;
+&lt;h3 id=&#34;构造第三扩域&#34;&gt;构造第三扩域&lt;/h3&gt;
+&lt;p&gt;令 $r_3=\zeta+\zeta^{\sigma^8}$. 则 $r_3$ 是 $\sigma^8$-不变量，但不是 $\sigma^4$-不变量，于是如下二次多项式是 $\sigma^4$-不变量，
+$$
+f_{3}(X)=(X-r_{3})(X-r_{3}^{\sigma^{4}})=X^{2}+b_{3}X+c_{3} \in \mathbb{Q}(r_{1},\ r_{2})[X],
+$$
+其中，
+$$
+b_{3}=-r_{3}-r_{3}^{\sigma^{4}}\ =-r_{2},\\
+c_{3}=r_{3}r_{3}^{\sigma^{4}}\ =(\zeta+\zeta^{16})(\zeta^{4}+\zeta^{13})=\zeta^{3}+\zeta^{5}+\zeta^{12}+\zeta^{14}=r_{2}^{\sigma}.
+$$
+因此，
+$$
+f_3(X)=X^{2}-r_{2}X+r_{2}^{\sigma} \in \mathbb{Q}(r_{1},\ r_{2})[X]
+$$
+且有如下两根：
+$$
+r_{3}=\ \frac{r_{2}+\sqrt{r_{2}^{2}-4r_{2}^{\sigma}}}{2},\ r_{3}^{\sigma^{4}}\ =\ \frac{r_{2}-\sqrt{r_{2}^{2}-4r_{2}^{\sigma}}}{2}.
+$$
+所以我们得到了第三扩域 $\mathbb{Q}(r_1,r_2,r_3)$。&lt;/p&gt;
+&lt;h3 id=&#34;最终章&#34;&gt;最终章&lt;/h3&gt;
+&lt;p&gt;最后，因为 $\zeta$ 与 $\zeta^{\sigma^8}=\zeta^{-1}$ 满足如下多项式，
+$$
+f_{4}(X)=X^{2}-r_{3}X+1.
+$$
+特别地，&lt;/p&gt;
+&lt;p&gt;$$
+\zeta=\ \frac{r_{3}+\sqrt{r_{3}^{2}-4}}{2},\ \zeta^{-1}\ =\ \frac{r_{3}-\sqrt{r_{3}^{2}-4}}{2}.
+$$&lt;/p&gt;
+&lt;p&gt;值得注意的是，我们仅仅在这最后一步做了虚数平方根。综上所述，&lt;/p&gt;
+&lt;p&gt;$$
+r_{1}=\ \frac{-1+\sqrt{17}}{2},\\
+r_{2}=\ \frac{r_{1}+\sqrt{r_{1}^{2}+4}}{2},\\
+r_{3}=\ \frac{r_{2}+\sqrt{r_{2}^{2}-4r_{2}^{\sigma}}}{2},\\
+\zeta_{17}=\ \frac{r_{3}+\sqrt{r_{3}^{2}-4}}{2}.
+$$&lt;/p&gt;
+&lt;p&gt;Reference: Jerry Shurman, The Seventeenth Root Of Unity Via Quadratics, &lt;a class=&#34;link&#34; href=&#34;https://people.reed.edu/~jerry/332/29gauss17.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;url&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;whzecomjm&lt;/p&gt;
+&lt;p&gt;2020-12-28 15:46&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
