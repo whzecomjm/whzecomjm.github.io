@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>染色 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E6%9F%93%E8%89%B2/</link>
+        <link>https://whzecomjm.com/tags/%E6%9F%93%E8%89%B2/</link>
         <description>Recent content in 染色 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 20 Aug 2019 22:48:12 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%9F%93%E8%89%B2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 20 Aug 2019 22:48:12 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E6%9F%93%E8%89%B2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>方程的染色问题</title>
-        <link>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</link>
+        <link>https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</link>
         <pubDate>Tue, 20 Aug 2019 22:48:12 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg" alt="Featured image of post 方程的染色问题" /&gt;&lt;p&gt;本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg" alt="Featured image of post 方程的染色问题" /&gt;&lt;p&gt;本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。&lt;/p&gt;
 &lt;p&gt;染色问题最著名的理论是&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Ramsey_theory&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;拉姆齐理论&lt;/a&gt;，它描述的是对有限整数集合或者所有自然数的任意染色下局部拥有的单色性。这一定理可以推广到可数甚至与一些大基数（large cardinals）。关于无限的拉姆齐理论可以参考这个 &lt;a class=&#34;link&#34; href=&#34;https://cs.stanford.edu/people/jbaek/infinite-ramsey.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Notes&lt;/a&gt;。至于满足单色性的局部性质，拉姆齐定理并没有给出这些性质的具体形式。然而， Van der Waerden 定理和 Hales–Jewett 定理等结论给出了一些具体的形式，比如前者是等差数列总有单色解，后者更是前者的推广。另一个有意思的局部性质是“单色方程解”，满足这一特性的方程我们称为“分割正规的”（partition regular）。&lt;/p&gt;

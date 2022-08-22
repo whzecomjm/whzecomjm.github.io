@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>KaTeX on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/katex/</link>
+        <link>https://whzecomjm.com/tags/katex/</link>
         <description>Recent content in KaTeX on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 12 Jul 2018 15:14:23 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/katex/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Jul 2018 15:14:23 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/katex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>KaTeX：博客的数学公式支持</title>
-        <link>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</link>
+        <link>https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</link>
         <pubDate>Thu, 12 Jul 2018 15:14:23 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/katex%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%94%AF%E6%8C%81/chris-liverani-ViEBSoZH6M4-unsplash.jpg" alt="Featured image of post KaTeX：博客的数学公式支持" /&gt;&lt;p&gt;其实早在好几年前 &lt;a class=&#34;link&#34; href=&#34;https://khan.github.io/KaTeX/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt; 刚出来的时候, 我就有关注这个 MathJax 的代替者. 不过当时好多公式符号都无法加载, 那时甚至矩阵都显示有问题. KaTeX 虽然加载公式速度很快, 但是怕我文章里有公式不能正常显示, 所以还是没有选择使用它. 不过就像很多开源软件一样, 时间能让它们变得越来越好. 诚如前段时间回归 Typecho 重新写博客一样, Markdown 和 MathJax 之间的小 Bug 得到完美解决; 如今 KaTeX 也能独当一面, 可以彻底代替 MathJax 了.&lt;/p&gt;
 &lt;p&gt;最简单的使用方法是使用了官方推荐的简单配置（使用 jsDelivr 的CDN）：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>组合 on Transcendence</title>
-        <link>https://whzecomjm.github.io/categories/%E7%BB%84%E5%90%88/</link>
+        <link>https://whzecomjm.com/categories/%E7%BB%84%E5%90%88/</link>
         <description>Recent content in 组合 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 08 Dec 2020 15:30:24 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/categories/%E7%BB%84%E5%90%88/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 08 Dec 2020 15:30:24 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/categories/%E7%BB%84%E5%90%88/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>向量法求根式函数值域</title>
-        <link>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</link>
+        <link>https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</link>
         <pubDate>Tue, 08 Dec 2020 15:30:24 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%90%91%E9%87%8F%E6%B3%95%E6%B1%82%E6%A0%B9%E5%BC%8F%E5%87%BD%E6%95%B0%E5%80%BC%E5%9F%9F/0.png" alt="Featured image of post 向量法求根式函数值域" /&gt;&lt;p&gt;对于含有根式的函数的值域求解，我们常常会先观察函数构型，或换元、或使用平方差和完全平方公式等拼凑，并没有统一的方法。事实上，这类函数的值域或者最值问题可以看成&lt;strong&gt;向量的模&lt;/strong&gt;的最值问题。这一方法看似不容易掌握，也有不少坑，但是依然是一个很好的入手点和思考函数值域的方式。&lt;/p&gt;
 &lt;p&gt;首先我们给出最常用的两个向量不等式，用以求解函数值域。它们分别是向量的三角不等式和数量积（柯西）不等式。向量的&lt;strong&gt;三角不等式&lt;/strong&gt;指的是，对于任意两个向量 $\vec{a}, \vec{b}$，下列不等式恒成立：
 $$
 ||\vec{a}|-|\vec{b}||\leq |\vec{a}+\vec{b}|\leq |\vec{a}|+|\vec{b}|            \qquad\qquad(1)
@@ -91,11 +91,11 @@ $$
         </item>
         <item>
         <title>幂平均不等式和对称法</title>
-        <link>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
+        <link>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
         <pubDate>Mon, 30 Nov 2020 15:25:54 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
 &lt;p&gt;事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&amp;gt;0$）：
 $$
 \frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},
@@ -157,11 +157,11 @@ $$
         </item>
         <item>
         <title>拉姆齐数一个下界的概率证明</title>
-        <link>https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</link>
+        <link>https://whzecomjm.com/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</link>
         <pubDate>Mon, 18 May 2020 16:50:05 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/greg-rosenke-TMXIWZncTZU-unsplash.jpg" alt="Featured image of post 拉姆齐数一个下界的概率证明" /&gt;&lt;p&gt;拉姆齐定理表明在二染色中对任意整数 $r$ 一定存在 $n$，使得完全图 $K_n$ 必然包含的同色子完全图$K_s$。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%E4%B8%80%E4%B8%AA%E4%B8%8B%E7%95%8C%E7%9A%84%E6%A6%82%E7%8E%87%E8%AF%81%E6%98%8E/greg-rosenke-TMXIWZncTZU-unsplash.jpg" alt="Featured image of post 拉姆齐数一个下界的概率证明" /&gt;&lt;p&gt;拉姆齐定理表明在二染色中对任意整数 $r$ 一定存在 $n$，使得完全图 $K_n$ 必然包含的同色子完全图$K_s$。&lt;/p&gt;
 &lt;p&gt;$R(s):=R(s,s)$. 我们已经知道 $R(1)=1$, $R(2)=2$, $R(3)=6$, 以及 $R(4)=18$. 然后寻找确切的拉姆齐数十分困难, 事实上, $R(5)$ 及其以上的确切值仍然没有确定. 因此, 自然的想法就是不断缩小上下界. P. Erdös 在其1947年的文章中开创性的利用概率方法给出第一个下界.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt; [3]. The Ramsey number $R(s)$ is bigger than $2^{(s-1)/2}$.&lt;/p&gt;
@@ -188,11 +188,11 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>方程的染色问题</title>
-        <link>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</link>
+        <link>https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</link>
         <pubDate>Tue, 20 Aug 2019 22:48:12 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg" alt="Featured image of post 方程的染色问题" /&gt;&lt;p&gt;本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%96%B9%E7%A8%8B%E7%9A%84%E6%9F%93%E8%89%B2%E9%97%AE%E9%A2%98/pawel-czerwinski-nyJY9UZnkrE-unsplash.jpg" alt="Featured image of post 方程的染色问题" /&gt;&lt;p&gt;本文翻译节选自我的一个笔记，为了偷懒，一些定义和证明就保持原样了。&lt;/p&gt;
 &lt;p&gt;染色问题最著名的理论是&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Ramsey_theory&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;拉姆齐理论&lt;/a&gt;，它描述的是对有限整数集合或者所有自然数的任意染色下局部拥有的单色性。这一定理可以推广到可数甚至与一些大基数（large cardinals）。关于无限的拉姆齐理论可以参考这个 &lt;a class=&#34;link&#34; href=&#34;https://cs.stanford.edu/people/jbaek/infinite-ramsey.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Notes&lt;/a&gt;。至于满足单色性的局部性质，拉姆齐定理并没有给出这些性质的具体形式。然而， Van der Waerden 定理和 Hales–Jewett 定理等结论给出了一些具体的形式，比如前者是等差数列总有单色解，后者更是前者的推广。另一个有意思的局部性质是“单色方程解”，满足这一特性的方程我们称为“分割正规的”（partition regular）。&lt;/p&gt;
@@ -312,11 +312,11 @@ $$
         </item>
         <item>
         <title>三角恒等式的几何表达</title>
-        <link>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</link>
+        <link>https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</link>
         <pubDate>Sun, 07 Oct 2018 12:27:30 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg" alt="Featured image of post 三角恒等式的几何表达" /&gt;&lt;p&gt;高中数学记忆三角恒等式一直是很多人苦于去做的，虽然有 &lt;code&gt;sinco cosin coco sinsin&lt;/code&gt; 之类的记忆“口诀”，但是过了一段时间不复习中间的细节比如两倍、正负号还是容易忘记的。下面我们来梳理一下这些恒等式的几何化表达。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg" alt="Featured image of post 三角恒等式的几何表达" /&gt;&lt;p&gt;高中数学记忆三角恒等式一直是很多人苦于去做的，虽然有 &lt;code&gt;sinco cosin coco sinsin&lt;/code&gt; 之类的记忆“口诀”，但是过了一段时间不复习中间的细节比如两倍、正负号还是容易忘记的。下面我们来梳理一下这些恒等式的几何化表达。&lt;/p&gt;
 &lt;h2 id=&#34;角和差三角恒等式&#34;&gt;角和差三角恒等式&lt;/h2&gt;
 &lt;p&gt;角和差三角恒等式是所有公式的基础，容易记忆、也容易得到几何化的表达。&lt;/p&gt;
 &lt;h3 id=&#34;正余弦的角和公式&#34;&gt;正余弦的角和公式&lt;/h3&gt;
@@ -367,10 +367,10 @@ $$
 $$
 是三角形ABC面积的两倍除以 $|l|$。故两边相等。&lt;/p&gt;
 &lt;h2 id=&#34;半角公式&#34;&gt;半角公式&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg&#34;
 	width=&#34;463&#34;
 	height=&#34;487&#34;
-	srcset=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_480x0_resize_q75_box.jpg 480w, https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -392,11 +392,11 @@ $$
         </item>
         <item>
         <title>完美正方形</title>
-        <link>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <link>https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
         <pubDate>Sun, 30 Sep 2018 02:23:22 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;其实最自然的想法是利用&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/PyramidalNumber.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;四角锥数&lt;/a&gt;($\sum_{i=1}^n i^2$)来寻找, 但是是平方数的四角锥数仅有 1 和 4900 ($70^2=\sum_{i=1}^{40}i^2$). 但是令人遗憾的是边长7200的正方形不能被分割为24个小正方形.&lt;/p&gt;
@@ -464,11 +464,11 @@ $$
         </item>
         <item>
         <title>[读读欧拉] 二项式公式的一个推广</title>
-        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</link>
+        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</link>
         <pubDate>Fri, 23 Mar 2018 01:47:28 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%8E%A8%E5%B9%BF/mark-basarab-1OtUkD_8svc-unsplash.jpg" alt="Featured image of post [读读欧拉] 二项式公式的一个推广" /&gt;&lt;p&gt;在初等代数中, 二项式定理描述了(线性)二项式的幂的代数展开。根据此定理，可以将 $x+y$ 的任意次幂展开成如下和的形式:&lt;/p&gt;
 &lt;p&gt;$$(x+y)^{n}={n \choose 0}x^{n}y^{0}+{n \choose 1}x^{{n-1}}y^{1}+\cdots +{n \choose n}x^{0}y^{n},$$&lt;/p&gt;
 &lt;p&gt;其中 ${n \choose 2}$ 称为二项式系数, 它等于 $\frac{n!}{k!(n-k)!}$. 二项式定理的一个变形是将 $y$ 替换为 1, 减少为一个变量. 这种形式的二项式公式为
 $$(1+x)^n=\sum_{k=0}^n {n\choose k} x^k.$$
@@ -502,11 +502,11 @@ $${n\choose k}^{\theta+1}=\sum_{k=0}^{\lambda}{\lambda-k\choose k}^{\theta} {n\c
         </item>
         <item>
         <title>[读读欧拉] 一个有理式的对称公式</title>
-        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</link>
+        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</link>
         <pubDate>Thu, 22 Mar 2018 00:43:26 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E4%B8%80%E4%B8%AA%E6%9C%89%E7%90%86%E5%BC%8F%E7%9A%84%E5%AF%B9%E7%A7%B0%E5%85%AC%E5%BC%8F/pawel-czerwinski-LEbkdsB8OMg-unsplash.jpg" alt="Featured image of post [读读欧拉] 一个有理式的对称公式" /&gt;&lt;p&gt;整式有很多对称的性质, 同样有理式也有. 首先我们从一些简单的例子来感受一下一组有趣的对称：假设 a,b,c 是互不相等的实数，容易知道我们有如下等式&lt;/p&gt;
 &lt;p&gt;$$\frac{1}{a-b}+\frac{1}{b-a}=0$$&lt;/p&gt;
 &lt;p&gt;$$\frac{1}{(a-b)(a-c)}+\frac{1}{(b-a)(b-c)}+\frac{1}{(c-a)(c-b)}=0$$&lt;/p&gt;
 &lt;p&gt;上述结果是一种 &amp;ldquo;轮换对称&amp;rdquo;, 可以很自然地推广到任意有限多个不相等的数，这个结果参见 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/math/0502425&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -535,11 +535,11 @@ $$\frac{b^n}{(b-a)(b-c)(b-d)\cdots}=B&amp;rsquo;,$$&lt;/p&gt;
         </item>
         <item>
         <title>[读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示</title>
-        <link>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</link>
+        <link>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</link>
         <pubDate>Wed, 21 Mar 2018 12:41:25 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E8%AF%BB%E8%AF%BB%E6%AC%A7%E6%8B%89-%E7%94%A8%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E6%8E%A8%E5%AF%BC%E6%AD%A3%E5%88%87%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E5%88%86%E5%BC%8F%E8%A1%A8%E7%A4%BA/pawel-czerwinski-NLv8pyZAp2I-unsplash.jpg" alt="Featured image of post [读读欧拉] 用二项式公式的连分式推导正切函数的连分式表示" /&gt;&lt;p&gt;拉普拉斯曾说过一句话, &amp;ldquo;读读欧拉，他是所有人的老师。&amp;rdquo; 过去几百年后，我想这句话还是很有力量的。欧拉一生中有占当时数学论文量30%的成果，涉及极广的数学分支。更重要的是，欧拉的著作可读性很高，对于那些看教材不爽的都可以去读一读欧拉, &lt;a class=&#34;link&#34; href=&#34;http://www.eulerarchive.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;eulerarchive.org&lt;/a&gt;总结了欧拉的一些结果, 一些他的论文还可以在 &lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/find/math/1/au:&amp;#43;Euler_L/0/1/0/all/0/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;arxiv&lt;/a&gt; 找到。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -562,11 +562,11 @@ $$\frac{b^n}{(b-a)(b-c)(b-d)\cdots}=B&amp;rsquo;,$$&lt;/p&gt;
         </item>
         <item>
         <title>几何平均即是零次幂平均</title>
-        <link>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
+        <link>https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
         <pubDate>Thu, 13 Apr 2017 12:11:33 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
 &lt;p&gt;$$\lim_{m\rightarrow 0} M_m(a) = \lim_{m\rightarrow 0} \left(\frac{a_1^m + a_2^m+\dots+ a_n^m}{n} \right)^{1/m}=\sqrt[n]{a_1 a_2 \dots a_n}=G(a)$$&lt;/p&gt;
 &lt;p&gt;左边是幂的形式，右边也是幂的形式，但是指数不一样，所以，当时我也是想取对数来做，右边取完对数就会变成&lt;/p&gt;
 &lt;p&gt;$$ \frac{1}{n}\ln(a_1a_2\dots a_n)=\frac{1}{n}(\ln a_1+\ln a_2+\cdots+\ln a_n) $$&lt;/p&gt;

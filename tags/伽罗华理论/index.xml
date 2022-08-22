@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>伽罗华理论 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/</link>
+        <link>https://whzecomjm.com/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/</link>
         <description>Recent content in 伽罗华理论 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 28 Dec 2020 15:33:47 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 28 Dec 2020 15:33:47 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E4%BC%BD%E7%BD%97%E5%8D%8E%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>17次单位根的二次根式表达</title>
-        <link>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</link>
+        <link>https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</link>
         <pubDate>Mon, 28 Dec 2020 15:33:47 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 17次单位根的二次根式表达" /&gt;&lt;p&gt;此笔记翻译自 Reed 大学的 Jerry Shurman 的一篇 Note：The seventeenth root of unity via quadratic，原文很详细，本文有所删减。这实际上是高斯使用尺规作图做出正十七边形的原理所在，使用了 Galois 理论。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 17次单位根的二次根式表达" /&gt;&lt;p&gt;此笔记翻译自 Reed 大学的 Jerry Shurman 的一篇 Note：The seventeenth root of unity via quadratic，原文很详细，本文有所删减。这实际上是高斯使用尺规作图做出正十七边形的原理所在，使用了 Galois 理论。&lt;/p&gt;
 &lt;p&gt;令 $p=17$, 且令
 $$
 \zeta=\zeta_{17}=e^{2\pi i/17}.

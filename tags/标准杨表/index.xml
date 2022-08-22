@@ -2,18 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>标准杨表 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8/</link>
+        <link>https://whzecomjm.com/tags/%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8/</link>
         <description>Recent content in 标准杨表 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 09 Jul 2020 11:32:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Jul 2020 11:32:05 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>对称群学习笔记</title>
-        <link>https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <link>https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 09 Jul 2020 11:32:05 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mike-newbry-7VyXToCotr4-unsplash.jpg" alt="Featured image of post 对称群学习笔记" /&gt;&lt;p&gt;这学期在家使用 Zoom 上完了 Prof. Ron Adin 的课程，有不少收获。我整理了这门课的笔记（中文）与大家分享，笔记的参考来源很广，包括但不限于 Adin 教授的讲义和 Sagan 关于对称群的教材 GTM203 等等。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mike-newbry-7VyXToCotr4-unsplash.jpg" alt="Featured image of post 对称群学习笔记" /&gt;&lt;p&gt;这学期在家使用 Zoom 上完了 Prof. Ron Adin 的课程，有不少收获。我整理了这门课的笔记（中文）与大家分享，笔记的参考来源很广，包括但不限于 Adin 教授的讲义和 Sagan 关于对称群的教材 GTM203 等等。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Symmetric-Groups.pdf&#34; &gt;笔记链接&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;之前我整理的一些课程笔记，可在 &lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt; 下载，国内用户可前往 &lt;a class=&#34;link&#34; href=&#34;https://mirrors.sustech.edu.cn/git/whzecomjm/Math-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SUSTech Gitlab&lt;/a&gt; 镜像浏览：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/GMT-Fractals.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Geometric Measure Theory and Fractals&lt;/a&gt;: 2014 年 Boris Solomyak 的几何测度与分形课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Aperiodic-order.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Aperiodic Order&lt;/a&gt;: 2015 年 Boris 的非周期序列课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Noncommutative-algebra.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Noncommutative Algebra&lt;/a&gt;: 2015 年 Uzi Vishne 的非交换代数课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Information-theory.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;信息论笔记&lt;/a&gt;: 2019 年 Reuven Cohen 的信息论课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Symmetric-groups.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;对称群笔记&lt;/a&gt;: 2020 年疫情期间 Ron Adin 的对称群的 Zoom 在线课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Random-graphs.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Random Graphs&lt;/a&gt;: 2020 年疫情期间 Simcha Haber 的随机图的 Zoom 在线课程笔记&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;whzecomjm&lt;/p&gt;
 &lt;p&gt;Jul 9, 2020 11:36:44&lt;/p&gt;
 </description>

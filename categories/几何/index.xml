@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>几何 on Transcendence</title>
-        <link>https://whzecomjm.github.io/categories/%E5%87%A0%E4%BD%95/</link>
+        <link>https://whzecomjm.com/categories/%E5%87%A0%E4%BD%95/</link>
         <description>Recent content in 几何 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 09 Jan 2020 14:14:17 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/categories/%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Jan 2020 14:14:17 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/categories/%E5%87%A0%E4%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>射影平面的直观理解</title>
-        <link>https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</link>
+        <link>https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</link>
         <pubDate>Thu, 09 Jan 2020 14:14:17 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg" alt="Featured image of post 射影平面的直观理解" /&gt;&lt;p&gt;射影虽名为 projective，但并不代表全部意义下的“投影”，而仅仅指的是“点光源的投影”，这也是为什么中文翻译使用“射影”（音同“摄影”）而非“投影”。本文仅从最常见的实射影平面来解释射影平面的几个不太直观或者令人困惑的点。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg" alt="Featured image of post 射影平面的直观理解" /&gt;&lt;p&gt;射影虽名为 projective，但并不代表全部意义下的“投影”，而仅仅指的是“点光源的投影”，这也是为什么中文翻译使用“射影”（音同“摄影”）而非“投影”。本文仅从最常见的实射影平面来解释射影平面的几个不太直观或者令人困惑的点。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;实射影平面是 $R^3$ 中所有过原点的直线构成的空间，记为 $\mathbb R P^2$ 或简记为 $P^2$。这一定义并不会给我们一个足够清晰的图像，作为“平面”，我们自然会考虑如何定义这一“平面”上的点和线等等。因此我们常常可以根据等价类来具体化。&lt;/p&gt;
 &lt;p&gt;过原点的全部直线可以分为两类，一类是与 xy 平面 (z=0) 有非零倾角的；另一类是位于 xy 平面上的。我们可以任取一个在 $R^3$ 中与 xy 平面平行但不重合的平面，比如 z=1 平面，则前一类的所有直线均在这一平面上有且仅有一个交点。不能选择 xy 平面作为投影平面是因为所有交点会退化为原点。另外一类在 xy 平面上的过原点的直线，并不会与 z=1 平面相交。但是在射影平面中，为了统一这些直线，可以将它们与 z=1 平面的交点定在“无穷远”。无穷远的讲法源自于过原点直线的倾角趋近于0的极限。&lt;/p&gt;
@@ -50,11 +50,11 @@ $$
         </item>
         <item>
         <title>三角恒等式的几何表达</title>
-        <link>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</link>
+        <link>https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</link>
         <pubDate>Sun, 07 Oct 2018 12:27:30 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg" alt="Featured image of post 三角恒等式的几何表达" /&gt;&lt;p&gt;高中数学记忆三角恒等式一直是很多人苦于去做的，虽然有 &lt;code&gt;sinco cosin coco sinsin&lt;/code&gt; 之类的记忆“口诀”，但是过了一段时间不复习中间的细节比如两倍、正负号还是容易忘记的。下面我们来梳理一下这些恒等式的几何化表达。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg" alt="Featured image of post 三角恒等式的几何表达" /&gt;&lt;p&gt;高中数学记忆三角恒等式一直是很多人苦于去做的，虽然有 &lt;code&gt;sinco cosin coco sinsin&lt;/code&gt; 之类的记忆“口诀”，但是过了一段时间不复习中间的细节比如两倍、正负号还是容易忘记的。下面我们来梳理一下这些恒等式的几何化表达。&lt;/p&gt;
 &lt;h2 id=&#34;角和差三角恒等式&#34;&gt;角和差三角恒等式&lt;/h2&gt;
 &lt;p&gt;角和差三角恒等式是所有公式的基础，容易记忆、也容易得到几何化的表达。&lt;/p&gt;
 &lt;h3 id=&#34;正余弦的角和公式&#34;&gt;正余弦的角和公式&lt;/h3&gt;
@@ -105,10 +105,10 @@ $$
 $$
 是三角形ABC面积的两倍除以 $|l|$。故两边相等。&lt;/p&gt;
 &lt;h2 id=&#34;半角公式&#34;&gt;半角公式&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA.jpg&#34;
 	width=&#34;463&#34;
 	height=&#34;487&#34;
-	srcset=&#34;https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_480x0_resize_q75_box.jpg 480w, https://whzecomjm.com/p/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%E7%9A%84%E5%87%A0%E4%BD%95%E8%A1%A8%E8%BE%BE/aZXCGcgtpwP8RMA_hu5b00630d19d90bb4a4949ace60ead1c3_26338_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -130,11 +130,11 @@ $$
         </item>
         <item>
         <title>斜航线介绍</title>
-        <link>https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</link>
+        <link>https://whzecomjm.com/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</link>
         <pubDate>Thu, 24 Dec 2015 06:50:05 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/Loxodrome.png" alt="Featured image of post 斜航线介绍" /&gt;&lt;p&gt;斜航线(Loxodrome)又叫恒向线，顾名思义，它是基于船舶航行背景的。Loxodrome最初是一个希腊词，loxos的意思是oblique，即是倾斜的，dromos是bearing，方位的意思。后来在17世纪这个词为了解释 Nune 这方面的工作时，被人拉丁化了，成为一个拉丁词语。我们也用Rhumb(或Rhumb Line)这个词代替之。实际上呢，比较抠门的人是有区别这两个名词的，他们的Rhumb是特指恒定的方位，而把loxodrome是指这条运动曲线。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%96%9C%E8%88%AA%E7%BA%BF%E4%BB%8B%E7%BB%8D/Loxodrome.png" alt="Featured image of post 斜航线介绍" /&gt;&lt;p&gt;斜航线(Loxodrome)又叫恒向线，顾名思义，它是基于船舶航行背景的。Loxodrome最初是一个希腊词，loxos的意思是oblique，即是倾斜的，dromos是bearing，方位的意思。后来在17世纪这个词为了解释 Nune 这方面的工作时，被人拉丁化了，成为一个拉丁词语。我们也用Rhumb(或Rhumb Line)这个词代替之。实际上呢，比较抠门的人是有区别这两个名词的，他们的Rhumb是特指恒定的方位，而把loxodrome是指这条运动曲线。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;斜航线的定义就是：在地球上保持恒定方位的运动路径。比如，始终朝着北偏东30度方向运动。基于航海背景的原因，为了统一文章的表述，我们就把这种运动就直接称之为航行就好了。&lt;/p&gt;
 &lt;p&gt;进一步的，对于地球而言，定义方向的最好手段，不是在夜晚的北半球寻找北极星以外，而是利用罗盘，利用地磁场，并且我们近似认为磁南北极和北南极重合。这样，呈现在地图上，经线就是我们判断方向的最好依据。当然，地图上还有纬线，但是还原到地球本身上去时，我们会发现，纬线都是闭合的并没有方向性，给一条纬线，并不知道哪边是东哪边是西，也就是说东西实际上是相对的。当然，其实最主要的原因还是南北极能在指南针中很好的识别，何苦再去弄一些不方便的东西。&lt;/p&gt;

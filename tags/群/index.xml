@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>群 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E7%BE%A4/</link>
+        <link>https://whzecomjm.com/tags/%E7%BE%A4/</link>
         <description>Recent content in 群 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 28 Dec 2020 15:33:47 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E7%BE%A4/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 28 Dec 2020 15:33:47 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E7%BE%A4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>17次单位根的二次根式表达</title>
-        <link>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</link>
+        <link>https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</link>
         <pubDate>Mon, 28 Dec 2020 15:33:47 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 17次单位根的二次根式表达" /&gt;&lt;p&gt;此笔记翻译自 Reed 大学的 Jerry Shurman 的一篇 Note：The seventeenth root of unity via quadratic，原文很详细，本文有所删减。这实际上是高斯使用尺规作图做出正十七边形的原理所在，使用了 Galois 理论。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/17%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9%E7%9A%84%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E8%A1%A8%E8%BE%BE/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 17次单位根的二次根式表达" /&gt;&lt;p&gt;此笔记翻译自 Reed 大学的 Jerry Shurman 的一篇 Note：The seventeenth root of unity via quadratic，原文很详细，本文有所删减。这实际上是高斯使用尺规作图做出正十七边形的原理所在，使用了 Galois 理论。&lt;/p&gt;
 &lt;p&gt;令 $p=17$, 且令
 $$
 \zeta=\zeta_{17}=e^{2\pi i/17}.
@@ -182,23 +182,41 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>对称群学习笔记</title>
-        <link>https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <link>https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 09 Jul 2020 11:32:05 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mike-newbry-7VyXToCotr4-unsplash.jpg" alt="Featured image of post 对称群学习笔记" /&gt;&lt;p&gt;这学期在家使用 Zoom 上完了 Prof. Ron Adin 的课程，有不少收获。我整理了这门课的笔记（中文）与大家分享，笔记的参考来源很广，包括但不限于 Adin 教授的讲义和 Sagan 关于对称群的教材 GTM203 等等。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%AF%B9%E7%A7%B0%E7%BE%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mike-newbry-7VyXToCotr4-unsplash.jpg" alt="Featured image of post 对称群学习笔记" /&gt;&lt;p&gt;这学期在家使用 Zoom 上完了 Prof. Ron Adin 的课程，有不少收获。我整理了这门课的笔记（中文）与大家分享，笔记的参考来源很广，包括但不限于 Adin 教授的讲义和 Sagan 关于对称群的教材 GTM203 等等。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Symmetric-Groups.pdf&#34; &gt;笔记链接&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;之前我整理的一些课程笔记，可在 &lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt; 下载，国内用户可前往 &lt;a class=&#34;link&#34; href=&#34;https://mirrors.sustech.edu.cn/git/whzecomjm/Math-Notes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SUSTech Gitlab&lt;/a&gt; 镜像浏览：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/GMT-Fractals.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Geometric Measure Theory and Fractals&lt;/a&gt;: 2014 年 Boris Solomyak 的几何测度与分形课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Aperiodic-order.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Aperiodic Order&lt;/a&gt;: 2015 年 Boris 的非周期序列课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Noncommutative-algebra.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Noncommutative Algebra&lt;/a&gt;: 2015 年 Uzi Vishne 的非交换代数课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Information-theory.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;信息论笔记&lt;/a&gt;: 2019 年 Reuven Cohen 的信息论课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Symmetric-groups.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;对称群笔记&lt;/a&gt;: 2020 年疫情期间 Ron Adin 的对称群的 Zoom 在线课程笔记&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/Math-Notes/blob/main/Random-graphs.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Random Graphs&lt;/a&gt;: 2020 年疫情期间 Simcha Haber 的随机图的 Zoom 在线课程笔记&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;whzecomjm&lt;/p&gt;
 &lt;p&gt;Jul 9, 2020 11:36:44&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>整系数的分式线性变换群仅有9个有限子群</title>
-        <link>https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</link>
+        <link>https://whzecomjm.com/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</link>
         <pubDate>Wed, 02 Dec 2015 10:52:33 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 整系数的分式线性变换群仅有9个有限子群" /&gt;&lt;p&gt;分式线性变换(FLT)又称为Mobius变换是指这样形式的函数：$m(x)=\frac{ax+b}{cx+d}$，其中$ad-bc\ne  0$。我们将要证明，如果Mobius变换的系数为整数，仅有9个有限子群。对于实系数和复系数的情况我们也将要提到。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%95%B4%E7%B3%BB%E6%95%B0%E7%9A%84%E5%88%86%E5%BC%8F%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%BE%A4%E4%BB%85%E6%9C%899%E4%B8%AA%E6%9C%89%E9%99%90%E5%AD%90%E7%BE%A4/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post 整系数的分式线性变换群仅有9个有限子群" /&gt;&lt;p&gt;分式线性变换(FLT)又称为Mobius变换是指这样形式的函数：$m(x)=\frac{ax+b}{cx+d}$，其中$ad-bc\ne  0$。我们将要证明，如果Mobius变换的系数为整数，仅有9个有限子群。对于实系数和复系数的情况我们也将要提到。&lt;/p&gt;
 &lt;p&gt;首先我们要求我们的整系数的FLT的所有系数互素即$\gcd(a,b,c,d)=1$，然后我们验证所有的整系数的FLT成群：两个FLT的乘积（复合）仍然为FLT。并且$e(x)=x$为单位变换，每个FLT均有逆变换，为$\frac{dx-b}{-cx+a}$。&lt;/p&gt;
 &lt;p&gt;为了便于计算（用矩阵计算），我们发现整系数的FLT与$PGL(2,\mathbb{Q})$同构。注意PGL中的“P”为“projective”，意思类似于我们前面提到的要求，即$\gcd(a,b,c,d)=1$，如果不等于1则除去公因子。如果是分数倍，当然也能一起去除。&lt;/p&gt;
 &lt;p&gt;我们再考虑复平面上的分式线性变换。我们将复平面拓s展为黎曼球面$\widehat{C}=C\cup{\infty}$，这样我们需要注意几个拓展后的规定$1 / 0=\infty,1 / \infty=0$，以及关于FLT的几个特征：如果$c\neq0$，则有$m(\infty)=a / c$以及$m(-d / c)=\infty$；如果$c=0$，则有$m(\infty)=\infty$。&lt;/p&gt;
@@ -270,11 +288,11 @@ $\frac{ax+b}{cx+d}=x$
         </item>
         <item>
         <title>正规化子和中心化子</title>
-        <link>https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</link>
+        <link>https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</link>
         <pubDate>Wed, 25 Nov 2015 12:07:35 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/hulki-okan-tabak-H2AkAU2QTpo-unsplash.jpg" alt="Featured image of post 正规化子和中心化子" /&gt;&lt;p&gt;初学群论的同学刚开始接触正规化子和中心化子这两个概念的时候会很容易弄混，因为他们的定义十分相似。一个群$G$的子集$S$的中心化子(Centralizer)和正规化子(Normalizer)都是$G$的子群，并且符合类似的“局部交换”的限制条件。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%E5%92%8C%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90/hulki-okan-tabak-H2AkAU2QTpo-unsplash.jpg" alt="Featured image of post 正规化子和中心化子" /&gt;&lt;p&gt;初学群论的同学刚开始接触正规化子和中心化子这两个概念的时候会很容易弄混，因为他们的定义十分相似。一个群$G$的子集$S$的中心化子(Centralizer)和正规化子(Normalizer)都是$G$的子群，并且符合类似的“局部交换”的限制条件。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;中心化子的一般定义是从一个元素开始，$a\in G$的中心化子$C(a)$是$G$中和$a$交换的元素集合，即&lt;/p&gt;
 &lt;p&gt;$$C(a):=\{x\in G:xa=ax\}.$$&lt;/p&gt;

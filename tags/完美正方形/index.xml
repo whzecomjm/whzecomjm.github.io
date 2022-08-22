@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>完美正方形 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <link>https://whzecomjm.com/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
         <description>Recent content in 完美正方形 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 30 Sep 2018 02:23:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 30 Sep 2018 02:23:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>完美正方形</title>
-        <link>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
+        <link>https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</link>
         <pubDate>Sun, 30 Sep 2018 02:23:22 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%AE%8C%E7%BE%8E%E6%AD%A3%E6%96%B9%E5%BD%A2/Smith_diagram.png" alt="Featured image of post 完美正方形" /&gt;&lt;p&gt;&lt;strong&gt;完美正方形&lt;/strong&gt;是把整数边长的正方形分割为若干个==不等整数边长==的小正方形. 我们接下来讨论的所有分割均是边长为整数的分割. 如果不限制边长不等, 我们很容易可以用小正方形分割正方形. 完美正方形如果其中任何一部分小正方形都无法构成一个矩形或正方形, 则称为简单完美正方形(Simple Perfect Squared Square, SPSS), 否则称为复合完美正方形(Compound Perfect Squared Square, CPSS). 为了描述简便, 我们用 &amp;ldquo;&lt;strong&gt;方割&lt;/strong&gt;&amp;rdquo; 来表示用小正方形分割大的正方形或者长方形.&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;其实最自然的想法是利用&lt;a class=&#34;link&#34; href=&#34;http://mathworld.wolfram.com/PyramidalNumber.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;四角锥数&lt;/a&gt;($\sum_{i=1}^n i^2$)来寻找, 但是是平方数的四角锥数仅有 1 和 4900 ($70^2=\sum_{i=1}^{40}i^2$). 但是令人遗憾的是边长7200的正方形不能被分割为24个小正方形.&lt;/p&gt;

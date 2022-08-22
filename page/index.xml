@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Transcendence</title>
-        <link>https://whzecomjm.github.io/page/</link>
+        <link>https://whzecomjm.com/page/</link>
         <description>Recent content in Pages on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 28 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://whzecomjm.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://whzecomjm.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://whzecomjm.github.io/archives/</link>
+        <link>https://whzecomjm.com/archives/</link>
         <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://whzecomjm.github.io/archives/</guid>
+        <guid>https://whzecomjm.com/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>https://whzecomjm.github.io/about/</link>
+        <link>https://whzecomjm.com/about/</link>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://whzecomjm.github.io/about/</guid>
+        <guid>https://whzecomjm.com/about/</guid>
         <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Ph.D. in Mathematics @BIU, Israel&lt;/li&gt;
@@ -42,10 +42,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;公众号：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://whzecomjm.github.io/about/1198538981.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://whzecomjm.com/about/1198538981.jpg&#34;
 	width=&#34;258&#34;
 	height=&#34;258&#34;
-	srcset=&#34;https://whzecomjm.github.io/about/1198538981_hu291769409febc89c437b342b1e1beee5_27617_480x0_resize_q75_box.jpg 480w, https://whzecomjm.github.io/about/1198538981_hu291769409febc89c437b342b1e1beee5_27617_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://whzecomjm.com/about/1198538981_hu291769409febc89c437b342b1e1beee5_27617_480x0_resize_q75_box.jpg 480w, https://whzecomjm.com/about/1198538981_hu291769409febc89c437b342b1e1beee5_27617_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;微信公众号&#34;
@@ -94,10 +94,10 @@
         </item>
         <item>
         <title>Search</title>
-        <link>https://whzecomjm.github.io/search/</link>
+        <link>https://whzecomjm.com/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://whzecomjm.github.io/search/</guid>
+        <guid>https://whzecomjm.com/search/</guid>
         <description></description>
         </item>
         

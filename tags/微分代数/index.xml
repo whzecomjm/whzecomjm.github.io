@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>微分代数 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/</link>
+        <link>https://whzecomjm.com/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/</link>
         <description>Recent content in 微分代数 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 06 Jan 2017 17:53:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 06 Jan 2017 17:53:22 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%BE%AE%E5%88%86%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>为什么 e^{x^2} 没有初等原函数</title>
-        <link>https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</link>
+        <link>https://whzecomjm.com/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</link>
         <pubDate>Fri, 06 Jan 2017 17:53:22 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/dylan-hunter-x-uT30vm2vU-unsplash.jpg" alt="Featured image of post 为什么 e^{x^2} 没有初等原函数" /&gt;&lt;p&gt;给定一个初等函数，我们很容易可以求得它的导数；而给定一个函数求它的原函数（即不定积分）却不是那么简单的一件事，对于一些常用函数的不定积分，我们有容易记得的几个例子以及并不好记积分表。可是并不是所有的初等函数都存在初等的原函数。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E4%B8%BA%E4%BB%80%E4%B9%88-ex2-%E6%B2%A1%E6%9C%89%E5%88%9D%E7%AD%89%E5%8E%9F%E5%87%BD%E6%95%B0/dylan-hunter-x-uT30vm2vU-unsplash.jpg" alt="Featured image of post 为什么 e^{x^2} 没有初等原函数" /&gt;&lt;p&gt;给定一个初等函数，我们很容易可以求得它的导数；而给定一个函数求它的原函数（即不定积分）却不是那么简单的一件事，对于一些常用函数的不定积分，我们有容易记得的几个例子以及并不好记积分表。可是并不是所有的初等函数都存在初等的原函数。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;例子有很多，比如今天我们要介绍的例子:  $e^ {x^2}$ 的原函数不能表示为初等函数。证明这个结论我们需要积分的刘维尔(Liouville)定理以及微分代数(Differential Algebra)的知识。&lt;/p&gt;
 &lt;h2 id=&#34;微分代数简介&#34;&gt;微分代数简介&lt;/h2&gt;

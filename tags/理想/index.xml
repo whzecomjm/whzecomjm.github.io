@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>理想 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E7%90%86%E6%83%B3/</link>
+        <link>https://whzecomjm.com/tags/%E7%90%86%E6%83%B3/</link>
         <description>Recent content in 理想 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 12 Jan 2015 10:52:33 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E7%90%86%E6%83%B3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 12 Jan 2015 10:52:33 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E7%90%86%E6%83%B3/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>互素理想的推广</title>
-        <link>https://whzecomjm.github.io/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/</link>
+        <link>https://whzecomjm.com/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/</link>
         <pubDate>Mon, 12 Jan 2015 10:52:33 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/andrew-palmer-nOOf3TPdDSg-unsplash.jpg" alt="Featured image of post 互素理想的推广" /&gt;&lt;p&gt;昨天在我的论坛上，link 同学问了一个问题： 如果理想 $A,B\lhd R$ 满足 $A+B=R$，证明 $A^2+ B^2=R$。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E4%BA%92%E7%B4%A0%E7%90%86%E6%83%B3%E7%9A%84%E6%8E%A8%E5%B9%BF/andrew-palmer-nOOf3TPdDSg-unsplash.jpg" alt="Featured image of post 互素理想的推广" /&gt;&lt;p&gt;昨天在我的论坛上，link 同学问了一个问题： 如果理想 $A,B\lhd R$ 满足 $A+B=R$，证明 $A^2+ B^2=R$。&lt;/p&gt;
 &lt;p&gt;问题等价于问 A,B 两个理想互素，则它们的二次幂也互素。这个结论在主理想环中是显而易见的，因为任何的主理想环的理想都是主理想，理想的互素等价于元素的互素。如果两个数是互素的话，那么显然他们的二次幂，甚至任何正整数次幂都是互素的。实际上，对于任意的环，这个结论也是成立的。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;命题 1&lt;/strong&gt;：如果 $A,B$ 为环 $R$ 中两互素理想，等价于 $A^n, B^m$ 也互素，其中 $m,n\in \mathbb{Z}^+$。&lt;/p&gt;

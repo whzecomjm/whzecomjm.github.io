@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>射影平面 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2/</link>
+        <link>https://whzecomjm.com/tags/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2/</link>
         <description>Recent content in 射影平面 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 09 Jan 2020 14:14:17 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Jan 2020 14:14:17 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>射影平面的直观理解</title>
-        <link>https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</link>
+        <link>https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</link>
         <pubDate>Thu, 09 Jan 2020 14:14:17 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg" alt="Featured image of post 射影平面的直观理解" /&gt;&lt;p&gt;射影虽名为 projective，但并不代表全部意义下的“投影”，而仅仅指的是“点光源的投影”，这也是为什么中文翻译使用“射影”（音同“摄影”）而非“投影”。本文仅从最常见的实射影平面来解释射影平面的几个不太直观或者令人困惑的点。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3/v2-bbf98b167fe5dd36bd6a871397459a74_1440w.jpg" alt="Featured image of post 射影平面的直观理解" /&gt;&lt;p&gt;射影虽名为 projective，但并不代表全部意义下的“投影”，而仅仅指的是“点光源的投影”，这也是为什么中文翻译使用“射影”（音同“摄影”）而非“投影”。本文仅从最常见的实射影平面来解释射影平面的几个不太直观或者令人困惑的点。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;实射影平面是 $R^3$ 中所有过原点的直线构成的空间，记为 $\mathbb R P^2$ 或简记为 $P^2$。这一定义并不会给我们一个足够清晰的图像，作为“平面”，我们自然会考虑如何定义这一“平面”上的点和线等等。因此我们常常可以根据等价类来具体化。&lt;/p&gt;
 &lt;p&gt;过原点的全部直线可以分为两类，一类是与 xy 平面 (z=0) 有非零倾角的；另一类是位于 xy 平面上的。我们可以任取一个在 $R^3$ 中与 xy 平面平行但不重合的平面，比如 z=1 平面，则前一类的所有直线均在这一平面上有且仅有一个交点。不能选择 xy 平面作为投影平面是因为所有交点会退化为原点。另外一类在 xy 平面上的过原点的直线，并不会与 z=1 平面相交。但是在射影平面中，为了统一这些直线，可以将它们与 z=1 平面的交点定在“无穷远”。无穷远的讲法源自于过原点直线的倾角趋近于0的极限。&lt;/p&gt;

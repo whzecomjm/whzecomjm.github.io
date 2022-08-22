@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>平均数 on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/</link>
+        <link>https://whzecomjm.com/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/</link>
         <description>Recent content in 平均数 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 30 Nov 2020 15:25:54 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 30 Nov 2020 15:25:54 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/%E5%B9%B3%E5%9D%87%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>幂平均不等式和对称法</title>
-        <link>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
+        <link>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</link>
         <pubDate>Mon, 30 Nov 2020 15:25:54 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%B9%82%E5%B9%B3%E5%9D%87%E4%B8%8D%E7%AD%89%E5%BC%8F%E5%92%8C%E5%AF%B9%E7%A7%B0%E6%B3%95/aaron-burden-9yhy1FXlKwI-unsplash.jpg" alt="Featured image of post 幂平均不等式和对称法" /&gt;&lt;p&gt;高中数学中的不等式板块一直是一个学生比较头疼的内容。因为不等式的题目往往很考察学生的观察能力和举一反三能力。在学习基本不等式这一内容中，我们常常通过引入“重要不等式”或者从几何图形中证明基本不等式。事实上，基本不等式即是“几何平均小于等于算术平均”。&lt;/p&gt;
 &lt;p&gt;事实上，这一结果可以推广到任意幂平均。通常我们有如下的结果（对任意$a,b&amp;gt;0$）：
 $$
 \frac{2}{\frac{1}{a}+\frac{1}{b}}\leq\sqrt{ab}\leq\frac{a+b}{2}\leq\sqrt{\frac{a^2+b^2}{2}},
@@ -74,11 +74,11 @@ $$
         </item>
         <item>
         <title>几何平均即是零次幂平均</title>
-        <link>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
+        <link>https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</link>
         <pubDate>Thu, 13 Apr 2017 12:11:33 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
+        <guid>https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E5%87%A0%E4%BD%95%E5%B9%B3%E5%9D%87%E5%8D%B3%E6%98%AF%E9%9B%B6%E6%AC%A1%E5%B9%82%E5%B9%B3%E5%9D%87/charlesdeluvio-Z5ViTNhtPRs-unsplash.jpg" alt="Featured image of post 几何平均即是零次幂平均" /&gt;&lt;p&gt;从小我们就学过算术平均和几何平均，似乎看起来是两种意义的平均，一个是“和”的平均，一个是“积”的平均。但是算数平均推广到幂平均以后，这两者可以统一。实际上，几何平均就是&amp;quot;零次幂平均&amp;quot;（在极限意义下），也就是说，我们有如下等式：&lt;/p&gt;
 &lt;p&gt;$$\lim_{m\rightarrow 0} M_m(a) = \lim_{m\rightarrow 0} \left(\frac{a_1^m + a_2^m+\dots+ a_n^m}{n} \right)^{1/m}=\sqrt[n]{a_1 a_2 \dots a_n}=G(a)$$&lt;/p&gt;
 &lt;p&gt;左边是幂的形式，右边也是幂的形式，但是指数不一样，所以，当时我也是想取对数来做，右边取完对数就会变成&lt;/p&gt;
 &lt;p&gt;$$ \frac{1}{n}\ln(a_1a_2\dots a_n)=\frac{1}{n}(\ln a_1+\ln a_2+\cdots+\ln a_n) $$&lt;/p&gt;

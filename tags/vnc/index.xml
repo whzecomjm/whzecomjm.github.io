@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>VNC on Transcendence</title>
-        <link>https://whzecomjm.github.io/tags/vnc/</link>
+        <link>https://whzecomjm.com/tags/vnc/</link>
         <description>Recent content in VNC on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 28 Dec 2019 05:47:25 +0800</lastBuildDate><atom:link href="https://whzecomjm.github.io/tags/vnc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Dec 2019 05:47:25 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/vnc/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用 MobaXTerm/VNC 打开图像化的远程服务器</title>
-        <link>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>https://whzecomjm.com/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <pubDate>Sat, 28 Dec 2019 05:47:25 +0800</pubDate>
         
-        <guid>https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-        <description>&lt;img src="https://whzecomjm.github.io/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 使用 MobaXTerm/VNC 打开图像化的远程服务器" /&gt;&lt;p&gt;刚来到 BIU 的时候，系里的计算机工程师就跟我讲我有了系里电脑的账号和对应的系里服务器账号。然而我一直只是使用 SSH 或者 SFTP 将自己电脑的文件和学校电脑同步。偶尔的一次机会看到了系里账号的配置网页 BIU-Remote &lt;a class=&#34;link&#34; href=&#34;http://ezra.cs.biu.ac.il/?p=241&amp;amp;page=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://whzecomjm.com/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/%E4%BD%BF%E7%94%A8-mobaxterm/vnc-%E6%89%93%E5%BC%80%E5%9B%BE%E5%83%8F%E5%8C%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post 使用 MobaXTerm/VNC 打开图像化的远程服务器" /&gt;&lt;p&gt;刚来到 BIU 的时候，系里的计算机工程师就跟我讲我有了系里电脑的账号和对应的系里服务器账号。然而我一直只是使用 SSH 或者 SFTP 将自己电脑的文件和学校电脑同步。偶尔的一次机会看到了系里账号的配置网页 BIU-Remote &lt;a class=&#34;link&#34; href=&#34;http://ezra.cs.biu.ac.il/?p=241&amp;amp;page=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Graphical Applications&lt;/a&gt; 中有关于远程图形化应用程序的骚操作。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;经过一番研究发现学校远程服务器的Linux系统中装了 VNC server，可以远程调用这台服务器。于是我兴冲冲地按照上述网页的指示进行操作。&lt;/p&gt;
