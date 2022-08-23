@@ -3,33 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://whzecomjm.com/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/categories/</loc>
-    <lastmod>2022-06-14T15:43:34+08:00</lastmod>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/post/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/tags/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/categories/%E4%BB%A3%E6%95%B0/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/categories/%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/categories/%E6%95%B0%E8%AE%BA/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/tags/%E6%AF%8F%E5%91%A8%E5%AE%9A%E7%90%86/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/p/2022/08/theorem-of-week/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
+  </url><url>
+    <loc>https://whzecomjm.com/categories/%E7%BB%84%E5%90%88/</loc>
+    <lastmod>2022-08-23T11:09:30+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/tags/gkdim/</loc>
     <lastmod>2022-06-14T15:43:34+08:00</lastmod>
   </url><url>
-    <loc>https://whzecomjm.com/post/</loc>
-    <lastmod>2022-06-14T15:43:34+08:00</lastmod>
-  </url><url>
     <loc>https://whzecomjm.com/tags/primitive-algebra/</loc>
-    <lastmod>2022-06-14T15:43:34+08:00</lastmod>
-  </url><url>
-    <loc>https://whzecomjm.com/tags/</loc>
     <lastmod>2022-06-14T15:43:34+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/p/2022/06/calculus-omission-in-algebra/</loc>
     <lastmod>2022-06-14T15:43:34+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/tags/%E4%B8%8A%E6%9E%81%E9%99%90/</loc>
-    <lastmod>2022-06-14T15:43:34+08:00</lastmod>
-  </url><url>
-    <loc>https://whzecomjm.com/categories/%E4%BB%A3%E6%95%B0/</loc>
-    <lastmod>2022-06-14T15:43:34+08:00</lastmod>
-  </url><url>
-    <loc>https://whzecomjm.com/categories/%E5%88%86%E6%9E%90/</loc>
     <lastmod>2022-06-14T15:43:34+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/archives/</loc>
@@ -69,9 +81,6 @@
     <lastmod>2020-12-08T15:30:24+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/p/2020/12/vectors-in-range/</loc>
-    <lastmod>2020-12-08T15:30:24+08:00</lastmod>
-  </url><url>
-    <loc>https://whzecomjm.com/categories/%E7%BB%84%E5%90%88/</loc>
     <lastmod>2020-12-08T15:30:24+08:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/tags/%E5%AF%B9%E7%A7%B0/</loc>
@@ -261,7 +270,5 @@
     <lastmod>2014-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://whzecomjm.com/search/</loc>
-  </url><url>
-    <loc>https://whzecomjm.com/categories/%E6%95%B0%E8%AE%BA/</loc>
   </url>
 </urlset>

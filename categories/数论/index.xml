@@ -5,6 +5,24 @@
         <link>https://whzecomjm.com/categories/%E6%95%B0%E8%AE%BA/</link>
         <description>Recent content in 数论 on Transcendence</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://whzecomjm.com/categories/%E6%95%B0%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Tue, 23 Aug 2022 11:09:30 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/categories/%E6%95%B0%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>每周定理</title>
+        <link>https://whzecomjm.com/p/2022/08/theorem-of-week/</link>
+        <pubDate>Tue, 23 Aug 2022 11:09:30 +0800</pubDate>
+        
+        <guid>https://whzecomjm.com/p/2022/08/theorem-of-week/</guid>
+        <description>&lt;img src="https://whzecomjm.com/p/2022/08/theorem-of-week/0.png" alt="Featured image of post 每周定理" /&gt;&lt;p&gt;这是博客 Theorem of the week 的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/whzecomjm/texmacs-bak/blob/master/%E6%AF%8F%E5%91%A8%E5%AE%9A%E7%90%86.tm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texmacs 笔记&lt;/a&gt;的版本。&lt;/p&gt;
+&lt;p&gt;我很早就是每周定理（&lt;a class=&#34;link&#34; href=&#34;https://theoremoftheweek.wordpress.com/list-of-theorems/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Theorem of the week&lt;/a&gt;）这一博客的读者，不过之前并没有系统的去看完所有的博文，做一个忠实的读者。最近，我在看过它关于随机图的概率证明（即 Erdos 关于拉姆齐数的一个下界的证明）之后，突然意识到这一博客的语言很自然，且会以很多简单的例子入手，因此值得推广它的做法。博客的作者维姬尼尔 （&lt;a class=&#34;link&#34; href=&#34;http://people.maths.ox.ac.uk/neale/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vicky Neale&lt;/a&gt;）是一位牛津大学的&lt;a class=&#34;link&#34; href=&#34;http://www-history.mcs.st-and.ac.uk/Biographies/Whitehead_Henry.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Whitehead&lt;/a&gt; Lecturer。然而遗憾的是，这一博客现在已经停止更新多年。但是得益于它对我的帮助，我决定把它的每周定理做一个简单的翻译和改写，这样有利于我自己偶尔复习查阅，也方便其他中文读者阅读。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PDF 文件下载链接：&lt;a class=&#34;link&#34; href=&#34;Theorem-of-week-Texmacs.pdf&#34; &gt;url&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
