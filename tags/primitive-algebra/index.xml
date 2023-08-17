@@ -30,7 +30,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;上述&amp;quot;证明&amp;quot;的错误在于第一步，前n项和是有界并不能保证$r_n$也是有界的。和朋友LT以及SC讨论以后，发现我证明的第一行的结论存在反例。&lt;/p&gt;
 &lt;p&gt;$$
-r_n=\begin{cases} 3 &amp;amp; n\neq 2^i \ 3+2^i &amp;amp; n=2^i\end{cases}, i\in \mathbb N.        \qquad(1)
+r_n=\begin{cases} 3 &amp;amp; n\neq 2^i \\ 3+2^i &amp;amp; n=2^i\end{cases}, i\in \mathbb N.        \qquad(1)
 $$&lt;/p&gt;
 &lt;p&gt;显然$\frac{r_1+\cdots+r_n}{n}\leq \frac{3n+2^{i+1}-1}{n}\leq 5 (n=2^i),$ 但$r_n$存在一个单调无界的子列。&lt;/p&gt;
 &lt;hr&gt;
