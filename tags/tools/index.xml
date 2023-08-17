@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>tools on Transcendence</title>
+        <link>https://whzecomjm.com/tags/tools/</link>
+        <description>Recent content in tools on Transcendence</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 17 Aug 2023 19:59:42 +0800</lastBuildDate><atom:link href="https://whzecomjm.com/tags/tools/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Links</title>
+        <link>https://whzecomjm.com/links/</link>
+        <pubDate>Thu, 17 Aug 2023 19:59:42 +0800</pubDate>
+        
+        <guid>https://whzecomjm.com/links/</guid>
+        <description>&lt;h2 id=&#34;常用链接&#34;&gt;常用链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;学术动态：&lt;a class=&#34;link&#34; href=&#34;https://www.researchgate.net/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ResearchGate&lt;/a&gt;、 &lt;a class=&#34;link&#34; href=&#34;https://scirate.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Scirate&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/list/math.RA/new&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arxiv&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.quantamagazine.org/mathematics/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mathematics | Quanta Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学术主页：&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/citations?user=Ih8JrFYAAAAJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;‪Google Scholar‬&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.researchgate.net/profile/Wenchao-Zhang-16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Researchgate&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://orcid.org/0000-0002-2235-5588&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;orcid&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;http://www.mathnet.ru/php/person.phtml?option_lang=eng&amp;amp;personid=162892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mathnet.ru&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Math Review：&lt;a class=&#34;link&#34; href=&#34;https://mathscinet.ams.org/mresubs/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MR&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://zbmath.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zbmath&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;论文下载：&lt;a class=&#34;link&#34; href=&#34;https://qingli.newacademic.net/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;青梨&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.sci-hub.ren/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sci-Hub&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://sci-hub.st/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sci-Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;数学百科：&lt;a class=&#34;link&#34; href=&#34;https://encyclopediaofmath.org/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Encyclopedia of Mathematics&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://mathshistory.st-andrews.ac.uk/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MacTutor History of Mathematics &lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://ncatlab.org/nlab/show/HomePage&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;nLab&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://subwiki.org/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Subwiki&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://planetmath.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PlanetMath&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用网页应用&#34;&gt;常用网页应用&lt;/h2&gt;
+&lt;h3 id=&#34;llm-gpt&#34;&gt;LLM GPT&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;镜像合集：&lt;a class=&#34;link&#34; href=&#34;https://cc.ai55.cc/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ChatGPT Site List&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://github.com/LiLittleCat/awesome-free-chatgpt/blob/main/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;awesone-GPT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;免费ChatGPT镜像：&lt;a class=&#34;link&#34; href=&#34;https://ai.qidianym.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;qidianym&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://chat-gpt.org/chat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AI Chatbot&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://7tad.aigpt77.com/c.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;aigpt77&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;学术论文助手：&lt;a class=&#34;link&#34; href=&#34;https://academic.chatwithpaper.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ChatGPT 学术优化&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://chatpaper.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ChatPaper&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.chatpdf.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ChatPDF&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.cambrianml.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cambrian&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.deepl.com/write#en/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DeepL Write&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.connectedpapers.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Connected Papers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://yiyan.baidu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;文心一言&lt;/a&gt;、BingChat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;数学应用&#34;&gt;数学应用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在线计算软件: &lt;a class=&#34;link&#34; href=&#34;https://matlab.mathworks.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Matlab Online&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.wolframalpha.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wolfram Alpha&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://sagecell.sagemath.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sage Cell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;图形计算器: &lt;a class=&#34;link&#34; href=&#34;https://www.symbolab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;symbolab&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.desmos.com/calculator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;desmos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;画图工具：&lt;a class=&#34;link&#34; href=&#34;https://www.geogebra.org/graphing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Geogebra&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://app.diagrams.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Draw.io&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://excalidraw.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Excalidraw&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://q.uiver.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Quiver&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://tikzcd.yichuanshen.de/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tikzcd-editor&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.netpad.net.cn/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网络画板&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在线LaTeX：&lt;a class=&#34;link&#34; href=&#34;https://www.overleaf.com/project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Overleaf&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.texpage.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Texpage&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.authorea.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Authorea&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://sharelatex-ext.cra.ac.cn/project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;南科大LaTeX&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://i.upmath.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;upmath&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;公式 OCR: &lt;a class=&#34;link&#34; href=&#34;https://snip.mathpix.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mathpix&lt;/a&gt;、 &lt;a class=&#34;link&#34; href=&#34;https://www.latexlive.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Latexlive&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://mathf.itewqq.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;免费公式识别&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://gongshi.wang/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;公式王&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.mathcha.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mathcha&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;其他LaTeX工具：&lt;a class=&#34;link&#34; href=&#34;https://3142.nl/latex-diff/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;latexdiff&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;http://www.tablesgenerator.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;表格转化tex/md&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.latexstudio.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LaTeX 模板&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;写作-markdown&#34;&gt;写作 Markdown&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在线 Markdown：&lt;a class=&#34;link&#34; href=&#34;https://editor.mdnice.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mdnice&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.madoko.net/editor.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Madoko&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.zybuluo.com/mdeditor&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cmd Markdown&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://web.marp.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Marp Web | Slides&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://resume.mdnice.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mdnice 简历&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://foliovision.com/seo-tools/pandoc-online&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pandoc Online Unlimited&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;写作助手：&lt;a class=&#34;link&#34; href=&#34;https://quillbot.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;QuillBot&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://xiezuocat.com/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;秘塔写作猫&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.connectedpapers.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Connected Papers&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.simplish.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Simplish &lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.ijiaodui.com/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;爱校对&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://wantwords.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WantWords&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.impan.pl/~slownik/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Math-Dict&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;http://www.1checker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1Checker 易改&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;其他工具&#34;&gt;其他工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PDF工具：&lt;a class=&#34;link&#34; href=&#34;https://tools.pdf24.org/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PDF24 Tools&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.ilovepdf.com/compress_pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ILovePDF&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://pdf.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PDF.io&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;http://dec41.user.srcf.net/crop/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Crop PDF&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://converter.app/djvu-to-pdf/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DjVu to PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文件快速传输：&lt;a class=&#34;link&#34; href=&#34;https://musetransfer.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MUSE&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.wenshushu.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;文叔叔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文字转表格：&lt;a class=&#34;link&#34; href=&#34;https://auto-graph.streamlit.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Streamlit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;密码管理：&lt;a class=&#34;link&#34; href=&#34;https://app.keeweb.info/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KeeWeb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;思维导图：&lt;a class=&#34;link&#34; href=&#34;http://naotu.baidu.com/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;百度脑图&lt;/a&gt;、 &lt;a class=&#34;link&#34; href=&#34;https://mubu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;幕布&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.processon.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ProcessOn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在线编程工具: &lt;a class=&#34;link&#34; href=&#34;https://notebooks.azure.com/wencho-zhang/projects/python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Microsoft Azure&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://colab.research.google.com/notebooks/welcome.ipynb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Colaboratory&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://whzecomjm.cloudstudio.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译工具：&lt;a class=&#34;link&#34; href=&#34;https://www.deepl.com/translator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;DeepL翻译&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://translate.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google 翻译&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;图片工具：&lt;a class=&#34;link&#34; href=&#34;https://ps.gaoding.com/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;在线PS-稿定&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://squoosh.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图片压缩-Squoosh&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.photofun.cn/compress/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PhotoFun - 图片压缩&lt;/a&gt;、 &lt;a class=&#34;link&#34; href=&#34;https://www.remove.bg/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;抠图| remove.bg&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://bgsub.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;消除图像背景 - BgSub&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;http://www.ssbbww.com/h/am.aspx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图片二值化处理&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://ezgif.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ezgif.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Last updated: 2023-08-17&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
